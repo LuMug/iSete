@@ -1,4 +1,0 @@
-Raccolta dati e analisi requisiti DB
-bisogna identificare un utente
-ogni utente generico ha un saldo speso e tipo capu
-sfdghjlé
