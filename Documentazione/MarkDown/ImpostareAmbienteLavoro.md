@@ -64,39 +64,46 @@ Installare Atom: https://atom.io/
 
 Insallare PanDoc: [*http://pandoc.org/*](http://pandoc.org/)
 
-Per creare il pdf da un md: pandoc [*source.md*](http://source.md/) -s
--o dest.pdf --highlight-style=tango
+Per creare il pdf da un md:
+
+```markdown
+pandoc [*source.md*](http://source.md/) -s -o dest.pdf --highlight-style=tango
+```
 
 Trasformare un docx in markdown:
-pandoc test1.docx -f docx -t markdown -s -o test1.md
 
+```markdown
+pandoc test1.docx -f docx -t markdown -s -o test1.md
+```
 
 
 ## Uso di Git
 
 Il seguente schema mostra il funzionamento di massima di Git.
 
-git config --global push.default matching
-git config --global push.default simple
-
 ![Git LifeCycle](./img/git-workflow.png)
 
 ### Da linea di comando
-
 
 Da una qualsiasi shell spostarsi nella cartella nella quale volete
 lavorare.
 
 |Comando  |Descrizione          |
 |---------                      |------------------------------------|
-|git clone [remote repository]  |Crea una copia locale del repository|
-|git pull                       |Aggiorna completamente il repository locale e la working copy|
-|git fetch                      |Aggiorna il repository locale|
-|git merge                      |Aggiorna la working copy con le modifiche locali|
-|git add *                      |Permette di decidere quali file (tutti) aggiungere al repository locale|
-|git commit -m "Messaggio"      |Porta le modifiche al repository locale con un'etichetta|
-|git push -u origin master      |Apporta le modifiche al repository remoto|
+|```git clone [remote repository]```  |Crea una copia locale del repository|
+|```git pull     ```                  |Aggiorna completamente il repository locale e la working copy|
+|```git fetch ```                     |Aggiorna il repo sitory locale|
+|```git merge                  ```    |Aggiorna la working copy con le modifiche locali|
+|```git add *                  ```    |Permette di decidere quali file (tutti) aggiungere al repository locale|
+|```git commit -m "Messaggio"  ```    |Porta le modifiche al repository locale con un'etichetta|
+|```git push -u origin master   ```   |Apporta le modifiche al repository remoto|
 
+Per modificare il metodo di push:
+
+```markdown
+git config --global push.default matching
+git config --global push.default simple
+```
 
 ### SourceTree
 Quando modificherete un file, source tree vi farà notare il file che
