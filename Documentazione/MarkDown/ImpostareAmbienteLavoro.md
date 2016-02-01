@@ -10,36 +10,36 @@
 1.  Configurare il file di impostazioni git ```<users>\<user>\.gitconfig```
     nella maniera seguente:
 
-```markdown
+    ```markdown
 
-[user]
-    name = nome cognome
-    email = nome.cognome@samtrevano.ch
+    [user]
+      name = nome cognome
+      email = nome.cognome@samtrevano.ch
 
-[core]
-    autocrlf = true
-    excludesfile = C:\Users\samt\Documents\gitignore_global.txt
+    [core]
+      autocrlf = true
+      excludesfile = C:\Users\samt\Documents\gitignore_global.txt
 
-[filter "lfs"]
-    clean = git-lfs clean %f
-    smudge = git-lfs smudge %f
-    required = true
+    [filter "lfs"]
+      clean = git-lfs clean %f
+      smudge = git-lfs smudge %f
+      required = true
 
-[http]
-    proxy = http://nome.cognome:proxypass@proxy:8080
+    [http]
+      proxy = http://nome.cognome:proxypass@proxy:8080
 
-[https]
-    proxy = https://nome.cognome:proxypass@proxy:8080
-```
+    [https]
+      proxy = https://nome.cognome:proxypass@proxy:8080
+      ```
 
-4.  Installare source Tree da questo sito
+1. Installare source Tree da questo sito
     [*https://www.sourcetreeapp.com/*](https://www.sourcetreeapp.com/)
 
 1.  Impostare il Git di sistema per SourceTree.
 
-![Settings](.//img/ST_img1.png)
+    ![Settings](.//img/ST_img1.png)
 
-6.  Completata l’istallazione mettendo le credenziali dell’account github
+1.  Completata l’istallazione mettendo le credenziali dell’account github
     creato in precedenza
 
 1.  Dopo l’accettazione dei termini di utilizzo l’installazione sarà
@@ -50,9 +50,9 @@
 
 1.  In seguito inserire il percorso della cartella locale nella quale sincronizzare il repository
 
-> **Non cambiare il percorso della cartella, se la cartella è già creata allora andrà a fare riferimento a quella cartella, altrimenti la creerà lui**
+     > **Non cambiare il percorso della cartella, se la cartella è già creata allora andrà a fare riferimento a quella cartella, altrimenti la creerà lui**
 
-10. Sempre in impostazioni inserire le credenziali (nome e email) per
+1. Sempre in impostazioni inserire le credenziali (nome e email) per
     mostrare chi modifica cosa.
 
 A questo punto nella vostra cartella locale dovreste poter vedere i file
@@ -75,6 +75,9 @@ pandoc test1.docx -f docx -t markdown -s -o test1.md
 ## Uso di Git
 
 Il seguente schema mostra il funzionamento di massima di Git.
+
+git config --global push.default matching
+git config --global push.default simple
 
 ![Git LifeCycle](./img/git-workflow.png)
 
