@@ -1,17 +1,16 @@
-Ambiente di sviluppo
---------------------
+# Ambiente di sviluppo
 
-
+## Preparazione
 
 1.  Creare un account su [*https://github.com/*](https://github.com/)
 
-2.  Installare Git
+1.  Installare Git
     [*http://git-scm.com/download/win*](http://git-scm.com/download/win)
 
-3.  Configurare il file di impostazioni git ```<users>\<user>\.gitconfig```
+1.  Configurare il file di impostazioni git ```<users>\<user>\.gitconfig```
     nella maniera seguente:
 
-```java
+```markdown
 
 [user]
     name = nome cognome
@@ -36,74 +35,72 @@ Ambiente di sviluppo
 4.  Installare source Tree da questo sito
     [*https://www.sourcetreeapp.com/*](https://www.sourcetreeapp.com/)
 
-5.  Impostare il Git di sistema per SourceTree.
+1.  Impostare il Git di sistema per SourceTree.
 
-![](img/image1.png){width="6.145833333333333in"height="4.458333333333333in"}
+![Settings](.//img/ST_img1.png)
 
-1.  Completata l’istallazione mettendo le credenziali dell’account github
+6.  Completata l’istallazione mettendo le credenziali dell’account github
     creato in precedenza
 
-2.  Dopo l’accettazione dei termini di utilizzo l’installazione sarà
+1.  Dopo l’accettazione dei termini di utilizzo l’installazione sarà
     completata
 
-3.  Aprire source Tree
-
-4.  Andare sotto impostazioni e mettere l’url del progetto:
+1.  Aprire source Tree. Nelle impostazioni mettere l’url del progetto:
     [*https://github.com/LucaMuggiasca/iSete.git*](https://github.com/LucaMuggiasca/iSete.git)
 
-5.  In seguito inserire il percorso della cartella locale
+1.  In seguito inserire il percorso della cartella locale nella quale sincronizzare il repository
 
-**Non cambiare il percorso della cartella **
+> **Non cambiare il percorso della cartella, se la cartella è già creata allora andrà a fare riferimento a quella cartella, altrimenti la creerà lui**
 
-Se la cartella è già creata allora andrà a fare riferimento a quella
-cartella, altrimenti la creerà lui
-
-1.  Sempre in impostazioni inserire le credenziali (nome e email) per
+10. Sempre in impostazioni inserire le credenziali (nome e email) per
     mostrare chi modifica cosa.
 
 A questo punto nella vostra cartella locale dovreste poter vedere i file
-che sono stati messi sul server.
+che sono stati messi sul server. Potrete modificarli ma non potrete uplodare finchè il proprietario del repository non vi concede il permesso di ```push```.
 
-Potrete modificarli ma non potrete uplodare poiché non avete il permesso
-dal responsabile del progetto Raffaele Scarcella.
 
-Quando modificherete un file, source tree vi farà notare il file che
-avete modificato ma non lo uploderà. Per fare ciò bisogna selezionare i
-file che si vuole uplodare, selezionare il check che vi è sotto ( invia
-immediatamente la commissione a origin/master) e premere invia.
-
-**Prima di modificare un file ricordarsi di premere commit per avere le
-eventuali modifiche che sono state fatte dagli altri ma che voi non
-avete in locale**
-
-Per maggiori informazioni vi spiegheremo io e Raffaele come fare in
-classe.
-
-Git da linea di comando
-
-Da una qualsiasi shell spostarsi nella cartella nella quale volete
-lavorare.
-
-Creare una copia del repository: git clone
-[*https://github.com/raffaelescarcella/iSete.git*](https://github.com/raffaelescarcella/iSete.git)
-
-Aggiornare: git fetch
-
-Merge: git merge
-
-Aggiornare e merge DAL repository: git pull
-
-Al termine delle modifiche locali:
-
-- git add \*
-
-- git commit -m "Messaggio"
-
-- git push -u origin master
-
+## Creazione documenti
 Installare Atom: https://atom.io/
 
 Insallare PanDoc: [*http://pandoc.org/*](http://pandoc.org/)
 
 Per creare il pdf da un md: pandoc [*source.md*](http://source.md/) -s
 -o dest.pdf --highlight-style=tango
+
+Trasformare un docx in markdown:
+pandoc test1.docx -f docx -t markdown -s -o test1.md
+
+
+
+## Uso di Git
+
+Il seguente schema mostra il funzionamento di massima di Git.
+
+![Git LifeCycle](./img/git-workflow.png)
+
+### Da linea di comando
+
+
+Da una qualsiasi shell spostarsi nella cartella nella quale volete
+lavorare.
+
+|Comando  |Descrizione          |
+|---------                      |------------------------------------|
+|git clone [remote repository]  |Crea una copia locale del repository|
+|git pull                       |Aggiorna completamente il repository locale e la working copy|
+|git fetch                      |Aggiorna il repository locale|
+|git merge                      |Aggiorna la working copy con le modifiche locali|
+|git add *                      |Permette di decidere quali file (tutti) aggiungere al repository locale|
+|git commit -m "Messaggio"      |Porta le modifiche al repository locale con un'etichetta|
+|git push -u origin master      |Apporta le modifiche al repository remoto|
+
+
+### SourceTree
+Quando modificherete un file, source tree vi farà notare il file che
+avete modificato ma non lo caricherà in remoto. Per fare ciò bisogna selezionare i
+file che si vogliono caricare, selezionare il check che vi è sotto ( invia
+immediatamente la commissione a origin/master) e premere invia.
+
+> Prima di modificare un file ricordarsi di premere commit per avere le
+eventuali modifiche che sono state fatte dagli altri ma che voi non
+avete in locale
