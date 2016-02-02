@@ -109,7 +109,7 @@ git config --global push.default simple
 Quando modificherete un file, source tree vi farà notare il file che
 avete modificato ma non lo caricherà in remoto. Per fare ciò bisogna selezionare i
 file che si vogliono caricare, selezionare il check che vi è sotto ( invia
-immediatamente la commissione a origin/master) e premere invia.
+immediatamente la commissione a origin/master) e premere ~~invia~~ commit.
 
 > Prima di modificare un file ricordarsi di premere commit per avere le
 eventuali modifiche che sono state fatte dagli altri ma che voi non
