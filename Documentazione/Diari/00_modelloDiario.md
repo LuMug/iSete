@@ -1,16 +1,8 @@
----
-header-includes:
-    - \usepackage{fancyhdr}
-    - \usepackage{array,graphicx}
-    - \newcommand*\rot{\rotatebox{90}}
-    - \pagestyle{fancy}
-    - \fancyhead[CO,CE]{iSete -Nishan Anthonippillai, Ettore Ongaro,      Raffaele Scarcella, Andrea Lupica, Serhiy Ushchapivskyy}
-    - \fancyfoot[LO,LE]{© SAMTrevano}
-    - \fancyfoot[RO,RE]{2015-16}
-    - \fancyfoot[CO,CE]{\thepage}
----
 
-# Diario di lavoro | Canobbio, [DATE]
+
+# iSete | Diario di lavoro - dd.mm.yyyy
+##### N. Anthonippillai, E. Ongaro, R. Scarcella, A. Lupica, S. Ushchapivskyy
+### Canobbio, [DATE]
 
 ## Lavori svolti
 
