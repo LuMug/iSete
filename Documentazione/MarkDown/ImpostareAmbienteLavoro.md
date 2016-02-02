@@ -67,7 +67,7 @@ Insallare PanDoc: [*http://pandoc.org/*](http://pandoc.org/)
 Per creare il pdf da un md:
 
 ```markdown
-pandoc [*source.md*](http://source.md/) -s -o dest.pdf --highlight-style=tango
+pandoc source.md -s -o dest.pdf --highlight-style=tango
 ```
 
 Trasformare un docx in markdown:
