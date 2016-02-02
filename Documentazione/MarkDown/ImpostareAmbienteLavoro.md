@@ -62,13 +62,18 @@ che sono stati messi sul server. Potrete modificarli ma non potrete uplodare fin
 ## Creazione documenti
 Installare Atom: https://atom.io/
 
-Insallare PanDoc: [*http://pandoc.org/*](http://pandoc.org/)
+Installare PanDoc: [*http://pandoc.org/*](http://pandoc.org/)
+
+Installare MikTex [*http://miktex.org/download*](http://miktex.org/download)
+
+
 
 Per creare il pdf da un md:
 
 ```markdown
 pandoc source.md -s -o dest.pdf --highlight-style=tango
 ```
+Al momento della conversione dovranno essere scaricati alcuni pacchetti. Selezionare la modalita via internet e configurare il proxy.
 
 Trasformare un docx in markdown:
 
