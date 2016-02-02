@@ -21,5 +21,5 @@ Data di consegna:
 ##Importante da sapere
 - [GitHub CheatSheet](Guide/github-cheatsheet.pdf)
 - [Scrum in 5 minuti](Guide/Scrum_in_5_min.pdf)
-- [MarkDown CheatSheet](Documentazione/MarkDown/markdownCheatSheet.md)
+- [MarkDown CheatSheet](Guide/markdownCheatSheet.md)
 - [Impostare ambiente di lavoro](Documentazione/MarkDown/ImpostareAmbienteLavoro.md)
