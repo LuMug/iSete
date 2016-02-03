@@ -9,7 +9,7 @@
 ##Informazioni sul progetto
 Iniziato il:
 Data di consegna:
-- [Quaderno dei compiti)](Documentazione/0_qdc_p3_dispenser.md)
+- [Quaderno dei compiti)](Documentazione/0_qdc_p3_iSete.md)
 
 
 ##Documentazione
