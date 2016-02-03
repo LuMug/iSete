@@ -46,7 +46,7 @@
     completata
 
 1.  Aprire source Tree. Nelle impostazioni mettere l’url del progetto:
-    [*https://github.com/LucaMuggiasca/iSete.git*](https://github.com/LucaMuggiasca/iSete.git)
+    [*https://github.com/LuMug/iSete.git*](https://github.com/LuMug/iSete.git)
 
 1.  In seguito inserire il percorso della cartella locale nella quale sincronizzare il repository
 
