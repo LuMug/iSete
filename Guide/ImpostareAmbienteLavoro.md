@@ -60,7 +60,7 @@ che sono stati messi sul server. Potrete modificarli ma non potrete uplodare fin
 
 
 ## Creazione documenti
-Installare Atom: https://atom.io/
+Installare Atom: [*https://atom.io/*](https://atom.io/)
 
 Installare PanDoc: [*http://pandoc.org/*](http://pandoc.org/)
 
