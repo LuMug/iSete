@@ -149,76 +149,75 @@
 
 ### Analisi e specifica dei requisiti
 
-  Il progettista, dopo aver ricevuto il mandato, in collaborazione con il
-  committente redige una lista di requisiti. Durante questi incontri,
-  tramite interviste (da inserire nei diari), il progettista deve cercare
-  di rispondere alle seguenti domande:
 
-  -   Quali sono i bisogni del committente?
-
-  -   Quali funzioni deve svolgere il prodotto?
-
-  -   Come devono essere implementate?
-
-  -   L’utente, come vorrebbe/dovrebbe interagire con il prodotto?
-
-  -   Come verrà utilizzato il prodotto?
-
-  -   Che tipo di interfaccia si immagina?
-
-  -   Che prestazioni minime deve fornire il prodotto?
-
-  -   Che grado di sicurezza deve avere il prodotto?
-
-  -   …
-
-  In base alla lista dei requisiti e all’analisi degli stessi, il
-  progettista redige una *specifica dei requisiti* in cui elenca e
-  descrive in modo dettagliato quali sono le funzionalità che il prodotto
-  fornirà. La specifica dovrebbe essere abbastanza dettagliata da poter
-  essere utilizzata come base per lo sviluppo, ma non troppo; ad esempio
-  non dovrebbe contenere dettagli di implementazione, o definizioni
-  dettagliate dell’interfaccia grafica a meno che questi non siano
-  considerati cruciali. Non si deve scordare che i requisiti non
-  rappresentano delle attività bensì delle caratteristiche che il prodotto
-  dovrà possedere.
-
-
-  |ID: REQ-012                                         |
-  |----------------------------------------------------|
-  |**Nome**    |Creazione interfaccia |
+  |ID |REQ-001                                       |
+  |---|------------------------------------------------|
+  |**Nome**    |Struttura hardware |
   |**Priorità**|1                     |
   |**Versione**|1.0                   |
-  |**Note**    |Si necessitano i permessi di root / Dipende dal requisito REQ-001 (Creazione DB)|
   |            |**Sotto requisiti** |
-  |**001**      | Si necessita una maschera di login  |
-  |**002**      | Si dovranno poter immettere nuovi allievi                 |
-  |**003**      | Dovrà essere possibile la ricerca di allievi                   |
+  |**001**      | 	Deve essere modulabile.  |
+  |**002**      | Deve essere riempito con le capsule.|
+  |**003**      |Il ricaricamento deve essere facilitato, senza compromettere il funzionamento della struttura.                  |
+  |**004**      |Deve avere un metodo di espulsione delle capsule a dipendenza della scelta effettuata.|
+  |**005**      |Notificare il responsabile della mancanza delle capsule.|
+  |**006**      |Deve comunicare al server gli acquisti.|
+  |**007**      |Le capsule devono essere gestite da un servomotore controllato dall’Arduino.|
 
 
-**Spiegazione elementi tabella dei requisiti:**
+  |ID |REQ-002                                       |
+  |---|------------------------------------------------|
+  |**Nome**    |Riconoscimento |
+  |**Priorità**|1                     |
+  |**Versione**|1.0                   |
+  |            |**Sotto requisiti** |
+  |**001**      | 	Deve essere presente un metodo di riconoscimento univoco dell’utente, che vuole usufruire dell’apparecchio.  |
+  |**002**      | Bisogna avere una server dove memorizzare gli utenti.|
+  |**003**      |In caso di server down, bisogna avere un riconoscimento locale.                 |
+  |**004**      |In caso di server down, bisogna avere un metodo di memorizzazione temporaneo in locale.|
 
-**ID**: identificativo univoco del requisito
+  |ID |REQ-003                                       |
+  |---|--------------------------------------------------------|
+  |**Nome**    |Amministratore |
+  |**Priorità**|1                     |
+  |**Versione**|1.0                   |
+  |            |**Sotto requisiti** |
+  |**001**      | 	Amministratore gestisce il sito.  |
+  |**002**      | Deve poter dare permessi.|
+  |**003**      |Deve poter aggiungere i moduli.        |
 
-**Nome**: breve descrizione del requisito
+  |ID |REQ-004                                       |
+  |---|------------------------------------------------|
+  |**Nome**    |Responsabile |
+  |**Priorità**|1                     |
+  |**Versione**|1.0                   |
+  |            |**Sotto requisiti** |
+  |**001**      | 	Si preoccupa della gestione dei crediti di ogni singolo utente.  |
+  |**002**      | Ricaricare il distributore di capsule. |
+  |**003**      |Avere la possibilità di creare utenti.    |
+  |**004**      |Deve poter gestire gli utenti.|
+  |**005**      |Deve poter creare i grafici dei acquisti.|
+  |**006**      |Deve poter caricare credito agli utenti.|
+  |**007**      |Dovrà avere la possibilità di vedere le capsule vendute.|
 
-**Priorità**: indica l’importanza di un requisito nell’insieme del
-progetto, definita assieme al committente. Ad esempio poter disporre di
-report con colonne di colori diversi ha priorità minore rispetto al
-fatto di avere un database con gli elementi al suo interno. Solitamente
-si definiscono al massimo di 2-3 livelli di priorità.
+  |ID |REQ-005                                      |
+  |---|--------------------------------------------------------|
+  |**Nome**    |Utente comune |
+  |**Priorità**|1                     |
+  |**Versione**|1.0                   |
+  |            |**Sotto requisiti** |
+  |**001**      | 	Ogni utente deve poter consultare il proprio credito.  |
+  |**002**      | Ha a disposizione informazioni riguardanti i propri acquisti quali storico e quantità di capsule.|
 
-**Versione**: indica la versione del requisito. Ogni modifica del
-requisito avrà una versione aggiornata.
-
-Sulla documentazione apparirà solamente l’ultima versione, mentre le
-vecchie dovranno essere inserite nei diari.
-
-**Note**: eventuali osservazioni importanti o riferimenti ad altri
-requisiti.
-
-**Sotto requisiti**: elementi che compongono il requisito.
-
+  |ID |REQ-006                                     |
+  |---|--------------------------------------------------------|
+  |**Nome**    |Utente comune |
+  |**Priorità**|1                     |
+  |**Versione**|1.0                   |
+  |            |**Sotto requisiti** |
+  |**001**      | Gestione credito dei utenti dal responsabile. |
+  |**002**      | Ordinare le capsule dal utente.|
+  |**003**      |Gestione intero sistema dall’amministratore.  |
 
 ### Use case
 
