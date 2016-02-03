@@ -150,74 +150,74 @@
 ### Analisi e specifica dei requisiti
 
 
-  |ID |REQ-001                                       |
-  |---|------------------------------------------------|
-  |**Nome**    |Struttura hardware |
-  |**Priorità**|1                     |
-  |**Versione**|1.0                   |
-  |            |**Sotto requisiti** |
-  |**001**      | 	Deve essere modulabile.  |
-  |**002**      | Deve essere riempito con le capsule.|
-  |**003**      |Il ricaricamento deve essere facilitato, senza compromettere il funzionamento della struttura.                  |
-  |**004**      |Deve avere un metodo di espulsione delle capsule a dipendenza della scelta effettuata.|
-  |**005**      |Notificare il responsabile della mancanza delle capsule.|
-  |**006**      |Deve comunicare al server gli acquisti.|
-  |**007**      |Le capsule devono essere gestite da un servomotore controllato dall’Arduino.|
+|ID |REQ-001                                       |
+|---|------------------------------------------------|
+|**Nome**    |Struttura hardware |
+|**Priorità**|1                     |
+|**Versione**|1.0                   |
+|            |**Sotto requisiti** |
+|**001**      | 	Deve essere modulabile.  |
+|**002**      | Deve essere riempito con le capsule.|
+|**003**      |Il ricaricamento deve essere facilitato, senza compromettere il funzionamento della struttura.                  |
+|**004**      |Deve avere un metodo di espulsione delle capsule a dipendenza della scelta effettuata.|
+|**005**      |Notificare il responsabile della mancanza delle capsule.|
+|**006**      |Deve comunicare al server gli acquisti.|
+|**007**      |Le capsule devono essere gestite da un servomotore controllato dall’Arduino.|
 
 
-  |ID |REQ-002                                       |
-  |---|------------------------------------------------|
-  |**Nome**    |Riconoscimento |
-  |**Priorità**|1                     |
-  |**Versione**|1.0                   |
-  |            |**Sotto requisiti** |
-  |**001**      | 	Deve essere presente un metodo di riconoscimento univoco dell’utente, che vuole usufruire dell’apparecchio.  |
-  |**002**      | Bisogna avere una server dove memorizzare gli utenti.|
-  |**003**      |In caso di server down, bisogna avere un riconoscimento locale.                 |
-  |**004**      |In caso di server down, bisogna avere un metodo di memorizzazione temporaneo in locale.|
+|ID |REQ-002                                       |
+|---|------------------------------------------------|
+|**Nome**    |Riconoscimento |
+|**Priorità**|1                     |
+|**Versione**|1.0                   |
+|            |**Sotto requisiti** |
+|**001**      | 	Deve essere presente un metodo di riconoscimento univoco dell’utente, che vuole usufruire dell’apparecchio.  |
+|**002**      | Bisogna avere una server dove memorizzare gli utenti.|
+|**003**      |In caso di server down, bisogna avere un riconoscimento locale.                 |
+|**004**      |In caso di server down, bisogna avere un metodo di memorizzazione temporaneo in locale.|
 
-  |ID |REQ-003                                       |
-  |---|--------------------------------------------------------|
-  |**Nome**    |Amministratore |
-  |**Priorità**|1                     |
-  |**Versione**|1.0                   |
-  |            |**Sotto requisiti** |
-  |**001**      | 	Amministratore gestisce il sito.  |
-  |**002**      | Deve poter dare permessi.|
-  |**003**      |Deve poter aggiungere i moduli.        |
+|ID |REQ-003                                       |
+|---|--------------------------------------------------------|
+|**Nome**    |Amministratore |
+|**Priorità**|1                     |
+|**Versione**|1.0                   |
+|            |**Sotto requisiti** |
+|**001**      | 	Amministratore gestisce il sito.  |
+|**002**      | Deve poter dare permessi.|
+|**003**      |Deve poter aggiungere i moduli.        |
 
-  |ID |REQ-004                                       |
-  |---|------------------------------------------------|
-  |**Nome**    |Responsabile |
-  |**Priorità**|1                     |
-  |**Versione**|1.0                   |
-  |            |**Sotto requisiti** |
-  |**001**      | 	Si preoccupa della gestione dei crediti di ogni singolo utente.  |
-  |**002**      | Ricaricare il distributore di capsule. |
-  |**003**      |Avere la possibilità di creare utenti.    |
-  |**004**      |Deve poter gestire gli utenti.|
-  |**005**      |Deve poter creare i grafici dei acquisti.|
-  |**006**      |Deve poter caricare credito agli utenti.|
-  |**007**      |Dovrà avere la possibilità di vedere le capsule vendute.|
+|ID |REQ-004                                       |
+|---|------------------------------------------------|
+|**Nome**    |Responsabile |
+|**Priorità**|1                     |
+|**Versione**|1.0                   |
+|            |**Sotto requisiti** |
+|**001**      | 	Si preoccupa della gestione dei crediti di ogni singolo utente.  |
+|**002**      | Ricaricare il distributore di capsule. |
+|**003**      |Avere la possibilità di creare utenti.    |
+|**004**      |Deve poter gestire gli utenti.|
+|**005**      |Deve poter creare i grafici dei acquisti.|
+|**006**      |Deve poter caricare credito agli utenti.|
+|**007**      |Dovrà avere la possibilità di vedere le capsule vendute.|
 
-  |ID |REQ-005                                      |
-  |---|--------------------------------------------------------|
-  |**Nome**    |Utente comune |
-  |**Priorità**|1                     |
-  |**Versione**|1.0                   |
-  |            |**Sotto requisiti** |
-  |**001**      | 	Ogni utente deve poter consultare il proprio credito.  |
-  |**002**      | Ha a disposizione informazioni riguardanti i propri acquisti quali storico e quantità di capsule.|
+|ID |REQ-005                                      |
+|---|--------------------------------------------------------|
+|**Nome**    |Utente comune |
+|**Priorità**|1                     |
+|**Versione**|1.0                   |
+|            |**Sotto requisiti** |
+|**001**      | 	Ogni utente deve poter consultare il proprio credito.  |
+|**002**      | Ha a disposizione informazioni riguardanti i propri acquisti quali storico e quantità di capsule.|
 
-  |ID |REQ-006                                     |
-  |---|--------------------------------------------------------|
-  |**Nome**    |Utente comune |
-  |**Priorità**|1                     |
-  |**Versione**|1.0                   |
-  |            |**Sotto requisiti** |
-  |**001**      | Gestione credito dei utenti dal responsabile. |
-  |**002**      | Ordinare le capsule dal utente.|
-  |**003**      |Gestione intero sistema dall’amministratore.  |
+|ID |REQ-006                                     |
+|---|--------------------------------------------------------|
+|**Nome**    |Utente comune |
+|**Priorità**|1                     |
+|**Versione**|1.0                   |
+|            |**Sotto requisiti** |
+|**001**      | Gestione credito dei utenti dal responsabile. |
+|**002**      | Ordinare le capsule dal utente.|
+|**003**      |Gestione intero sistema dall’amministratore.  |
 
 ### Use case
 
