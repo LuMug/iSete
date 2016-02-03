@@ -1,5 +1,5 @@
-create database iSete;
-use iSete;
+create database dispenser;
+use dispenser;
 
 create table utente(
 	ut_id int primary key auto_increment,
@@ -41,7 +41,7 @@ create table prenota(
 
 create table caricaCredito(
 	ut_idResp int,
-    ut_idNorm int primary key,
+    ut_idNorm int ,
     cre_data timestamp,
     cre_quantita int,
     foreign key(ut_idResp) references utente(ut_id),
