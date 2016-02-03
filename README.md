@@ -9,11 +9,11 @@
 ##Informazioni sul progetto
 Iniziato il:
 Data di consegna:
-- [QdC (provvisorio)](Documentazione/0_qdc_p3_dispenser.docx)
+- [Quaderno dei compiti)](Documentazione/0_qdc_p3_dispenser.md)
 
 
 ##Documentazione
-
+  - [Documentazione](Documentazione/0_Documentazione.md)
 
 ###Diari
   - [Diari](Documentazione/Diari/)
@@ -22,4 +22,4 @@ Data di consegna:
 - [GitHub CheatSheet](Guide/github-cheatsheet.pdf)
 - [MarkDown CheatSheet](Guide/markdownCheatSheet.md)
 - [Scrum in 5 minuti](Guide/Scrum_in_5_min.pdf)
-- [Impostare ambiente di lavoro](Documentazione/MarkDown/ImpostareAmbienteLavoro.md)
+- [Impostare ambiente di lavoro](Guide/ImpostareAmbienteLavoro.md)
