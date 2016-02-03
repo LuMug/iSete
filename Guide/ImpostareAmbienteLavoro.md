@@ -37,7 +37,7 @@
 
 1.  Impostare il Git di sistema per SourceTree.
 
-    ![Settings](.//img/ST_img1.png)
+    ![Settings](../Documentazione/img/ST_img1.png)
 
 1.  Completata l’istallazione mettendo le credenziali dell’account github
     creato in precedenza
@@ -86,7 +86,7 @@ pandoc test1.docx -f docx -t markdown -s -o test1.md
 
 Il seguente schema mostra il funzionamento di massima di Git.
 
-![Git LifeCycle](./img/git-workflow.png)
+![Git LifeCycle](../Documentazione/img/git-workflow.png)
 
 ### Da linea di comando
 
