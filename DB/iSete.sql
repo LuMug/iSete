@@ -1,5 +1,5 @@
-create database dispenser;
-use dispenser;
+create database iSete;
+use iSete;
 
 create table utente(
 	ut_id int primary key auto_increment,
