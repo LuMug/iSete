@@ -11,12 +11,16 @@ Iniziato il:
 Data di consegna:
 - [Quaderno dei compiti](Documentazione/0_qdc_p3_iSete.md)
 
-
 ##Documentazione
   - [Documentazione](Documentazione/0_Documentazione.md)
 
 ###Diari
   - [Diari](Documentazione/Diari/)
+
+##Link interessanti
+  - [https://www.tinkercad.com/](https://www.tinkercad.com/)
+  - [http://www.shapeways.com/](http://www.shapeways.com/)
+
 
 ##Importante da sapere
 - [GitHub CheatSheet](Guide/github-cheatsheet.pdf)
