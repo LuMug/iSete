@@ -221,8 +221,7 @@
 
 ### Use case
 
-I casi d’uso rappresentano l’interazione tra i vari attori e le
-funzionalità del prodotto.
+![Use case](https://github.com/LuMug/iSete/blob/master/Documentazione/img/Use_case.png)
 
 ### Pianificazione
 
