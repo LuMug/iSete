@@ -1,4 +1,4 @@
-# iSete | Diario di lavoro - 04.02.2016
+# iSete | Diario di lavoro - 03.02.2016
 ##### N. Anthonippillai, E. Ongaro, R. Scarcella, A. Lupica, S. Ushchapivskyy
 
 ## Lavori svolti
