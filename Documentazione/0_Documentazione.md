@@ -1,13 +1,21 @@
 # Esempio di documentazione
 
+<<<<<<< HEAD
 1. [Introduzione](#introduzione)
+=======
+[1. Introduzione](#introduzione)
+>>>>>>> d660ba803c440f0050d8d25de0ab7ccd519169d0
   - Informazioni sul progetto
 
   - Abstract
 
   - Scopo
 
+<<<<<<< HEAD
 1. [Analisi](#analisi)
+=======
+[1. Analisi](# analisi)
+>>>>>>> d660ba803c440f0050d8d25de0ab7ccd519169d0
 
   - Analisi del dominio
 
