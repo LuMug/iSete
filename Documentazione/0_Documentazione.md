@@ -1,14 +1,13 @@
 # Esempio di documentazione
 
-[introduzione](#introduzione)
-1. Introduzione
+[1. Introduzione](#introduzione)
   - Informazioni sul progetto
 
   - Abstract
 
   - Scopo
 
-1. Analisi
+[1. Analisi](# analisi)
 
   - Analisi del dominio
 
