@@ -3,65 +3,59 @@
 
 1. [Introduzione](#introduzione)
 
-  - Informazioni sul progetto
+  - [Informazioni sul progetto](#informazioni-sul-progetto)
 
   - [Abstract](#abstract)
 
-  - Scopo
-
+  - [Scopo](#scopo)
 
 1. [Analisi](#analisi)
 
-  - Analisi del dominio
+  - [Analisi del dominio](#analisi-del-dominio)
 
-  - Analisi e specifica dei requisiti
-
+  - [Analisi e specifica dei requisiti](#analisi-e-specifica-dei-requisiti)
 
 1. [Use case](#use-case)
 
-  - Pianificazione
+  - [Pianificazione](#pianificazione)
 
-  - Analisi dei mezzi
-    - Software
-
-    - Hardware
+  - [Analisi dei mezzi](#analisi-dei-mezzi)
 
 1. [Progettazione](#progettazione)
 
+  - [Design dell’architettura del sistema](#design-dell’architettura-del-sistema)
 
-  - Design dell’architettura del sistema
+  - [Design dei dati e database](#design-dei-dati-e-database)
 
-  - Design dei dati e database
+  - [Design delle interfacce](#design-delle-interfacce)
 
-  - Design delle interfacce
-
-  - Design procedurale
+  - [Design procedurale](#design-procedurale)
 
 1. [Implementazione](#implementazione)
 
 1. [Test](#test)
 
-  - Protocollo di test
+  - [Protocollo di test](#protocollo-di-test)
 
-  - Risultati test
+  - [Risultati test](#risultati-test)
 
-  - Mancanze/limitazioni conosciute
+  - [Mancanze/limitazioni conosciute](#mancanze/limitazioni-conosciute)
 
 1. [Consuntivo](#consuntivo)
 
 1. [Conclusioni](#conclusioni)
 
-  - Sviluppi futuri
+  - [Sviluppi futuri](#sviluppi-futuri)
 
-  - Considerazioni personali
+  - [Considerazioni personali](#considerazioni-personali)
 
 1. [Bibliografia](#bibliografia)
 
-  - Bibliografia per articoli di riviste
+  - [Bibliografia per articoli di riviste](#bibliografia-per-articoli-di-riviste)
 
-  - Bibliografia per libri
+  - [Bibliografia per libri](#bibliografia-per-libri)
 
-  - Sitografia
+  - [Sitografia](#sitografia)
 
 1. [Allegati](#allegati)
 
