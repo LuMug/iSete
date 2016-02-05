@@ -1,6 +1,6 @@
 # Esempio di documentazione
 
-[Introduzione](#introduzione)
+[introduzione](#introduzione)
 1. Introduzione
   - Informazioni sul progetto
 
