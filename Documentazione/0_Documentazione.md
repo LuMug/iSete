@@ -16,7 +16,11 @@
 
   - Analisi e specifica dei requisiti
 
+<<<<<<< HEAD
   - [Use case](#use-case)
+=======
+  - [Use case](#use case)
+>>>>>>> 9a2ea26ec7c6d13db378881bb83d21a5550fe304
 
   - Pianificazione
   - Analisi dei mezzi
