@@ -1,6 +1,6 @@
 # Esempio di documentazione
 
-[Introduzione](#Introduzione)
+[Introduzione](#introduzione)
 1. Introduzione
   - Informazioni sul progetto
 
@@ -60,7 +60,7 @@
 1. Allegati
 
 
-# Introduzione
+## Introduzione
 
 ### Informazioni sul progetto
 
