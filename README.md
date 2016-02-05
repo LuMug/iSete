@@ -17,15 +17,15 @@ Data di consegna:
 ###Diari
   - [Diari](Documentazione/Diari/)
 
-<<<<<<< HEAD
+
 ### Software
   - [DropTask](https://www.droptask.com)
-=======
+
 ##Link interessanti
   - [https://www.tinkercad.com/](https://www.tinkercad.com/)
   - [http://www.shapeways.com/](http://www.shapeways.com/)
 
->>>>>>> e84094c3fd83196abe26efaf787b5dde2cff5df2
+
 
 ##Importante da sapere
 - [GitHub CheatSheet](Guide/github-cheatsheet.pdf)
