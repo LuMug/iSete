@@ -9,7 +9,9 @@
 ##Informazioni sul progetto
 Iniziato il:
 Data di consegna:
-- [Quaderno dei compiti](Documentazione/0_qdc_p3_iSete.md)
+
+  - [Quaderno dei compiti](Documentazione/0_qdc_p3_iSete.md)
+  - [Statistiche](https://bitdeli.com/LuMug)
 
 ##Documentazione
   - [Documentazione](Documentazione/0_Documentazione.md)
