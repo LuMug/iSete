@@ -32,3 +32,7 @@ Data di consegna:
 - [MarkDown CheatSheet](Guide/markdownCheatSheet.md)
 - [Scrum in 5 minuti](Guide/Scrum_in_5_min.pdf)
 - [Impostare ambiente di lavoro](Guide/ImpostareAmbienteLavoro.md)
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/LuMug/isete/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
