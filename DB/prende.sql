@@ -1,0 +1,17 @@
+insert into prende (ut_id,ca_tipo,pre_quantita) values (1,'Green', 17);
+insert into prende (ut_id,ca_tipo,pre_quantita) values (2,'Green', 16);
+insert into prende (ut_id,ca_tipo,pre_quantita) values (3,'Green', 16);
+insert into prende (ut_id,ca_tipo,pre_quantita) values (4,'Green', 17);
+insert into prende (ut_id,ca_tipo,pre_quantita) values (1,'Red', 16);
+insert into prende (ut_id,ca_tipo,pre_quantita) values (2,'Red', 16);
+insert into prende (ut_id,ca_tipo,pre_quantita) values (3,'Red', 16);
+insert into prende (ut_id,ca_tipo,pre_quantita) values (4,'Red', 16);
+select sleep(1);
+insert into prende (ut_id,ca_tipo,pre_quantita) values (1,'Green', 17);
+insert into prende (ut_id,ca_tipo,pre_quantita) values (2,'Green', 16);
+insert into prende (ut_id,ca_tipo,pre_quantita) values (3,'Green', 16);
+insert into prende (ut_id,ca_tipo,pre_quantita) values (4,'Green', 17);
+insert into prende (ut_id,ca_tipo,pre_quantita) values (1,'Red', 16);
+insert into prende (ut_id,ca_tipo,pre_quantita) values (2,'Red', 16);
+insert into prende (ut_id,ca_tipo,pre_quantita) values (3,'Red', 16);
+insert into prende (ut_id,ca_tipo,pre_quantita) values (4,'Red', 16);
