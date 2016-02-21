@@ -5,7 +5,8 @@ create table utente(
 	ut_id int primary key auto_increment,
     ut_nome varchar(30),
     ut_cognome varchar(30),
-    ut_email varchar(50),
+    ut_password char(32),
+    ut_email varchar(50) unique,
     ut_credito int
 );
 
