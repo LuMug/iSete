@@ -5,12 +5,14 @@
 		private $pwd;
 		private $db;
 		private $conn;
+		private $res;
 		function __construct($host, $usr, $pwd, $db=''){
 			$this->host = $host;
 			$this->usr = $usr;
 			$this->pwd = $pwd;
 			$this->db = $db;
 			$this->conn = null;
+			$this->res = null;
 		}
 		public function start() {
 			if($this->conn != null){
@@ -24,11 +26,16 @@
 			$this->conn = null;
 		}
 		public function query($query){
-			return mysqli_query($this->conn, $query);
+			$this->res = mysqli_query($this->conn, $query);
+			return $this->res;
 		}
-		public static function fetch($result) {
-			return mysqli_fetch_assoc($result);
+		public function fetch() {
+			return mysqli_fetch_assoc($this->res);
+		}
+		public function rows(){
+			return mysqli_num_rows($this->res);
 		}
 	}
 	$db = new DB("127.0.0.1", "iSete", "isete1", "isete");
+	session_start();
 ?>
