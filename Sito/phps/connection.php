@@ -64,5 +64,4 @@
 		$newDB = new DB("localhost", "iSete", "isete1", "isete");
 		sess("db", &$newDB);
 	}
-
 ?>
