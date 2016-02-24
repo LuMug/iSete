@@ -27,11 +27,22 @@ Raffaele:
 Inizialmente ho modificato il diagramma E-R del database aggiungendo alla tabella utente il campo ut_credito e ut_password.
 Successivamente ho iniziato a informarmi su bootstrap e su la connessione tra php e mysql per la realizzazione del sito.
 Sono riuscito a comunicare con il database tramite il file connection.php creato da Ettore.
+
+Ettore:
+Durante questa mattinata, mi sono dedicato alle sessioni del sito. Avendo avuto dei contrattempi, ho chiesto aiuto a dei docenti.
+Nel seguito della mattina, sono riuscito a risolvere buona parte dei problemi, ma anche verso pomeriggio ve ne erano di nuovi (quali
+mal fuinzionamento nella creazione del oggetto DB e della relativa apertura alla comunicazione).
+Ho anche iniziato a creare la pagina dedicata all'ordinazione degli utenti, oltre a perfezionare il login e la registrazione.
+Per ora il sito è composto dalle sezioni: login (Io), registrazione (Io), richieste (Io), tabella di configurazione (Raffaele) e tabella utenti (Nishan).
+
 ##  Problemi riscontrati e soluzioni adottate
 Nishan:
 
-
+Ettore: I problemi maggiormente riscontrati erano relativi alla connessione con il database. Modificando il riferimento al databse (quindi usando il riferimento
+di memoria della variabile del databaase) sono riuscito a risolvere questo problema. Verso la fine della giornata c'è stato un breve periodo nel quale personalmente
+non riuscivo a coleggarmi al sito, ma è bastato ricaricare il file connection.php per risolvere il problema.
 ##  Punto della situazione rispetto alla pianificazione
 
 
 ## Programma di massima per la prossima giornata di lavoro
+Ettore: Nella prossima lezione, inizieremo a far comunicare il sito con l'arduino. Quest'ultimop lavoro è stato svolto da Andrea e Serhiy.
