@@ -14,6 +14,9 @@
 			$this->conn = null;
 			$this->res = null;
 		}
+		public function error() {
+			return "(" . mysqli_errno($this->conn) . ") " . mysqli_error($this->conn);
+		}
 		public function start() {
 			if($this->conn != null){
 				$this->stop();
@@ -36,6 +39,24 @@
 			return mysqli_num_rows($this->res);
 		}
 	}
-	$db = new DB("127.0.0.1", "iSete", "isete1", "isete");
+	function pwdrnd($len){
+		$res = "";
+		for($i = 0; $i < $len; $i++){
+			$chrs = array(rand(65, 90), rand(97, 122), rand(48, 57));
+			$res .= chr($chrs[rand(0, 2)]);
+		}
+		return $res;
+	}
 	session_start();
+	function sess($name, $val=""){
+		if($val != ""){
+			$_SESSION[$name] = $val;
+		}
+		else{
+			return $_SESSION[$name];
+		}
+	}
+	if(sess("db") != null){
+		sess("db", new DB("localhost", "iSete", "isete1", "isete"));
+	}
 ?>
