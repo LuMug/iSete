@@ -32,8 +32,8 @@
 			$this->res = mysqli_query($this->conn, $query);
 			return $this->res;
 		}
-		public function fetch($query) {
-			return mysqli_fetch_assoc($query);
+		public function fetch($q) {
+			return mysqli_fetch_assoc($q);
 		}
 		public function rows(){
 			return mysqli_num_rows($this->res);
@@ -59,7 +59,7 @@
 			return $_SESSION;
 		}
 	}
-	$dum = sess("db");
+	$dum = &sess("db");
 	if(isset($dum)){
 		$newDB = new DB("localhost", "iSete", "isete1", "isete");
 		sess("db", &$newDB);
