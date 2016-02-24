@@ -1,5 +1,4 @@
 <?php
-	//phpinfo();
 	include "phps/connection.php";
 	$err = "";
 	$succ = "";
