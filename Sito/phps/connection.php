@@ -32,8 +32,8 @@
 			$this->res = mysqli_query($this->conn, $query);
 			return $this->res;
 		}
-		public function fetch() {
-			return mysqli_fetch_assoc($this->res);
+		public function fetch($query) {
+			return mysqli_fetch_assoc($query);
 		}
 		public function rows(){
 			return mysqli_num_rows($this->res);
