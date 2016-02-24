@@ -59,10 +59,9 @@
 			return $_SESSION;
 		}
 	}
-	$dum = sess("db");
+	$dum = &sess("db");
 	if(isset($dum)){
 		$newDB = new DB("localhost", "iSete", "isete1", "isete");
 		sess("db", &$newDB);
 	}
-
 ?>
