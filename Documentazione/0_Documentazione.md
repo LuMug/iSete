@@ -310,6 +310,12 @@ ad esempio:
 Questi documenti permetteranno di rappresentare i dettagli procedurali
 per la realizzazione del prodotto.
 
+### Web Server
+
+### HW
+
+#### Arduino
+
 ## Implementazione
 
 In questo capitolo dovrà essere mostrato come è stato realizzato il
@@ -330,6 +336,25 @@ Non deve apparire nessuna forma di guida d’uso di librerie o di
 componenti utilizzati. Eventualmente questa va allegata.
 
 Per eventuali dettagli si possono inserire riferimenti ai diari.
+
+### Web Server
+
+####Sitoweb
+
+#####Login(Ettore)
+
+#####Pagina di configurazione(Raffaele)
+
+#####Gestione utenti(Nishan)
+
+### Arduino
+
+#### Servo motore(Nishan)
+
+#### Connessione ethernet(Serhiy & Andrea)
+
+#### Memorizzazione(Andrea)
+
 
 ## Test
 
