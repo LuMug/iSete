@@ -66,7 +66,6 @@
 
 ### Informazioni sul progetto
 
-<<<<<<< HEAD
 <!--
 =======
   Scuola: SAMT - Scuola Arti e Mestieri Trevano
@@ -87,8 +86,7 @@
   DAta di consegna: 11.05.2016
 
 <!--
-  
->>>>>>> 8557f27211411e30ac343f1b1f6bcad5da28c4fa
+
   In questo capitolo raccogliere le informazioni relative al progetto, ad esempio:
 
   -   Allievo/i e docente/i coinvolti nel progetto e rispettivi ruoli,
@@ -100,10 +98,7 @@
   -   …
   -->
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 8557f27211411e30ac343f1b1f6bcad5da28c4fa
 ### Abstract
 
 <!--
@@ -372,13 +367,13 @@ componenti utilizzati. Eventualmente questa va allegata.
 Per eventuali dettagli si possono inserire riferimenti ai diari.
 -->
 
-<<<<<<< HEAD
+
 #### Sitoweb
 
 ##### Login(Ettore)
 
 ##### Pagina di configurazione(Raffaele)
-=======
+
 ### Web Server
 
 #### Sitoweb
@@ -388,7 +383,7 @@ Per eventuali dettagli si possono inserire riferimenti ai diari.
 ##### Pagina di configurazione(Raffaele)
 
 ##### Pagina Statistiche(Raffaele)
->>>>>>> 8557f27211411e30ac343f1b1f6bcad5da28c4fa
+
 
 ##### Gestione utenti(Nishan)
 
