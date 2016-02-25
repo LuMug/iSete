@@ -66,6 +66,24 @@
 
 ### Informazioni sul progetto
 
+  Scuola: SAMT - Scuola Arti e Mestieri Trevano
+  Sezione: Informatica
+  Matera: Progetti
+
+  Allievi:
+  - Ettore Ongaro
+  - Andrea Lupica
+  - Raffaele Scarcella
+  - Nishan Anthonippillai
+  - Serhiy Ushchapivskyy
+
+  Docente responsabile:
+  - Luca Muggiasca
+
+  Data di inizio: 03.02.2016
+  DAta di consegna: 11.05.2016
+
+  <!--
   In questo capitolo raccogliere le informazioni relative al progetto, ad esempio:
 
   -   Allievo/i e docente/i coinvolti nel progetto e rispettivi ruoli,
@@ -75,6 +93,8 @@
   -   date di inizio e termine di consegna,
 
   -   …
+  -->
+
 
 ### Abstract
 
@@ -339,13 +359,15 @@ Per eventuali dettagli si possono inserire riferimenti ai diari.
 
 ### Web Server
 
-####Sitoweb
+#### Sitoweb
 
-#####Login(Ettore)
+##### Login(Ettore)
 
-#####Pagina di configurazione(Raffaele)
+##### Pagina di configurazione(Raffaele)
 
-#####Gestione utenti(Nishan)
+##### Pagina Statistiche(Raffaele)
+
+##### Gestione utenti(Nishan)
 
 ### Arduino
 
