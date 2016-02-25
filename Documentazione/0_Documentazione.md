@@ -83,7 +83,8 @@
   Data di inizio: 03.02.2016
   DAta di consegna: 11.05.2016
 
-  <!--
+<!--
+  
   In questo capitolo raccogliere le informazioni relative al progetto, ad esempio:
 
   -   Allievo/i e docente/i coinvolti nel progetto e rispettivi ruoli,
@@ -93,7 +94,8 @@
   -   date di inizio e termine di consegna,
 
   -   …
-  -->
+
+-->
 
 
 ### Abstract
