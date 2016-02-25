@@ -35,6 +35,9 @@ mal fuinzionamento nella creazione del oggetto DB e della relativa apertura alla
 Ho anche iniziato a creare la pagina dedicata all'ordinazione degli utenti, oltre a perfezionare il login e la registrazione.
 Per ora il sito è composto dalle sezioni: login (Io), registrazione (Io), richieste (Io), tabella di configurazione (Raffaele) e tabella utenti (Nishan).
 
+Serhiy:
+Durante la giornata mi sono occupato della connessione tramite lan all'arduino, scoprendo così che il metodo migliore per gestire il motore è usare il circuito come server, così da mandare il segnale dal computer tramite un indirizzo ip e un token speciale, facendo sì che non sia controllabile da tutti ma solo dal nostro shuttle. Mentre per la comunicazione dei dati ho pensato alla soluzione di adattare l'arduino così da renderlo anche client, in modo che possa comunicare senza problemi al nostro server i dati degli acquisti.
+
 ##  Problemi riscontrati e soluzioni adottate
 Nishan:
 
@@ -45,4 +48,7 @@ non riuscivo a coleggarmi al sito, ma è bastato ricaricare il file connection.p
 
 
 ## Programma di massima per la prossima giornata di lavoro
-Ettore: Nella prossima lezione, inizieremo a far comunicare il sito con l'arduino. Quest'ultimop lavoro è stato svolto da Andrea e Serhiy.
+Ettore: Nella prossima lezione, inizieremo a far comunicare il sito con l'arduino. Quest'ultimo lavoro è stato svolto da Andrea e Serhiy.
+
+Serhiy:
+Per la prossima volta ho intenzione di finalizzare con Ettore e Andrea il collegamento in LAN tra il server e l'Arduino, aggiungendo anche i token per la sicurezza.
