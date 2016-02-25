@@ -66,6 +66,7 @@
 
 ### Informazioni sul progetto
 
+<!--
   In questo capitolo raccogliere le informazioni relative al progetto, ad esempio:
 
   -   Allievo/i e docente/i coinvolti nel progetto e rispettivi ruoli,
@@ -76,7 +77,11 @@
 
   -   …
 
+-->
+
 ### Abstract
+
+<!--
 
   E’ una breve e accurata rappresentazione dei contenuti di un documento,
   senza notazioni critiche o valutazioni. Lo scopo di un abstract efficace
@@ -115,17 +120,21 @@
   > months of time. With the help of this compiler, a single person could
   > design such a large-scale microprocessor in just weeks.*
 
+-->
+
 ### Scopo
 
+<!--
   Lo scopo del progetto (scopi didattici/scopi operativi). Dovrebbe
   descrivere il mandato, ma non vanno ricopiate le informazioni del
   quaderno dei compiti (che va invece allegato).
-
+-->
 
 ## Analisi
 
 ### Analisi del dominio
 
+<!--
   Questo capitolo dovrebbe descrivere il contesto in cui il prodotto verrà
   utilizzato, da questa analisi dovrebbero scaturire le risposte a quesiti
   quali ad esempio:
@@ -149,7 +158,7 @@
       efficacemente nel dominio?
 
   -   …
-
+-->
 ### Analisi e specifica dei requisiti
 
 
@@ -224,10 +233,10 @@
 
 ### Use case
 
-![Use case](https://github.com/LuMug/iSete/blob/master/Documentazione/img/Use_case.png)
+![Use case](img/Use_case.png)
 
 ### Pianificazione
-
+<!--
 Prima di stabilire una pianificazione bisogna avere almeno una vaga idea
 del modello di sviluppo che si intende adottare. In questa sezione
 bisognerà inserire il modello concettuale di sviluppo che si seguirà
@@ -240,9 +249,9 @@ Gantt.
 
 Se si usano altri metodi di pianificazione (es scrum), dovranno apparire
 in questo capitolo.
-
+-->
 ### Analisi dei mezzi
-
+<!--
 Elencare e *descrivere* i mezzi disponibili per la realizzazione del
 progetto. Ricordarsi di sempre descrivere nel dettaglio le versioni e il
 modello di riferimento.
@@ -253,16 +262,16 @@ eventuali dipendenze.
 Su quale piattaforma dovrà essere eseguito il prodotto? Che hardware
 particolare è coinvolto nel progetto? Che particolarità e limitazioni
 presenta? Che hw sarà disponibile durante lo sviluppo?
-
+-->
 ## Progettazione
-
+<!--
 Questo capitolo descrive esaustivamente come deve essere realizzato il
 prodotto fin nei suoi dettagli. Una buona progettazione permette
 all’esecutore di evitare fraintendimenti e imprecisioni
 nell’implementazione del prodotto.
-
+-->
 ### Design dell’architettura del sistema
-
+<!--
 Descrive:
 
 -   La struttura del programma/sistema lo schema di rete...
@@ -274,26 +283,26 @@ Descrive:
     dati* (DFD).
 
 -   Eventuale sitemap
-
+-->
 ### Design dei dati e database
-
+<!--
 Descrizione delle strutture di dati utilizzate dal programma in base
 agli attributi e le relazioni degli oggetti in uso.
-
+-->
 ### Schema E-R, schema logico e descrizione.
-
+<!--
 Se il diagramma E-R viene modificato, sulla doc dovrà apparire l’ultima
 versione, mentre le vecchie saranno sui diari.
-
+-->
 ### Design delle interfacce
-
+<!--
 Descrizione delle interfacce interne ed esterne del sistema e
 dell’interfaccia utente. La progettazione delle interfacce è basata
 sulle informazioni ricavate durante la fase di analisi e realizzata
 tramite mockups.
-
+-->
 ### Design procedurale
-
+<!--
 Descrive i concetti dettagliati dell’architettura/sviluppo utilizzando
 ad esempio:
 
@@ -309,7 +318,7 @@ ad esempio:
 
 Questi documenti permetteranno di rappresentare i dettagli procedurali
 per la realizzazione del prodotto.
-
+-->
 ### Web Server
 
 ### HW
@@ -317,7 +326,7 @@ per la realizzazione del prodotto.
 #### Arduino
 
 ## Implementazione
-
+<!--
 In questo capitolo dovrà essere mostrato come è stato realizzato il
 lavoro. Questa parte può differenziarsi dalla progettazione in quanto il
 risultato ottenuto non per forza può essere come era stato progettato.
@@ -336,16 +345,15 @@ Non deve apparire nessuna forma di guida d’uso di librerie o di
 componenti utilizzati. Eventualmente questa va allegata.
 
 Per eventuali dettagli si possono inserire riferimenti ai diari.
+-->
 
-### Web Server
+#### Sitoweb
 
-####Sitoweb
+##### Login(Ettore)
 
-#####Login(Ettore)
+##### Pagina di configurazione(Raffaele)
 
-#####Pagina di configurazione(Raffaele)
-
-#####Gestione utenti(Nishan)
+##### Gestione utenti(Nishan)
 
 ### Arduino
 
@@ -359,7 +367,7 @@ Per eventuali dettagli si possono inserire riferimenti ai diari.
 ## Test
 
 ### Protocollo di test
-
+<!--
 Definire in modo accurato tutti i test che devono essere realizzati per
 garantire l’adempimento delle richieste formulate nei requisiti. I test
 fungono da garanzia di qualità del prodotto. Ogni test deve essere
@@ -375,45 +383,48 @@ ripetibile alle stesse condizioni.
 |**Procedura**     | - Go to “Cards manager” menu, in main page click “Import Profiles” link, Select the “1.2.001.xml” file, Import the Profile - Go to “Cards manager” menu, in main page click “Import Cards” link, Select the “1.2.001.txt” file, Delete the cards, Select the “1.2.001.txt” file, Import the cards |
 |**Risultati attesi** |Keys visible in the DB (OtaCardKey) but not visible in the GUI (Card details) |
 
-
+-->
 ### Risultati test
-
+<!--
 Tabella riassuntiva in cui si inseriscono i test riusciti e non del
 prodotto finale. Se un test non riesce e viene corretto l’errore, questo
 dovrà risultare nel documento finale come riuscito (la procedura della
 correzione apparirà nel diario), altrimenti dovrà essere descritto
 l’errore con eventuali ipotesi di correzione.
-
+-->
 ### Mancanze/limitazioni conosciute
-
+<!--
 Descrizione con motivazione di eventuali elementi mancanti o non
 completamente implementati, al di fuori dei test case. Non devono essere
 riportati gli errori e i problemi riscontrati e poi risolti durante il
 progetto.
-
+-->
 ## Consuntivo
-
+<!--
 Consuntivo del tempo di lavoro effettivo e considerazioni riguardo le
 differenze rispetto alla pianificazione (cap 1.7) (ad esempio Gannt
 consuntivo).
-
+-->
 ## Conclusioni
-
+<!--
 Quali sono le implicazioni della mia soluzione? Che impatto avrà?
 Cambierà il mondo? È un successo importante? È solo un’aggiunta
 marginale o è semplicemente servita per scoprire che questo percorso è
 stato una perdita di tempo? I risultati ottenuti sono generali,
 facilmente generalizzabili o sono specifici di un caso particolare? ecc
-
+-->
 ### Sviluppi futuri
+<!--
   Migliorie o estensioni che possono essere sviluppate sul prodotto.
-
+-->
 ### Considerazioni personali
+<!--
   Cosa ho imparato in questo progetto? ecc
-
+-->
 ## Bibliografia
 
 ### Bibliografia per articoli di riviste
+<!--
 1.  Cognome e nome (o iniziali) dell’autore o degli autori, o nome
     dell’organizzazione,
 
@@ -424,10 +435,10 @@ facilmente generalizzabili o sono specifici di un caso particolare? ecc
 4.  Anno e numero
 
 5.  Pagina iniziale dell’articolo,
-
+-->
 ### Bibliografia per libri
 
-
+<!--
 1.  Cognome e nome (o iniziali) dell’autore o degli autori, o nome
     dell’organizzazione,
 
@@ -440,9 +451,10 @@ facilmente generalizzabili o sono specifici di un caso particolare? ecc
 5.  Anno di pubblicazione,
 
 6.  ISBN.
+-->
 
 ### Sitografia
-
+<!--
 1.  URL del sito (se troppo lungo solo dominio, evt completo nel
     diario),
 
@@ -454,9 +466,9 @@ facilmente generalizzabili o sono specifici di un caso particolare? ecc
 
 -   http://standards.ieee.org/guides/style/section7.html, *IEEE
     Standards Style Manual*, 07-06-2008.
-
+-->
 ## Allegati
-
+<!--
 Elenco degli allegati, esempio:
 
 -   Diari di lavoro
@@ -475,3 +487,4 @@ Elenco degli allegati, esempio:
 -   Prodotto
 
 -   …
+-->
