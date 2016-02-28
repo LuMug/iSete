@@ -38,11 +38,16 @@ Sono riuscito a comunicare al database del server, con l'ip fisso 192.168.1.100,
 Serhiy:
 Durante la giornata mi sono occupato della connessione tramite lan all'arduino, scoprendo così che il metodo migliore per gestire il motore è usare il circuito come server, così da mandare il segnale dal computer tramite un indirizzo ip e un token speciale, facendo sì che non sia controllabile da tutti ma solo dal nostro shuttle. Mentre per la comunicazione dei dati ho pensato alla soluzione di adattare l'arduino così da renderlo anche client, in modo che possa comunicare senza problemi al nostro server i dati degli acquisti.
 
+Andrea:
+Durante la giornata mi sono occupato della memorizzazione degli script su una scheda SD all'interno dell'Arduino. Per fare ciò ho cercato un modo per riuscire a creare file sulla scheda SD e scriverci dentro. Purtroppo in seguito ho scoperto che la lettura della scheda SD e la connessione tramite lan condivide lo SPI bus quindi non possono funzionare in contemporanea. Durante il pomeriggio infatti ho cercato un modo per risolvere questo problema ma purtroppo senza successo.
+
 
 ##  Problemi riscontrati e soluzioni adottate
 Ettore: I problemi maggiormente riscontrati erano relativi alla connessione con il database. Modificando il riferimento al database (quindi usando il riferimento
 di memoria della variabile del databaase) sono riuscito a risolvere questo problema. Verso la fine della giornata c'è stato un breve periodo nel quale personalmente
 non riuscivo a coleggarmi al sito, ma è bastato ricaricare il file connection.php per risolvere il problema.
+
+Andrea: Il problema riscontrato era far comunicare scheda SD e connessione lan in contemporanea. Non sono state trovate soluzioni.
 
 
 ##  Punto della situazione rispetto alla pianificazione
@@ -55,3 +60,5 @@ Serhiy:
 Per la prossima volta ho intenzione di finalizzare con Ettore e Andrea il collegamento in LAN tra il server e l'Arduino, aggiungendo anche i token per la sicurezza.
 
 Raffaele: Nel corso della prossima lezione mi occuperò di concludere la pagina di statistiche e quella di configurazione.
+
+Andrea: Trovare un modo per far comunicare la scheda SD e la connessione lan
