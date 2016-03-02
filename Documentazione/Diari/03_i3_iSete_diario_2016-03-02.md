@@ -24,6 +24,15 @@ Dopo aver finito anche l'implementazione della pagina di configurazione mi sono 
 Successivamente mi sono informato su quale libreria di php usare per fare i grafici e ho trovato la libreria JpGraph: http://jpgraph.net/
 Nel corso del pomeriggio ho iniziato la parte di implementazione della pagina inserendo qualche grafico.
 
+Ettore
+In questa giornata, ho creato la pagina del'profilo per l'utente, in modo che possa modificare eventuali informazioni personali.
+Ho fatto in modo che solo alcune di queste informazioni siano effettivamente modificabili (quindi non ho permesso la modifica della email, dando per scontato che
+essa non debba mai essere sostituita, e non ho dato il permesso diretto di cambiare la password, ma ho fatto in modo che venga effettuato in due passaggi).
+Inoltre, abbiamo iniziato a stabilire come identificare un utente che sia responsabile: supponendo che esso sia un individuo singolo, quindi che non ve ne siano altri,
+abbiamo deciso che l'utente con l'id a 1 sarà il responsabile. In qualsiasi caso, non risulta un problema riadattare questa ideologia a più individui (per es. aggiungendo una colonna
+tipo in utente), ma essendo che in questo momento non siamo ancora completamente certi di quale scelta verrà effettuata, alla fine, abbiamo deciso di semplificarci il lavoro scegliendo, appunto,
+una sola persona come responsabile.
+Per giunta, in questa giornata ho terminato correttamente l'identificazione della sezione e il login.
 ##  Problemi riscontrati e soluzioni adottate
 
 
