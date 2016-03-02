@@ -66,8 +66,7 @@
 
 ### Informazioni sul progetto
 
-<!--
-=======
+
   Scuola: SAMT - Scuola Arti e Mestieri Trevano
   Sezione: Informatica
   Matera: Progetti
@@ -79,11 +78,12 @@
   - Nishan Anthonippillai
   - Serhiy Ushchapivskyy
 
-  Docente responsabile:
+Docente responsabile
   - Luca Muggiasca
 
-  Data di inizio: 03.02.2016
-  DAta di consegna: 11.05.2016
+Data di inizio: 03.02.2016
+
+Data di consegna: 11.05.2016
 
 <!--
 
@@ -149,7 +149,22 @@
   descrivere il mandato, ma non vanno ricopiate le informazioni del
   quaderno dei compiti (che va invece allegato).
 -->
+  Lo scopo principale del progetto è quello di realizzare un sistema di
+  gestione e acquisto per le capsule del caffé.
 
+  Questo sistema viene utilizzato principalmente da tre tipologie di utenti:
+  - Amministratore: ha il pieno controllo del sistema
+  - Responsabile: si occupa della gestione dei crediti e degli utenti
+  - Utente generico: acquista le capsule e consulta il suo credito e storico
+    degli acquisti
+
+Vi è un sito del prodotto dove il cliente tramite la postazione fisica oppure
+tramite un applicazione android può acquistare le capsule.
+Il responsabile si collega al sito per visualizzare statistiche riguardanti
+utenti e capsule e ricaricare il saldo.
+
+<!-- sezione non finita -->
+s
 ## Analisi
 
 ### Analisi del dominio
@@ -283,6 +298,28 @@ Su quale piattaforma dovrà essere eseguito il prodotto? Che hardware
 particolare è coinvolto nel progetto? Che particolarità e limitazioni
 presenta? Che hw sarà disponibile durante lo sviluppo?
 -->
+#### Software
+- Windows 7
+- Apache ?
+- MySQL ?
+- PHP ?
+- Bootstrap 3.3.6
+- JQuery 1.12.0
+- SDK Java ?
+- JpGraph 3.5.0b1
+- GanttProject 2.7.2
+- MySQL Workbench 6.3.6
+- Dia 0.97.2
+- Atom 1.5.4
+- Source Tree 1.8.2.3
+- Android Studio ?
+- Arduino ?
+- Browser ...
+- Office 2013
+- FileZilla ?
+
+#### Hardware
+
 ## Progettazione
 <!--
 Questo capitolo descrive esaustivamente come deve essere realizzato il
@@ -314,6 +351,8 @@ agli attributi e le relazioni degli oggetti in uso.
 Se il diagramma E-R viene modificato, sulla doc dovrà apparire l’ultima
 versione, mentre le vecchie saranno sui diari.
 -->
+
+![Use case](img/e-r.png)
 ### Design delle interfacce
 <!--
 Descrizione delle interfacce interne ed esterne del sistema e
@@ -341,9 +380,41 @@ per la realizzazione del prodotto.
 -->
 ### Web Server
 
+#### Sitoweb
+
+##### Login(Ettore)
+
+##### Pagina di configurazione(Raffaele)
+
+Ho pensato di fare la pagina di configurazione nel seguente modo:
+
+un titolo in alto alla pagina, una tabella centrale che contiene i record
+della tabella di configurazione e due bottoni rispettivamente per aggiungere o
+rimuovere record.
+
+![Config table page](img/config_table.png)
+
+
+##### Pagina Statistiche(Raffaele)
+Per quanto riguarda la pagina di statistiche per il responsabile ho pensato
+di svilupparla con un titolo in alto, con delle tabelle contenenti delle
+statistiche che in seguito vengono rappresentati attraverso dei grafici.
+
+![Stats page](img/stats.png)
+##### Gestione utenti(Nishan)
+
+#### Applicazione Android(Raffaele)
+L'applicazione Android ho pensato di farla semplicemente tramite una
+webview permettendo così di utilizzare unicamente il sito e renderlo responsive
+su qualunque smartphone android.
+
 ### HW
 
 #### Arduino
+
+#### Struttura
+
+##### Servo
 
 ## Implementazione
 <!--
@@ -367,12 +438,6 @@ componenti utilizzati. Eventualmente questa va allegata.
 Per eventuali dettagli si possono inserire riferimenti ai diari.
 -->
 
-
-#### Sitoweb
-
-##### Login(Ettore)
-
-##### Pagina di configurazione(Raffaele)
 
 ### Web Server
 
