@@ -42,31 +42,28 @@ void loop() {
   // if an incoming client connects, there will be bytes available to read:
   EthernetClient client = server.available();
   if (client) { // se connesso
-    while (client.connected()) {
-      webFile = SD.open("index.htm");        // open web page file
-      if (webFile) {
-        while(webFile.available()) {
-          client.write(webFile.read()); // send web page to client
-        }              
-        webFile.close();
-      }      
-      break;
-    }  // while (client.connected())
+    webFile = SD.open("index.htm");        // open web page file
+    if (webFile) {
+      while(webFile.available()) {
+        client.write(webFile.read()); // send web page to client
+      }              
+      webFile.close();
+    }        // while (client.connected())
     delay(1);
-    client.stop();
     // SD.remove("prova.txt"); 
   }  // if (client)
   else { // se non si connette
     webFile = SD.open("index.txt"); 
     // webFile.write("client non connesso");
     while(webFile.available()) {
-      Serial.write(webFile.read()); // send web page to client
+      Serial.print(webFile.read()); // send web page to client
     }    
     Serial.println("finish");
     webFile.close();
     // log the data
   }
 }// void loop()
+
 
 
 
