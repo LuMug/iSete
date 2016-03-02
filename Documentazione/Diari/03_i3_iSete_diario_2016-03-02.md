@@ -24,10 +24,19 @@ Dopo aver finito anche l'implementazione della pagina di configurazione mi sono 
 Successivamente mi sono informato su quale libreria di php usare per fare i grafici e ho trovato la libreria JpGraph: http://jpgraph.net/
 Nel corso del pomeriggio ho iniziato la parte di implementazione della pagina inserendo qualche grafico.
 
-##  Problemi riscontrati e soluzioni adottate
+Andrea 
+Durante le prime ore della mattinata ho continuato a cercare di trovare un modo per far funzionare la scheda SD e il cavo Ethernet.
+Sono riuscito a far leggere il contenuto di un file presente sulla Scheda e farlo stampare su una pagina web, ma non sono riuscito a capire per quale motivo quando l'arduino è offline non riesco a scrivere o creare un file e a stampare il contenuto di un file sulla porta seriale.
+Durante le ultime ore della mattinata e durante il pomeriggio ho cercato un modo per notificare l'eusarimento delle capsule, 
+insieme a Ettore siamo riusciti a trovare un modo per far si che esso accada. In pratica facciamo ricaricare una pagina web, che si troverà nella pagina del Responsabile, dove ogni 10 secondi verrà ricaricata e stamperà all'interno della pagina tutte le capsule, con la sua relativa quantità rimanente, con meno di 5 unità.
 
+##  Problemi riscontrati e soluzioni adottate
+Andrea
+Non sono riuscito a capire per quale motivo l'arduino non riuscisse a scrivere o a leggere sulla scheda SD quando il client non è connesso. Non ho trovato soluzioni poiché non avevo altro tempo a disposizione a starci dietro.
 
 ##  Punto della situazione rispetto alla pianificazione
-
+Andrea
+Non sono riuscito a far funzionare l'Arduino come doveva, quindi non abbiamo la memorizzazione OFFLINE.
 
 ## Programma di massima per la prossima giornata di lavoro
+Trovare un modo per la memorizzazione offline
