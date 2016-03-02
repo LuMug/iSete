@@ -18,11 +18,9 @@ Poi ho fatto i controlli in modo che vengono inseriti dati corretti.
 
 Raffaele
 Ho iniziato facendo una progettazione della pagina di configurazione del responsabile.
-![Use case](../sito/Progettazione/config_table.png)
 Il sito è strutturato con una tabella centrale contenente i record della tabella conf e si ridimensiona in base alla quantità di record presenti.
 Per aggiungere o rimuovere record ho preso come esempio le due classi fatte da Nishan adattandole alla mia situazione.
-Dopo aver finito anche l'implementazione della pagina di configurazione mi sono occupato della progettazione della pagina di statistiche per il responsabile:
-![Use case](../sito/Progettazione/stats.png)
+Dopo aver finito anche l'implementazione della pagina di configurazione mi sono occupato della progettazione della pagina di statistiche per il responsabile.
 Successivamente mi sono informato su quale libreria di php usare per fare i grafici e ho trovato la libreria JpGraph: http://jpgraph.net/
 Nel corso del pomeriggio ho iniziato la parte di implementazione della pagina inserendo qualche grafico.
 
