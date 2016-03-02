@@ -1,19 +1,10 @@
 <?php
-  include "connection.php";
+  include "..\connection.php";
   sess("db")->start();
   $cnt = 0;
   $query = "SELECT co_nome, co_valore, co_descrizione FROM configurazione";
   $array= array();
   $tmp = sess("db")->query($query);
- /* while($row = sess("db")->fetch($tmp)){
-	  $array['id'] = $cnt;
-	  $array['nome'] = $row["co_nome"];
-	  $array['valore'] = $row["co_valore"];
-	  $array['descrizione'] = $row["co_descrizione"];
-	  $cnt++
-  }*/
-  //printf ("%s %s %s\n",$row["co_nome"],$row["co_valore"],$row["co_descrizione"]);
-  
 ?>
 <!DOCTYPE html>
 <html>
@@ -28,9 +19,20 @@
   <body>
       <div class="container">
         <div class="jumbotron">
-          <h1>Config Table</h1>
-          <p>Prova comunicazione mysql</p>
+          <h2>Gestione configurazioni</h2>
         </div>
+		<form action="aggiungiConf.php" method="post">
+		  Nome: <br><input type="text" name="nome"><br>
+		  Valore: <br><input type="text" name="valore"><br>
+		  Descrizione: <br><input type="text" name="descrizione"><br>
+		  <input type="submit" value="Inserisci">
+		</form>
+		<form action="togliConf.php" method="post">
+		  Nome: <br><input type="text" name="nome"><br>
+		  Valore: <br><input type="text" name="valore"><br>
+		  <input type="submit" value="Rimuovi">
+		</form>
+		</br>
         <table class="table table-striped">
           <thead>
             <tr>
