@@ -50,7 +50,6 @@ void loop() {
     myFile = SD.open("index.txt");     
     Serial.println("client non connesso");
     while(myFile.available()) {
-
       myFile.write("client non connesso"); // send web page to client
     }    
     Serial.println("finish");
@@ -58,9 +57,3 @@ void loop() {
     // log the data
   }
 }// void loop()
-
-
-
-
-
-
