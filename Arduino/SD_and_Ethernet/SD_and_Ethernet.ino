@@ -16,16 +16,11 @@
 // pin used for Ethernet chip SPI chip select
 #define PIN_ETH_SPI   10
 
-long log_time_ms = 5000; // how often to log data in milliseconds
-long prev_log_time = 0;   // previous time log occurred
-
-// the media access control (ethernet hardware) address for the shield:
-byte mac[] = { 
-  0x90, 0xA2, 0xDA, 0x10, 0x25, 0xFE };
+byte mac[] = { 0x90, 0xA2, 0xDA, 0x10, 0x25, 0xFE }; // the media access control (ethernet hardware) address for the shield:
 IPAddress ip(192, 168, 1, 249); // IP address, may need to change depending on network
-// the router's gateway address:
 EthernetServer server(80);
-File webFile;
+File myFile; 
+
 void setup() {
   // deselect Ethernet chip on SPI bus
   pinMode(PIN_ETH_SPI, OUTPUT);
@@ -41,25 +36,25 @@ void setup() {
 void loop() {
   // if an incoming client connects, there will be bytes available to read:
   EthernetClient client = server.available();
-  if (client) { // se connesso
-    webFile = SD.open("index.htm");        // open web page file
-    if (webFile) {
-      while(webFile.available()) {
-        client.write(webFile.read()); // send web page to client
+  if (client) { // se si connette
+    myFile = SD.open("index.htm");        // open web page file
+    if (myFile) {
+      while(myFile.available()) {
+        client.print(myFile.read()); // send web page to client
       }              
-      webFile.close();
+      myFile.close();
     }        // while (client.connected())
     delay(1);
-    // SD.remove("prova.txt"); 
   }  // if (client)
   else { // se non si connette
-    webFile = SD.open("index.txt"); 
-    // webFile.write("client non connesso");
-    while(webFile.available()) {
-      Serial.print(webFile.read()); // send web page to client
+    myFile = SD.open("index.txt");     
+    Serial.println("client non connesso");
+    while(myFile.available()) {
+
+      myFile.write("client non connesso"); // send web page to client
     }    
     Serial.println("finish");
-    webFile.close();
+    myFile.close();
     // log the data
   }
 }// void loop()
