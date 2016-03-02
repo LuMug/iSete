@@ -2,6 +2,11 @@
 	include "phps/connection.php";
 	$err = "";
 	$succ = "";
+	$u = sess("usr");
+	$p = sess("pwd");
+	if($u != false && $p != false){
+		header("Location: phps/request.php");
+	}
 	if(isset($_POST["email"]) && isset($_POST["pwd"])){
 		$usr = $_POST["email"];
 		$pwd = $_POST["pwd"];
@@ -25,6 +30,7 @@
 	<title>iSete | Pagina principale</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/jpeg" href="images/isete-logo.jpg">
 	<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -35,6 +41,7 @@
 		<div class="row">
 			<div class="col-xs-1 col-sm-2 col-md-3"></div>
 			<form method="post" action="#" class="form-horizontal col-xs-10 col-sm-8 col-md-6 panel panel-default">
+				<img src="images/isete.jpg" class="img-responsive center-block" width="450" alt="iSete Main Logo">
 				<h1>Login</h1>
 				<div class="form-group">
 					<label class="col-xs-4 control-label" for="email">Email</label>
@@ -53,7 +60,7 @@
 				<div class="form-group btn-group btn-group-justified">
 					<div class="col-xs-1 col-sm-2"></div>
 					<div class="col-xs-4 col-sm-3">
-						<a href="phps/register.php" class="btn btn-link col-xs-12">Register</a>
+						<a href="phps/register.php" class="btn btn-link col-xs-12">Registrati</a>
 					</div>
 					<div class="col-xs-2"></div>
 					<div class="col-xs-4 col-sm-3">

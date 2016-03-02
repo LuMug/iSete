@@ -53,7 +53,12 @@
 			$_SESSION[$name] = $val;
 		}
 		elseif($name != null){
-			return $_SESSION[$name];
+			if(isset($_SESSION[$name])){
+				return $_SESSION[$name];
+			}
+			else{
+				return false;
+			}
 		}
 		else{
 			return $_SESSION;

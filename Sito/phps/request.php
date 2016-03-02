@@ -2,7 +2,7 @@
 	include "connection.php";
 	$u = sess("usr");
 	$p = sess("pwd");
-	if(!isset($u) && !isset($p)){
+	if($u == false && $p == false){
 		header("Location: ../index.php");
 	}
 	$err = "";
@@ -12,9 +12,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>iSete | Registrazione</title>
+	<title>iSete | Richiesta</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/jpeg" href="images/isete-logo.jpg">
 	<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -29,7 +30,8 @@
 				<div class="form-group">
 					<label class="col-xs-4 control-label" for="capsula">Capsula</label>
 					<div class="col-xs-7 col-sm-5">
-						<select id="capsula">
+						<select id="capsula" class="form-control">
+							<option value="">--- Tipo ---</option>
 							<?php
 								sess("db")->start();
 								$q = sess("db")->query("select ca_tipo from capsula");
@@ -50,15 +52,15 @@
 					<div class="col-xs-1 col-sm-4"></div>
 				</div>
 				<div class="form-group">
-					<div class="col-xs-3 col-sm-2"></div>
-					<div class="col-xs-4 col-sm-3">
+					<div class="col-xs-1 col-sm-2"></div>
+					<div class="col-xs-5 col-sm-3">
 						<a href="profile.php" class="btn btn-link col-xs-12">Profilo</a>
 					</div>
-					<div class="col-xs-2"></div>
-					<div class="col-xs-4 col-sm-3">
+					<div class="col-xs-0 col-sm-2"></div>
+					<div class="col-xs-5 col-sm-3">
 						<input class="btn btn-primary col-xs-12" type="submit" value="Richiedi">
 					</div>
- 					<div class="col-xs-3 col-sm-2"></div>
+ 					<div class="col-xs-1 col-sm-2"></div>
 				</div>
 			</form>
 			<div class="col-xs-1 col-sm-2 col-md-3"></div>
