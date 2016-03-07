@@ -352,7 +352,7 @@ Se il diagramma E-R viene modificato, sulla doc dovrà apparire l’ultima
 versione, mentre le vecchie saranno sui diari.
 -->
 
-![Use case](img/e-r.png)
+![Use case](img/ER.png)
 ### Design delle interfacce
 <!--
 Descrizione delle interfacce interne ed esterne del sistema e
@@ -402,6 +402,13 @@ statistiche che in seguito vengono rappresentati attraverso dei grafici.
 
 ![Stats page](img/stats.png)
 ##### Gestione utenti(Nishan)
+Ho progettato una pagina molto semplice con una tabella chiara con le informazioni neccessarie e inserito anche dei campi per gestire la tabella.
+
+All'inizio della pagina chiedo le informazione base per aggiungere utenti e rimuoverli.
+
+Per aggiungere un utente chiedo di inserire nome, cognome, credito e password. Deve essere obbligatorio mettere tutti i dati. Per rimuovere l'utente basta inserire nome e cognome.
+
+![Config table page](img/GestioneUtenti.png)
 
 #### Applicazione Android(Raffaele)
 L'applicazione Android ho pensato di farla semplicemente tramite una
