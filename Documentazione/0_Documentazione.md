@@ -420,6 +420,15 @@ L'applicazione Android ho pensato di farla semplicemente tramite una
 webview permettendo così di utilizzare unicamente il sito e renderlo responsive
 su qualunque smartphone android.
 
+
+##### Storico acquisti(Nishan)
+Ho progettato una pagina molto semplice con una tabella chiara con le informazioni neccessarie.
+
+Questa pagina è visible solamente agli utenti che sono registrati e tramite la connesione al database faccio vedere
+tutti gli acquisti.
+
+![Config table page](img/Storico.png)
+
 ### HW
 
 #### Gestione (Andrea & Serhiy)
