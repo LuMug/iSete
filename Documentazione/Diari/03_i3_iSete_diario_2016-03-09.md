@@ -6,6 +6,7 @@
 
 ## Lavori svolti
 Nishan
+
 Durante questa lezione abbiamo parlato su cosa fare per il terzo sprint, ho preso l'incarico di fare la pagina dello storico e la gestione del credito.
 
 Prma di cominciare con il nuovo lavoro ho dovuto mettere a posto la grafica della pagina dei utenti, in modo che i campi di inserimento vengono visualizzati solamente se fossero neccessari.
