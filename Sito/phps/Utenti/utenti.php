@@ -36,22 +36,62 @@
 <body>
 
 <div class="container">
-  <h2>Gestione utenti</h2>
-  <h3>Aggiungi utenti</h3>
-	<form action="aggiungiUtente.php" name="modulo" method="post" onsubmit="return controllo(this)">
-	  Nome: <br><input type="text" name="nome"><br>
-	  Cognome: <br><input type="text" name="cognome"><br>
-	  Credito: <br><input type="number" name="credito"><br>
-	  Password: <br><input type="password" name="password"><br>
-	  Ripeti password: <br><input type="password" name="ripeti"><br>
-	  <input type="submit" value="Inserisci">
-	</form>
-	<h3>Rimuovi utenti</h3>
-	<form action="togliUtente.php" method="post">
-	  Nome: <br><input type="text" name="nome"><br>
-	  Cognome: <br><input type="text" name="cognome"><br>
-	  <input type="submit" value="Rimuovi">
-	</form>
+  <div class="container">
+        <div class="jumbotron">
+          <h2>Gestione configurazioni</h2>
+        </div>
+	</div>
+			<!-- Trigger the modal with a button -->
+			  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#aggiungi">Aggiungi utenti</button>
+			  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#rimuovi">Rimuovi utenti</button>
+
+			  <!-- Modal -->
+			  <div class="modal fade" id="aggiungi" role="dialog">
+				<div class="modal-dialog">
+				  <!-- Modal content-->
+				  <div class="modal-content">
+					<div class="modal-header">
+					  <button type="button" class="close" data-dismiss="modal">&times;</button>
+					  <h4 class="modal-title">Aggiungi utenti</h4>
+					</div>
+					<div class="modal-body">
+					  <form action="aggiungiUtente.php" name="modulo" method="post" onsubmit="return controllo(this)">
+						  Nome: <br><input type="text" name="nome" class="form-control" placeholder="Inserisci il nome"><br>
+						  Cognome: <br><input type="text" name="cognome" class="form-control" placeholder="Inserisci cognome"><br>
+						  Credito: <br><input type="number" name="credito" class="form-control" placeholder="Inserisci credito"><br>
+						  Email: <br><input type="email" name="email" id="email" pattern="[a-zA-Z]{3,30}.[a-zA-Z]{3,30}@(edu.ti|samtrevano).ch" name="usr" class="form-control" placeholder="Inserisci emal"><br>
+						  Password: <br><input type="password" name="password" class="form-control" placeholder="Inserisci password"><br>
+						  Ripeti password: <br><input type="password" name="ripeti" class="form-control" placeholder="Ripeti password"><br>
+						  <input type="submit" value="Inserisci">
+						</form>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			  
+			  
+			  
+			  
+			  <!-- Modal -->
+			  <div class="modal fade" id="rimuovi" role="dialog">
+				<div class="modal-dialog">
+				  <!-- Modal content-->
+				  <div class="modal-content">
+					<div class="modal-header">
+					  <button type="button" class="close" data-dismiss="modal">&times;</button>
+					  <h4 class="modal-title">Rimuovi utenti</h4>
+					</div>
+					<div class="modal-body">
+					 <form action="togliUtente.php" method="post">
+					  Email: <br><input type="email" name="email" id="email" pattern="[a-zA-Z]{3,30}.[a-zA-Z]{3,30}@(edu.ti|samtrevano).ch" name="usr" class="form-control" placeholder="Inserisci emal"><br>
+					  <input type="submit" value="Rimuovi">
+					</form>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			
+			
 	</br>
 	<div class="table-responsive">          
 	<table class="table">
