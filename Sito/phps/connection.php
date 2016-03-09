@@ -25,8 +25,10 @@
 			return $this->conn;
 		}
 		public function stop(){
-			mysqli_close($this->conn);
-			$this->conn = null;
+			if($this->conn != null){
+				mysqli_close($this->conn);
+				$this->conn = null;
+			}
 		}
 		public function query($query){
 			$this->res = mysqli_query($this->conn, $query);
@@ -48,8 +50,8 @@
 		return $res;
 	}
 	session_start();
-	function sess($name=null, $val=""){
-		if($val != ""){
+	function sess($name=null, $val=null){
+		if($val != null){
 			$_SESSION[$name] = $val;
 		}
 		elseif($name != null){
@@ -64,9 +66,9 @@
 			return $_SESSION;
 		}
 	}
-	$dum = &sess("db");
+	$dum = sess("db");
 	if(!isset($dum)){
 		$newDB = new DB("localhost", "iSete", "isete1", "isete");
-		sess("db", &$newDB);
+		sess("db", $newDB);
 	}
 ?>

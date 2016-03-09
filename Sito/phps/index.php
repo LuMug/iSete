@@ -1,35 +1,23 @@
 <?php
-	include "phps/connection.php";
+	include "check.php";
+	if(isset($_POST["capsula"]) && isset($_POST["qta"])){
+		$cap = $_POST["capsula"];
+		$qta = $_POST["qta"];
+		if($cap != ""){
+			sess("db")->start();
+				$query = sess("db")->query("");
+			sess("db")->stop();
+		}
+	}
 	$err = "";
+	$warn = "";
 	$succ = "";
-	$u = sess("usr");
-	$p = sess("pwd");
-	if($u != false && $p != false){
-		header("Location: phps/index.php");
-	}
-	if(isset($_POST["email"]) && isset($_POST["pwd"])){
-		$usr = $_POST["email"];
-		$pwd = $_POST["pwd"];
-		sess("db")->start();
-			$query = "select ut_id as 'id' from utente where ut_email='$usr' and ut_password='" . md5($pwd) . "'";
-			if(sess("db")->query($query) != false && sess("db")->rows() == 1){
-				sess("usr", $usr);
-				sess("pwd", $pwd);
-				$succ = "Accesso riuscito!";
-				//sess("db")->stop();
-				header("Location: phps/index.php");
-			}
-			else{
-				$err = "Nome utente o password errati.";
-			}
-		sess("db")->stop();
-	}
 ?>
 <!DOCTYPE html>
 <html>
 <head>
-	<title>iSete | Pagina principale</title>
-	<meta charset="utf-8">
+	<title>iSete | Richiesta</title>
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" type="image/jpeg" href="images/isete-logo.jpg">
 	<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -42,30 +30,39 @@
 		<div class="row">
 			<div class="col-xs-1 col-sm-2 col-md-3"></div>
 			<form method="post" action="#" class="form-horizontal col-xs-10 col-sm-8 col-md-6 panel panel-default">
-				<img src="images/isete.jpg" class="img-responsive center-block" width="450" alt="iSete Main Logo">
-				<h1>Login</h1>
+				<h1>Richiesta</h1>
 				<div class="form-group">
-					<label class="col-xs-4 control-label" for="email">Email</label>
+					<label class="col-xs-4 control-label" for="capsula">Capsula</label>
 					<div class="col-xs-7 col-sm-5">
-						<input type="email" name="email" id="email" pattern="[a-zA-Z]{3,30}.[a-zA-Z]{3,30}@(edu.ti|samtrevano).ch" name="usr" class="form-control" placeholder="E-mail qui...">
+						<select id="capsula" class="form-control">
+							<option value="">--- Tipo ---</option>
+							<?php
+								sess("db")->start();
+								$q = sess("db")->query("select ca_tipo from capsula");
+								while($el = sess("db")->fetch($q)){
+									echo "<option value='" . $el['ca_tipo'] . "'>" . $el['ca_tipo'] . "</option>";
+								}
+								sess("db")->stop();
+							?>
+						</select>
 					</div>
 					<div class="col-xs-1 col-sm-4"></div>
 				</div>
 				<div class="form-group">
-					<label class="col-xs-4 control-label" for="pwd">Password</label>
+					<label class="col-xs-4 control-label" for="qta">Quantit&agrave;</label>
 					<div class="col-xs-7 col-sm-5">
-						<input type="password" id="pwd" name="pwd" class="form-control" placeholder="Password qui...">
+						<input type="number" id="qta" class="form-control" value="1" min="1">
 					</div>
 					<div class="col-xs-1 col-sm-4"></div>
 				</div>
-				<div class="form-group btn-group btn-group-justified">
+				<div class="form-group">
 					<div class="col-xs-1 col-sm-2"></div>
-					<div class="col-xs-4 col-sm-3">
-						<a href="phps/register.php" class="btn btn-link col-xs-12">Registrati</a>
+					<div class="col-xs-5 col-sm-3">
+						<a href="profile.php" class="btn btn-link col-xs-12">Profilo</a>
 					</div>
-					<div class="col-xs-2"></div>
-					<div class="col-xs-4 col-sm-3">
-						<input class="btn btn-primary col-xs-12" type="submit" value="Invia">
+					<div class="col-xs-0 col-sm-2"></div>
+					<div class="col-xs-5 col-sm-3">
+						<input class="btn btn-primary col-xs-12" type="submit" value="Richiedi">
 					</div>
  					<div class="col-xs-1 col-sm-2"></div>
 				</div>
@@ -85,6 +82,11 @@
 						echo "<div class='alert alert-success fade in'>" .
 						"<a href='javascript:void(0)' class='close' data-dismiss='alert' aria-label='close'>" .
 						"&times;</a>$succ</div>";
+					}
+					elseif($warn != ""){
+						echo "<div class='alert alert-warning fade in'>" .
+						"<a href='javascript:void(0)' class='close' data-dismiss='alert' aria-label='close'>" .
+						"&times;</a>$warn</div>";
 					}
 					else{
 						echo "&nbsp;";
