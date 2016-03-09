@@ -141,6 +141,10 @@ Data di consegna: 11.05.2016
   > design such a large-scale microprocessor in just weeks.*
 
 -->
+_Do you need a coffe but you don't have with you for but it? Don't worry, with the new dispenser you can buy everything coffe pod trought your account.
+You just do the identification, add your credit to your account and you can buy coffe pod when you want, everywhere you are.
+With the new dispenser you could buy coffe pod from your phone without go to the coffe maker !
+What do you waiting for? Take the coffe pod you prefer!_
 
 ### Scopo
 
@@ -164,7 +168,7 @@ Il responsabile si collega al sito per visualizzare statistiche riguardanti
 utenti e capsule e ricaricare il saldo.
 
 <!-- sezione non finita -->
-s
+
 ## Analisi
 
 ### Analisi del dominio
@@ -314,6 +318,7 @@ presenta? Che hw sarà disponibile durante lo sviluppo?
 - Source Tree 1.8.2.3
 - Android Studio ?
 - Arduino ?
+- Raspberry ?
 - Browser ...
 - Office 2013
 - FileZilla ?
@@ -417,11 +422,14 @@ su qualunque smartphone android.
 
 ### HW
 
-#### Arduino
+#### Gestione (Andrea & Serhiy)
+Per la memorizzazione offline e il collegamento ethernet abbiamo inizialmente deciso di usare Arduino, ma a causa di troppi problemi riscontrati abbiamo deciso di usare Raspberry.
 
-#### Struttura
+#### memorizzazione offline
 
-##### Servo
+#### collegamento ethernet
+
+#### Servo motore(Nishan)
 
 ## Implementazione
 <!--
@@ -459,7 +467,7 @@ Per eventuali dettagli si possono inserire riferimenti ai diari.
 
 ##### Gestione utenti(Nishan)
 
-### Arduino
+### HW
 
 #### Servo motore(Nishan)
 
