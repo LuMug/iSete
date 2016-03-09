@@ -3,18 +3,18 @@
 	sess("db")->start();
 	$err = "";
 	$succ = "";
-	if(isset($_POST["email"])){
+	if(isset($_POST["email"]) && isset($_POST["pwd"])){
 		$email = $_POST["email"];
 		$nomcog = explode("@", $email);
 		$nomcog = explode(".", $nomcog[0]);
 		$nome = $nomcog[0];
 		$cognome = $nomcog[1];
+		$pwd = $_POST["pwd"];
 		if(sess("db")->query("insert into utente(ut_email, ut_password, ut_nome, ut_cognome)" .
 		" values ('$email', '" .
 		md5($pwd) ."', '$nome'," .
 		" '$cognome')")) {
-			$succ = "Registrazione effettuata con successo!\n" .
-			"Controlla la tua e-mail per maggiori informazioni.";
+			$succ = "Registrazione effettuata con successo! <a href='../index.php' class='btn btn-link'>Login</a>";
 		}
 		else{
 			$err = "Registrazione fallita";
@@ -48,7 +48,14 @@
 				<div class="form-group">
 					<label class="col-xs-4 control-label" for="email">Email</label>
 					<div class="col-xs-7 col-sm-5">
-						<input type="email" name="email" id="email" pattern="[a-zA-Z]{3,30}.[a-zA-Z]{3,30}@(edu.ti|samtrevano).ch" name="usr" class="form-control" placeholder="E-mail qui...">
+						<input type="email" name="email" id="email" pattern="[a-zA-Z]{3,30}.[a-zA-Z]{3,30}@(edu.ti|samtrevano).ch" class="form-control" placeholder="E-mail qui...">
+					</div>
+					<div class="col-xs-1 col-sm-4"></div>
+				</div>
+				<div class="form-group">
+					<label class="col-xs-4 control-label" for="pwd">Password</label>
+					<div class="col-xs-7 col-sm-5">
+						<input type="password" name="pwd" id="pwd" class="form-control" placeholder="Password qui...">
 					</div>
 					<div class="col-xs-1 col-sm-4"></div>
 				</div>
