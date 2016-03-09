@@ -1,26 +1,24 @@
-<?php // content="text/plain; charset=utf-8"
-
-include "connection.php";
+<?php
+include "..\connection.php";
 sess("db")->start();
-
-
 require_once ('jpgraph/jpgraph.php');
 require_once ('jpgraph/jpgraph_bar.php');
 
 //query per grafici
-$queryUsoCapsule = "select ca_tipo, sum(pre_quantita) as 'numero' from prende group by ca_tipo asc limit 3";
+$queryUsoCapsule = "select ca_tipo, sum(pre_quantita) as 'numero' from prende group by ca_tipo";
 
 //eseguo le query
 $tmpUsoCapsule = sess("db")->query($queryUsoCapsule);
 
+//array per memorizzazione
 $quantitaCapsule = array();
 $tipo = array();
+
 //ciclo per riempire array
 while($row = sess("db")->fetch($tmpUsoCapsule)){
 	array_push($quantitaCapsule, $row['numero']);
 	array_push($tipo, $row['ca_tipo']);
 }
-
 
 // Create the graph. These two calls are always required
 $graph = new Graph(350,220,'auto');
@@ -35,20 +33,22 @@ $graph->SetBox(false);
 
 //$graph->ygrid->SetColor('gray');
 $graph->ygrid->SetFill(false);
-$graph->xaxis->SetTickLabels($tipo[0], $tipo[1], $tipo[2]);
+$graph->xaxis->SetTickLabels($tipo);
 $graph->yaxis->HideLine(false);
 $graph->yaxis->HideTicks(false,false);
 
 // Create the bar plots
-$b1plot = new BarPlot($tipo);
+$b1plot = new BarPlot($quantitaCapsule);
 
 // ...and add it to the graPH
 $graph->Add($b1plot);
 
 
 $b1plot->SetWidth(45);
-$graph->title->Set("Bar Gradient(Left reflection)");
+$graph->title->Set("Quantità capsule vedute");
 
 // Display the graph
 $graph->Stroke();
+
+sess("db")->stop();
 ?>
