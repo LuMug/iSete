@@ -38,7 +38,7 @@
 <div class="container">
   <div class="container">
         <div class="jumbotron">
-          <h2>Gestione configurazioni</h2>
+          <h2>Gestione Utenti</h2>
         </div>
 	</div>
 			<!-- Trigger the modal with a button -->
