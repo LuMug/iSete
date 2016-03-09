@@ -1,10 +1,9 @@
 <?php 
 	include "..\connection.php";
-	$nome = $_POST['nome'];
-	$cognome = $_POST['cognome'];
 	$email = $_POST['email'];
 	sess("db")->start();
-	$ret = sess("db")->query("ut_email='$email'");
+	$ret = sess("db")->query("DELETE FROM utente WHERE ut_email='$email'");
+	echo "Utente tolto!";  
 	sess("db")->stop();
 ?>	
 <html>
