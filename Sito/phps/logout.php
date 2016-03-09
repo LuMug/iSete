@@ -14,6 +14,7 @@
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
 <body>
+	<div class="container">
 	<?php
 		session_unset();
 		session_destroy();
@@ -26,11 +27,12 @@
 		}
 		else{
 			?>
-		<div class='alert alert-success fade in'>
-			Log-out effetuato con successo.
+		<div class='alert alert-danger fade in'>
+			Errore imprevisto
 		</div>
 			<?php
 		}
 	?>
+	</div>
 </body>
 </html>

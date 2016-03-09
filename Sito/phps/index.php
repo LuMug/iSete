@@ -1,17 +1,28 @@
 <?php
 	include "check.php";
+	$err = "";
+	$warn = "";
+	$succ = "";
 	if(isset($_POST["capsula"]) && isset($_POST["qta"])){
 		$cap = $_POST["capsula"];
 		$qta = $_POST["qta"];
 		if($cap != ""){
 			sess("db")->start();
-				$query = sess("db")->query("");
+				$v = sess("db")->query("select ut_id, ut_credito from utente where ut_email='" . sess('usr') . "'");
+				$v = sess("db")->fetch($v);
+				$v_id = $v['ut_id'];
+				//$v_cr = $v['ut_credito'];
+				//$query = sess("db")->query("update utente set credito=" . (++$v_cr) . " where ut_id=$v_id");
+				$query = sess("db")->query("insert into prende(ut_id, ca_tipo, pre_quantita) values ($v_id, '$cap', $qta)");
+				if($query){
+					$succ = "ordine di $qta $cap eseguito";
+				}
+				else{
+					$warn = "ordine non riuscito";
+				}
 			sess("db")->stop();
 		}
 	}
-	$err = "";
-	$warn = "";
-	$succ = "";
 ?>
 <!DOCTYPE html>
 <html>
@@ -34,7 +45,7 @@
 				<div class="form-group">
 					<label class="col-xs-4 control-label" for="capsula">Capsula</label>
 					<div class="col-xs-7 col-sm-5">
-						<select id="capsula" class="form-control">
+						<select id="capsula" name="capsula" class="form-control">
 							<option value="">--- Tipo ---</option>
 							<?php
 								sess("db")->start();
@@ -51,18 +62,22 @@
 				<div class="form-group">
 					<label class="col-xs-4 control-label" for="qta">Quantit&agrave;</label>
 					<div class="col-xs-7 col-sm-5">
-						<input type="number" id="qta" class="form-control" value="1" min="1">
+						<input type="number" id="qta" name="qta" class="form-control" value="1" min="1">
 					</div>
 					<div class="col-xs-1 col-sm-4"></div>
 				</div>
 				<div class="form-group">
 					<div class="col-xs-1 col-sm-2"></div>
 					<div class="col-xs-5 col-sm-3">
-						<a href="profile.php" class="btn btn-link col-xs-12">Profilo</a>
+						<a href="profile.php" class="btn btn-link col-xs-12">
+							<span class="glyphicon glyphicon-user"> Profilo</span>
+						</a>
 					</div>
 					<div class="col-xs-0 col-sm-2"></div>
 					<div class="col-xs-5 col-sm-3">
-						<input class="btn btn-primary col-xs-12" type="submit" value="Richiedi">
+						<button class="btn btn-primary col-xs-12" type="submit">
+							<span class="glyphicon glyphicon-chevron-up"></span> Richiedi
+						</button>
 					</div>
  					<div class="col-xs-1 col-sm-2"></div>
 				</div>

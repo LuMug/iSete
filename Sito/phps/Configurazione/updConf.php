@@ -5,7 +5,7 @@
 	$descrizione = $_POST['descrizione'];
 	sess("db")->start();
 	if(!empty($nome) && !empty($valore) && !empty($descrizione)){
-		$ret = sess("db")->query("INSERT INTO configurazione (co_nome, co_valore, co_descrizione) VALUES ('".$nome."', '".$valore."', '".$descrizione."');");
+		$ret = sess("db")->query("UPDATE configurazione set co_nome = '".$nome."', co_valore = '".$valore."', co_descrizione = '".$descrizione."';");
 	}else{ 
 		echo "Non hai inserito tutti i campi obbligatori!";  
 	}

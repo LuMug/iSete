@@ -65,7 +65,9 @@
 					</div>
 					<div class="col-xs-2"></div>
 					<div class="col-xs-4 col-sm-3">
-						<input class="btn btn-primary col-xs-12" type="submit" value="Invia">
+						<button class="btn btn-primary col-xs-12" type="submit">
+							<span class="glyphicon glyphicon-log-in"></span> Log-in
+						</button>
 					</div>
  					<div class="col-xs-1 col-sm-2"></div>
 				</div>

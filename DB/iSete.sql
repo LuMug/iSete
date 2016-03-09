@@ -29,9 +29,14 @@ create table prende(
     pre_data timestamp default now(),
     pre_quantita int,
 	primary key(ut_id, ca_tipo, pre_data),
-    foreign key(ut_id) references utente(ut_id),
-    foreign key(ca_tipo) references capsula(ca_tipo)
-
+    foreign key(ut_id)
+		references utente(ut_id)
+			on delete cascade
+            on update cascade,
+    foreign key(ca_tipo)
+		references capsula(ca_tipo)
+			on delete cascade
+            on update cascade
 );
 
 create table caricaCredito(
@@ -39,7 +44,13 @@ create table caricaCredito(
     ut_idNorm int ,
     cre_data timestamp default now(),
     cre_importo int,
-    foreign key(ut_idResp) references utente(ut_id),
-    foreign key(ut_idNorm) references utente(ut_id),
+    foreign key(ut_idResp)
+		references utente(ut_id)
+			on delete cascade
+            on update cascade,
+    foreign key(ut_idNorm)
+		references utente(ut_id)
+			on delete cascade
+            on update cascade,
 	primary key(ut_idNorm, ut_idResp,cre_data)
 );

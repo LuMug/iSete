@@ -11,21 +11,25 @@
 	if($el['id'] == '1'){
 		$show = true;
 	}
-	if(isset($_POST["nome"]) && isset($_POST["cognome"])){
+	if(isset($_POST["nome"]) && isset($_POST["cognome"]) && isset($_POST["pwd"])){
 		$email = $usr;
 		$nome = $_POST["nome"];
 		$cognome = $_POST["cognome"];
+		$pwdi = $_POST["pwd"];
+		$pwdi = (($pwdi == "")? $pwd:$pwdi);
 		$pwd1 = $_POST["chgpwd"];
 		$pwd2 = $_POST["repwd"];
-		if($pwd1 === $pwd2 && $pwd1 != ""){
-			$pwd = $pwd1;
+		if($pwd1 === $pwd2 && $pwd1 != "" && $pwdi == sess("pwd")){
+			$pwdi = $pwd1;
 		}
 		elseif($pwd1 != "" || $pwd2 != ""){
 			$err = "Cambiamento password fallito. Ricontrollare i campi e riprovare";
 		}
-		$query = sess("db")->query("update utente set ut_nome='$nome', ut_cognome='$cognome', ut_password='" . md5($pwd) . "' where ut_email='$usr'");
+		$query = sess("db")->query("update utente set ut_nome='$nome', ut_cognome='$cognome', ut_password='" . md5($pwdi) . "' where ut_email='$usr'");
 		if($query){
 			$succ = "Profilo salvato correttamente";
+			sess("pwd", $pwdi);
+			$pwd = $pwdi;
 		}
 		else{
 			$err = "Errore imprevisto";
@@ -51,14 +55,23 @@
 		<div class="row">
 			<div class="col-xs-1 col-sm-2 col-md-3"></div>
 			<form method="post" action="#" class="form-horizontal col-xs-10 col-sm-8 col-md-6 panel panel-default">
-				<h1>Profilo</h1>
-				<div class="form-group">
-					<label class="col-xs-4 control-label" for="email">Email</label>
-					<div class="col-xs-7 col-sm-5">
-						<input type="email" id="email" pattern="[a-zA-Z]{3,30}.[a-zA-Z]{3,30}@(edu.ti|samtrevano).ch" class="form-control" disabled="true" placeholder="<?php echo $res['ut_email']; ?>">
+				<h1>
+				Profilo
+					<div class="dropdown pull-right">
+						<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+							<span class="glyphicon glyphicon-cog"></span>
+						</button>
+						<ul class="dropdown-menu">
+						<?php if($show){ ?>
+							<li><a href="configurazione/index.php">Configurazione</a></li>
+						<?php } ?>
+							<li><a href="storico/index.php">Storico</a></li>
+						<?php if($show){ ?>
+							<li><a href="utenti/index.php">Utenti</a></li>
+						<?php } ?>
+						</ul>
 					</div>
-					<div class="col-xs-1 col-sm-4"></div>
-				</div>
+				</h1>
 				<div class="form-group">
 					<label class="col-xs-4 control-label" for="nome">Nome</label>
 					<div class="col-xs-7 col-sm-5">
@@ -76,7 +89,7 @@
 				<div class="form-group">
 					<label class="col-xs-4 control-label" for="pwd">Password</label>
 					<div class="col-xs-7 col-sm-5">
-						<input type="text" id="pwd" class="form-control" disabled="true" placeholder="<?php echo $pwd; ?>">
+						<input type="password" id="pwd" name="pwd" class="form-control" placeholder="Inserisci password...">
 					</div>
 					<div class="col-xs-1 col-sm-4"></div>
 				</div>
@@ -95,16 +108,22 @@
 					<div class="col-xs-1 col-sm-4"></div>
 				</div>
 				<div class="form-group btn-group btn-group-justified">
-					<div class="col-xs-4 col-sm-3">
-						<a href="logout.php" class="btn btn-link col-xs-12">Logout</a>
-					</div>
-					<div class="col-xs-0 col-sm-1"></div>
 					<div class="col-xs-4 col-sm-4">
-						<a href="request.php" class="btn btn-link col-xs-12">Indietro</a>
+						<a href="index.php" class="btn btn-link col-xs-12">
+							<span class="glyphicon glyphicon-arrow-left"></span> Indietro
+						</a>
 					</div>
 					<div class="col-xs-0 col-sm-1"></div>
 					<div class="col-xs-4 col-sm-3">
-						<input class="btn btn-primary col-xs-12" type="submit" value="Salva">
+						<a href="logout.php" class="btn btn-link col-xs-12">
+							<span class="glyphicon glyphicon-log-out"></span> Logout
+						</a>
+					</div>
+					<div class="col-xs-0 col-sm-1"></div>
+					<div class="col-xs-4 col-sm-3">
+						<button class="btn btn-primary col-xs-12" type="submit">
+							<span class="glyphicon glyphicon-floppy-disk"></span> Salva
+						</button>
 					</div>
 				</div>
 			</form>
