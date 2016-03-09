@@ -1,11 +1,11 @@
 
 
-# iSete | Diario di lavoro - dd.mm.yyyy
+# iSete | Diario di lavoro - 09.03.2016
 ##### N. Anthonippillai, E. Ongaro, R. Scarcella, A. Lupica, S. Ushchapivskyy
 ### Canobbio, [DATE]
 
 ## Lavori svolti
-Nishan
+#####Nishan
 
 Durante questa lezione abbiamo parlato su cosa fare per il terzo sprint, ho preso l'incarico di fare la pagina dello storico e la gestione del credito.
 
@@ -23,10 +23,40 @@ Nel tempo che mi avanzava ho pensato a come potevo fare per gestire il credito e
 
 Infine ho fatto il diario
 
+
+#####Ettore
+
+In questa giornata, mi sono concentrato particolarmente sul migliorare il sito web:
+ - Ho risistemato la pagina del profilo in modo che vengano visualizzate solo le informazioni modificabili
+
+ - Ho inserito alcune icone di aiuto (per abbellire il sito, più che tutto)
+
+ - Ho fatto in modo che il responsabile possa accedere alle pagine aggiuntive, aggiungendo
+   un menu a tendina, identificato con un icona simile alle impostazioni (una rotellina).
+   Questo menu è presente anche per gli utenti standard, ma consente di vedere univocamente il proprio storico.
+
+ - Come scelto precedentemente, ho fatto in modo che il primo utente registrato fosse ritenuto automaticamente come
+   responsabile (eventualmente, si può fare un campo nella tabella di configurazione per poter fare multipli responsabili).
+
+ - Ho sistemato una piccola mancanza al database (quale l'effetto a cascata nell'eliminazione di un utente)
+
+#####Andrea
+
+Durante le prime ore della mattina, abbiamo discusso sullo sprint 3 e su ciò che volevamo fare con il raspberry.
+Dopodiché ho iniziato a fare il consuntivo dei primi due sprint e ho aggiunto il terzo sprint al gannt.
+In seguito, ho aggiornato la parte di progettazione nella documentazione e ho fatto l'abstract.
+
 ##  Problemi riscontrati e soluzioni adottate
 
+#####Ettore
+Durante l'ultima operazione elencata (riguardante il db), ho riscontrato dei leggeri problemi nella creazione di uno
+		  uno script di automazione. Per oviare a questo problema, abbiamo scelto di inserire alcuni dati di prova a mano.
 
 ##  Punto della situazione rispetto alla pianificazione
 
 
 ## Programma di massima per la prossima giornata di lavoro
+
+#####Andrea
+
+Riuscire a fare la memorizzazione offline e la connessione ethernet con il raspberry
