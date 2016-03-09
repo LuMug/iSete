@@ -8,5 +8,5 @@
 	sess("db")->stop();
 ?>	
 <html>
-<meta http-equiv="refresh" content="2;URL=utenti.php">
+<meta http-equiv="refresh" content="2;URL=index.php">
 </html>
