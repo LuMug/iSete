@@ -2,34 +2,22 @@
 	include "..\connection.php";
 	sess("db")->start();
 	$array= array();
-	$query = "SELECT ut_id, ut_nome, ut_cognome, ut_credito FROM utente";
+	$usr = sess("usr");
+	$query = "SELECT u.ut_id, p.ca_tipo, p.pre_data, p.pre_quantita FROM prende p JOIN utente u ON p.ut_id=u.ut_id where u.ut_email='$usr'";
 	$tmp = sess("db")->query($query);
 
 ?>	
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Utenti</title>
+  <title>Storico</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <script language="Javascript" type="text/javascript">
-	  function controllo(modulo){
-	  if (modulo.password.value != modulo.ripeti.value) {
-		alert("La password inserita non coincide con la prima!")
-		modulo.password.focus()
-		modulo.password.select()
-		return false
-	  }
-	  return true
-	}
-  </script>
+  <script language="Javascript" type="text/javascript"/>
   <script type="text/javascript">
-  // $(document).ready(function (){
-	  
-  // });
   </script>
 </head>
 
@@ -46,19 +34,17 @@
 	<table class="table">
     <thead>
       <tr>
-        <th>#</th>
-        <th>Nome</th>
-        <th>Cognome</th>
-        <th>Credito</th>
+        <th>Capsula</th>
+        <th>data</th>
+        <th>quantita</th>
       </tr>
     </thead>
     <tbody>
 		  <?php while($row = sess("db")->fetch($tmp)){ ?>
             <tr>
-				<td><?php echo $row["ut_id"];?></td>
-				<td><?php echo $row["ut_nome"];?></td>
-				<td><?php echo $row["ut_cognome"];?></td>
-				<td><?php echo $row["ut_credito"];?></td>
+				<td><?php echo $row["ca_tipo"];?></td>
+				<td><?php echo $row["pre_data"];?></td>
+				<td><?php echo $row["pre_quantita"];?></td>
             </tr>
 		  <?php }
 		  sess("db")->stop();?>
