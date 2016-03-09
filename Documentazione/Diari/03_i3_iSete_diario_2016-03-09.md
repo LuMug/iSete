@@ -84,7 +84,7 @@ tramite un immagine come jpgraph. Inoltre questa API genera in automatico una
 sorta di legenda che aiuta a leggere meglio il grafico e quando si passa
 con il cursore del mouse sopra il grafico vengono indicati il valore e la
 percentuale di quella singola sezione.
-![Grafico](..\img\grafico.png)
+![Grafico](https://github.com/LuMug/iSete/tree/master/Documentazione/img/grafico.png)
 
 ##  Problemi riscontrati e soluzioni adottate
 
