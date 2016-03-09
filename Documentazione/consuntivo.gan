@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2016-01-18" view-index="0" gantt-divider-location="423" resource-divider-location="300" version="2.7.1" locale="it">
     <description/>
     <view zooming-state="default:6" id="gantt-chart">
-        <field id="tpd3" name="Nome" width="52" order="0"/>
-        <field id="tpd4" name="Data d'inizio" width="23" order="1"/>
+        <field id="tpd3" name="Nome" width="58" order="0"/>
+        <field id="tpd4" name="Data d'inizio" width="18" order="1"/>
         <field id="tpd5" name="Data di fine" width="23" order="2"/>
     </view>
     <view id="resource-table">
@@ -37,19 +37,11 @@
             <task id="22" name="consegna libro dei compiti" meeting="false" start="2016-01-18" duration="1" complete="0" expand="true"/>
             <task id="4" name="Sprint 1" meeting="false" start="2016-02-03" duration="16" complete="0" expand="true">
                 <depend id="44" type="2" difference="0" hardness="Strong"/>
-                <task id="29" name="Gantt" meeting="false" start="2016-02-03" duration="11" complete="0" expand="true"/>
                 <task id="30" name="Requisiti" meeting="false" start="2016-02-03" duration="11" complete="0" expand="true"/>
                 <task id="31" name="Use case" meeting="false" start="2016-02-03" duration="11" complete="0" expand="true"/>
                 <task id="32" name="Database" meeting="false" start="2016-02-03" duration="11" complete="0" expand="true"/>
                 <task id="35" name="Creazione di un web server" meeting="false" start="2016-02-03" duration="11" complete="0" expand="true"/>
                 <task id="33" name="Prototipo Android" meeting="false" start="2016-02-17" duration="6" complete="0" expand="true"/>
-                <task id="36" name="HW" meeting="false" start="2016-02-17" duration="6" complete="0" expand="true">
-                    <task id="37" name="Riconoscimento" meeting="false" start="2016-02-17" duration="6" complete="0" expand="true"/>
-                    <task id="38" name="Ethernet" meeting="false" start="2016-02-17" duration="6" complete="0" expand="true"/>
-                    <task id="39" name="Espulsione capsule" meeting="false" start="2016-02-17" duration="6" complete="0" expand="true"/>
-                    <task id="40" name="Memorizazzione offline" meeting="false" start="2016-02-17" duration="6" complete="0" expand="true"/>
-                    <task id="42" name="Progettazione sito" meeting="false" start="2016-02-17" duration="6" complete="0" expand="true"/>
-                </task>
             </task>
             <task id="44" name="Sprint 2" color="#000000" meeting="false" start="2016-02-25" duration="10" complete="0" expand="true">
                 <depend id="45" type="2" difference="0" hardness="Strong"/>
@@ -60,23 +52,22 @@
                 <task id="51" name="Sito web" meeting="false" start="2016-02-25" duration="10" complete="0" expand="true">
                     <task id="55" name="Login" meeting="false" start="2016-02-25" duration="10" complete="0" expand="true"/>
                     <task id="57" name="Gestione utenti" meeting="false" start="2016-02-25" duration="10" complete="0" expand="true"/>
-                    <task id="59" name="Tabella di configurazione" meeting="false" start="2016-02-25" duration="10" complete="0" expand="true"/>
-                    <task id="61" name="Pagina statistiche" meeting="false" start="2016-02-25" duration="10" complete="0" expand="true"/>
-                    <task id="63" name="Notifiche esaurimento" meeting="false" start="2016-03-09" duration="1" complete="0" expand="true"/>
                 </task>
             </task>
-            <task id="45" name="Sprint 3" color="#000000" meeting="false" start="2016-03-10" duration="1" complete="0" expand="true">
+            <task id="45" name="Sprint 3" color="#000000" meeting="false" start="2016-03-10" duration="10" complete="0" expand="true">
                 <depend id="46" type="2" difference="0" hardness="Strong"/>
-                <task id="53" name="Struttura HW" meeting="false" start="2016-03-10" duration="1" complete="0" expand="true"/>
-                <task id="54" name="Modulare" meeting="false" start="2016-03-10" duration="1" complete="0" expand="true"/>
+                <task id="74" name="Tabella di configurazione" meeting="false" start="2016-03-10" duration="1" complete="0" expand="true"/>
+                <task id="79" name="Pagina statistiche" meeting="false" start="2016-03-10" duration="1" complete="0" expand="true"/>
+                <task id="81" name="Notifiche esaurimento" meeting="false" start="2016-03-10" duration="1" complete="0" expand="true"/>
+                <task id="82" name="Gannt" meeting="false" start="2016-03-10" duration="10" complete="0" expand="true"/>
             </task>
-            <task id="46" name="Sprint 4" color="#8cb6ce" meeting="false" start="2016-03-11" duration="1" complete="0" expand="true">
+            <task id="46" name="Sprint 4" color="#8cb6ce" meeting="false" start="2016-03-24" duration="1" complete="0" expand="true">
                 <depend id="47" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="47" name="Sprint 5" color="#8cb6ce" meeting="false" start="2016-03-14" duration="1" complete="0" expand="true">
+            <task id="47" name="Sprint 5" color="#8cb6ce" meeting="false" start="2016-03-25" duration="1" complete="0" expand="true">
                 <depend id="48" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="48" name="Sprint 6" color="#8cb6ce" meeting="false" start="2016-03-15" duration="1" complete="0" expand="true"/>
+            <task id="48" name="Sprint 6" color="#8cb6ce" meeting="false" start="2016-03-28" duration="1" complete="0" expand="true"/>
             <task id="10" name="Conclusione" color="#8cb6ce" meeting="true" start="2016-05-11" duration="0" complete="0" expand="true"/>
         </task>
     </tasks>
@@ -88,8 +79,8 @@
         <displaycolumn property-id="tpd7" order="-1" width="75" visible="false"/>
         <displaycolumn property-id="tpd8" order="-1" width="75" visible="false"/>
         <displaycolumn property-id="tpd12" order="-1" width="75" visible="false"/>
-        <displaycolumn property-id="tpd3" order="0" width="222" visible="true"/>
-        <displaycolumn property-id="tpd4" order="1" width="99" visible="true"/>
+        <displaycolumn property-id="tpd3" order="0" width="244" visible="true"/>
+        <displaycolumn property-id="tpd4" order="1" width="77" visible="true"/>
         <displaycolumn property-id="tpd5" order="2" width="98" visible="true"/>
         <displaycolumn property-id="tpd6" order="-1" width="75" visible="false"/>
         <displaycolumn property-id="tpd10" order="-1" width="75" visible="false"/>
