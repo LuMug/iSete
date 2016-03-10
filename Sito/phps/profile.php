@@ -48,6 +48,11 @@
 	<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		#back {
+			overflow:hidden;
+		}
+	</style>
 </head>
 <body>
 	<div class="container-fluid">
@@ -108,9 +113,9 @@
 					<div class="col-xs-1 col-sm-4"></div>
 				</div>
 				<div class="form-group btn-group btn-group-justified">
-					<div class="col-xs-4 col-sm-4">
-						<a href="index.php" class="btn btn-link col-xs-12">
-							<span class="glyphicon glyphicon-arrow-left"></span> Indietro
+					<div class="col-xs-2 col-sm-4">
+						<a href="index.php" id="back" class="btn btn-link col-xs-12">
+							<span class="glyphicon glyphicon-arrow-left"></span>
 						</a>
 					</div>
 					<div class="col-xs-0 col-sm-1"></div>
@@ -120,7 +125,7 @@
 						</a>
 					</div>
 					<div class="col-xs-0 col-sm-1"></div>
-					<div class="col-xs-4 col-sm-3">
+					<div class="col-xs-6 col-sm-3">
 						<button class="btn btn-primary col-xs-12" type="submit">
 							<span class="glyphicon glyphicon-floppy-disk"></span> Salva
 						</button>

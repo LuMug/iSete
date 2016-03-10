@@ -62,7 +62,9 @@
 				<div class="form-group">
 					<div class="col-xs-3 col-md-4"></div>
 					<div class="col-xs-6 col-md-4">
-						<input class="btn btn-primary col-xs-12" type="submit" value="Registrati">
+						<button class="btn btn-primary col-xs-12" type="submit">
+							<span class="glyphicon glyphicon-plus"></span> Registrati
+						</button>
 					</div>
  					<div class="col-xs-3 col-md-4"></div>
 				</div>

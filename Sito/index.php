@@ -59,17 +59,19 @@
 					<div class="col-xs-1 col-sm-4"></div>
 				</div>
 				<div class="form-group btn-group btn-group-justified">
-					<div class="col-xs-1 col-sm-2"></div>
-					<div class="col-xs-4 col-sm-3">
-						<a href="phps/register.php" class="btn btn-link col-xs-12">Registrati</a>
+					<div class="col-xs-0 col-sm-2"></div>
+					<div class="col-xs-6 col-sm-3">
+						<a href="phps/register.php" class="btn btn-link col-xs-12">
+							<span class="glyphicon glyphicon-plus"></span> Registrati
+						</a>
 					</div>
-					<div class="col-xs-2"></div>
-					<div class="col-xs-4 col-sm-3">
+					<div class="col-xs-0 col-sm-2"></div>
+					<div class="col-xs-6 col-sm-3">
 						<button class="btn btn-primary col-xs-12" type="submit">
 							<span class="glyphicon glyphicon-log-in"></span> Log-in
 						</button>
 					</div>
- 					<div class="col-xs-1 col-sm-2"></div>
+ 					<div class="col-xs-0 col-sm-2"></div>
 				</div>
 			</form>
 			<div class="col-xs-1 col-sm-2 col-md-3"></div>
