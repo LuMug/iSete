@@ -2,7 +2,7 @@
 
 # iSete | Diario di lavoro - 09.03.2016
 ##### N. Anthonippillai, E. Ongaro, R. Scarcella, A. Lupica, S. Ushchapivskyy
-### Canobbio, [DATE]
+### Canobbio, 09.03.2016
 
 ## Lavori svolti
 #####Nishan
