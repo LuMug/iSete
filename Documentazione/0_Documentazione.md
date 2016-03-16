@@ -400,7 +400,7 @@ rimuovere record.
 ![Config table page](img/config_table.png)
 
 
-##### Pagina Statistiche(Raffaele)
+##### Pagina Statistiche (Raffaele)
 Per quanto riguarda la pagina di statistiche per il responsabile ho pensato
 di svilupparla con un titolo in alto, con delle tabelle contenenti delle
 statistiche che in seguito vengono rappresentati attraverso dei grafici.
@@ -438,9 +438,54 @@ Per la memorizzazione offline e il collegamento ethernet abbiamo inizialmente de
 
 #### collegamento ethernet
 
-#### Servo motore(Nishan)
+#### Servo motore (Nishan)
 
 ## Implementazione
+
+##### Gestione utenti (Nishan)
+###### Aggiungi utente
+Per svolgere questa pagina ho usato Boostrap.
+Il per chiedere il credito ho inserto un campo per soli numeri, per la mail ho usato una funzione di controllo che ha usato Ettore per il login. Quando si inserisce la password e le inserisco nel database le codifico con la una funzione che si chiama .md5. Poi tramite una funzione controllo se le due password sono uguali.
+```
+function controllo(modulo){
+    if (modulo.password.value != modulo.ripeti.value) {
+		alert("La password inserita non coincide con la prima!")
+		modulo.password.focus()
+		modulo.password.select()
+		return false
+	  }
+	  return true
+	}
+  ```
+C'è anche in controllo che obbliga a inserire tutti i campi.
+```
+if(!empty($nome) && !empty($cognome) && !empty($credito) && !empty($password)){
+  ```
+  Con questo if controllo se tutti i campi sono completati.
+
+![Config table page](img/aggiungi.png)
+###### Rimuovi utente
+Per rimuovere un utente basta inserire l'email dell'utnete visto che lo abbiamo messo primary key quindi vado a cancellare quell'utente con la mail specificata in precedenza.
+
+![Config table page](img/rimuovi.png)
+Mi è stato richiesto di inserire un tasto che riporta l'utnete sulla pagina del proprio profilo. Per questo ho deciso di usare un file css dove specifico dove deve rimanere
+```
+#back{
+position:fixed;
+top:0;
+left:0;
+}
+```
+![Config table page](img/tasto_indietro.png)
+
+##### Gestione credito (Nishan)
+Con questo modulo posso gestire il credito massimo che si puo avere. Poi come detto in precedenza, quando inserisco un nuovo utente controllo che il credito iniziale sia minore uguale al massimo.
+
+![Config table page](img/modifica_credito.png)
+##### Storico utente (Nishan)
+QUesta pagina mostra le capsule prese dall'utente. Quando l'utente accede prendo il nome utente e uso quello per mostrare lo storico.
+
+![Config table page](img/storico_imp.png)
 <!--
 In questo capitolo dovrà essere mostrato come è stato realizzato il
 lavoro. Questa parte può differenziarsi dalla progettazione in quanto il
