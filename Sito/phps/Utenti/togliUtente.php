@@ -1,5 +1,5 @@
 <?php 
-	include "..\connection.php";
+	include "..\check.php";
 	$email = $_POST['email'];
 	sess("db")->start();
 	$ret = sess("db")->query("DELETE FROM utente WHERE ut_email='$email'");

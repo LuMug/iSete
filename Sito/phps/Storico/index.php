@@ -1,5 +1,5 @@
 <?php 
-	include "..\connection.php";
+	include "..\check.php";
 	sess("db")->start();
 	$array= array();
 	$usr = sess("usr");
@@ -14,6 +14,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="custom.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script language="Javascript" type="text/javascript"/>
@@ -22,7 +23,9 @@
 </head>
 
 <body>
-
+<a href="..\profile.php" id="back" class="btn btn-info btn-lg">
+		<span class="glyphicon glyphicon-arrow-left"></span>
+	</a>
 <div class="container">
   <div class="container">
         <div class="jumbotron">
