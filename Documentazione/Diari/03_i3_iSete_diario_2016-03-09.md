@@ -56,6 +56,7 @@ sito web:
  - Ho sistemato una piccola mancanza al database (quale l'effetto a cascata
    nell'eliminazione di un utente)
 
+
 #####Andrea
 
 Durante le prime ore della mattina, abbiamo discusso sullo sprint 3 e su ciò
@@ -65,7 +66,9 @@ il terzo sprint al gannt.
 In seguito, ho aggiornato la parte di progettazione nella documentazione e
 ho fatto l'abstract.
 
+
 #####Raffaele
+
 Nel corso della mattinata mi sono occupato di ultimare la pagina delle
 statistiche poichè facevo visualizzare solo i primi 3 risultati.
 Provando ad implementare la nuova soluzione ho riscontrato un problema:
@@ -86,6 +89,12 @@ con il cursore del mouse sopra il grafico vengono indicati il valore e la
 percentuale di quella singola sezione.
 [Grafico](https://github.com/LuMug/iSete/tree/master/Documentazione/img/grafico.png)
 
+
+#####Serhiy
+
+Come detto da Nishan, oggi abbiamo assegnato alcuni nuovi compiti a ciascuno di noi. Io mi sono preso l'incarico di fare la progettazione per il Raspberry, su come verra utilizzato e su cosa bisogna ancora implementare.
+Ho terminato la progettazione ( la quale è basica perché non ho ancora avuto modo di poter utilizzare il microcomputer ) nella quale ho già rappresentato la soluzione al problema del collegamento tra la pagina web e la classe di Java che permette l'utilizzo dei motori che fanno uscire la capsula.
+
 ##  Problemi riscontrati e soluzioni adottate
 
 #####Ettore
@@ -95,6 +104,9 @@ inserire alcuni dati di prova a mano.
 
 ##  Punto della situazione rispetto alla pianificazione
 
+#####Serhiy
+
+Progettazione Raspberry Basica terminata.
 
 ## Programma di massima per la prossima giornata di lavoro
 
@@ -103,5 +115,11 @@ inserire alcuni dati di prova a mano.
 Riuscire a fare la memorizzazione offline e la connessione ethernet con
 il raspberry
 
+
 #####Raffaele
 Implementare i grafici con la nuova API e pagina gestione capsule.
+
+
+#####Serhiy
+
+Mettere in comunicazione la pagina web e la classe di Java per gestire i motori direttamente dal web.
