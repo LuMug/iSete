@@ -34,6 +34,10 @@ Durante il pomeriggio, mentre Ettore inseriva il sito web sul server, ho modific
 a raspberry e, poiché io, Ettore e Scarcella avevamo un problema con la connessione in remoto (a quanto pare veniva condiviso
 in contemporanea su tutti e tre i pc lo stesso desktop) ho provato insieme a Usha far partire gli script fatti in mattinata. Per far partire gli script in java abbiamo dovuto installare una libreria e, dopo averlo fatto, abbiamo provato a far accendere un led tramite il Raspberry. Dopodiché abbiamo provato a far funzionare il servo motore, ma purtroppo, non siamo riusciti a finire.
 
+#####Raffaele
+Nelle prime due ore della mattianta mi sono concentrato a finire il grafico degli acquisti implementando l'API di google per fare i grafici.
+Successivamente mi sono occupato di applicare bootstrapp alla pagina delle statistiche e riportare i vecchi grafici fatti(capsule più vendute, utenti più attivi, capsule rimanenti).
+Nel pomeriggio ho lavorato sulla gestione delle capsule implementando le funzionalità aggiungi, rimuovi e modifica.
 
 ##  Problemi riscontrati e soluzioni adottate
 #####Ettore
@@ -48,11 +52,18 @@ in contemporanea su tutti e tre i pc lo stesso desktop) ho provato insieme a Ush
 #####Andrea
 - Ho impiegato fin troppo tempo a capire come far funzionare i codici e purtroppo, a causa del problema successo durante la mattinata, non sono riuscito a finire di far funzionare il servo motore.
 
+#####Raffaele
+Ho avuto un problemi quando dovevo inserire dei dati nel grafico poichè quando inserivo i dati nel grafico erano ancora sotto forma di stringa. Ho risolto il problema utilizzando la funzione parseInt.
+
 ##  Punto della situazione rispetto alla pianificazione
 #####Andrea
 -Leggermente indietro, avremmo dovuto avere il servo motore funzionante!
+#####Raffaele
+In linea con la mia pianificazione.
 
 ## Programma di massima per la prossima giornata di lavoro
 #####Andrea
 -Concludere il funzionamento del servo motore
 -Trovare un modo per far si che un'eventuale richiesta di prenotazione, faccia muovere il servo motore.
+#####Raffaele
+Apportare migliorie alla modifica dei dati, sia configurazione che capsule, e riportare l'implementazione della documentazione.
