@@ -1,6 +1,6 @@
 
 
-# iSete | Diario di lavoro - dd.mm.yyyy
+# iSete | Diario di lavoro - 16.03.2016
 ##### N. Anthonippillai, E. Ongaro, R. Scarcella, A. Lupica, S. Ushchapivskyy
 ### Canobbio, 16.03.2016
 
