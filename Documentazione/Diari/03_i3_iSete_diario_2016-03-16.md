@@ -76,8 +76,8 @@ In linea con la mia pianificazione.
 
 ## Programma di massima per la prossima giornata di lavoro
 #####Andrea
--Concludere il funzionamento del servo motore
--Trovare un modo per far si che un'eventuale richiesta di prenotazione, faccia muovere il servo motore.
+- Concludere il funzionamento del servo motore
+- Trovare un modo per far si che un'eventuale richiesta di prenotazione, faccia muovere il servo motore.
 
 #####Raffaele
 Apportare migliorie alla modifica dei dati, sia configurazione che capsule, e riportare l'implementazione della documentazione.
