@@ -524,7 +524,7 @@ Per eventuali dettagli si possono inserire riferimenti ai diari.
 ### HW
 
 #### Servo motore(Andrea)
-Per far funzionare il servo motore con il Raspberry ho cercato uno script che mi permettesse la connessione fra Servo motore e Raspberry, dopodiché, per farlo funzionare, ho dovuto installare la libreria GPIO seguendo la seguente guida : [a link](http://pi4j.com/install.html)
+Per far funzionare il servo motore con il Raspberry ho cercato uno script che mi permettesse la connessione fra Servo motore e Raspberry, dopodiché, per farlo funzionare, ho dovuto installare la libreria GPIO seguendo la seguente guida : [a questo link](http://pi4j.com/install.html)
 #### Connessione ethernet(Serhiy & Andrea)
 
 #### Memorizzazione(Andrea)
