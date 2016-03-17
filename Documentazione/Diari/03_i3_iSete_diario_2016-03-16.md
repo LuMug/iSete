@@ -38,7 +38,7 @@ al raspberry e, poiché io, Ettore e Scarcella avevamo un problema con la connes
 
 #####Raffaele
 
-Nelle prime due ore della mattianta mi sono concentrato a finire il grafico degli acquisti implementando l'API di google per fare i grafici.
+Nelle prime due ore della mattinata mi sono concentrato a finire il grafico degli acquisti implementando l'API di google per fare i grafici.
 Successivamente mi sono occupato di applicare bootstrapp alla pagina delle statistiche e riportare i vecchi grafici fatti(capsule più vendute, utenti più attivi, capsule rimanenti).
 Nel pomeriggio ho lavorato sulla gestione delle capsule implementando le funzionalità aggiungi, rimuovi e modifica.
 
@@ -80,7 +80,7 @@ In linea con la mia pianificazione.
 - Trovare un modo per far si che un'eventuale richiesta di prenotazione, faccia muovere il servo motore.
 
 #####Raffaele
-Apportare migliorie alla modifica dei dati, sia configurazione che capsule, e riportare l'implementazione della documentazione.
+Apportare migliorie alla modifica dei dati, sia configurazione che capsule, riportare l'implementazione della documentazione e trasportare le mie pagine sul raspberry.
 
 #####Serhiy
 Finire lo script per il servo e progettarlo in modo che venga richiamato dalla pagina web.
