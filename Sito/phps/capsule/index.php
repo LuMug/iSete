@@ -3,7 +3,7 @@
   include "..\connection.php";
   sess("db")->start();
   $cnt = 0;
-  $query = "SELECT co_nome, co_valore, co_descrizione FROM configurazione";
+  $query = "SELECT ca_tipo, ca_prezzoAcquisto, ca_prezzoVendita FROM capsula";
   $array= array();
   $tmp = sess("db")->query($query);
 ?>
@@ -26,7 +26,7 @@
     <div class="container">
       <div class="container">
         <div class="jumbotron">
-          <h2>Gestione configurazioni</h2>
+          <h2>Gestione capsule</h2>
         </div>
       </div>
 
@@ -41,13 +41,13 @@
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 class="modal-title">Aggiungi configurazione</h4>
+              <h4 class="modal-title">Aggiungi capsula</h4>
             </div>
             <div class="modal-body">
               <form action="addConf.php" name="modulo" method="post">
                 Nome: <br><input type="text" name="nome" class="form-control" placeholder="Inserisci il nome"><br>
-                Valore: <br><input type="number" name="valore" class="form-control" placeholder="Inserisci il valore"><br>
-                Descrizione: <br><input type="text" name="descrizione" class="form-control" placeholder="Inserisci la descrizione"><br>
+                Prezzo acquisto: <br><input type="text" name="prezzoAcquisto" class="form-control" placeholder="Inserisci il prezzo d'acquisto"><br>
+                Prezzo vendita: <br><input type="text" name="prezzoVendita" class="form-control" placeholder="Inserisci il prezzo di vendita"><br>
                 <input type="submit" value="Inserisci">
               </form>
             </div>
@@ -63,11 +63,12 @@
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 class="modal-title">Rimuovi configurazione</h4>
+              <h4 class="modal-title">Rimuovi capsula</h4>
             </div>
             <div class="modal-body">
               <form action="remConf.php" method="post">
-                Nome: <br><input type="text" name="nome" class="form-control" placeholder="Inserisci il nome"><br>							  <input type="submit" value="Rimuovi">
+                Nome: <br><input type="text" name="nome" class="form-control" placeholder="Inserisci il nome"><br>
+                <input type="submit" value="Rimuovi">
               </form>
             </div>
           </div>
@@ -81,13 +82,13 @@
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 class="modal-title">Modifica configurazione</h4>
+              <h4 class="modal-title">Modifica capsula</h4>
             </div>
             <div class="modal-body">
               <form action="updConf.php" name="modulo" method="post">
                 Nome: <br><input type="text" name="nome" class="form-control" placeholder="Inserisci il nome"><br>
-                Valore: <br><input type="number" name="valore" class="form-control" placeholder="Inserisci il valore"><br>
-                Descrizione: <br><input type="text" name="descrizione" class="form-control" placeholder="Inserisci la descrizione"><br>
+                Prezzo acquisto: <br><input type="text" name="prezzoAcquisto" class="form-control" placeholder="Inserisci il prezzo d'acquisto"><br>
+                Prezzo vendita: <br><input type="text" name="prezzoVendita" class="form-control" placeholder="Inserisci il prezzo di vendita"><br>
                 <input type="submit" value="Inserisci">
               </form>
             </div>
@@ -99,16 +100,16 @@
         <thead>
           <tr>
             <th>Nome</th>
-            <th>Valore</th>
-            <th>Descrizione</th>
+            <th>Prezzo acquisto</th>
+            <th>Prezzo vendita</th>
           </tr>
         </thead>
         <tbody>
           <?php while($row = sess("db")->fetch($tmp)){ ?>
             <tr>
-              <td><?php echo $row["co_nome"];?></td>
-              <td><?php echo $row["co_valore"];?></td>
-              <td><?php echo $row["co_descrizione"];?></td>
+              <td><?php echo $row["ca_tipo"];?></td>
+              <td><?php echo $row["ca_prezzoAcquisto"];?></td>
+              <td><?php echo $row["ca_prezzoVendita"];?></td>
             </tr>
           <?php }
           sess("db")->stop();?>
