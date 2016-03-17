@@ -432,7 +432,7 @@ tutti gli acquisti.
 ### HW
 
 #### Gestione (Andrea & Serhiy)
-Per la memorizzazione offline e il collegamento ethernet abbiamo inizialmente deciso di usare Arduino, ma a causa di troppi problemi riscontrati abbiamo deciso di usare Raspberry.
+Per la memorizzazione offline e il collegamento ethernet abbiamo inizialmente deciso di usare Arduino, ma a causa di troppi problemi riscontrati abbiamo deciso di usare Raspberry. Abbiamo deciso di fare uno codice in java che, a dipendenza di quante capsule venivano scelte, faceva girare il servo motore n volte.
 
 #### memorizzazione offline
 
@@ -523,8 +523,8 @@ Per eventuali dettagli si possono inserire riferimenti ai diari.
 
 ### HW
 
-#### Servo motore(Nishan)
-
+#### Servo motore(Andrea)
+Per far funzionare il servo motore con il Raspberry ho cercato uno script che mi permettesse la connessione fra Servo motore e Raspberry, dopodiché, per farlo funzionare, ho dovuto installare la libreria GPIO seguendo la seguente guida : [a link](http://pi4j.com/install.html)
 #### Connessione ethernet(Serhiy & Andrea)
 
 #### Memorizzazione(Andrea)
