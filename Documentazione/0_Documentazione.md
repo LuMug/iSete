@@ -361,7 +361,7 @@ Se il diagramma E-R viene modificato, sulla doc dovrà apparire l’ultima
 versione, mentre le vecchie saranno sui diari.
 -->
 
-![Use case](img/ER.png)
+![ER](img/ER.PNG)
 ### Design delle interfacce
 <!--
 Descrizione delle interfacce interne ed esterne del sistema e
