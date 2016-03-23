@@ -198,6 +198,10 @@ utenti e capsule e ricaricare il saldo.
 
   -   …
 -->
+Al momento per usufruire della macchinetta del caffé ognuno si deve comprare le proprie capsule.
+Gli utenti sono tutti coloro che vogliono utilizzare la macchinetta del caffé.
+
+
 ### Analisi e specifica dei requisiti
 
 
