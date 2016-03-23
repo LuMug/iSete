@@ -59,7 +59,7 @@
 
 
 		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
+    		<script type="text/javascript">
 
 			var contatoreUso = '<?php echo $grandezzaTipoUso; ?>';
 			var quantita_uso_js = <?php echo json_encode($quantitaCapsule); ?>;
@@ -74,11 +74,6 @@
 			var nome_t3utenti_js = <?php echo json_encode($nomet3utenti); ?>;
 			var	numero_t3utenti_js = <?php echo json_encode($numerot3utenti); ?>;
 
-			document.write(contatoret3Utenti);
-			document.write("<br>");
-			document.write(numero_t3utenti_js);
-			document.write("<br>");
-			document.write(nome_t3utenti_js);
 
 
 
@@ -160,7 +155,7 @@
 			});
     </script>
 
-		<a href="..\profile.php" id="back" class="btn btn-info btn-lg">
+		<a href="../profile.php" id="back" class="btn btn-info btn-lg">
 			<span class="glyphicon glyphicon-arrow-left"></span>
 		</a>
 		<div class="container">

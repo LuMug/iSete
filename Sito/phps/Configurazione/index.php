@@ -20,6 +20,9 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   </head>
   <body>
+	<a href="../profile.php" id="back" class="btn btn-info btn-lg">
+		<span class="glyphicon glyphicon-arrow-left"></span>
+	</a>
       <div class="container">
 		  <div class="container">
 			<div class="jumbotron">
