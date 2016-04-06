@@ -20,6 +20,7 @@ cartone per non complicarci troppo il lavoro.
 Nella tarda mattinata, dopo aver tagliato il cartone e il legno in aula
 di modellistica con l'aiuto del capolaboratorio dei disegnatori Cesare
 Casale, abbiamo incollato alla base i primi due separatori.
+In seguito ho lavorato alla documentazione aggiungendo la parte di implementazione dell'applicazione android.
 
 #####Nishan
 
