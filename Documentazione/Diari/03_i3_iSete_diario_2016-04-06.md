@@ -6,7 +6,11 @@
 
 ## Lavori svolti
 #####Ettore
-
+Durante questa gironata, ho rifinito il "re-design" del sito (fatto tutto su una pagina unica,
+con sezioni differenti) e di fare in modo che si riuscisse a far partire una classe java da php.
+Quest'ultima operazione, mi ha richiesto buona parte della giornata, purtroppo, per il fatto stesso
+che non riuscivo a comprendere il corretto utilizzo del metodo exec(). Dopodiché, ho implementato
+il pulsante delle richieste, in modo che faccia le richieste al raspberry (con java, appunto).
 #####Andrea
 
 #####Raffaele
@@ -37,7 +41,12 @@ il Risultato:
 
 ##  Problemi riscontrati e soluzioni adottate
 #####Ettore
-
+Come precedentemente detto, ho avuto particolari problemi con la funzione di php exec().
+Non mi permetteva di eseguire una classe java se non come utente root. Sapendo che, lavorando
+in ambiente linux (similar, almeno) fosse presente il comando shell sudo (che permette l'esecuzione
+di un determinato comando come, appunto, utente amministratore), ma solo anch'esso mi dava un errore
+di mancata password. Cercando su internet, ho trovato la corretta soluzione per far si che il comando funzioni
+adeguatamente (vedere in Sito/phps/index.php).
 #####Andrea
 
 #####Serhiy
@@ -51,3 +60,6 @@ In linea con il programma
 ## Programma di massima per la prossima giornata di lavoro
 #####Raffaele & Nishan
 Implementazione espulsione capsule a ferro di cavallo
+
+#####Ettore
+- Modulazione programma richieste
