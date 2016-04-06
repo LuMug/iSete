@@ -1,0 +1,40 @@
+
+
+# iSete | Diario di lavoro - 16.03.2016
+##### N. Anthonippillai, E. Ongaro, R. Scarcella, A. Lupica, S. Ushchapivskyy
+### Canobbio, 16.03.2016
+
+## Lavori svolti
+#####Nishan
+
+#####Ettore
+
+#####Andrea
+
+#####Raffaele
+Insieme a Nishan ho lavorato all'implementazione della struttura hardware del
+dispenser.
+Abbiamo pensato di usare del legno per realizzare la base attaccata alla
+parete e i separatori che dividono le colonne di capsule.
+Invece per tenere ferme le capsule abbiamo pensato di usare dei pezzi in
+cartone per non complicarci troppo il lavoro.
+Nella tarda mattinata, dopo aver tagliato il cartone e il legno in aula
+di modellistica con l'aiuto del capolaboratorio dei disegnatori Cesare
+Casale, abbiamo incollato alla base i primi due separatori.
+
+#####Serhiy
+
+
+##  Problemi riscontrati e soluzioni adottate
+#####Ettore
+
+#####Andrea
+
+#####Serhiy
+
+#####Raffaele
+
+##  Punto della situazione rispetto alla pianificazione
+
+
+## Programma di massima per la prossima giornata di lavoro
