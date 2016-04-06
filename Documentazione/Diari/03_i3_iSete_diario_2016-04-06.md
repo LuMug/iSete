@@ -5,13 +5,12 @@
 ### Canobbio, 16.03.2016
 
 ## Lavori svolti
-#####Nishan
-
 #####Ettore
 
 #####Andrea
 
 #####Raffaele
+
 Insieme a Nishan ho lavorato all'implementazione della struttura hardware del
 dispenser.
 Abbiamo pensato di usare del legno per realizzare la base attaccata alla
@@ -21,6 +20,16 @@ cartone per non complicarci troppo il lavoro.
 Nella tarda mattinata, dopo aver tagliato il cartone e il legno in aula
 di modellistica con l'aiuto del capolaboratorio dei disegnatori Cesare
 Casale, abbiamo incollato alla base i primi due separatori.
+
+#####Nishan
+
+Come ha scritto Raffaele nella sua parte, abbiamo tagliato tutti i pezzi e per fare le canaline
+abbiamo utilizzato cartone e incollato il tutto con la colla calda
+il Risultato:
+
+![Risultato](img/struttura_fisica1.png)
+
+![Risultato](img/struttura_fisica2.png)
 
 #####Serhiy
 
