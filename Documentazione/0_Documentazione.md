@@ -417,13 +417,7 @@ All'inizio della pagina chiedo le informazione base per aggiungere utenti e rimu
 
 Per aggiungere un utente chiedo di inserire nome, cognome, credito e password. Deve essere obbligatorio mettere tutti i dati. Per rimuovere l'utente basta inserire nome e cognome.
 
-![Config table page](img/GestioneUtenti.png)
-
-#### Applicazione Android(Raffaele)
-L'applicazione Android ho pensato di farla semplicemente tramite una
-webview permettendo così di utilizzare unicamente il sito e renderlo responsive
-su qualunque smartphone android.
-
+![Gestione utenti](img/GestioneUtenti.png)
 
 ##### Storico acquisti(Nishan)
 Ho progettato una pagina molto semplice con una tabella chiara con le informazioni neccessarie.
@@ -431,16 +425,21 @@ Ho progettato una pagina molto semplice con una tabella chiara con le informazio
 Questa pagina è visible solamente agli utenti che sono registrati e tramite la connesione al database faccio vedere
 tutti gli acquisti.
 
-![Config table page](img/Storico.png)
+![Storico](img/Storico.png)
+
+#### Applicazione Android(Raffaele)
+L'applicazione Android ho pensato di farla semplicemente tramite una
+webview permettendo così di utilizzare unicamente il sito e renderlo responsive
+su qualunque smartphone android.
 
 ### HW
 
 #### Gestione (Andrea & Serhiy)
 Per la memorizzazione offline e il collegamento ethernet abbiamo inizialmente deciso di usare Arduino, ma a causa di troppi problemi riscontrati abbiamo deciso di usare Raspberry. Abbiamo deciso di fare uno codice in java che, a dipendenza di quante capsule venivano scelte, faceva girare il servo motore n volte.
 
-#### memorizzazione offline
+#### Memorizzazione offline
 
-#### collegamento ethernet
+#### Collegamento ethernet
 
 #### Servo motore (Nishan)
 
@@ -467,11 +466,11 @@ if(!empty($nome) && !empty($cognome) && !empty($credito) && !empty($password)){
   ```
   Con questo if controllo se tutti i campi sono completati.
 
-![Config table page](img/aggiungi.png)
+![Aggiungi utenti](img/aggiungi.png)
 ###### Rimuovi utente
 Per rimuovere un utente basta inserire l'email dell'utnete visto che lo abbiamo messo primary key quindi vado a cancellare quell'utente con la mail specificata in precedenza.
 
-![Config table page](img/rimuovi.png)
+![Rimuovi utenti](img/rimuovi.png)
 Mi è stato richiesto di inserire un tasto che riporta l'utnete sulla pagina del proprio profilo. Per questo ho deciso di usare un file css dove specifico dove deve rimanere
 ```
 #back{
@@ -480,16 +479,16 @@ top:0;
 left:0;
 }
 ```
-![Config table page](img/tasto_indietro.png)
+![Tasto indietro](img/tasto_indietro.png)
 
 ##### Gestione credito (Nishan)
 Con questo modulo posso gestire il credito massimo che si puo avere. Poi come detto in precedenza, quando inserisco un nuovo utente controllo che il credito iniziale sia minore uguale al massimo.
 
-![Config table page](img/modifica_credito.png)
+![Modifica credito](img/modifica_credito.png)
 ##### Storico utente (Nishan)
 QUesta pagina mostra le capsule prese dall'utente. Quando l'utente accede prendo il nome utente e uso quello per mostrare lo storico.
 
-![Config table page](img/storico_imp.png)
+![Storico](img/storico_imp.png)
 <!--
 In questo capitolo dovrà essere mostrato come è stato realizzato il
 lavoro. Questa parte può differenziarsi dalla progettazione in quanto il
@@ -525,6 +524,42 @@ Per eventuali dettagli si possono inserire riferimenti ai diari.
 
 ##### Gestione utenti(Nishan)
 
+#### Applicazione Android(Raffaele)
+Con la seguente riga di codice abilito l'applicazione alla navigazione in internet.
+```
+<uses-permission android:name="android.permission.INTERNET"/>
+```
+Mentre con quest'altra riga di codice abilito l'applicazione a ricavare informazioni sullo stato di rete.
+```
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+```
+Con questo pezzo di codice, nella classe java dell'applicazione, nel metodo onCreate ricavo lo stato della rete tramite le classi ConnectivityManager e NetworkInfo.
+Successivamente controllo che l'applicazione sia connessa alla rete e informo tramite un toast(popup) l'esito sia positivo che negativo.
+In caso di esito positivo creo la webview e la reindirizzo, tramite il metodo loadUrl, al sito desiderato.
+```
+ @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        ConnectivityManager cManager = (ConnectivityManager) getSystemService(this.CONNECTIVITY_SERVICE);
+        NetworkInfo nInfo = cManager.getActiveNetworkInfo();
+        if(nInfo!= null && nInfo.isConnected()){
+            Toast.makeText(this,"Connessione a internet disponibile",Toast.LENGTH_LONG).show();
+
+
+            WebView webView = (WebView)findViewById(R.id.webView);
+            webView.setWebViewClient(new WebViewClient());
+            webView.getSettings().setJavaScriptEnabled(true);
+            webView.setVerticalScrollBarEnabled(false);
+            webView.setHorizontalScrollBarEnabled(false);
+            webView.loadUrl("192.168.1.253");
+        }
+        else{
+            Toast.makeText(this,"Connessione a internet non disponibile",Toast.LENGTH_LONG).show();
+        }
+    }
+```
 ### HW
 
 #### Servo motore(Andrea)
