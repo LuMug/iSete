@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
             webView.setHorizontalScrollBarEnabled(false);
             //Indirizzo l'app ad uno specifico sito
             //webView.loadUrl("sitoIsete");
-            webView.loadUrl("http://www.google.ch/");
+            webView.loadUrl("192.168.1.253");
         }
         //se non ha una connessione do un messagio d'errore
         else{
