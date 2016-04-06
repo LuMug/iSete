@@ -5,12 +5,15 @@
 	sess("db")->start();
 	if(!empty($nome)){
 		$ret = sess("db")->query("DELETE FROM configurazione WHERE co_nome='$nome'");
+		if($ret){
+			echo "Configurazione rimossa correttamente";
+		}
+		else{
+			echo "Configurazione non trovata";
+		}
 	}
 	else{
 		echo "Non hai inserito tutti i campi obbligatori!"; 
 	}
 	sess("db")->stop();
-?>	
-<html>
-<meta http-equiv="refresh" content="1;URL=index.php">
-</html>
+?>

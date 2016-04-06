@@ -1,16 +1,8 @@
 <?php
-	include "check.php";
+	//include "check.php";
 	sess("db")->start();
 	$err = "";
 	$succ = "";
-	$usr = sess("usr");
-	$pwd = sess("pwd");
-	$show = false;
-	$query = sess("db")->query("select ut_id as 'id' from utente where ut_email = '$usr' and ut_password = '". md5($pwd) . "'");
-	$el = sess("db")->fetch($query);
-	if($el['id'] == '1'){
-		$show = true;
-	}
 	if(isset($_POST["nome"]) && isset($_POST["cognome"]) && isset($_POST["pwd"])){
 		$email = $usr;
 		$nome = $_POST["nome"];
@@ -55,27 +47,15 @@
 	</style>
 </head>
 <body>
-	<div class="container-fluid">
+	<div class="container-fluid" id="profile">
+		<div class="row"><div class="col-xs-12">&nbsp;</div></div>
+		<div class="row"><div class="col-xs-12">&nbsp;</div></div>
 		<div class="row"><div class="col-xs-12">&nbsp;</div></div>
 		<div class="row">
 			<div class="col-xs-1 col-sm-2 col-md-3"></div>
-			<form method="post" action="#" class="form-horizontal col-xs-10 col-sm-8 col-md-6 panel panel-default">
+			<form method="post" action="#profile" class="form-horizontal col-xs-10 col-sm-8 col-md-6 panel panel-default">
 				<h1>
 				Profilo
-					<div class="dropdown pull-right">
-						<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
-							<span class="glyphicon glyphicon-cog"></span>
-						</button>
-						<ul class="dropdown-menu">
-						<?php if($show){ ?>
-							<li><a href="configurazione/index.php">Configurazione</a></li>
-						<?php } ?>
-							<li><a href="storico/index.php">Storico</a></li>
-						<?php if($show){ ?>
-							<li><a href="utenti/index.php">Utenti</a></li>
-						<?php } ?>
-						</ul>
-					</div>
 				</h1>
 				<div class="form-group">
 					<label class="col-xs-4 control-label" for="nome">Nome</label>
@@ -113,19 +93,13 @@
 					<div class="col-xs-1 col-sm-4"></div>
 				</div>
 				<div class="form-group btn-group btn-group-justified">
-					<div class="col-xs-2 col-sm-4">
-						<a href="index.php" id="back" class="btn btn-link col-xs-12">
-							<span class="glyphicon glyphicon-arrow-left"></span>
-						</a>
-					</div>
-					<div class="col-xs-0 col-sm-1"></div>
-					<div class="col-xs-4 col-sm-3">
+					<div class="col-xs-5 col-sm-4">
 						<a href="logout.php" class="btn btn-link col-xs-12">
 							<span class="glyphicon glyphicon-log-out"></span> Logout
 						</a>
 					</div>
-					<div class="col-xs-0 col-sm-1"></div>
-					<div class="col-xs-6 col-sm-3">
+					<div class="col-xs-2 col-sm-4"></div>
+					<div class="col-xs-5 col-sm-4">
 						<button class="btn btn-primary col-xs-12" type="submit">
 							<span class="glyphicon glyphicon-floppy-disk"></span> Salva
 						</button>
