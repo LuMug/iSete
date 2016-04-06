@@ -27,9 +27,9 @@ Come ha scritto Raffaele nella sua parte, abbiamo tagliato tutti i pezzi e per f
 abbiamo utilizzato cartone e incollato il tutto con la colla calda
 il Risultato:
 
-![Risultato](img/struttura_fisica1.png)
+![Risultato](../img/struttura_fisica1.png)
 
-![Risultato](img/struttura_fisica2.png)
+![Risultato](../img/struttura_fisica2.png)
 
 #####Serhiy
 
