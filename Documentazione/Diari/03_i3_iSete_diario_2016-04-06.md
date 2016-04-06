@@ -45,6 +45,9 @@ il Risultato:
 #####Raffaele
 
 ##  Punto della situazione rispetto alla pianificazione
-
+#####Raffaele
+In linea con il programma
 
 ## Programma di massima per la prossima giornata di lavoro
+#####Raffaele & Nishan
+Implementazione espulsione capsule a ferro di cavallo
