@@ -38,6 +38,8 @@ il Risultato:
 
 #####Serhiy
 
+Nella giornata di oggi ho cominciato a lavorare alla possibilità di poter prendere le capsule del caffè anche quando il sito è offline. Per far ciò ho sviluppato un'applicazione user-friendly in JAVA che riuscisse a collegarsi al DB, fare il login con il nome utente e la password e recuperare i tipi di capsule disponibili.
+
 
 ##  Problemi riscontrati e soluzioni adottate
 #####Ettore
@@ -54,6 +56,7 @@ in ambiente linux (similar, almeno) fosse presente il comando shell sudo (che pe
 di un determinato comando come, appunto, utente amministratore), ma solo anch'esso ci dava un errore
 di mancata password. Cercando su internet, abbiamo trovato la corretta soluzione per far si che il comando funzioni
 adeguatamente (vedere in Sito/phps/index.php).
+
 #####Serhiy
 
 #####Raffaele
@@ -71,3 +74,7 @@ Implementazione espulsione capsule a ferro di cavallo
 - 
 #####Andrea
 - Incrementazione dello script in java in modo da rendere modulare la comanda di capsule.
+
+#####Serhiy
+
+Termine del programma in JAVA per l'acquisto delle capsule.
