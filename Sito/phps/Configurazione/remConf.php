@@ -1,7 +1,7 @@
 <?php 
-	include "..\connection.php";
+	include "../connection.php";
 	$nome = $_POST['nome'];
-	$valore = $_POST['valore'];
+	//$valore = $_POST['valore'];
 	sess("db")->start();
 	if(!empty($nome)){
 		$ret = sess("db")->query("DELETE FROM configurazione WHERE co_nome='$nome'");

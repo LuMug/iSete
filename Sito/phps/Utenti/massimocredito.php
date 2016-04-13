@@ -1,15 +1,18 @@
 <?php 
-	include "..\check.php";
+	include "../connection.php";
+	$email = $_POST['email'];
 	$credito = $_POST['credito'];
 	sess("db")->start();
-	if(!empty($credito)){
-		$ret = sess("db")->query("UPDATE configurazione SET co_valore='".$credito."' WHERE co_nome='massimo credito'");
-		echo "Credito modificato!";  
+	if(!empty($email) && isset($credito)){
+		$ret = sess("db")->query("UPDATE utente SET ut_credito = $credito WHERE ut_email = '$email'");
+		if($ret){
+			echo "Credito modificato per $email!";
+		}
+		else{
+			echo "Credito NON modificato";
+		}
 	}else{ 
 		echo "Non hai inserito tutti i campi obbligatori!";  
 	}
 	sess("db")->stop();
-?>	
-<html>
-<meta http-equiv="refresh" content="0;URL=index.php">
-</html>
+?>

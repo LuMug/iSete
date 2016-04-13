@@ -1,5 +1,5 @@
 <?php 
-	include "..\connection.php";
+	include "../connection.php";
 	$nome = $_POST['nome'];
 	$valore = $_POST['valore'];
 	$descrizione = $_POST['descrizione'];

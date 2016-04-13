@@ -1,28 +1,32 @@
 <?php 
-	include "..\check.php";
-	$nome = $_POST['nome'];
-	$cognome = $_POST['cognome'];
+	include "../connection.php";
 	$credito = $_POST['credito'];
-	$password = $_POST['password'];
-	$email = $_POST['email'];
+	$pass = $_POST['password'];
+	$pass2 = $_POST['ripeti'];
+	$email = $_POST['email'];	
+	$nomcog = explode(".", explode("@", $email)[0]);
+	$nome = ucfirst($nomcog[0]);
+	$cognome = ucfirst($nomcog[1]);
 	sess("db")->start();
-	$query1 = "SELECT co_valore FROM configurazione where co_nome='massimo credito'";
-	$tmp1 = sess("db")->query($query1);
-	$rr = sess("db")->fetch($tmp1);
-	if(!empty($nome) && !empty($cognome) && !empty($credito) && !empty($password)){
-		if($credito <= $rr['co_valore']){
+	if(!empty($email) && !empty($credito) && !empty($pass)){
+		if($pass != $pass2){
+			echo "password diverse";
+		}
+		elseif($credito >= 0){
 			$ret = sess("db")->query("INSERT INTO utente (ut_nome, ut_cognome, ut_credito, ut_password, ut_email)" . 
-			"VALUES ('".$nome."', '".$cognome."', '".$credito."', '".md5($password)."', '".$email."');");
-			echo "Utente aggiunto!";  
+			"VALUES ('$nome', '$cognome', $credito, '" . md5($pass) . "', '$email')");
+			if($ret){
+				echo "Utente aggiunto!";
+			}
+			else{
+				echo "Utente NON aggiunto";
+			}
 		}else{
-			echo "credito troppo alto!";  
+			echo "credito troppo basso!";  
 		}
 	}
 	else{
 		echo "Non hai inserito tutti i campi obbligatori!";  
 	}
 	sess("db")->stop();
-?>	
-<html>
-<meta http-equiv="refresh" content="0;URL=index.php">
-</html>
+?>

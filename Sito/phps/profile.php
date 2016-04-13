@@ -93,17 +93,13 @@
 					<div class="col-xs-1 col-sm-4"></div>
 				</div>
 				<div class="form-group btn-group btn-group-justified">
-					<div class="col-xs-5 col-sm-4">
-						<a href="logout.php" class="btn btn-link col-xs-12">
-							<span class="glyphicon glyphicon-log-out"></span> Logout
-						</a>
-					</div>
-					<div class="col-xs-2 col-sm-4"></div>
-					<div class="col-xs-5 col-sm-4">
+					<div class="col-xs-3 col-sm-4"></div>
+					<div class="col-xs-6 col-sm-4">
 						<button class="btn btn-primary col-xs-12" type="submit">
 							<span class="glyphicon glyphicon-floppy-disk"></span> Salva
 						</button>
 					</div>
+					<div class="col-xs-3 col-sm-4"></div>
 				</div>
 			</form>
 			<div class="col-xs-1 col-sm-2 col-md-3"></div>

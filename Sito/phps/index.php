@@ -20,7 +20,7 @@
 				$v = sess("db")->fetch($v);
 				$v_id = $v['ut_id'];
 				$v_cr = $v['ut_credito'];
-				exec("sudo -u root -S java -classpath .:classes:/opt/pi4j/lib/'*' ServoMotore $qta 2>&1 < /var/sudopass.secret");
+				exec("sudo -u root -S java -classpath .:classes:/opt/pi4j/lib/'*' ServoMotoreModulare $qta $cap 2>&1 < /var/sudopass.secret");
 				$query = sess("db")->query("update utente set credito=" . (--$v_cr) . " where ut_id=$v_id");
 				$query = sess("db")->query("insert into prende(ut_id, ca_tipo, pre_quantita) values ($v_id, '$cap', $qta)");
 				if($query){
@@ -72,6 +72,11 @@
 						</li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="logout.php">
+								<span class="glyphicon glyphicon-log-out"></span>
+							</a>
+						</li>
 						<li><a href="javascript:void(0);">Benvenuto/a <?php echo $el['nome'] ?>!</a></li>
 					</ul>
 				</div>

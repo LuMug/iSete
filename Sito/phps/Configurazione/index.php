@@ -1,6 +1,5 @@
 <?php
-
-	include "..\connection.php";
+	//include "..\connection.php";
 	sess("db")->start();
 	$cnt = 0;
 	$query = "SELECT co_nome, co_valore, co_descrizione FROM configurazione";
@@ -18,7 +17,6 @@
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-	<?php echo $script; ?>
 </head>
 <body>
 	<div class="container" id="conf">
@@ -96,7 +94,7 @@
 						</select><br>
 						Valore: <br><input type="text" name="valore" class="form-control" placeholder="Inserisci il valore"><br>
 						Descrizione: <br><input type="text" name="descrizione" class="form-control" placeholder="Inserisci la descrizione"><br>
-						<input type="button" onclick="updConf()" value="Inserisci">
+						<input type="button" onclick="updConf()" value="Aggiorna">
 					</form>
 				</div>
 				</div>
