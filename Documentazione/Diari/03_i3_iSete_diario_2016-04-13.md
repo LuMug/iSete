@@ -9,6 +9,8 @@
 
 #####Andrea
 
+Durante la mattinata, dopo aver fatto una riunione per stabilire lo sprint, ho continuato con il lavoro che stavo facendo durante la lezione precedente. Dopo aver aggiustato un paio di righe di codice dal codiche che avevo fatto in precedenza ho implementato il codice in modo tale che fosse modulare. Prima di iniziare ho cambiato il servo motore, ma poiché era diverso, ho dovuto ritoccare un'altra volta il codice. Dopodiché ho aggiunto un servo motore e in seguito ho implementato il codice. Durante l'implementazione del codice ho dovtuo collegarmi al DB tramite java e questo mi ha causato molti problemi. Dopo averne risolti alcuni ho provato a compilare, ma poiché mi risultava questo errore non ho potuto andare avanti e poiché non avevo altro tempo, non ho avuto tempo di provare a correggere il codice: java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+
 #####Raffaele
 
 Nel corso della mattinata abbiamo fatto una riunione e spartito i nuovi lavori da fare in questo nuovo sprint.
@@ -33,11 +35,21 @@ Visto che le cose che ho fatto settimana scorsa non andavano bene, ho rifatto un
 
 #####Andrea
 
+Ho avuto dei problemi durante il cambiamento del servo motore e ho impiegato un po' di tempo per riaggiustare il codice.
+problema java.lang.ClassNotFoundException: com.mysql.jdbc.Driver che non ho avuto il tempo di risolvere
+
 #####Serhiy
 
 #####Raffaele
 
 ##  Punto della situazione rispetto alla pianificazione
 
+#####Andrea
+
+Pensavo di riuscire a rendere la comanda modulare ma ho ancora qualche problema a riguardo
 
 ## Programma di massima per la prossima giornata di lavoro
+
+#####Andrea 
+
+concludere la comanda modulare
