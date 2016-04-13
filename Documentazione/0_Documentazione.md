@@ -437,6 +437,31 @@ su qualunque smartphone android.
 #### Gestione (Andrea & Serhiy)
 Per la memorizzazione offline e il collegamento ethernet abbiamo inizialmente deciso di usare Arduino, ma a causa di troppi problemi riscontrati abbiamo deciso di usare Raspberry. Abbiamo deciso di fare uno codice in java che, a dipendenza di quante capsule venivano scelte, faceva girare il servo motore n volte.
 
+#### Struttura (Nishan & Raffaele)
+Per la struttura abbiamo pensato ad una superificie da attaccare al muro sulla quale posizionare dei separatori per le capsule.
+Le capsule saranno visibili poichè si collegeranno i separatori con del plexiglass.
+
+![Dispenser 3d](img/dispenser_3d.jpg)
+Uno schizzo fatto alla lavagna con qualche misura annotata.
+
+![Dispenser dall'alto](img/dispenser_vista_alto.png)
+Progettazione dall'alto del dispenser con misure più nel dettaglio:
+
+- 1) Materiale che andrà attaccato alla parete.
+Dimensioni: 6.5x30x1 centimetri.
+- 2) Materiale che avrà la funziona di separatore tra le diverse colonne di capsule.
+Dimensioni: 1x25x3 centimetri in modo da contenere una decina di capsule e avere lo spazio per creare un'unica via d'uscita.
+- 3) Plexiglass per fare in modo di poter vedere le capsule all'interno del dispenser.
+Dimensioni: 6.5x25x0.3 centimetri per poter ricoprire tutta la lunghezza dei separatori.
+
+
+#### Espulsione capsule (Nishan & Raffaele)
+Per quanto riguarda l'espulsione delle capsule abbiamo pensato di far ruotare le capsule usando il metodo a ferro di cavallo.
+![Espulsione Capsule](img/espulsione_progettazione.jpg)
+Il servo motore avrà attaccata un'elica che a sua volta sarà collegata al "ferro di cavallo" per farlo girare.
+Con questo metodo si riesce a prendere una capsula alla volta, poichè grazie alla rotazione del contenitore si chiude lo spazio per una seconda capsula.
+![Servo](img/Servo.png)
+
 #### Memorizzazione offline
 
 #### Collegamento ethernet
