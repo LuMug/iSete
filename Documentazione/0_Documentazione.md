@@ -141,10 +141,10 @@ Data di consegna: 11.05.2016
   > design such a large-scale microprocessor in just weeks.*
 
 -->
-_Do you need a coffe but you don't have with you for but it? Don't worry, with the new dispenser you can buy everything coffe pod trought your account.
-You just do the identification, add your credit to your account and you can buy coffe pod when you want, everywhere you are.
-With the new dispenser you could buy coffe pod from your phone without go to the coffe maker !
-What do you waiting for? Take the coffe pod you prefer!_
+_Do you need a coffe but you don't have with for buy it? Don't worry: with the new dispenser you can buy every type of coffee pod trought your account!
+You just have to log in, add your credit to your account and you can buy coffee pod when you want, everywhere you are.
+With the new dispenser you could buy coffee pod from your phone without go to the coffe maker !
+What do you waiting for? Take your preferred coffee pod!_
 
 ### Scopo
 
@@ -391,7 +391,20 @@ per la realizzazione del prodotto.
 
 #### Sitoweb
 
-##### Login(Ettore)
+##### Login(Ettore & Usha)
+
+La pagina di login, dovrebbe diventare qualcosa di simile
+all'immagine sottostante.
+
+![Login](img/login.png)
+
+Da cui si accede, poi, a dipendenza dell'utente, ad una pagina differente (richiesta o configurazione).
+
+##### Richiesta (Ettore & Usha)
+La pagina richiesta abbiamo deciso di farla in questo modo
+
+<!-- da terminare -->
+
 
 ##### Pagina di configurazione(Raffaele)
 
