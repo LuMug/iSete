@@ -47,11 +47,16 @@ problema java.lang.ClassNotFoundException: com.mysql.jdbc.Driver che non ho avut
 
 #####Raffaele
 
+Insieme a Nishan abbiamo fatto i binari per far scendere le capsule, ma ci siamo accorti che sono inutili perchè il plexyglass avrà la funzione di contenitore in modo da non far fuoriuscire le capsule.
+
 ##  Punto della situazione rispetto alla pianificazione
 
 #####Andrea
 
 Pensavo di riuscire a rendere la comanda modulare ma ho ancora qualche problema a riguardo
+
+#####Raffaele
+In linea con il programma
 
 ## Programma di massima per la prossima giornata di lavoro
 #####Ettore
@@ -61,3 +66,6 @@ Creazione gruppi identificativi per i tipi di utente.
 #####Andrea 
 
 concludere la comanda modulare
+
+#####Raffaele
+Riuscire a concludere un prototipo per avere qualcosa in mano.
