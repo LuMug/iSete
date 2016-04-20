@@ -480,50 +480,6 @@ Con questo metodo si riesce a prendere una capsula alla volta, poichè grazie al
 
 ## Implementazione
 
-##### Gestione utenti (Nishan)
-###### Aggiungi utente
-Per svolgere questa pagina ho usato Boostrap.
-Il per chiedere il credito ho inserto un campo per soli numeri, per la mail ho usato una funzione di controllo che ha usato Ettore per il login. Quando si inserisce la password e le inserisco nel database le codifico con la una funzione che si chiama .md5. Poi tramite una funzione controllo se le due password sono uguali.
-```
-function controllo(modulo){
-    if (modulo.password.value != modulo.ripeti.value) {
-		alert("La password inserita non coincide con la prima!")
-		modulo.password.focus()
-		modulo.password.select()
-		return false
-	  }
-	  return true
-	}
-  ```
-C'è anche in controllo che obbliga a inserire tutti i campi.
-```
-if(!empty($nome) && !empty($cognome) && !empty($credito) && !empty($password)){
-  ```
-  Con questo if controllo se tutti i campi sono completati.
-
-![Aggiungi utenti](img/aggiungi.PNG)
-###### Rimuovi utente
-Per rimuovere un utente basta inserire l'email dell'utnete visto che lo abbiamo messo primary key quindi vado a cancellare quell'utente con la mail specificata in precedenza.
-
-![Rimuovi utenti](img/rimuovi.png)
-Mi è stato richiesto di inserire un tasto che riporta l'utnete sulla pagina del proprio profilo. Per questo ho deciso di usare un file css dove specifico dove deve rimanere
-```
-#back{
-position:fixed;
-top:0;
-left:0;
-}
-```
-![Tasto indietro](img/tasto_indietro.PNG)
-
-##### Gestione credito (Nishan)
-Con questo modulo posso gestire il credito massimo che si puo avere. Poi come detto in precedenza, quando inserisco un nuovo utente controllo che il credito iniziale sia minore uguale al massimo.
-
-![Modifica credito](img/modifica_credito.PNG)
-##### Storico utente (Nishan)
-QUesta pagina mostra le capsule prese dall'utente. Quando l'utente accede prendo il nome utente e uso quello per mostrare lo storico.
-
-![Storico](img/storico_imp.PNG)
 <!--
 In questo capitolo dovrà essere mostrato come è stato realizzato il
 lavoro. Questa parte può differenziarsi dalla progettazione in quanto il
@@ -550,14 +506,74 @@ Per eventuali dettagli si possono inserire riferimenti ai diari.
 
 #### Sitoweb
 
+##### Gestione utenti (Nishan)
+###### Aggiungi utente
+Per svolgere questa pagina ho usato Boostrap.
+Il per chiedere il credito ho inserto un campo per soli numeri, per la mail ho usato una funzione di controllo che ha usato Ettore per il login. Quando si inserisce la password e le inserisco nel database le codifico con la una funzione che si chiama .md5. Poi tramite una funzione controllo se le due password sono uguali.
+```
+function controllo(modulo){
+    if (modulo.password.value != modulo.ripeti.value) {
+		alert("La password inserita non coincide con la prima!")
+		modulo.password.focus()
+		modulo.password.select()
+		return false
+	  }
+	  return true
+	}
+  ```
+C'è anche in controllo che obbliga a inserire tutti i campi.
+```
+if(!empty($nome) && !empty($cognome) && !empty($credito) && !empty($password)){
+  ```
+  Con questo if controllo se tutti i campi sono completati.
+
+![Aggiungi utenti](img/aggiungi.PNG)
+###### Rimuovi utente
+Per rimuovere un utente basta inserire l'email dell'utente visto che lo abbiamo messo primary key quindi vado a cancellare quell'utente con la mail specificata in precedenza.
+
+![Rimuovi utenti](img/rimuovi.png)
+Mi è stato richiesto di inserire un tasto che riporta l'utnete sulla pagina del proprio profilo. Per questo ho deciso di usare un file css dove specifico dove deve rimanere
+```
+#back{
+position:fixed;
+top:0;
+left:0;
+}
+```
+![Tasto indietro](img/tasto_indietro.PNG)
+
+##### Gestione credito (Nishan)
+Con questo modulo posso gestire il credito massimo che si puo avere. Poi come detto in precedenza, quando inserisco un nuovo utente controllo che il credito iniziale sia minore uguale al massimo.
+
+![Modifica credito](img/modifica_credito.PNG)
+##### Storico utente (Nishan)
+Questa pagina mostra le capsule prese dall'utente. Quando l'utente accede prendo il nome utente e uso quello per mostrare lo storico.
+
+![Storico](img/storico_imp.PNG)
+
 ##### Login(Ettore)
 
-##### Pagina di configurazione(Raffaele)
+##### Sezione configurazione(Raffaele)
+
+La sezione è configurata in modo da avere una tabella centrale con sopra tre bottoni per le funzionalità: aggiungi, rimuovi e modifica.
+![Configurazione implementazione](img/implementazioneConfigurazione.PNG)
+
+###### Aggiungi configurazione
+
+Quando si clicca il bottone "Aggiungi configurazione" uscirà un popup in cui viene richiesto il nome, il valore e una descrizione.
+![Aggiungi configurazione](img/aggiungiConfigurazione.PNG)
+
+###### Modifica configurazione
+
+Quando si clica il bottone "Modifica configurazione" uscirà un popup dove si deve scegliere tramite un menù la configurazione, il suo nuovo valore ed un eventuale descrizione. 
+![Modifica configurazione](img/modificaConfigurazione.PNG)
+
+###### Elimina Configurazione
+
+Quando si clicca il bottone "Rimuovi configurazione" uscirà uscirà un popup dove si deve scegliere tramite un menü la configurazione da rimuovere.
+![Rimuovi configurazione](img/rimuoviConfigurazione.PNG)
 
 ##### Pagina Statistiche(Raffaele)
-
-
-##### Gestione utenti(Nishan)
 
 #### Applicazione Android(Raffaele)
 Con la seguente riga di codice abilito l'applicazione alla navigazione in internet.
