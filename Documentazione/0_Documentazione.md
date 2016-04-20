@@ -327,6 +327,7 @@ prodotto fin nei suoi dettagli. Una buona progettazione permette
 all’esecutore di evitare fraintendimenti e imprecisioni
 nell’implementazione del prodotto.
 -->
+![Gantt](img/gantt.png)
 ### Design dell’architettura del sistema
 <!--
 Descrive:
