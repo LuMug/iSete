@@ -438,7 +438,7 @@ Ho progettato una pagina molto semplice con una tabella chiara con le informazio
 Questa pagina è visible solamente agli utenti che sono registrati e tramite la connesione al database faccio vedere
 tutti gli acquisti.
 
-![Storico](img/Storico.png)
+![Storico](img/storico_imp.PNG)
 
 #### Applicazione Android(Raffaele)
 L'applicazione Android ho pensato di farla semplicemente tramite una
@@ -476,7 +476,7 @@ Per quanto riguarda la posizione dei servo motori praticheremo dei fori alla bas
 
 #### Espulsione capsule (Nishan & Raffaele)
 Per quanto riguarda l'espulsione delle capsule abbiamo pensato di far ruotare le capsule usando il metodo a ferro di cavallo.
-![Espulsione Capsule](img/espulsione_progettazione.jpg)
+![Espulsione Capsule](img/espulsione_progettazione.png)
 Il servo motore avrà attaccata un'elica che a sua volta sarà collegata al "ferro di cavallo" per farlo girare.
 Con questo metodo si riesce a prendere una capsula alla volta, poichè grazie alla rotazione del contenitore si chiude lo spazio per una seconda capsula.
 ![Servo](img/Servo.png)
