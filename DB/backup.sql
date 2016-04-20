@@ -383,15 +383,17 @@ CREATE TABLE IF NOT EXISTS `utente` (
   `ut_cognome` varchar(30) DEFAULT NULL,
   `ut_password` char(32) DEFAULT NULL,
   `ut_email` varchar(50) DEFAULT NULL,
-  `ut_credito` int(11) DEFAULT NULL
+  `ut_credito` int(11) DEFAULT NULL,
+  `ut_gruppo` enum('Responsabile', 'Utente') default 'Utente'
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=251 ;
 
 --
 -- Dumping data for table `utente`
 --
 
+INSERT INTO `utente` (`ut_id`, `ut_nome`, `ut_cognome`, `ut_password`, `ut_email`, `ut_credito`, `ut_gruppo`) VALUES
+(1, 'Karen', 'Johnston', 'a87c2c813a64a69074effa1db3de2559', 'karen.johnston@samtrevano.ch', 64, 'Responsabile');
 INSERT INTO `utente` (`ut_id`, `ut_nome`, `ut_cognome`, `ut_password`, `ut_email`, `ut_credito`) VALUES
-(1, 'Karen', 'Johnston', 'a87c2c813a64a69074effa1db3de2559', 'karen.johnston@samtrevano.ch', 64),
 (2, 'Louise', 'Castillo', 'b88d6b04a9dc38860301f6bdd81e5ccd', 'louise.castillo@samtrevano.ch', 86),
 (3, 'Lori', 'Moreno', 'f7a88d7c3168218b580aa68ab3030491', 'lori.moreno@samtrevano.ch', 52),
 (4, 'Juan', 'Sullivan', 'd3dc39b29f873ec94631cdbe4e92dbf7', 'juan.sullivan@samtrevano.ch', 34),
