@@ -558,20 +558,78 @@ Questa pagina mostra le capsule prese dall'utente. Quando l'utente accede prendo
 La sezione è configurata in modo da avere una tabella centrale con sopra tre bottoni per le funzionalità: aggiungi, rimuovi e modifica.
 ![Configurazione implementazione](img/implementazioneConfigurazione.PNG)
 
+La tabella è strutturata nel seguente modo:
+```
+<?php while($row = sess("db")->fetch($tmp)){ ?>
+	<tr>
+		<td><?php echo $row["co_nome"];?></td>
+		<td><?php echo $row["co_valore"];?></td>
+		<td><?php echo $row["co_descrizione"];?></td>
+	</tr>
+<?php }
+```
+
 ###### Aggiungi configurazione
 
 Quando si clicca il bottone "Aggiungi configurazione" uscirà un popup in cui viene richiesto il nome, il valore e una descrizione.
 ![Aggiungi configurazione](img/aggiungiConfigurazione.PNG)
+
+Una volta confermata l'aggiunta, il sito si reindirizza ad un'altra pagina che aggiunge la configurazione al database:
+```
+$nome = $_POST['nome'];
+$valore = $_POST['valore'];
+$descrizione = $_POST['descrizione'];
+sess("db")->start();
+if(!empty($nome) && !empty($valore)){
+	$ret = sess("db")->query("INSERT INTO configurazione (co_nome, co_valore, co_descrizione) VALUES ('".$nome."', '".$valore."', '".$descrizione."');");
+	if($ret){
+		echo "Configurazione aggiunta correttamente";
+	}else{
+		echo "Configurazione già presente";
+	}
+}
+```
 
 ###### Modifica configurazione
 
 Quando si clica il bottone "Modifica configurazione" uscirà un popup dove si deve scegliere tramite un menù la configurazione, il suo nuovo valore ed un eventuale descrizione. 
 ![Modifica configurazione](img/modificaConfigurazione.PNG)
 
+Una volta confermata la modifica, il sito si reindirizza ad un'altra pagina che modifica la configurazione nel database:
+```
+$nome = $_POST['nome'];
+$valore = $_POST['valore'];
+$descrizione = $_POST['descrizione'];
+sess("db")->start();
+if(!empty($nome) && !empty($valore) && isset($descrizione)){
+	$ret = sess("db")->query("UPDATE configurazione SET co_nome = '$nome', co_valore = '$valore', co_descrizione = '$descrizione' WHERE co_nome = '$nome';");
+	if($ret){
+		echo "Aggiornamento configurazione effettuato";
+	}
+	else{
+		echo "Errore imprevisto";
+	}
+}
+```
 ###### Elimina Configurazione
 
 Quando si clicca il bottone "Rimuovi configurazione" uscirà uscirà un popup dove si deve scegliere tramite un menü la configurazione da rimuovere.
 ![Rimuovi configurazione](img/rimuoviConfigurazione.PNG)
+
+Una volta confermata l'eliminazione, il sito si reindirizza ad un'altra pagina che elimina la configurazione nel database:
+```
+$nome = $_POST['nome'];
+sess("db")->start();
+if(!empty($nome)){
+	$ret = sess("db")->query("DELETE FROM configurazione WHERE co_nome='$nome'");
+	if($ret){
+		echo "Configurazione rimossa correttamente";
+	}
+	else{
+		echo "Configurazione non trovata";
+	}
+}
+```
 
 ##### Pagina Statistiche(Raffaele)
 
