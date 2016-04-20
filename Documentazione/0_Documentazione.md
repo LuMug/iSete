@@ -1,4 +1,4 @@
-# Esempio di documentazione
+# iSete
 
 
 1. [Introduzione](#introduzione)
@@ -141,10 +141,10 @@ Data di consegna: 11.05.2016
   > design such a large-scale microprocessor in just weeks.*
 
 -->
-_Do you need a coffe but you don't have with for buy it? Don't worry: with the new dispenser you can buy every type of coffee pod trought your account!
+_Do you need a coffee but you don't have with for buy it? Don't worry: with the new dispenser you can buy every type of coffee pod trought your account!
 You just have to log in, add your credit to your account and you can buy coffee pod when you want, everywhere you are.
 With the new dispenser you could buy coffee pod from your phone without go to the coffe maker !
-What do you waiting for? Take your preferred coffee pod!_
+What are you waiting for? Take your preferred coffee pod!_
 
 ### Scopo
 
@@ -198,8 +198,9 @@ utenti e capsule e ricaricare il saldo.
 
   -   …
 -->
-Al momento per usufruire della macchinetta del caffé ognuno si deve comprare le proprie capsule.
-Gli utenti sono tutti coloro che vogliono utilizzare la macchinetta del caffé.
+Al momento coloro che usufruiscono della macchinetta del caffé sono solo i docenti.
+Non esiste nulla di simile al momento, chi vuole usare la macchinetta del caffé deve comprarsi le proprie capsule.
+Per utilizzare questo prodotto non bisogna avere competenze particolari.
 
 
 ### Analisi e specifica dei requisiti
@@ -307,25 +308,15 @@ particolare è coinvolto nel progetto? Che particolarità e limitazioni
 presenta? Che hw sarà disponibile durante lo sviluppo?
 -->
 #### Software
-- Windows 7
-- Apache ?
-- MySQL ?
-- PHP ?
+- Apache 2.4.10
+- MySQL 5.5.44-0+deb8u1
+- PHP 5.6.17-0+deb8u1
+- Android Studio 2.0
+- Raspbian 8.0
+- API Google Chart
 - Bootstrap 3.3.6
 - JQuery 1.12.0
-- SDK Java ?
-- JpGraph 3.5.0b1
-- GanttProject 2.7.2
-- MySQL Workbench 6.3.6
-- Dia 0.97.2
-- Atom 1.5.4
-- Source Tree 1.8.2.3
-- Android Studio ?
-- Arduino ?
-- Raspberry ?
-- Browser ...
-- Office 2013
-- FileZilla ?
+- JDK Java 1.8.0_65
 
 #### Hardware
 
@@ -336,6 +327,7 @@ prodotto fin nei suoi dettagli. Una buona progettazione permette
 all’esecutore di evitare fraintendimenti e imprecisioni
 nell’implementazione del prodotto.
 -->
+![Gantt](img/gantt.png)
 ### Design dell’architettura del sistema
 <!--
 Descrive:
@@ -438,7 +430,7 @@ Ho progettato una pagina molto semplice con una tabella chiara con le informazio
 Questa pagina è visible solamente agli utenti che sono registrati e tramite la connesione al database faccio vedere
 tutti gli acquisti.
 
-![Storico](img/Storico.png)
+![Storico](img/storico_imp.PNG)
 
 #### Applicazione Android(Raffaele)
 L'applicazione Android ho pensato di farla semplicemente tramite una
@@ -468,9 +460,15 @@ Dimensioni: 1x25x3 centimetri in modo da contenere una decina di capsule e avere
 Dimensioni: 6.5x25x0.3 centimetri per poter ricoprire tutta la lunghezza dei separatori.
 
 
+Per permettere di collegare i componenti al Raspberry applicheremo dei supporti per tenere la base leggermente distante dal muro.
+
+![Posizione servo](img/posizione_servo.png)
+Per quanto riguarda la posizione dei servo motori praticheremo dei fori alla base dove inserirceli dentro.
+
+
 #### Espulsione capsule (Nishan & Raffaele)
 Per quanto riguarda l'espulsione delle capsule abbiamo pensato di far ruotare le capsule usando il metodo a ferro di cavallo.
-![Espulsione Capsule](img/espulsione_progettazione.jpg)
+
 Il servo motore avrà attaccata un'elica che a sua volta sarà collegata al "ferro di cavallo" per farlo girare.
 Con questo metodo si riesce a prendere una capsula alla volta, poichè grazie alla rotazione del contenitore si chiude lo spazio per una seconda capsula.
 ![Servo](img/Servo.png)
@@ -479,7 +477,6 @@ Con questo metodo si riesce a prendere una capsula alla volta, poichè grazie al
 
 #### Collegamento ethernet
 
-#### Servo motore (Nishan)
 
 ## Implementazione
 
@@ -504,7 +501,7 @@ if(!empty($nome) && !empty($cognome) && !empty($credito) && !empty($password)){
   ```
   Con questo if controllo se tutti i campi sono completati.
 
-![Aggiungi utenti](img/aggiungi.png)
+![Aggiungi utenti](img/aggiungi.PNG)
 ###### Rimuovi utente
 Per rimuovere un utente basta inserire l'email dell'utnete visto che lo abbiamo messo primary key quindi vado a cancellare quell'utente con la mail specificata in precedenza.
 
@@ -517,16 +514,16 @@ top:0;
 left:0;
 }
 ```
-![Tasto indietro](img/tasto_indietro.png)
+![Tasto indietro](img/tasto_indietro.PNG)
 
 ##### Gestione credito (Nishan)
 Con questo modulo posso gestire il credito massimo che si puo avere. Poi come detto in precedenza, quando inserisco un nuovo utente controllo che il credito iniziale sia minore uguale al massimo.
 
-![Modifica credito](img/modifica_credito.png)
+![Modifica credito](img/modifica_credito.PNG)
 ##### Storico utente (Nishan)
 QUesta pagina mostra le capsule prese dall'utente. Quando l'utente accede prendo il nome utente e uso quello per mostrare lo storico.
 
-![Storico](img/storico_imp.png)
+![Storico](img/storico_imp.PNG)
 <!--
 In questo capitolo dovrà essere mostrato come è stato realizzato il
 lavoro. Questa parte può differenziarsi dalla progettazione in quanto il
