@@ -8,6 +8,12 @@
 
 #####Ettore
 
+In questa giornata, ho fatto in modo che gli utenti si possano suddividere in due gruppi (Responsabile o utente).
+Per ora, ho dato la possibilità ad ogni responsabile di aggiungere altri utenti. Successivamente, assieme ad Andrea,
+siamo riusciti a fare in modo che il codice java modulare funzionasse assieme alla pagina php di richiesta.
+Inoltre, ho dato una mano a fare la struttura hardware. Per finire, volevo implementare i grafici all'interno del sito
+(creati da Raffaele), ma ci sono problemi di compatibilità, probabilmente, da sistemare.
+
 #####Andrea
 
 Durante la prima mezz'ora della mattinata abbiamo discusso sulle cose che c'erano da finire nello sprint, dopodiché ho cercato un modo di risolvere il problema che ho avuto durante la lezione precedente. Dopo svariate ricerche e diverse prove sono, con l'aiuto di Ettore e del professore Adriano Barchi, a far funzionare correttamente il codice.
@@ -39,6 +45,8 @@ Infine abbiamo riguardato la documentazione e modificato.
 
 #####Ettore
 
+
+
 #####Andrea
 
 Ho avuto qualche problema a risolvere il problema che ho avuto durante la lezione precedente, ma grazie a Ettore e a Barchi sono riuscito a risolvere.
@@ -56,9 +64,17 @@ Ho fatto tutto ciò che mi ero programmato di fare, purtroppo i miei compagni so
 
 Leggermente indietro alla pianificazione
 
+#####Ettore
+
+Da come mi sono prefissato, sono effettivamente riuscito nell'intento (non ottimalmente come credevo).
+
 ## Programma di massima per la prossima giornata di lavoro
 
 #####Ettore
+
+- Risolvere i problemi con i grafici
+- Sistemare i permessi dei responsabili
+- Definire un super utente
 
 #####Andrea
 
