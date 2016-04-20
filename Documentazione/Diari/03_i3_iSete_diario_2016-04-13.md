@@ -32,6 +32,8 @@ Visto che le cose che ho fatto settimana scorsa non andavano bene, ho rifatto un
 
 #####Serhiy
 
+Durante questa giornata ho discusso col gruppo per la scelta fatta precedentemente sull'uso di un'applicazione in Java per la possibilità di acquistare capsule anche quando la macchina è offline. Dopo questa discussione ho passato molto tempo su internet a cercare delle soluzioni alternative per poter fare quel lavoro. Ho concluso infine che la soluzione migliore è quella di usare un device ( un tablet android nel nostro caso ), sul quale è presente un'applicazione sempre in Java oppure il sito internet di iSete, tramite i quali si può effettuare l'acquisto quando la macchina non è connessa alla rete lan scolastica.
+
 
 ##  Problemi riscontrati e soluzioni adottate
 #####Ettore
@@ -45,6 +47,8 @@ problema java.lang.ClassNotFoundException: com.mysql.jdbc.Driver che non ho avut
 
 #####Serhiy
 
+Non ho riscontrato problemi nella giornata di oggi.
+
 #####Raffaele
 
 Insieme a Nishan abbiamo fatto i binari per far scendere le capsule, ma ci siamo accorti che sono inutili perchè il plexyglass avrà la funzione di contenitore in modo da non far fuoriuscire le capsule.
@@ -53,10 +57,10 @@ Insieme a Nishan abbiamo fatto i binari per far scendere le capsule, ma ci siamo
 
 #####Andrea
 
-Pensavo di riuscire a rendere la comanda modulare ma ho ancora qualche problema a riguardo
+Pensavo di riuscire a rendere la comanda modulare ma ho ancora qualche problema a riguardo.
 
 #####Raffaele
-In linea con il programma
+In linea con il programma.
 
 ## Programma di massima per la prossima giornata di lavoro
 #####Ettore
@@ -65,7 +69,12 @@ Creazione gruppi identificativi per i tipi di utente.
 
 #####Andrea 
 
-concludere la comanda modulare
+concludere la comanda modulare.
 
 #####Raffaele
+
 Riuscire a concludere un prototipo per avere qualcosa in mano.
+
+#####Serhiy
+
+Sviluppare la soluzione migliore da usare per l'uso offline dell'acquisto.
