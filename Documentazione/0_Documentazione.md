@@ -308,25 +308,15 @@ particolare è coinvolto nel progetto? Che particolarità e limitazioni
 presenta? Che hw sarà disponibile durante lo sviluppo?
 -->
 #### Software
-- Windows 7
 - Apache ?
 - MySQL ?
 - PHP ?
+- Android Studio 2.0
+- Raspbian ?
+- API Google Chart
 - Bootstrap 3.3.6
 - JQuery 1.12.0
 - SDK Java ?
-- JpGraph 3.5.0b1
-- GanttProject 2.7.2
-- MySQL Workbench 6.3.6
-- Dia 0.97.2
-- Atom 1.5.4
-- Source Tree 1.8.2.3
-- Android Studio ?
-- Arduino ?
-- Raspberry ?
-- Browser ...
-- Office 2013
-- FileZilla ?
 
 #### Hardware
 
