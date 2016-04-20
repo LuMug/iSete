@@ -476,7 +476,7 @@ Per quanto riguarda la posizione dei servo motori praticheremo dei fori alla bas
 
 #### Espulsione capsule (Nishan & Raffaele)
 Per quanto riguarda l'espulsione delle capsule abbiamo pensato di far ruotare le capsule usando il metodo a ferro di cavallo.
-![Espulsione Capsule](img/espulsione_progettazione.png)
+
 Il servo motore avrà attaccata un'elica che a sua volta sarà collegata al "ferro di cavallo" per farlo girare.
 Con questo metodo si riesce a prendere una capsula alla volta, poichè grazie alla rotazione del contenitore si chiude lo spazio per una seconda capsula.
 ![Servo](img/Servo.png)
@@ -509,7 +509,7 @@ if(!empty($nome) && !empty($cognome) && !empty($credito) && !empty($password)){
   ```
   Con questo if controllo se tutti i campi sono completati.
 
-![Aggiungi utenti](img/aggiungi.png)
+![Aggiungi utenti](img/aggiungi.PNG)
 ###### Rimuovi utente
 Per rimuovere un utente basta inserire l'email dell'utnete visto che lo abbiamo messo primary key quindi vado a cancellare quell'utente con la mail specificata in precedenza.
 
@@ -522,16 +522,16 @@ top:0;
 left:0;
 }
 ```
-![Tasto indietro](img/tasto_indietro.png)
+![Tasto indietro](img/tasto_indietro.PNG)
 
 ##### Gestione credito (Nishan)
 Con questo modulo posso gestire il credito massimo che si puo avere. Poi come detto in precedenza, quando inserisco un nuovo utente controllo che il credito iniziale sia minore uguale al massimo.
 
-![Modifica credito](img/modifica_credito.png)
+![Modifica credito](img/modifica_credito.PNG)
 ##### Storico utente (Nishan)
 QUesta pagina mostra le capsule prese dall'utente. Quando l'utente accede prendo il nome utente e uso quello per mostrare lo storico.
 
-![Storico](img/storico_imp.png)
+![Storico](img/storico_imp.PNG)
 <!--
 In questo capitolo dovrà essere mostrato come è stato realizzato il
 lavoro. Questa parte può differenziarsi dalla progettazione in quanto il
