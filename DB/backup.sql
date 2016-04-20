@@ -384,7 +384,7 @@ CREATE TABLE IF NOT EXISTS `utente` (
   `ut_password` char(32) DEFAULT NULL,
   `ut_email` varchar(50) DEFAULT NULL,
   `ut_credito` int(11) DEFAULT NULL,
-  `ut_gruppo` enum('Responsabile', 'Utente') default 'Utente'
+  `ut_gruppo` enum('Responsabile', 'Utente') DEFAULT 'Utente'
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=251 ;
 
 --
