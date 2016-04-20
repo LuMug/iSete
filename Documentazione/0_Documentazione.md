@@ -308,15 +308,15 @@ particolare è coinvolto nel progetto? Che particolarità e limitazioni
 presenta? Che hw sarà disponibile durante lo sviluppo?
 -->
 #### Software
-- Apache ?
-- MySQL ?
-- PHP ?
+- Apache 2.4.10
+- MySQL 5.5.44-0+deb8u1
+- PHP 5.6.17-0+deb8u1
 - Android Studio 2.0
-- Raspbian ?
+- Raspbian 8.0
 - API Google Chart
 - Bootstrap 3.3.6
 - JQuery 1.12.0
-- SDK Java ?
+- JDK Java 1.8.0_65
 
 #### Hardware
 
