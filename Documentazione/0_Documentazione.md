@@ -317,6 +317,8 @@ presenta? Che hw sarà disponibile durante lo sviluppo?
 - Bootstrap 3.3.6
 - JQuery 1.12.0
 - JDK Java 1.8.0_65
+- libreria jdbc (mysql connector)
+- libreria gpio (servo motore)
 
 #### Hardware
 
@@ -440,11 +442,12 @@ su qualunque smartphone android.
 ### HW
 
 #### Gestione (Andrea & Serhiy)
-Per la memorizzazione offline e il collegamento ethernet abbiamo inizialmente deciso di usare Arduino, ma a causa di troppi problemi riscontrati abbiamo deciso di usare Raspberry. Abbiamo deciso di fare uno codice in java che, a dipendenza di quante capsule venivano scelte, faceva girare il servo motore n volte.
+Per la memorizzazione offline e il collegamento ethernet abbiamo inizialmente deciso di usare Arduino, ma a causa di troppi problemi riscontrati abbiamo deciso di usare Raspberry. 
+Abbiamo deciso di fare uno codice in java che, a dipendenza di quante capsule venivano scelte, faceva girare un servo motore (a dipendenza della capsula scelta) n volte.
 
 #### Struttura (Nishan & Raffaele)
 Per la struttura abbiamo pensato ad una superificie da attaccare al muro sulla quale posizionare dei separatori per le capsule.
-Le capsule saranno visibili poichè si collegeranno i separatori con del plexiglass.
+Le capsule saranno visibili poichè si userà del plexiglass come materiale per la facciata frontale.
 
 ![Dispenser 3d](img/dispenser_3d.jpg)
 Uno schizzo fatto alla lavagna con qualche misura annotata.
@@ -673,9 +676,35 @@ In caso di esito positivo creo la webview e la reindirizzo, tramite il metodo lo
 
 #### Servo motore(Andrea)
 Per far funzionare il servo motore con il Raspberry ho cercato uno script che mi permettesse la connessione fra Servo motore e Raspberry, dopodiché, per farlo funzionare, ho dovuto installare la libreria GPIO seguendo  [la seguente guida](http://pi4j.com/install.html)
-#### Connessione ethernet(Serhiy & Andrea)
+Dopodiché ho implementato la classe funzionante in modo tale che il codice potesse essere usato anche con l'aumento di tipi di capsule. Per fare ciò ho dovuto collegarmi al database tramite java e per fare ciò ho dovuto usare la classe [jdbc](https://dev.mysql.com/downloads/connector/j/3.1.html). Ho creato un codice che, passando due parametri come argomenti della classe, che equivalgono al numero delle capsule e al tipo delle capsule mi facciano girare il servo motore corrispondente al tipo della capsula per numero di volte equivalte al primo parametro passato.
+```
+    public static void main(String[] args) {
+        ServoMotoreModulare s = new ServoMotoreModulare(Integer.parseInt(args[0]), args[1]);
+    }
+```
+Per fare ciò ho creato dei metodi che richiamo nel costruttore.
+```
+    
+    public ServoMotoreModulare(int n, String t) { // costruttore
+        this.connected(); // connessione al db
+        this.setTypeCapsula(t); // settaggio del pin
+        this.rotation(n); // rotazione del servo motore
+    }
+```
+tramite this.connected() faccio la connessione al db.
+con il metodo setTypeCapsula() cerco prima nell'array la posizione in cui si trova quel tipo di capsula, dopodiché uso quella posizione per inizalizzare il servo motore dove la posizione nell'array dei pin è uguale a quella dell'array delle capsule
 
-#### Memorizzazione(Andrea)
+```
+    public void setTypeCapsula(String tipo) { // tipo della capsula
+        int p = nomiCapsule.indexOf(tipo); // mi ritorna la posizione dove value=tipo
+        myServo = gpio.provisionDigitalOutputPin(pinRasp[p], // pin del servo motore corrispondente
+                "My LED", // PIN FRIENDLY NAME (optional)
+                PinState.LOW);;
+    }
+```
+infine con il metodo this.rotation() realizzo un for che mi faccia girare il servo motore inizalizzato in precedenza n volte.
+
+#### Memorizzazione(Serhiy)
 
 
 ## Test
