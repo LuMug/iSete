@@ -1,4 +1,4 @@
-# Esempio di documentazione
+# iSete
 
 
 1. [Introduzione](#introduzione)
@@ -468,6 +468,12 @@ Dimensioni: 1x25x3 centimetri in modo da contenere una decina di capsule e avere
 Dimensioni: 6.5x25x0.3 centimetri per poter ricoprire tutta la lunghezza dei separatori.
 
 
+Per permettere di collegare i componenti al Raspberry applicheremo dei supporti per tenere la base leggermente distante dal muro.
+
+![Posizione servo](img/posizione_servo.png)
+Per quanto riguarda la posizione dei servo motori praticheremo dei fori alla base dove inserirceli dentro.
+
+
 #### Espulsione capsule (Nishan & Raffaele)
 Per quanto riguarda l'espulsione delle capsule abbiamo pensato di far ruotare le capsule usando il metodo a ferro di cavallo.
 ![Espulsione Capsule](img/espulsione_progettazione.jpg)
@@ -479,7 +485,6 @@ Con questo metodo si riesce a prendere una capsula alla volta, poichè grazie al
 
 #### Collegamento ethernet
 
-#### Servo motore (Nishan)
 
 ## Implementazione
 
