@@ -23,6 +23,10 @@ l'implementazione della sezione configurazione.
 
 #####Nishan
 
+Oggi ho preso le misure del servo motore e poi sono andato nell'aula di modellismo e ho fatto un buco per inserirlo.
+Abbiamo anche rialzato tutto perchè ogni volta che cadeva la capsula cadeva sull'elica.
+Infine abbiamo riguardato la documentazione e modificato.
+
 #####Serhiy
 
 ##  Problemi riscontrati e soluzioni adottate
