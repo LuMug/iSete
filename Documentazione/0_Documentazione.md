@@ -141,10 +141,10 @@ Data di consegna: 11.05.2016
   > design such a large-scale microprocessor in just weeks.*
 
 -->
-_Do you need a coffe but you don't have with for buy it? Don't worry: with the new dispenser you can buy every type of coffee pod trought your account!
+_Do you need a coffee but you don't have with for buy it? Don't worry: with the new dispenser you can buy every type of coffee pod trought your account!
 You just have to log in, add your credit to your account and you can buy coffee pod when you want, everywhere you are.
 With the new dispenser you could buy coffee pod from your phone without go to the coffe maker !
-What do you waiting for? Take your preferred coffee pod!_
+What are you waiting for? Take your preferred coffee pod!_
 
 ### Scopo
 
@@ -198,8 +198,9 @@ utenti e capsule e ricaricare il saldo.
 
   -   …
 -->
-Al momento per usufruire della macchinetta del caffé ognuno si deve comprare le proprie capsule.
-Gli utenti sono tutti coloro che vogliono utilizzare la macchinetta del caffé.
+Al momento coloro che usufruiscono della macchinetta del caffé sono solo i docenti.
+Non esiste nulla di simile al momento, chi vuole usare la macchinetta del caffé deve comprarsi le proprie capsule.
+Per utilizzare questo prodotto non bisogna avere competenze particolari.
 
 
 ### Analisi e specifica dei requisiti
