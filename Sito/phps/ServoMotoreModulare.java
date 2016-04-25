@@ -10,7 +10,6 @@ import java.sql.*; // import classe per sql
 public class ServoMotoreModulare {
 
     final GpioController gpio = GpioFactory.getInstance();
-    private int cnt = 0;
     private GpioPinDigitalOutput myServo;
     private Pin[] pinRasp = new Pin[]{
         RaspiPin.GPIO_00,
@@ -50,12 +49,10 @@ public class ServoMotoreModulare {
     static final String PASS = "isete1";
 
     // costruttore
-    public ServoMotoreModulare(int n, String t) {
-        this.connected();
-        cnt = 0;
+    public ServoMotoreModulare(int n, String t) { // costruttore
+        this.connected(); // connessione al db
         this.setTypeCapsula(t); // settaggio del pin
         this.rotation(n); // rotazione del servo motore
-
     }
 
     // rotazione servo motore
@@ -102,18 +99,11 @@ public class ServoMotoreModulare {
         }
     }
 
-    public void setTypeCapsula(String tipo) { //farlo modulare
-        //c = findKey(ArrayTipo(Valore))
-        //Pin(c);
-          /*          myServo = = gpio.provisionDigitalOutputPin(Pin(c), // PIN NUMBER
-         "My LED", // PIN FRIENDLY NAME (optional)
-         PinState.LOW);
-         */
-        int p = nomiCapsule.indexOf(tipo);
-        myServo = gpio.provisionDigitalOutputPin(pinRasp[p], // PIN NUMBER
+    public void setTypeCapsula(String tipo) { // tipo della capsula
+        int p = nomiCapsule.indexOf(tipo); // mi ritorna la posizione dove value=tipo
+        myServo = gpio.provisionDigitalOutputPin(pinRasp[p], // pin del servo motore corrispondente
                 "My LED", // PIN FRIENDLY NAME (optional)
                 PinState.LOW);;
-
     }
 	
 
