@@ -164,8 +164,8 @@ What are you waiting for? Take your preferred coffee pod!_
 
 Vi è un sito del prodotto dove il cliente tramite la postazione fisica oppure
 tramite un applicazione android può acquistare le capsule.
-Il responsabile si collega al sito per visualizzare statistiche riguardanti
-utenti e capsule e ricaricare il saldo.
+Il responsabile si collega al sito per visualizzare le statistiche riguardanti
+gli utenti e le capsule e per ricaricare il saldo.
 
 <!-- sezione non finita -->
 
@@ -216,7 +216,7 @@ Per utilizzare questo prodotto non bisogna avere competenze particolari.
 |**002**      | Deve essere riempito con le capsule.|
 |**003**      |Il ricaricamento deve essere facilitato, senza compromettere il funzionamento della struttura.                  |
 |**004**      |Deve avere un metodo di espulsione delle capsule a dipendenza della scelta effettuata.|
-|**005**      |Notificare il responsabile della mancanza delle capsule.|
+|**005**      |Notificare al responsabile della mancanza delle capsule.|
 |**006**      |Deve comunicare al server gli acquisti.|
 |**007**      |Le capsule devono essere gestite da un servomotore controllato dall’Arduino.|
 
@@ -227,7 +227,7 @@ Per utilizzare questo prodotto non bisogna avere competenze particolari.
 |**Priorità**|1                     |
 |**Versione**|1.0                   |
 |            |**Sotto requisiti** |
-|**001**      | 	Deve essere presente un metodo di riconoscimento univoco dell’utente, che vuole usufruire dell’apparecchio.  |
+|**001**      | Deve essere presente un metodo di riconoscimento univoco dell’utente per chi vuole usufruire dell’apparecchio.  |
 |**002**      | Bisogna avere una server dove memorizzare gli utenti.|
 |**003**      |In caso di server down, bisogna avere un riconoscimento locale.                 |
 |**004**      |In caso di server down, bisogna avere un metodo di memorizzazione temporaneo in locale.|
@@ -412,13 +412,13 @@ rimuovere record.
 
 
 ##### Pagina Statistiche (Raffaele)
-Per quanto riguarda la pagina di statistiche per il responsabile ho pensato
+Per quanto riguarda la pagina di statistiche per il responsabile, ho pensato
 di svilupparla con un titolo in alto, con delle tabelle contenenti delle
 statistiche che in seguito vengono rappresentati attraverso dei grafici.
 
 ![Stats page](img/stats.png)
 ##### Gestione utenti(Nishan)
-Ho progettato una pagina molto semplice con una tabella chiara con le informazioni neccessarie e inserito anche dei campi per gestire la tabella.
+Ho progettato una pagina molto semplice con una tabella chiara con le informazioni neccessarie e ho anche inserito dei campi per gestire la tabella.
 
 All'inizio della pagina chiedo le informazione base per aggiungere utenti e rimuoverli.
 
@@ -429,7 +429,7 @@ Per aggiungere un utente chiedo di inserire nome, cognome, credito e password. D
 ##### Storico acquisti(Nishan)
 Ho progettato una pagina molto semplice con una tabella chiara con le informazioni neccessarie.
 
-Questa pagina è visible solamente agli utenti che sono registrati e tramite la connesione al database faccio vedere
+Questa pagina è visible solamente agli utenti che sono registrati e, tramite la connessione al database, faccio vedere
 tutti gli acquisti.
 
 ![Storico](img/storico_imp.PNG)
@@ -476,9 +476,6 @@ Il servo motore avrà attaccata un'elica che a sua volta sarà collegata al "fer
 Con questo metodo si riesce a prendere una capsula alla volta, poichè grazie alla rotazione del contenitore si chiude lo spazio per una seconda capsula.
 ![Servo](img/Servo.png)
 
-#### Memorizzazione offline
-
-#### Collegamento ethernet
 
 
 ## Implementazione
@@ -512,7 +509,7 @@ Per eventuali dettagli si possono inserire riferimenti ai diari.
 ##### Gestione utenti (Nishan)
 ###### Aggiungi utente
 Per svolgere questa pagina ho usato Boostrap.
-Il per chiedere il credito ho inserto un campo per soli numeri, per la mail ho usato una funzione di controllo che ha usato Ettore per il login. Quando si inserisce la password e le inserisco nel database le codifico con la una funzione che si chiama .md5. Poi tramite una funzione controllo se le due password sono uguali.
+Per chiedere il credito ho inserito un campo number value, per la mail ho usato una funzione di controllo che ha usato Ettore per il login. Quando si inserisce la password e le inserisco nel database le codifico con la una funzione che si chiama .md5. Poi tramite una funzione controllo se le due password sono uguali.
 ```
 function controllo(modulo){
     if (modulo.password.value != modulo.ripeti.value) {
@@ -524,18 +521,19 @@ function controllo(modulo){
 	  return true
 	}
   ```
-C'è anche in controllo che obbliga a inserire tutti i campi.
+Con questo if controllo se tutti i campi sono completati.
 ```
 if(!empty($nome) && !empty($cognome) && !empty($credito) && !empty($password)){
   ```
-  Con questo if controllo se tutti i campi sono completati.
+
+Questo è il risultato di come appare la nostra finestra aggiungi utenti.
 
 ![Aggiungi utenti](img/aggiungi.PNG)
 ###### Rimuovi utente
-Per rimuovere un utente basta inserire l'email dell'utente visto che lo abbiamo messo primary key quindi vado a cancellare quell'utente con la mail specificata in precedenza.
+Per rimuovere un utente basta inserire l'email dell'utente.
 
 ![Rimuovi utenti](img/rimuovi.png)
-Mi è stato richiesto di inserire un tasto che riporta l'utnete sulla pagina del proprio profilo. Per questo ho deciso di usare un file css dove specifico dove deve rimanere
+Mi è stato richiesto di inserire un tasto che riporta l'utente sulla pagina del proprio profilo. Per questo ho deciso di usare un file css.
 ```
 #back{
 position:fixed;
@@ -546,7 +544,7 @@ left:0;
 ![Tasto indietro](img/tasto_indietro.PNG)
 
 ##### Gestione credito (Nishan)
-Con questo modulo posso gestire il credito massimo che si puo avere. Poi come detto in precedenza, quando inserisco un nuovo utente controllo che il credito iniziale sia minore uguale al massimo.
+Con questo modulo posso gestire il credito massimo che si puo avere. Poi come ho detto in precedenza, quando inserisco un nuovo utente controllo che il credito iniziale sia minore uguale al massimo.
 
 ![Modifica credito](img/modifica_credito.PNG)
 ##### Storico utente (Nishan)
