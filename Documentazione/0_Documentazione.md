@@ -460,7 +460,6 @@ Uno schizzo fatto alla lavagna con qualche misura annotata.
 ![Dispenser 3d](img/dispenser_3d.png)
 
 Progettazione dall'alto del dispenser con misure più nel dettaglio:
-![Dispenser dall'alto](img/dispenser_vista_alto.png)
 
 - 1) Materiale che andrà attaccato alla parete.
 Dimensioni: 50x30x1 centimetri.
@@ -470,6 +469,8 @@ Dimensioni: 1x25x3 centimetri in modo da contenere una decina di capsule e avere
 Dimensioni: 6.5x25x0.3 centimetri per poter ricoprire tutta la lunghezza dei separatori.
 - 4) Materiale che servirà per avere un spazio tra il muro e la base dove poter posizionare il Raspberry e il cablaggio per collegare gli altri componenti.
 Dimensioni: 1x15x3 centimetri.
+
+![Dispenser dall'alto](img/dispenser_vista_alto.png)
 
 Vista da dietro del dispenser:
 ![Dispenser da dietro](img/dispenser_vista_dietro.png)
@@ -541,6 +542,7 @@ Questo è il risultato di come appare la nostra finestra aggiungi utenti.
 Per rimuovere un utente basta inserire l'email dell'utente.
 
 ![Rimuovi utenti](img/rimuovi.png)
+
 Mi è stato richiesto di inserire un tasto che riporta l'utente sulla pagina del proprio profilo. Per questo ho deciso di usare un file css.
 ```
 #back{
@@ -581,6 +583,7 @@ La tabella è strutturata nel seguente modo:
 ###### Aggiungi configurazione
 
 Quando si clicca il bottone "Aggiungi configurazione" uscirà un popup in cui viene richiesto il nome, il valore e una descrizione.
+
 ![Aggiungi configurazione](img/aggiungiConfigurazione.PNG)
 
 Una volta confermata l'aggiunta, il sito si reindirizza ad un'altra pagina che aggiunge la configurazione al database:
