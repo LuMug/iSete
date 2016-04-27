@@ -24,7 +24,9 @@
 --
 -- Table structure for table `capsula`
 --
-
+drop database if exists isete;
+create database isete;
+use isete;
 CREATE TABLE IF NOT EXISTS `capsula` (
   `ca_tipo` varchar(30) NOT NULL,
   `ca_prezzoAcquisto` float DEFAULT NULL,
@@ -383,8 +385,8 @@ CREATE TABLE IF NOT EXISTS `utente` (
   `ut_cognome` varchar(30) DEFAULT NULL,
   `ut_password` char(32) DEFAULT NULL,
   `ut_email` varchar(50) DEFAULT NULL,
-  `ut_credito` int(11) DEFAULT NULL,
-  `ut_gruppo` enum('Responsabile', 'Utente') DEFAULT 'Utente'
+  `ut_credito` float DEFAULT NULL,
+  `ut_gruppo` enum('Responsabile', 'Utente', 'Admin') DEFAULT 'Utente'
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=251 ;
 
 --
