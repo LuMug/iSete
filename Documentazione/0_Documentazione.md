@@ -321,6 +321,13 @@ presenta? Che hw sarà disponibile durante lo sviluppo?
 - libreria gpio (servo motore)
 
 #### Hardware
+- Attrezzi presenti nell'aula di modellismo
+- Cartone
+- Legno
+- Cartone 
+- Servo motore
+- Raspberry
+- Capsule del caffè
 
 ## Progettazione
 <!--
@@ -456,7 +463,7 @@ Uno schizzo fatto alla lavagna con qualche misura annotata.
 Progettazione dall'alto del dispenser con misure più nel dettaglio:
 
 - 1) Materiale che andrà attaccato alla parete.
-Dimensioni: 6.5x30x1 centimetri.
+Dimensioni: 50x30x1 centimetri.
 - 2) Materiale che avrà la funziona di separatore tra le diverse colonne di capsule.
 Dimensioni: 1x25x3 centimetri in modo da contenere una decina di capsule e avere lo spazio per creare un'unica via d'uscita.
 - 3) Plexiglass per fare in modo di poter vedere le capsule all'interno del dispenser.
