@@ -411,12 +411,17 @@ La pagina richiesta abbiamo deciso di farla in questo modo
 
 Ho pensato di fare la pagina di configurazione nel seguente modo:
 
-un titolo in alto alla pagina, una tabella centrale che contiene i record
-della tabella di configurazione e due bottoni rispettivamente per aggiungere o
-rimuovere record.
+un titolo in alto alla pagina, una tabella centrale che contiene i record, tre bottoni rispettivamente per aggiungere, rimuovere e modificare le configurazioni.
 
 ![Config table page](img/config_table.png)
 
+##### Gestione capsule
+
+La pagina dovrebbe essere strutturata nel seguente modo:
+
+un titolo in alto alla pagina, una tabella centrale che contiene i record, tre bottoni rispettivamente per aggiungere, rimuovere e modificare le capsule.
+
+![Gestione capsule](img/gestione_capsule.png)
 
 ##### Pagina Statistiche (Raffaele)
 Per quanto riguarda la pagina di statistiche per il responsabile, ho pensato
@@ -430,6 +435,8 @@ Ho progettato una pagina molto semplice con una tabella chiara con le informazio
 All'inizio della pagina chiedo le informazione base per aggiungere utenti e rimuoverli.
 
 Per aggiungere un utente chiedo di inserire nome, cognome, credito e password. Deve essere obbligatorio mettere tutti i dati. Per rimuovere l'utente basta inserire nome e cognome.
+
+
 
 ![Gestione utenti](img/GestioneUtenti.png)
 
