@@ -457,7 +457,7 @@ Per la struttura abbiamo pensato ad una superificie da attaccare al muro sulla q
 Le capsule saranno visibili poichè si userà del plexiglass come materiale per la facciata frontale.
 
 Uno schizzo fatto alla lavagna con qualche misura annotata.
-![Dispenser 3d](img/dispenser_3d.jpg)
+![Dispenser 3d](img/dispenser_3d.png)
 
 Progettazione dall'alto del dispenser con misure più nel dettaglio:
 ![Dispenser dall'alto](img/dispenser_vista_alto.png)
