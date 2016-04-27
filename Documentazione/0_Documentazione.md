@@ -439,7 +439,7 @@ Ho progettato una pagina molto semplice con una tabella chiara con le informazio
 Questa pagina è visible solamente agli utenti che sono registrati e, tramite la connessione al database, faccio vedere
 tutti gli acquisti.
 
-![Storico](img/storico_imp.PNG)
+![Storico](img/prog_storico.PNG)
 
 #### Applicazione Android(Raffaele)
 L'applicazione Android ho pensato di farla semplicemente tramite una
