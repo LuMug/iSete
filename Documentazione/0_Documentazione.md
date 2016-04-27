@@ -543,6 +543,7 @@ Per rimuovere un utente basta inserire l'email dell'utente.
 
 ![Rimuovi utenti](img/rimuovi.png)
 
+
 Mi è stato richiesto di inserire un tasto che riporta l'utente sulla pagina del proprio profilo. Per questo ho deciso di usare un file css.
 ```
 #back{
@@ -582,7 +583,9 @@ La tabella è strutturata nel seguente modo:
 
 ###### Aggiungi configurazione
 
-Quando si clicca il bottone "Aggiungi configurazione" uscirà un popup in cui viene richiesto il nome, il valore e una descrizione.
+Quando si clicca il bottone "Aggiungi configurazione" uscirà un popup in cui viene richiesto il nome, il valore
+e una descrizione.
+
 
 ![Aggiungi configurazione](img/aggiungiConfigurazione.PNG)
 
@@ -593,7 +596,8 @@ $valore = $_POST['valore'];
 $descrizione = $_POST['descrizione'];
 sess("db")->start();
 if(!empty($nome) && !empty($valore)){
-	$ret = sess("db")->query("INSERT INTO configurazione (co_nome, co_valore, co_descrizione) VALUES ('".$nome."', '".$valore."', '".$descrizione."');");
+	$ret = sess("db")->query("INSERT INTO configurazione (co_nome, co_valore, co_descrizione) 
+	VALUES ('".$nome."', '".$valore."', '".$descrizione."');");
 	if($ret){
 		echo "Configurazione aggiunta correttamente";
 	}else{
@@ -614,7 +618,8 @@ $valore = $_POST['valore'];
 $descrizione = $_POST['descrizione'];
 sess("db")->start();
 if(!empty($nome) && !empty($valore) && isset($descrizione)){
-	$ret = sess("db")->query("UPDATE configurazione SET co_nome = '$nome', co_valore = '$valore', co_descrizione = '$descrizione' WHERE co_nome = '$nome';");
+	$ret = sess("db")->query("UPDATE configurazione SET co_nome = '$nome', co_valore = '$valore',
+	co_descrizione = '$descrizione' WHERE co_nome = '$nome';");
 	if($ret){
 		echo "Aggiornamento configurazione effettuato";
 	}
