@@ -442,7 +442,7 @@ su qualunque smartphone android.
 ### HW
 
 #### Gestione (Andrea & Serhiy)
-Per la memorizzazione offline e il collegamento ethernet abbiamo inizialmente deciso di usare Arduino, ma a causa di troppi problemi riscontrati abbiamo deciso di usare Raspberry. 
+Per la memorizzazione offline e il collegamento ethernet abbiamo inizialmente deciso di usare Arduino, ma a causa di troppi problemi riscontrati abbiamo deciso di usare Raspberry.
 Abbiamo deciso di fare uno codice in java che, a dipendenza di quante capsule venivano scelte, faceva girare un servo motore (a dipendenza della capsula scelta) n volte.
 
 #### Struttura (Nishan & Raffaele)
@@ -461,11 +461,11 @@ Dimensioni: 6.5x30x1 centimetri.
 Dimensioni: 1x25x3 centimetri in modo da contenere una decina di capsule e avere lo spazio per creare un'unica via d'uscita.
 - 3) Plexiglass per fare in modo di poter vedere le capsule all'interno del dispenser.
 Dimensioni: 6.5x25x0.3 centimetri per poter ricoprire tutta la lunghezza dei separatori.
+- 4) Materiale che servirà per avere un spazio tra il muro e la base dove poter posizionare il Raspberry e il cablaggio per collegare gli altri componenti.
+Dimensioni: 1x15x3 centimetri.
 
 
-Per permettere di collegare i componenti al Raspberry applicheremo dei supporti per tenere la base leggermente distante dal muro.
 
-![Posizione servo](img/posizione_servo.png)
 Per quanto riguarda la posizione dei servo motori praticheremo dei fori alla base dove inserirceli dentro.
 
 
@@ -593,7 +593,7 @@ if(!empty($nome) && !empty($valore)){
 
 ###### Modifica configurazione
 
-Quando si clica il bottone "Modifica configurazione" uscirà un popup dove si deve scegliere tramite un menù la configurazione, il suo nuovo valore ed un eventuale descrizione. 
+Quando si clica il bottone "Modifica configurazione" uscirà un popup dove si deve scegliere tramite un menù la configurazione, il suo nuovo valore ed un eventuale descrizione.
 ![Modifica configurazione](img/modificaConfigurazione.PNG)
 
 Una volta confermata la modifica, il sito si reindirizza ad un'altra pagina che modifica la configurazione nel database:
@@ -682,7 +682,7 @@ Dopodiché ho implementato la classe funzionante in modo tale che il codice pote
 ```
 Per fare ciò ho creato dei metodi che richiamo nel costruttore.
 ```
-    
+
     public ServoMotoreModulare(int n, String t) { // costruttore
         this.connected(); // connessione al db
         this.setTypeCapsula(t); // settaggio del pin
