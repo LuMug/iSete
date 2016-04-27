@@ -415,7 +415,7 @@ un titolo in alto alla pagina, una tabella centrale che contiene i record, tre b
 
 ![Config table page](img/config_table.png)
 
-##### Gestione capsule
+##### Gestione capsule (Raffaele)
 
 La pagina dovrebbe essere strutturata nel seguente modo:
 
