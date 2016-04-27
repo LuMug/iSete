@@ -449,11 +449,11 @@ Abbiamo deciso di fare uno codice in java che, a dipendenza di quante capsule ve
 Per la struttura abbiamo pensato ad una superificie da attaccare al muro sulla quale posizionare dei separatori per le capsule.
 Le capsule saranno visibili poichè si userà del plexiglass come materiale per la facciata frontale.
 
-![Dispenser 3d](img/dispenser_3d.jpg)
 Uno schizzo fatto alla lavagna con qualche misura annotata.
+![Dispenser 3d](img/dispenser_3d.jpg)
 
-![Dispenser dall'alto](img/dispenser_vista_alto.png)
 Progettazione dall'alto del dispenser con misure più nel dettaglio:
+![Dispenser dall'alto](img/dispenser_vista_alto.png)
 
 - 1) Materiale che andrà attaccato alla parete.
 Dimensioni: 6.5x30x1 centimetri.
@@ -464,7 +464,8 @@ Dimensioni: 6.5x25x0.3 centimetri per poter ricoprire tutta la lunghezza dei sep
 - 4) Materiale che servirà per avere un spazio tra il muro e la base dove poter posizionare il Raspberry e il cablaggio per collegare gli altri componenti.
 Dimensioni: 1x15x3 centimetri.
 
-
+Vista da dietro del dispenser:
+![Dispenser da dietro](img/dispenser_vista_dietro.png)
 
 Per quanto riguarda la posizione dei servo motori praticheremo dei fori alla base dove inserirceli dentro.
 
