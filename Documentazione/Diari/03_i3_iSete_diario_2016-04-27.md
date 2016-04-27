@@ -8,6 +8,10 @@
 
 #####Ettore
 
+Oggi, ho aggiunto al sito la parte di gestione delle capsule, ho fatto dei test e
+corretto alcuni bug riscontrati, sempre sul sito. Ho dato una mano ad Andrea per
+fare funzionare correttamente il prototipo.
+
 #####Andrea
 
 
@@ -26,6 +30,8 @@ il plexyglass non toccasse la capsula.
 
 #####Ettore
 
+- Ho avuto qualche disguido con un menu del sito, messo a posto suddividendo
+i vari elementi sulla barra di navigazione.
 
 #####Andrea
 
@@ -46,12 +52,15 @@ Leggermente indietro alla pianificazione
 
 #####Ettore
 
+Essendo presenti altri bug a me conosciuti, ho intenzione di sistemarli
+e migliorare il design del sito, rendendolo più facilmente usabile
+per i dispositivi mobili.
 
 #####Andrea
 
 
 #####Raffaele & Nishan
 
-Fare il buco per inserire altri tre servomotori
+Fare i bucĥi per inserire altri tre servomotori
 
 #####Serhiy
