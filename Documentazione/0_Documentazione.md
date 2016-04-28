@@ -475,7 +475,7 @@ Dimensioni: 1x25x3 centimetri in modo da contenere una decina di capsule e avere
 - 3) Plexiglass per fare in modo di poter vedere le capsule all'interno del dispenser.
 Dimensioni: 6.5x25x0.3 centimetri per poter ricoprire tutta la lunghezza dei separatori.
 - 4) Materiale che servirà per avere un spazio tra il muro e la base dove poter posizionare il Raspberry e il cablaggio per collegare gli altri componenti.
-Dimensioni: 1x15x3 centimetri.
+Dimensioni: 1.8x15x5 centimetri.
 
 ![Dispenser dall'alto](img/dispenser_vista_alto.png)
 
