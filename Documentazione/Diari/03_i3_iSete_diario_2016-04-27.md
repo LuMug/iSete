@@ -17,6 +17,10 @@ fare funzionare correttamente il prototipo.
 
 #####Raffaele
 
+Nel corso della mattinata ho lavorato alla documentazione aggiungendo nella progettazione la vista da dietro del dispenser.
+In seguito, sempre nella documentazione, ho aggiunto la parte di progettazione della gestione delle capsule.
+Durante il pomeriggio ho iniziato a fare i test sul sito, precisamente sulle richieste delle capsule.
+In seguito a una manutenzione del sito ho iniziato a guardare come si usa sketchup.
 
 #####Nishan
 
