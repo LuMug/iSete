@@ -14,6 +14,7 @@ fare funzionare correttamente il prototipo.
 
 #####Andrea
 
+A inizio mattinata ho aggiustato il prototipo in modo tale da avere qualcosa di funzionante nel momento in cui abbiamo parlato dello sprint. Dopo aver discusso lo sprint ho cercato di aggiustare il prototipo e per fare ciò ho preso i due bicchieri del caffé e li ho tagliati in modo da fare un mezzo cerchio dove poter infilare la capsula. Dopodiché, durante il pomeriggio, ho aggiustato la bread board con i cavi poiché erano in disordine.
 
 #####Raffaele
 
@@ -62,6 +63,7 @@ per i dispositivi mobili.
 
 #####Andrea
 
+Concludere gli altri due ferri che ci mancano e finire il montaggio completo della bread board
 
 #####Raffaele & Nishan
 
