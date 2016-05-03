@@ -31,6 +31,8 @@ il plexyglass non toccasse la capsula.
 
 #####Serhiy
 
+Nella giornata di oggi mi sono occupato del collegamento via VNC tra il dispositivo Android. Ho dovuto usa il telefono di Ettore perché il dispositivo a noi destinato era scomparso. Dopo varie installazioni non ho purtroppo potuto testare il funzionamento del collegamento per dare spazio agli altri di lavorare.
+
 ##  Problemi riscontrati e soluzioni adottate
 
 #####Ettore
@@ -42,6 +44,8 @@ i vari elementi sulla barra di navigazione.
 
 
 #####Serhiy
+
+Installazione di pacchetti troppo lenta sul RaspBerry Pi.
 
 ##  Punto della situazione rispetto alla pianificazione
 
@@ -70,3 +74,5 @@ Concludere gli altri due ferri che ci mancano e finire il montaggio completo del
 Fare i bucĥi per inserire altri tre servomotori
 
 #####Serhiy
+
+Concludere finalmente il collegamento tra i due dispositivi.
