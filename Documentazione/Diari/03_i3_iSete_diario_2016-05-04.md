@@ -1,10 +1,12 @@
 
 
-# iSete | Diario di lavoro - 27.04.2016
+# iSete | Diario di lavoro - 04.05.2016
 ##### N. Anthonippillai, E. Ongaro, R. Scarcella, A. Lupica, S. Ushchapivskyy
-### Canobbio, 27.04.2016
+### Canobbio, 04.05.2016
 
 ## Lavori svolti
+
+Quest'oggi abbiamo avuto a disposizione solo le prime 5 ore del mattino.
 
 #####Ettore
 
@@ -12,6 +14,7 @@
 
 #####Raffaele
 
+Ho dedicato tutta la mattinata allo svolgimento dei test, mi sono concentrato particolarmente sulle capsule e sulle configurazioni.
 
 #####Nishan
 
@@ -40,7 +43,7 @@ Leggermente indietro
 
 #####Raffaele
 
-Leggermente indietro alla pianificazione
+In linea con il programma
 
 #####Ettore
 
@@ -58,7 +61,7 @@ Concludere gli altri due ferri che ci mancano e finire il montaggio completo del
 
 #####Raffaele
 
-Fare i bucĥi per inserire altri tre servomotori
+Testare il sito.
 
 #####Nishan
 Settimana prossima fare il cartone da inserire all'interno della colonna.
