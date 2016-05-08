@@ -12,6 +12,8 @@ Quest'oggi abbiamo avuto a disposizione solo le prime 5 ore del mattino.
 
 #####Andrea
 
+Poiché i pezzi non erano arrivati non ho potuto finire la bread board così ho aiutato i miei compagni a finire ciò che stavano facendo e in seguito ho preso le misure per fare il disegno tecnico.
+
 #####Raffaele
 
 Ho dedicato tutta la mattinata allo svolgimento dei test, mi sono concentrato particolarmente sulle capsule e sulle configurazioni.
@@ -31,12 +33,15 @@ Poi, insieme ad Andrea abbiamo preso tutte le misure da dare per fare il disegno
 
 #####Andrea
 
+Non avendo i pezzi non ho potuto finire la bread board
 
 #####Serhiy
 
 ##  Punto della situazione rispetto alla pianificazione
 
 #####Andrea
+
+Molto indietro rispetto la pianificazione
 
 #####Nishan
 Leggermente indietro
