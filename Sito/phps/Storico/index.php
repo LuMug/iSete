@@ -39,13 +39,22 @@
       </tr>
     </thead>
     <tbody>
-	  <?php while($row = sess("db")->fetch($tmp)){ ?>
+	  <?php
+	  $cnt = 0;
+	  while($row = sess("db")->fetch($tmp)){ ?>
          <tr>
 			<td><?php echo $row["ca_tipo"];?></td>
 			<td><?php echo $row["pre_data"];?></td>
 			<td><?php echo $row["pre_quantita"];?></td>
          </tr>
-	  <?php }
+	  <?php $cnt++; }
+	  if($cnt == 0){
+	  	?>
+	  	<tr>
+			<td colspan="3" class="text-center">Nessun elemento trovato.</td>
+      </tr>
+	  	<?php
+	  }
 	  sess("db")->stop();?>
      </tbody>
   </table>

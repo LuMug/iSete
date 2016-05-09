@@ -7,6 +7,7 @@
 	$array= array();
 	$tmp = sess("db")->query($query);
 	$co_nome = sess("db")->query($query2);
+	$co_nome2 = sess("db")->query($query2);
 ?>
 <!DOCTYPE html>
 <html>
@@ -29,9 +30,9 @@
 		</div>
 		</div>
 		
-		<button type="button" class="btn btn-info" data-toggle="modal" data-target="#aggiungiconf">Aggiungi configurazione</button>
-		<button type="button" class="btn btn-info" data-toggle="modal" data-target="#rimuoviconf">Rimuovi configurazione</button>
-		<button type="button" class="btn btn-info" data-toggle="modal" data-target="#modificaconf">Modifica configurazione</button>
+		<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#aggiungiconf">Aggiungi configurazione</button>
+		<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#rimuoviconf">Rimuovi configurazione</button>
+		<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#modificaconf">Modifica configurazione</button>
 
 			<!-- Modal -->
 			<div class="modal fade" id="aggiungiconf" role="dialog">
@@ -66,7 +67,13 @@
 				</div>
 				<div class="modal-body">
 				 <form id="remC">
-					Nome: <br><input type="text" name="nome" class="form-control" placeholder="Inserisci il nome"><br>
+					Nome: <br>
+					<select name="nome" class="form-control">
+						<?php while($el = sess("db")->fetch($co_nome)) {?>
+						<option value="<?php echo $el['co_nome'];?>"><?php echo $el["co_nome"];?></option>
+						<?php }
+						?>
+					</select><br>
 					<input type="button" onclick="remConf();" value="Rimuovi">
 				</form>
 				</div>
@@ -87,10 +94,10 @@
 				 	<form id="updC">
 						Nome: <br>			
 						<select name="nome" class="form-control">
-							<?php while($el = sess("db")->fetch($co_nome)) {?>
+							<?php while($el = sess("db")->fetch($co_nome2)) {?>
 							<option value="<?php echo $el['co_nome'];?>"><?php echo $el["co_nome"];?></option>
 							<?php }
-							sess("db")->stop();?>
+							?>
 						</select><br>
 						Valore: <br><input type="text" name="valore" class="form-control" placeholder="Inserisci il valore"><br>
 						Descrizione: <br><input type="text" name="descrizione" class="form-control" placeholder="Inserisci la descrizione"><br>

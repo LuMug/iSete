@@ -50,8 +50,8 @@
 		return $res;
 	}
 	session_start();
-	function sess($name=null, $val=""){
-		if($val != ""){
+	function sess($name=null, $val=null){
+		if($val != null){
 			$_SESSION[$name] = $val;
 		}
 		elseif($name != null){
@@ -66,9 +66,9 @@
 			return $_SESSION;
 		}
 	}
-	$dum = &sess("db");
-	if(!isset($_SESSION["db"])){
+	$dum = $_SESSION["db"];
+	if(!isset($dum)){
 		$newDB = new DB("localhost", "iSete", "isete1", "isete");
-		$_SESSION["db"] = &$newDB;
+		$_SESSION["db"] = $newDB;
 	}
 ?>

@@ -125,15 +125,6 @@
 			</div>
 			<div class="col-xs-1 col-sm-2 col-md-3"></div>
 		</div>
-		<?php if($show){ ?>
-		<div class="row">
-			<div class="col-xs-1 col-sm-2 col-md-3"></div>
-			<div class="col-xs-10 col-sm-8 col-md-6 embed-responsive embed-responsive-16by9">
-				<iframe src="alert.php" class="embed-responsive-item"></iframe>
-			</div>
-			<div class="col-xs-1 col-sm-2 col-md-3"></div>
-		</div>
-		<?php } ?>
 	</div>
 </body>
 </html>

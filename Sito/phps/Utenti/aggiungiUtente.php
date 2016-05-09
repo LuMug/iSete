@@ -2,19 +2,16 @@
 	include "../connection.php";
 	$credito = $_POST['credito'];
 	$pass = $_POST['password'];
-	$pass2 = $_POST['ripeti'];
+	$grp = $_POST['grp'];
 	$email = $_POST['email'];	
 	$nomcog = explode(".", explode("@", $email)[0]);
 	$nome = ucfirst($nomcog[0]);
 	$cognome = ucfirst($nomcog[1]);
 	sess("db")->start();
-	if(!empty($email) && !empty($credito) && !empty($pass)){
-		if($pass != $pass2){
-			echo "password diverse";
-		}
-		elseif($credito >= 0){
-			$ret = sess("db")->query("INSERT INTO utente (ut_nome, ut_cognome, ut_credito, ut_password, ut_email)" . 
-			"VALUES ('$nome', '$cognome', $credito, '" . md5($pass) . "', '$email')");
+	if(!empty($email) && isset($credito) && !empty($pass)){
+		if($credito >= 0){
+			$ret = sess("db")->query("INSERT INTO utente (ut_nome, ut_cognome, ut_credito, ut_password, ut_email, ut_gruppo)" . 
+			"VALUES ('$nome', '$cognome', $credito, '" . md5($pass) . "', '$email', '$grp')");
 			if($ret){
 				echo "Utente aggiunto!";
 			}
