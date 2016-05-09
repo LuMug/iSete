@@ -399,12 +399,17 @@ all'immagine sottostante.
 
 ![Login](img/login.png)
 
-Da cui si accede, poi, a dipendenza dell'utente, ad una pagina differente (richiesta o configurazione).
+Da cui si accede, poi alla pagina richiesta.
+Vorremo fare anche in modo che ci sia un bottone anche per potersi registrare al sito.
+
 
 ##### Richiesta (Ettore & Usha)
 La pagina richiesta abbiamo deciso di farla in questo modo
 
-<!-- da terminare -->
+![Richiesta](img/richieste.png)
+
+Come si può notare, vi sono delle zone tratteggiate. Esse, sono delle "idee temporanee"
+da sviluppare in maniera migliore in fase di implementazione.
 
 
 ##### Pagina di configurazione(Raffaele)
@@ -522,21 +527,17 @@ Per eventuali dettagli si possono inserire riferimenti ai diari.
 
 #### Sitoweb
 
+####### Premessa
+
+La pagina di richiesta ingloberà tutte le altre pagine di ipotetico interesse dell'utente
+(quindi storico, configurazione per responsabile, gestione utenti per responsabile, ...).
+Questa scelta è stata adottata, in parte per via di consigli di terze parti ma anche perché permetteva
+una maggiore elasticità di inserimento di elementi aggiuntivi (riferimenti esterni in generale).
+
 ##### Gestione utenti (Nishan)
 ###### Aggiungi utente
 Per svolgere questa pagina ho usato Boostrap.
 Per chiedere il credito ho inserito un campo number value, per la mail ho usato una funzione di controllo che ha usato Ettore per il login. Quando si inserisce la password e le inserisco nel database le codifico con la una funzione che si chiama .md5. Poi tramite una funzione controllo se le due password sono uguali.
-```
-function controllo(modulo){
-    if (modulo.password.value != modulo.ripeti.value) {
-		alert("La password inserita non coincide con la prima!")
-		modulo.password.focus()
-		modulo.password.select()
-		return false
-	  }
-	  return true
-	}
-  ```
 Con questo if controllo se tutti i campi sono completati.
 ```
 if(!empty($nome) && !empty($cognome) && !empty($credito) && !empty($password)){
@@ -551,14 +552,7 @@ Per rimuovere un utente basta inserire l'email dell'utente.
 ![Rimuovi utenti](img/rimuovi.png)
 
 
-Mi è stato richiesto di inserire un tasto che riporta l'utente sulla pagina del proprio profilo. Per questo ho deciso di usare un file css.
-```
-#back{
-position:fixed;
-top:0;
-left:0;
-}
-```
+La pagina risultante è questa.
 ![Tasto indietro](img/tasto_indietro.PNG)
 
 ##### Gestione credito (Nishan)
@@ -571,6 +565,22 @@ Questa pagina mostra le capsule prese dall'utente. Quando l'utente accede prendo
 ![Storico](img/storico_imp.PNG)
 
 ##### Login(Ettore)
+
+Per la creazione del login, ho deciso di formare il tutto con l'ausilio degli elementi Bootstrap
+dedicati principalmente ai form, ma non solo: ho deciso di fare in modo che il tutto fosse "avvolto" in un pannello,
+rendendo l'intera pagina di Login comprente solo una parte dell'intero schermo. Ho addottato questa decisione, perché
+buona parte dei login che si possono trovarer in giro hanno uno "standard di visualizzazione" e volevo provare
+ad imitarlo. Per rendere anche più intuitivo il tutto, ho deciso di utilizzare le Glyphicon, una serie
+di icone standardizzate implementate da Bootstrap.
+
+![Design Login](img/loginView.PNG)
+
+##### Richiesta (Ettore)
+
+Nella pagina di richiesta sono presenti univocamente i due input che si riferiscono al tipo e al quantitativo di capsule.
+Per finire, i grafici e le opzioni verranno implementate in modo differente dall'aspettato.
+
+![Design Richiesta](img/richiesteView.PNG)
 
 ##### Sezione configurazione(Raffaele)
 
@@ -770,6 +780,13 @@ differenze rispetto alla pianificazione (cap 1.7) (ad esempio Gannt
 consuntivo).
 -->
 ## Conclusioni
+
+Questo progetto è un idea alternativa alle macchinette da caffé, potrebbe essere molto interessante
+in caso che non si voglia avere molte macchinette da caffe sparse per una determinata zona, ma avere un ritrovo
+per tutte le capsule desiderate. L'ipotesi, però, che esso diventi un oggetto comune non è totalmente da scartare,
+tutto dipende dai bisogni di ogni singolo utente, giustamente. Inoltre, permette un punto d'accesso univoco
+indipendentemente dall'utente che vi accede, il che può essere un fattore molto comodo.
+
 <!--
 Quali sono le implicazioni della mia soluzione? Che impatto avrà?
 Cambierà il mondo? È un successo importante? È solo un’aggiunta
@@ -778,6 +795,11 @@ stato una perdita di tempo? I risultati ottenuti sono generali,
 facilmente generalizzabili o sono specifici di un caso particolare? ecc
 -->
 ### Sviluppi futuri
+
+- Il nostro modello hardware non è stato progettato con l'intento di diventare direttamente modulabile. Quindi, uno sviluppo futuro potrebbe essere il re-design della struttura in modo da renderla più facilmente
+modulabile.
+
+- Si potrebbe fare in modo che faccia cadere direttamente la capsula in una macchinetta la quale faccia il caffé.
 <!--
   Migliorie o estensioni che possono essere sviluppate sul prodotto.
 -->
