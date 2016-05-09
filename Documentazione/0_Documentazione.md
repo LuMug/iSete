@@ -767,6 +767,11 @@ correzione apparirà nel diario), altrimenti dovrà essere descritto
 l’errore con eventuali ipotesi di correzione.
 -->
 ### Mancanze/limitazioni conosciute
+
+- Non è modulabile (o difficilmente modulabile) la parte hardware
+
+- Un po' lento nell'attuazione della richiesta
+
 <!--
 Descrizione con motivazione di eventuali elementi mancanti o non
 completamente implementati, al di fuori dei test case. Non devono essere
