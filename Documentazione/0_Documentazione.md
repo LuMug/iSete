@@ -527,10 +527,10 @@ Per eventuali dettagli si possono inserire riferimenti ai diari.
 
 #### Sitoweb
 
-####### Premessa
+###### Premessa
 
 La pagina di richiesta ingloberà tutte le altre pagine di ipotetico interesse dell'utente
-(quindi storico, configurazione per responsabile, gestione utenti per responsabile, ...).
+(quindi storico, configurazione (per responsabile), gestione utenti (per responsabile), ...).
 Questa scelta è stata adottata, in parte per via di consigli di terze parti ma anche perché permetteva
 una maggiore elasticità di inserimento di elementi aggiuntivi (riferimenti esterni in generale).
 
@@ -784,6 +784,32 @@ Consuntivo del tempo di lavoro effettivo e considerazioni riguardo le
 differenze rispetto alla pianificazione (cap 1.7) (ad esempio Gannt
 consuntivo).
 -->
+
+Durante lo sviluppo del progetto, vi sono stati vari cambiamenti dall'idea di partenza:
+
+- **dal utilizzare l'Arduino al Raspberry**
+	principalmente, è stato fatto questo cambiamento, perché ci serviva un sistema efficente per la comunicazione in parallello con un
+	sistema di memorizazzione e via ethernet. Dato che arduino questa funzionalità la gestiva in modo inutilizzabile, poco pratico, per
+	ciò di cui avevamo bisogno, abbiamo adottato la scelta di utilizzare comunque una sorta di micro-controllore, ma "nato" per riuscire
+	a gestire al meglio questa, apparentemente insignificante, particolarità.
+
+- **sito multi-pagina a mono pagina**
+	questa scelta è avvenuta grazie anche ad un consiglio offertoci da un nostro professore. In effetti, ultimamente, le applicazioni, o pagine,
+	web tendono a fare tutto ciò di cui si ha bisogno su un'univoca pagina, per fare in modo che su qualsiasi dispositivo sia facilmente utilizzabile
+	senza troppi problemi. Questa scelta non ha mancato di portarci problemi, ma con la giusta determinazione e testardaggine, siamo comunque più
+	soddisfatti del risultato.
+
+- **approccio diretto con iSete**
+	per quanto riguarda i metodi per poter comunicare direttamente (senza bisogno di dispositivi esterni, intendesi) con il nostro sistema, vi sono
+	stati una grande quantità di cambiamenti o supposizioni. Tra riconoscimenti di vario genere (QR Code, carta, codice identificativo) e metodi di
+	iterazione (solo schermo, schermo e tastierino numerico, eccetera), siamo arrivati alla conclusione di utilizzare un dispositivo che ci desse
+	abbastanza libertà di scelta: un tablet. Non sarà stata la via più semplice, ma quella più conveniente di sicuro.
+
+- **struttura hardware**
+	la struttura hardware ha avuto leggere modifiche riguradante le misure che essa avrebbe dovuto avere. Il nostro più grande collo di bottiglia era
+	avere a disposizione un officina per poter creare questa struttura, dato che necessitavamo di docenti specifici (quindi in mancanza di essi non
+	si poteva proseguire). Inoltre, non essendo degli esperti nel settore di laborazione di materiali, in alcuni casi ha portato anche dei rallentamenti.
+
 ## Conclusioni
 
 Questo progetto è un idea alternativa alle macchinette da caffé, potrebbe essere molto interessante
