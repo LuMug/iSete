@@ -28,6 +28,8 @@ Poi, insieme ad Andrea abbiamo preso tutte le misure da dare per fare il disegno
 #####Serhiy
 
 Durante la giornata di oggi ho continuato la mia ricerca al collegamento Tablet-Raspberry, facendo anche delle prove che però hanno tutte fallito.
+AGGIORNAMENTO :
+Nella mattinata di lunedì e nella serata di martedì ho nuovamente lavorato sul collegamento, riuscendo piano piano a risolvere alcuni problemi.
 
 ##  Problemi riscontrati e soluzioni adottate
 
