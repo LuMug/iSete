@@ -29,10 +29,6 @@
 
   - [Design dei dati e database](#design-dei-dati-e-database)
 
-  - [Design delle interfacce](#design-delle-interfacce)
-
-  - [Design procedurale](#design-procedurale)
-
 1. [Implementazione](#implementazione)
 
 1. [Test](#test)
@@ -363,32 +359,7 @@ versione, mentre le vecchie saranno sui diari.
 -->
 
 ![ER](img/ER.PNG)
-### Design delle interfacce
-<!--
-Descrizione delle interfacce interne ed esterne del sistema e
-dell’interfaccia utente. La progettazione delle interfacce è basata
-sulle informazioni ricavate durante la fase di analisi e realizzata
-tramite mockups.
--->
 
-### Design procedurale
-<!--
-Descrive i concetti dettagliati dell’architettura/sviluppo utilizzando
-ad esempio:
-
--   Diagrammi di flusso e Nassi.
-
--   Tabelle.
-
--   Classi e metodi.
-
--   Tabelle di routing
-
--   Diritti di accesso a condivisioni …
-
-Questi documenti permetteranno di rappresentare i dettagli procedurali
-per la realizzazione del prodotto.
--->
 ### Web Server
 
 #### Sitoweb
@@ -858,11 +829,12 @@ Durante lo sviluppo del progetto, vi sono stati vari cambiamenti dall'idea di pa
 	ciò di cui avevamo bisogno, abbiamo adottato la scelta di utilizzare comunque una sorta di micro-controllore, ma "nato" per riuscire
 	a gestire al meglio questa, apparentemente insignificante, particolarità.
 
-- **sito multi-pagina a mono pagina**
-	questa scelta è avvenuta grazie anche ad un consiglio offertoci da un nostro professore. In effetti, ultimamente, le applicazioni, o pagine,
+- **design sito e multi-pagina a mono pagina**
+	fare il sito monopagina è una scelta è avvenuta grazie anche ad un consiglio offertoci da un nostro professore. In effetti, ultimamente, le applicazioni, o pagine,
 	web tendono a fare tutto ciò di cui si ha bisogno su un'univoca pagina, per fare in modo che su qualsiasi dispositivo sia facilmente utilizzabile
 	senza troppi problemi. Questa scelta non ha mancato di portarci problemi, ma con la giusta determinazione e testardaggine, siamo comunque più
-	soddisfatti del risultato.
+	soddisfatti del risultato. Inoltre, durante lo sviluppo vi sono stati parecchi cambiamenti
+  riguardanti le pagine web, tentando di migliorarle sempre di più.
 
 - **approccio diretto con iSete**
 	per quanto riguarda i metodi per poter comunicare direttamente (senza bisogno di dispositivi esterni, intendesi) con il nostro sistema, vi sono
@@ -908,7 +880,7 @@ modulabile.
 ### Considerazioni personali
 #### Nishan
 Per me, questo è la seconda esperienza in un progetto di gruppo ma gestito in modo diverso.
-Quest'anno abbiamo usato droptask per dividerci il lavoro e secondo me è stata una bella 
+Quest'anno abbiamo usato droptask per dividerci il lavoro e secondo me è stata una bella
 idea ma anche contemporaneamente utile perchè in questo modo potevi sempre sapere cosa c'era da
 fare e cosa mancava. Mi è piaciuto il progetto perchè ho potuto lavorare un po sul sito e sull'hardware.
 In conclusione volevo anche dire che, questo progetto facendolo in massimo 5 persone era piu produttivo,
@@ -916,39 +888,11 @@ e coinvolgieva tutti in modo attivo.
 <!--
   Cosa ho imparato in questo progetto? ecc
 -->
-## Bibliografia
-
-### Bibliografia per articoli di riviste
-<!--
-1.  Cognome e nome (o iniziali) dell’autore o degli autori, o nome
-    dell’organizzazione,
-
-2.  Titolo dell’articolo (tra virgolette),
-
-3.  Titolo della rivista (in italico),
-
-4.  Anno e numero
-
-5.  Pagina iniziale dell’articolo,
--->
-### Bibliografia per libri
-
-<!--
-1.  Cognome e nome (o iniziali) dell’autore o degli autori, o nome
-    dell’organizzazione,
-
-2.  Titolo del libro (in italico),
-
-3.  ev. Numero di edizione,
-
-4.  Nome dell’editore,
-
-5.  Anno di pubblicazione,
-
-6.  ISBN.
--->
 
 ### Sitografia
+
+- [W3Schools](http://www.w3schools.com)
+- [PI4J](http://www.pi4j.com)
 <!--
 1.  URL del sito (se troppo lungo solo dominio, evt completo nel
     diario),
