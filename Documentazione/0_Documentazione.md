@@ -704,6 +704,13 @@ In caso di esito positivo creo la webview e la reindirizzo, tramite il metodo lo
     }
 ```
 ### HW
+#### Struttura legno(Nishan)
+
+Come si vede nell'immagine sottostante ho messo due pezzi di legno di spessore 1 cm.
+Questi due distano 4.8 cm.
+Alla base ho messo 5 strati di cartone che formano 5 centimentri in modo che la capsula cada nel ferro di cavallo
+![Login](img/HW_Finale2.png)
+
 
 #### Espulsione capsule(Andrea)
 #####Schema Logico
