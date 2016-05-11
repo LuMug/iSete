@@ -507,7 +507,7 @@ Per chiedere il credito ho inserito un campo number value, per la mail ho usato 
 Con questo if controllo se tutti i campi sono completati.
 ```
 if(!empty($nome) && !empty($cognome) && !empty($credito) && !empty($password)){
-  ```
+```
 
 Questo è il risultato di come appare la nostra finestra aggiungi utenti.
 
@@ -994,7 +994,7 @@ Come per Nishan, questo è il mio secondo progetto di gruppo. Quest'anno invece 
 Nonostante avessimo un gran carico di lavoro siamo riusciti a gestirlo abbastanza bene con questo metodo poichè ogni 2 settimane si faceva il punto della situazione mettendo nuovi paletti da seguire.
 È stato utile perchè a differenza di un gantt classico il programma poteva cambiare, anche drasticamente, dando nuove priorità.
 
-### Ettore
+#### Ettore
 
 Il progetto agli inizi mi convinceva molto e avrei voluto finirlo. Trovo che come gruppo potevamo
 fare molto di più. Per quanto, comunque, non abbiamo finito, trovo che il risutlato non sia dei peggiori di cui mi immaginavo.
@@ -1007,6 +1007,11 @@ Grazie a esso ho imparato a documentarmi molto bene prima di iniziare a lavorare
 Dall'altro canto però questo cambiamento è stata un'ottima idea, perché ha semplificato di molto la progettazione delle varie comunicazioni e ha permesso di ridurre le dimensioni del nostro dispenser.<br>
 È stato interessante lavorare in gruppo, perché se si ha un problema o un dubbio ci si può consultare con i propri compagni, che sono sempre disposti ad aiutarti. L'unica pecca è stata però il fatto che, quando due componenti lavorano con il Raspberry e uno dei due deve per forza riavviarlo allora bisogna che lui aspetti che l'altro compagno finisca il suo lavoro prima di poter procedere.
 
+#### Andrea
+Questo progetto è stato molto interessante poiché ho imparato a lavorare con il Raspberry, inoltre ho imparato a lavorare in gruppo.
+Questo progetto è stato anche molto stressante poiché ho perso moltissime ore a sbattere la testa su cose che non funzionavano.
+Il dover cambiare da lavorare con l'Arduino a dover lavorare con il Raspberry è stato molto noioso poiché ho "perso" tutto ciò che avevo fatto, ma grazie al fatto che abbiamo cambiato modo di lavorare è stato molto più facile.
+Comunque sia la penso come gli altri. Questo progetto è stato molto istruttivo.
 <!--
   Cosa ho imparato in questo progetto? ecc
 -->
@@ -1016,6 +1021,7 @@ Dall'altro canto però questo cambiamento è stata un'ottima idea, perché ha se
 - [W3Schools](http://www.w3schools.com)
 - [PI4J](http://www.pi4j.com)
 - [API Google Chart](https://developers.google.com/chart)
+- [USB](http://joshuawoehlke.com/android-raspberry-pi-display-over-usb/)
 
 <!--
 1.  URL del sito (se troppo lungo solo dominio, evt completo nel

@@ -1,0 +1,1551 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8" />
+      <title>0_Documentazione</title>
+      <style>.markdown-preview:not([data-use-github-style]) { padding: 2em; font-size: 1.2em; color: rgb(171, 178, 191); overflow: auto; background-color: rgb(40, 44, 52); }
+.markdown-preview:not([data-use-github-style]) > :first-child { margin-top: 0px; }
+.markdown-preview:not([data-use-github-style]) h1, .markdown-preview:not([data-use-github-style]) h2, .markdown-preview:not([data-use-github-style]) h3, .markdown-preview:not([data-use-github-style]) h4, .markdown-preview:not([data-use-github-style]) h5, .markdown-preview:not([data-use-github-style]) h6 { line-height: 1.2; margin-top: 1.5em; margin-bottom: 0.5em; color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) h1 { font-size: 2.4em; font-weight: 300; }
+.markdown-preview:not([data-use-github-style]) h2 { font-size: 1.8em; font-weight: 400; }
+.markdown-preview:not([data-use-github-style]) h3 { font-size: 1.5em; font-weight: 500; }
+.markdown-preview:not([data-use-github-style]) h4 { font-size: 1.2em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) h5 { font-size: 1.1em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) h6 { font-size: 1em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) strong { color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) del { color: rgb(124, 135, 156); }
+.markdown-preview:not([data-use-github-style]) a, .markdown-preview:not([data-use-github-style]) a code { color: rgb(82, 139, 255); }
+.markdown-preview:not([data-use-github-style]) img { max-width: 100%; }
+.markdown-preview:not([data-use-github-style]) > p { margin-top: 0px; margin-bottom: 1.5em; }
+.markdown-preview:not([data-use-github-style]) > ul, .markdown-preview:not([data-use-github-style]) > ol { margin-bottom: 1.5em; }
+.markdown-preview:not([data-use-github-style]) blockquote { margin: 1.5em 0px; font-size: inherit; color: rgb(124, 135, 156); border-color: rgb(75, 83, 98); border-width: 4px; }
+.markdown-preview:not([data-use-github-style]) hr { margin: 3em 0px; border-top-width: 2px; border-top-style: dashed; border-top-color: rgb(75, 83, 98); background: none; }
+.markdown-preview:not([data-use-github-style]) table { margin: 1.5em 0px; }
+.markdown-preview:not([data-use-github-style]) th { color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) th, .markdown-preview:not([data-use-github-style]) td { padding: 0.66em 1em; border: 1px solid rgb(75, 83, 98); }
+.markdown-preview:not([data-use-github-style]) code { color: rgb(255, 255, 255); background-color: rgb(58, 63, 75); }
+.markdown-preview:not([data-use-github-style]) pre.editor-colors { margin: 1.5em 0px; padding: 1em; font-size: 0.92em; border-radius: 3px; background-color: rgb(49, 54, 63); }
+.markdown-preview:not([data-use-github-style]) kbd { color: rgb(255, 255, 255); border-width: 1px 1px 2px; border-style: solid; border-color: rgb(75, 83, 98) rgb(75, 83, 98) rgb(62, 68, 81); background-color: rgb(58, 63, 75); }
+.markdown-preview[data-use-github-style] { font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; line-height: 1.6; word-wrap: break-word; padding: 30px; font-size: 16px; color: rgb(51, 51, 51); overflow: scroll; background-color: rgb(255, 255, 255); }
+.markdown-preview[data-use-github-style] > :first-child { margin-top: 0px !important; }
+.markdown-preview[data-use-github-style] > :last-child { margin-bottom: 0px !important; }
+.markdown-preview[data-use-github-style] a:not([href]) { color: inherit; text-decoration: none; }
+.markdown-preview[data-use-github-style] .absent { color: rgb(204, 0, 0); }
+.markdown-preview[data-use-github-style] .anchor { position: absolute; top: 0px; left: 0px; display: block; padding-right: 6px; padding-left: 30px; margin-left: -30px; }
+.markdown-preview[data-use-github-style] .anchor:focus { outline: none; }
+.markdown-preview[data-use-github-style] h1, .markdown-preview[data-use-github-style] h2, .markdown-preview[data-use-github-style] h3, .markdown-preview[data-use-github-style] h4, .markdown-preview[data-use-github-style] h5, .markdown-preview[data-use-github-style] h6 { position: relative; margin-top: 1em; margin-bottom: 16px; font-weight: bold; line-height: 1.4; }
+.markdown-preview[data-use-github-style] h1 .octicon-link, .markdown-preview[data-use-github-style] h2 .octicon-link, .markdown-preview[data-use-github-style] h3 .octicon-link, .markdown-preview[data-use-github-style] h4 .octicon-link, .markdown-preview[data-use-github-style] h5 .octicon-link, .markdown-preview[data-use-github-style] h6 .octicon-link { display: none; color: rgb(0, 0, 0); vertical-align: middle; }
+.markdown-preview[data-use-github-style] h1:hover .anchor, .markdown-preview[data-use-github-style] h2:hover .anchor, .markdown-preview[data-use-github-style] h3:hover .anchor, .markdown-preview[data-use-github-style] h4:hover .anchor, .markdown-preview[data-use-github-style] h5:hover .anchor, .markdown-preview[data-use-github-style] h6:hover .anchor { padding-left: 8px; margin-left: -30px; text-decoration: none; }
+.markdown-preview[data-use-github-style] h1:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h2:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h3:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h4:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h5:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h6:hover .anchor .octicon-link { display: inline-block; }
+.markdown-preview[data-use-github-style] h1 tt, .markdown-preview[data-use-github-style] h2 tt, .markdown-preview[data-use-github-style] h3 tt, .markdown-preview[data-use-github-style] h4 tt, .markdown-preview[data-use-github-style] h5 tt, .markdown-preview[data-use-github-style] h6 tt, .markdown-preview[data-use-github-style] h1 code, .markdown-preview[data-use-github-style] h2 code, .markdown-preview[data-use-github-style] h3 code, .markdown-preview[data-use-github-style] h4 code, .markdown-preview[data-use-github-style] h5 code, .markdown-preview[data-use-github-style] h6 code { font-size: inherit; }
+.markdown-preview[data-use-github-style] h1 { padding-bottom: 0.3em; font-size: 2.25em; line-height: 1.2; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(238, 238, 238); }
+.markdown-preview[data-use-github-style] h1 .anchor { line-height: 1; }
+.markdown-preview[data-use-github-style] h2 { padding-bottom: 0.3em; font-size: 1.75em; line-height: 1.225; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(238, 238, 238); }
+.markdown-preview[data-use-github-style] h2 .anchor { line-height: 1; }
+.markdown-preview[data-use-github-style] h3 { font-size: 1.5em; line-height: 1.43; }
+.markdown-preview[data-use-github-style] h3 .anchor { line-height: 1.2; }
+.markdown-preview[data-use-github-style] h4 { font-size: 1.25em; }
+.markdown-preview[data-use-github-style] h4 .anchor { line-height: 1.2; }
+.markdown-preview[data-use-github-style] h5 { font-size: 1em; }
+.markdown-preview[data-use-github-style] h5 .anchor { line-height: 1.1; }
+.markdown-preview[data-use-github-style] h6 { font-size: 1em; color: rgb(119, 119, 119); }
+.markdown-preview[data-use-github-style] h6 .anchor { line-height: 1.1; }
+.markdown-preview[data-use-github-style] p, .markdown-preview[data-use-github-style] blockquote, .markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol, .markdown-preview[data-use-github-style] dl, .markdown-preview[data-use-github-style] table, .markdown-preview[data-use-github-style] pre { margin-top: 0px; margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] hr { height: 4px; padding: 0px; margin: 16px 0px; border: 0px none; background-color: rgb(231, 231, 231); }
+.markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol { padding-left: 2em; }
+.markdown-preview[data-use-github-style] ul.no-list, .markdown-preview[data-use-github-style] ol.no-list { padding: 0px; list-style-type: none; }
+.markdown-preview[data-use-github-style] ul ul, .markdown-preview[data-use-github-style] ul ol, .markdown-preview[data-use-github-style] ol ol, .markdown-preview[data-use-github-style] ol ul { margin-top: 0px; margin-bottom: 0px; }
+.markdown-preview[data-use-github-style] li > p { margin-top: 16px; }
+.markdown-preview[data-use-github-style] dl { padding: 0px; }
+.markdown-preview[data-use-github-style] dl dt { padding: 0px; margin-top: 16px; font-size: 1em; font-style: italic; font-weight: bold; }
+.markdown-preview[data-use-github-style] dl dd { padding: 0px 16px; margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] blockquote { padding: 0px 15px; color: rgb(119, 119, 119); border-left-width: 4px; border-left-style: solid; border-left-color: rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] blockquote > :first-child { margin-top: 0px; }
+.markdown-preview[data-use-github-style] blockquote > :last-child { margin-bottom: 0px; }
+.markdown-preview[data-use-github-style] table { display: block; width: 100%; overflow: auto; word-break: keep-all; }
+.markdown-preview[data-use-github-style] table th { font-weight: bold; }
+.markdown-preview[data-use-github-style] table th, .markdown-preview[data-use-github-style] table td { padding: 6px 13px; border: 1px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] table tr { border-top-width: 1px; border-top-style: solid; border-top-color: rgb(204, 204, 204); background-color: rgb(255, 255, 255); }
+.markdown-preview[data-use-github-style] table tr:nth-child(2n) { background-color: rgb(248, 248, 248); }
+.markdown-preview[data-use-github-style] img { max-width: 100%; box-sizing: border-box; }
+.markdown-preview[data-use-github-style] .emoji { max-width: none; }
+.markdown-preview[data-use-github-style] span.frame { display: block; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.frame > span { display: block; float: left; width: auto; padding: 7px; margin: 13px 0px 0px; overflow: hidden; border: 1px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] span.frame span img { display: block; float: left; }
+.markdown-preview[data-use-github-style] span.frame span span { display: block; padding: 5px 0px 0px; clear: both; color: rgb(51, 51, 51); }
+.markdown-preview[data-use-github-style] span.align-center { display: block; overflow: hidden; clear: both; }
+.markdown-preview[data-use-github-style] span.align-center > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: center; }
+.markdown-preview[data-use-github-style] span.align-center span img { margin: 0px auto; text-align: center; }
+.markdown-preview[data-use-github-style] span.align-right { display: block; overflow: hidden; clear: both; }
+.markdown-preview[data-use-github-style] span.align-right > span { display: block; margin: 13px 0px 0px; overflow: hidden; text-align: right; }
+.markdown-preview[data-use-github-style] span.align-right span img { margin: 0px; text-align: right; }
+.markdown-preview[data-use-github-style] span.float-left { display: block; float: left; margin-right: 13px; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.float-left span { margin: 13px 0px 0px; }
+.markdown-preview[data-use-github-style] span.float-right { display: block; float: right; margin-left: 13px; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.float-right > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: right; }
+.markdown-preview[data-use-github-style] code, .markdown-preview[data-use-github-style] tt { padding: 0.2em 0px; margin: 0px; font-size: 85%; border-radius: 3px; background-color: rgba(0, 0, 0, 0.0392157); }
+.markdown-preview[data-use-github-style] code::before, .markdown-preview[data-use-github-style] tt::before, .markdown-preview[data-use-github-style] code::after, .markdown-preview[data-use-github-style] tt::after { letter-spacing: -0.2em; content: " "; }
+.markdown-preview[data-use-github-style] code br, .markdown-preview[data-use-github-style] tt br { display: none; }
+.markdown-preview[data-use-github-style] del code { text-decoration: inherit; }
+.markdown-preview[data-use-github-style] pre > code { padding: 0px; margin: 0px; font-size: 100%; word-break: normal; white-space: pre; border: 0px; background: transparent; }
+.markdown-preview[data-use-github-style] .highlight { margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] .highlight pre, .markdown-preview[data-use-github-style] pre { padding: 16px; overflow: auto; font-size: 85%; line-height: 1.45; border-radius: 3px; background-color: rgb(247, 247, 247); }
+.markdown-preview[data-use-github-style] .highlight pre { margin-bottom: 0px; word-break: normal; }
+.markdown-preview[data-use-github-style] pre { word-wrap: normal; }
+.markdown-preview[data-use-github-style] pre code, .markdown-preview[data-use-github-style] pre tt { display: inline; max-width: initial; padding: 0px; margin: 0px; overflow: initial; line-height: inherit; word-wrap: normal; border: 0px; background-color: transparent; }
+.markdown-preview[data-use-github-style] pre code::before, .markdown-preview[data-use-github-style] pre tt::before, .markdown-preview[data-use-github-style] pre code::after, .markdown-preview[data-use-github-style] pre tt::after { content: normal; }
+.markdown-preview[data-use-github-style] kbd { display: inline-block; padding: 3px 5px; font-size: 11px; line-height: 10px; color: rgb(85, 85, 85); vertical-align: middle; border-style: solid; border-width: 1px; border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(187, 187, 187); border-radius: 3px; box-shadow: rgb(187, 187, 187) 0px -1px 0px inset; background-color: rgb(252, 252, 252); }
+.markdown-preview[data-use-github-style] a { color: rgb(51, 122, 183); }
+.markdown-preview[data-use-github-style] code { color: inherit; }
+.markdown-preview[data-use-github-style] pre.editor-colors { padding: 0.8em 1em; margin-bottom: 1em; font-size: 0.85em; border-radius: 4px; overflow: auto; }
+.scrollbars-visible-always .markdown-preview pre.editor-colors::shadow .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors::shadow .horizontal-scrollbar { visibility: hidden; }
+.scrollbars-visible-always .markdown-preview pre.editor-colors:hover::shadow .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors:hover::shadow .horizontal-scrollbar { visibility: visible; }
+.bracket-matcher .region {
+  border-bottom: 1px dotted lime;
+  position: absolute;
+}
+
+.spell-check-misspelling .region {
+  border-bottom: 2px dotted rgba(255, 51, 51, 0.75);
+}
+
+pre.editor-colors,
+.host {
+  background-color: #282c34;
+  color: #abb2bf;
+}
+pre.editor-colors .line.cursor-line,
+.host .line.cursor-line {
+  background-color: rgba(153, 187, 255, 0.04);
+}
+pre.editor-colors .invisible,
+.host .invisible {
+  color: #abb2bf;
+}
+pre.editor-colors .cursor,
+.host .cursor {
+  border-left: 2px solid #528bff;
+}
+pre.editor-colors .selection .region,
+.host .selection .region {
+  background-color: #3e4451;
+}
+pre.editor-colors .bracket-matcher .region,
+.host .bracket-matcher .region {
+  border-bottom: 1px solid #528bff;
+  box-sizing: border-box;
+}
+pre.editor-colors .invisible-character,
+.host .invisible-character {
+  color: rgba(171, 178, 191, 0.15);
+}
+pre.editor-colors .indent-guide,
+.host .indent-guide {
+  color: rgba(171, 178, 191, 0.15);
+}
+pre.editor-colors .wrap-guide,
+.host .wrap-guide {
+  background-color: rgba(171, 178, 191, 0.15);
+}
+pre.editor-colors .gutter .line-number,
+.host .gutter .line-number {
+  color: #636d83;
+  -webkit-font-smoothing: antialiased;
+}
+pre.editor-colors .gutter .line-number.cursor-line,
+.host .gutter .line-number.cursor-line {
+  color: #abb2bf;
+  background-color: #2c313a;
+}
+pre.editor-colors .gutter .line-number.cursor-line-no-selection,
+.host .gutter .line-number.cursor-line-no-selection {
+  background-color: transparent;
+}
+pre.editor-colors .gutter .line-number .icon-right,
+.host .gutter .line-number .icon-right {
+  color: #abb2bf;
+}
+pre.editor-colors .gutter:not(.git-diff-icon) .line-number.git-line-removed.git-line-removed::before,
+.host .gutter:not(.git-diff-icon) .line-number.git-line-removed.git-line-removed::before {
+  bottom: -3px;
+}
+pre.editor-colors .gutter:not(.git-diff-icon) .line-number.git-line-removed::after,
+.host .gutter:not(.git-diff-icon) .line-number.git-line-removed::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 25px;
+  border-bottom: 1px dotted rgba(224, 82, 82, 0.5);
+  pointer-events: none;
+}
+pre.editor-colors .gutter .line-number.folded,
+.host .gutter .line-number.folded,
+pre.editor-colors .gutter .line-number:after,
+.host .gutter .line-number:after,
+pre.editor-colors .fold-marker:after,
+.host .fold-marker:after {
+  color: #abb2bf;
+}
+.comment {
+  color: #5c6370;
+  font-style: italic;
+}
+.comment .markup.link {
+  color: #5c6370;
+}
+.entity.name.type {
+  color: #e5c07b;
+}
+.entity.other.inherited-class {
+  color: #98c379;
+}
+.keyword {
+  color: #c678dd;
+}
+.keyword.control {
+  color: #c678dd;
+}
+.keyword.operator {
+  color: #abb2bf;
+}
+.keyword.other.special-method {
+  color: #61afef;
+}
+.keyword.other.unit {
+  color: #d19a66;
+}
+.storage {
+  color: #c678dd;
+}
+.storage.type.annotation,
+.storage.type.primitive {
+  color: #c678dd;
+}
+.storage.modifier.package,
+.storage.modifier.import {
+  color: #abb2bf;
+}
+.constant {
+  color: #d19a66;
+}
+.constant.variable {
+  color: #d19a66;
+}
+.constant.character.escape {
+  color: #56b6c2;
+}
+.constant.numeric {
+  color: #d19a66;
+}
+.constant.other.color {
+  color: #56b6c2;
+}
+.constant.other.symbol {
+  color: #56b6c2;
+}
+.variable {
+  color: #e06c75;
+}
+.variable.interpolation {
+  color: #be5046;
+}
+.variable.parameter {
+  color: #abb2bf;
+}
+.string {
+  color: #98c379;
+}
+.string.regexp {
+  color: #56b6c2;
+}
+.string.regexp .source.ruby.embedded {
+  color: #e5c07b;
+}
+.string.other.link {
+  color: #e06c75;
+}
+.punctuation.definition.comment {
+  color: #5c6370;
+}
+.punctuation.definition.method-parameters,
+.punctuation.definition.function-parameters,
+.punctuation.definition.parameters,
+.punctuation.definition.separator,
+.punctuation.definition.seperator,
+.punctuation.definition.array {
+  color: #abb2bf;
+}
+.punctuation.definition.heading,
+.punctuation.definition.identity {
+  color: #61afef;
+}
+.punctuation.definition.bold {
+  color: #e5c07b;
+  font-weight: bold;
+}
+.punctuation.definition.italic {
+  color: #c678dd;
+  font-style: italic;
+}
+.punctuation.section.embedded {
+  color: #be5046;
+}
+.punctuation.section.method,
+.punctuation.section.class,
+.punctuation.section.inner-class {
+  color: #abb2bf;
+}
+.support.class {
+  color: #e5c07b;
+}
+.support.type {
+  color: #56b6c2;
+}
+.support.function {
+  color: #56b6c2;
+}
+.support.function.any-method {
+  color: #61afef;
+}
+.entity.name.function {
+  color: #61afef;
+}
+.entity.name.class,
+.entity.name.type.class {
+  color: #e5c07b;
+}
+.entity.name.section {
+  color: #61afef;
+}
+.entity.name.tag {
+  color: #e06c75;
+}
+.entity.other.attribute-name {
+  color: #d19a66;
+}
+.entity.other.attribute-name.id {
+  color: #61afef;
+}
+.meta.class {
+  color: #e5c07b;
+}
+.meta.class.body {
+  color: #abb2bf;
+}
+.meta.method-call,
+.meta.method {
+  color: #abb2bf;
+}
+.meta.definition.variable {
+  color: #e06c75;
+}
+.meta.link {
+  color: #d19a66;
+}
+.meta.require {
+  color: #61afef;
+}
+.meta.selector {
+  color: #c678dd;
+}
+.meta.separator {
+  background-color: #373b41;
+  color: #abb2bf;
+}
+.meta.tag {
+  color: #abb2bf;
+}
+.underline {
+  text-decoration: underline;
+}
+.none {
+  color: #abb2bf;
+}
+.invalid.deprecated {
+  color: #523d14 !important;
+  background-color: #e0c285 !important;
+}
+.invalid.illegal {
+  color: #ffffff !important;
+  background-color: #e05252 !important;
+}
+.markup.bold {
+  color: #d19a66;
+  font-weight: bold;
+}
+.markup.changed {
+  color: #c678dd;
+}
+.markup.deleted {
+  color: #e06c75;
+}
+.markup.italic {
+  color: #c678dd;
+  font-style: italic;
+}
+.markup.heading {
+  color: #e06c75;
+}
+.markup.heading .punctuation.definition.heading {
+  color: #61afef;
+}
+.markup.link {
+  color: #c678dd;
+}
+.markup.inserted {
+  color: #98c379;
+}
+.markup.quote {
+  color: #d19a66;
+}
+.markup.raw {
+  color: #98c379;
+}
+.source.cs .keyword.operator {
+  color: #c678dd;
+}
+.source.css .property-name,
+.source.css .property-value {
+  color: #828997;
+}
+.source.css .property-name.support,
+.source.css .property-value.support {
+  color: #abb2bf;
+}
+.source.gfm .markup {
+  -webkit-font-smoothing: auto;
+}
+.source.gfm .link .entity {
+  color: #61afef;
+}
+.source.ini .keyword.other.definition.ini {
+  color: #e06c75;
+}
+.source.java .storage.modifier.import {
+  color: #e5c07b;
+}
+.source.java .storage.type {
+  color: #e5c07b;
+}
+.source.java-properties .meta.key-pair {
+  color: #e06c75;
+}
+.source.java-properties .meta.key-pair > .punctuation {
+  color: #abb2bf;
+}
+.source.js .keyword.operator {
+  color: #56b6c2;
+}
+.source.js .keyword.operator.delete,
+.source.js .keyword.operator.in,
+.source.js .keyword.operator.of,
+.source.js .keyword.operator.instanceof,
+.source.js .keyword.operator.new,
+.source.js .keyword.operator.typeof,
+.source.js .keyword.operator.void {
+  color: #c678dd;
+}
+.source.json .meta.structure.dictionary.json > .string.quoted.json {
+  color: #e06c75;
+}
+.source.json .meta.structure.dictionary.json > .string.quoted.json > .punctuation.string {
+  color: #e06c75;
+}
+.source.json .meta.structure.dictionary.json > .value.json > .string.quoted.json,
+.source.json .meta.structure.array.json > .value.json > .string.quoted.json,
+.source.json .meta.structure.dictionary.json > .value.json > .string.quoted.json > .punctuation,
+.source.json .meta.structure.array.json > .value.json > .string.quoted.json > .punctuation {
+  color: #98c379;
+}
+.source.json .meta.structure.dictionary.json > .constant.language.json,
+.source.json .meta.structure.array.json > .constant.language.json {
+  color: #56b6c2;
+}
+.source.ruby .constant.other.symbol > .punctuation {
+  color: inherit;
+}
+.source.python .keyword.operator.logical.python {
+  color: #c678dd;
+}
+.source.python .variable.parameter {
+  color: #d19a66;
+}
+</style>
+  </head>
+  <body class='markdown-preview' data-use-github-style><h1 id="isete">iSete</h1>
+<ol>
+<li><p><a href="#introduzione">Introduzione</a></p>
+<ul>
+<li><p><a href="#informazioni-sul-progetto">Informazioni sul progetto</a></p>
+</li>
+<li><p><a href="#abstract">Abstract</a></p>
+</li>
+<li><p><a href="#scopo">Scopo</a></p>
+</li>
+</ul>
+</li>
+<li><p><a href="#analisi">Analisi</a></p>
+<ul>
+<li><p><a href="#analisi-del-dominio">Analisi del dominio</a></p>
+</li>
+<li><p><a href="#analisi-e-specifica-dei-requisiti">Analisi e specifica dei requisiti</a></p>
+</li>
+</ul>
+</li>
+<li><p><a href="#use-case">Use case</a></p>
+<ul>
+<li><p><a href="#pianificazione">Pianificazione</a></p>
+</li>
+<li><p><a href="#analisi-dei-mezzi">Analisi dei mezzi</a></p>
+</li>
+</ul>
+</li>
+<li><p><a href="#progettazione">Progettazione</a></p>
+<ul>
+<li><p><a href="#design-dell&#x2019;architettura-del-sistema">Design dell’architettura del sistema</a></p>
+</li>
+<li><p><a href="#design-dei-dati-e-database">Design dei dati e database</a></p>
+</li>
+</ul>
+</li>
+<li><p><a href="#implementazione">Implementazione</a></p>
+</li>
+<li><p><a href="#test">Test</a></p>
+<ul>
+<li><p><a href="#protocollo-di-test">Protocollo di test</a></p>
+</li>
+<li><p><a href="#risultati-test">Risultati test</a></p>
+</li>
+<li><p><a href="#mancanze/limitazioni-conosciute">Mancanze/limitazioni conosciute</a></p>
+</li>
+</ul>
+</li>
+<li><p><a href="#consuntivo">Consuntivo</a></p>
+</li>
+<li><p><a href="#conclusioni">Conclusioni</a></p>
+<ul>
+<li><p><a href="#sviluppi-futuri">Sviluppi futuri</a></p>
+</li>
+<li><p><a href="#considerazioni-personali">Considerazioni personali</a></p>
+</li>
+</ul>
+</li>
+<li><p><a href="#sitografia">Sitografia</a></p>
+</li>
+<li><p><a href="#allegati">Allegati</a></p>
+</li>
+</ol>
+<h2 id="introduzione">Introduzione</h2>
+<h3 id="informazioni-sul-progetto">Informazioni sul progetto</h3>
+<p>  Scuola: SAMT - Scuola Arti e Mestieri Trevano
+  Sezione: Informatica
+  Matera: Progetti</p>
+<p>  Allievi:</p>
+<ul>
+<li>Ettore Ongaro</li>
+<li>Andrea Lupica</li>
+<li>Raffaele Scarcella</li>
+<li>Nishan Anthonippillai</li>
+<li>Serhiy Ushchapivskyy</li>
+</ul>
+<p>Docente responsabile</p>
+<ul>
+<li>Luca Muggiasca</li>
+</ul>
+<p>Data di inizio: 03.02.2016</p>
+<p>Data di consegna: 11.05.2016</p>
+<!--
+
+  In questo capitolo raccogliere le informazioni relative al progetto, ad esempio:
+
+  -   Allievo/i e docente/i coinvolti nel progetto e rispettivi ruoli,
+
+  -   scuola ,sezione, materia/e,
+
+  -   date di inizio e termine di consegna,
+
+  -   …
+  -->
+<h3 id="abstract">Abstract</h3>
+<!--
+
+  E’ una breve e accurata rappresentazione dei contenuti di un documento,
+  senza notazioni critiche o valutazioni. Lo scopo di un abstract efficace
+  dovrebbe essere quello di far conoscere all’utente il contenuto di base
+  di un documento e metterlo nella condizione di decidere se risponde ai
+  suoi interessi e se è opportuno il ricorso al documento originale.
+
+  Può contenere alcuni o tutti gli elementi seguenti:
+
+  -   **Background/Situazione iniziale**
+
+  -   **Descrizione del problema e motivazione**: Che problema ho cercato
+      di risolvere? Questa sezione dovrebbe includere l'importanza del
+      vostro lavoro, la difficoltà dell'area e l'effetto che potrebbe
+      avere se portato a termine con successo.
+
+  -   **Approccio/Metodi**: Come ho ottenuto dei progressi? Come ho
+      risolto il problema (tecniche…)? Quale è stata l’entità del mio
+      lavoro? Che fattori importanti controllo, ignoro o misuro?
+
+  -   **Risultati**: Quale è la risposta? Quali sono i risultati? Quanto è
+      più veloce, più sicuro, più economico o in qualche altro aspetto
+      migliore di altri prodotti/soluzioni?
+
+  Esempio di abstract:
+
+  > *As the size and complexity of today’s most modern computer chips
+  > increase, new techniques must be developed to effectively design and
+  > create Very Large Scale Integration chips quickly. For this project, a
+  > new type of hardware compiler is created. This hardware compiler will
+  > read a C++ program, and physically design a suitable microprocessor
+  > intended for running that specific program. With this new and powerful
+  > compiler, it is possible to design anything from a small adder, to a
+  > microprocessor with millions of transistors. Designing new computer
+  > chips, such as the Pentium 4, can require dozens of engineers and
+  > months of time. With the help of this compiler, a single person could
+  > design such a large-scale microprocessor in just weeks.*
+
+-->
+<p><em>Do you need a coffee but you don&#39;t have with for buy it? Don&#39;t worry: with the new dispenser you can buy every type of coffee pod trought your account!
+You just have to log in, add your credit to your account and you can buy coffee pod when you want, everywhere you are.
+With the new dispenser you could buy coffee pod from your phone without go to the coffe maker !
+What are you waiting for? Take your preferred coffee pod!</em></p>
+<h3 id="scopo">Scopo</h3>
+<!--
+  Lo scopo del progetto (scopi didattici/scopi operativi). Dovrebbe
+  descrivere il mandato, ma non vanno ricopiate le informazioni del
+  quaderno dei compiti (che va invece allegato).
+-->
+<p>  Lo scopo principale del progetto è quello di realizzare un sistema di
+  gestione e acquisto per le capsule del caffé.</p>
+<p>  Questo sistema viene utilizzato principalmente da tre tipologie di utenti:</p>
+<ul>
+<li>Amministratore: ha il pieno controllo del sistema</li>
+<li>Responsabile: si occupa della gestione dei crediti e degli utenti</li>
+<li>Utente generico: acquista le capsule e consulta il suo credito e storico
+degli acquisti</li>
+</ul>
+<p>Vi è un sito del prodotto dove il cliente tramite la postazione fisica oppure
+tramite un applicazione android può acquistare le capsule.
+Il responsabile si collega al sito per visualizzare le statistiche riguardanti
+gli utenti e le capsule e per ricaricare il saldo.</p>
+<!-- sezione non finita -->
+<h2 id="analisi">Analisi</h2>
+<h3 id="analisi-del-dominio">Analisi del dominio</h3>
+<!--
+  Questo capitolo dovrebbe descrivere il contesto in cui il prodotto verrà
+  utilizzato, da questa analisi dovrebbero scaturire le risposte a quesiti
+  quali ad esempio:
+
+  -   Background/Situazione iniziale
+
+  -   Quale è e come è organizzato il contesto in cui il prodotto dovrà
+      funzionare?
+
+  -   Come viene risolto attualmente il problema? Esiste già un prodotto
+      simile?
+
+  -   Chi sono gli utenti? Che bisogni hanno? Come e dove lavorano?
+
+  -   Che competenze/conoscenze/cultura posseggono gli utenti in relazione
+      con il problema?
+
+  -   Esistono convenzioni/standard applicati nel dominio?
+
+  -   Che conoscenze teoriche bisogna avere/acquisire per poter operare
+      efficacemente nel dominio?
+
+  -   …
+-->
+<p>Al momento coloro che usufruiscono della macchinetta del caffé sono solo i docenti.
+Non esiste nulla di simile al momento, chi vuole usare la macchinetta del caffé deve comprarsi le proprie capsule.
+Per utilizzare questo prodotto non bisogna avere competenze particolari.</p>
+<h3 id="analisi-e-specifica-dei-requisiti">Analisi e specifica dei requisiti</h3>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>REQ-001</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Nome</strong></td>
+<td>Struttura hardware</td>
+</tr>
+<tr>
+<td><strong>Priorità</strong></td>
+<td>1</td>
+</tr>
+<tr>
+<td><strong>Versione</strong></td>
+<td>1.0</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>Sotto requisiti</strong></td>
+</tr>
+<tr>
+<td><strong>001</strong></td>
+<td>Deve essere modulabile.</td>
+</tr>
+<tr>
+<td><strong>002</strong></td>
+<td>Deve essere riempito con le capsule.</td>
+</tr>
+<tr>
+<td><strong>003</strong></td>
+<td>Il ricaricamento deve essere facilitato, senza compromettere il funzionamento della struttura.</td>
+</tr>
+<tr>
+<td><strong>004</strong></td>
+<td>Deve avere un metodo di espulsione delle capsule a dipendenza della scelta effettuata.</td>
+</tr>
+<tr>
+<td><strong>006</strong></td>
+<td>Deve comunicare al server gli acquisti.</td>
+</tr>
+<tr>
+<td><strong>007</strong></td>
+<td>Le capsule devono essere gestite da un servomotore controllato dall’Arduino.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>REQ-002</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Nome</strong></td>
+<td>Riconoscimento</td>
+</tr>
+<tr>
+<td><strong>Priorità</strong></td>
+<td>1</td>
+</tr>
+<tr>
+<td><strong>Versione</strong></td>
+<td>1.0</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>Sotto requisiti</strong></td>
+</tr>
+<tr>
+<td><strong>001</strong></td>
+<td>Deve essere presente un metodo di riconoscimento univoco dell’utente per chi vuole usufruire dell’apparecchio.</td>
+</tr>
+<tr>
+<td><strong>002</strong></td>
+<td>Bisogna avere una server dove memorizzare gli utenti.</td>
+</tr>
+<tr>
+<td><strong>003</strong></td>
+<td>In caso di server down, bisogna avere un riconoscimento locale.</td>
+</tr>
+<tr>
+<td><strong>004</strong></td>
+<td>In caso di server down, bisogna avere un metodo di memorizzazione temporaneo in locale.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>REQ-003</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Nome</strong></td>
+<td>Amministratore</td>
+</tr>
+<tr>
+<td><strong>Priorità</strong></td>
+<td>1</td>
+</tr>
+<tr>
+<td><strong>Versione</strong></td>
+<td>1.0</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>Sotto requisiti</strong></td>
+</tr>
+<tr>
+<td><strong>001</strong></td>
+<td>Amministratore gestisce il sito.</td>
+</tr>
+<tr>
+<td><strong>002</strong></td>
+<td>Deve poter dare permessi.</td>
+</tr>
+<tr>
+<td><strong>003</strong></td>
+<td>Deve poter aggiungere i moduli.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>REQ-004</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Nome</strong></td>
+<td>Responsabile</td>
+</tr>
+<tr>
+<td><strong>Priorità</strong></td>
+<td>1</td>
+</tr>
+<tr>
+<td><strong>Versione</strong></td>
+<td>1.0</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>Sotto requisiti</strong></td>
+</tr>
+<tr>
+<td><strong>001</strong></td>
+<td>Si preoccupa della gestione dei crediti di ogni singolo utente.</td>
+</tr>
+<tr>
+<td><strong>002</strong></td>
+<td>Ricaricare il distributore di capsule.</td>
+</tr>
+<tr>
+<td><strong>003</strong></td>
+<td>Avere la possibilità di creare utenti.</td>
+</tr>
+<tr>
+<td><strong>004</strong></td>
+<td>Deve poter gestire gli utenti.</td>
+</tr>
+<tr>
+<td><strong>005</strong></td>
+<td>Deve poter creare i grafici dei acquisti.</td>
+</tr>
+<tr>
+<td><strong>006</strong></td>
+<td>Deve poter caricare credito agli utenti.</td>
+</tr>
+<tr>
+<td><strong>007</strong></td>
+<td>Dovrà avere la possibilità di vedere le capsule vendute.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>REQ-005</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Nome</strong></td>
+<td>Utente comune</td>
+</tr>
+<tr>
+<td><strong>Priorità</strong></td>
+<td>1</td>
+</tr>
+<tr>
+<td><strong>Versione</strong></td>
+<td>1.0</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>Sotto requisiti</strong></td>
+</tr>
+<tr>
+<td><strong>001</strong></td>
+<td>Ogni utente deve poter consultare il proprio credito.</td>
+</tr>
+<tr>
+<td><strong>002</strong></td>
+<td>Ha a disposizione informazioni riguardanti i propri acquisti quali storico e quantità di capsule.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>REQ-006</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Nome</strong></td>
+<td>Raspberry</td>
+</tr>
+<tr>
+<td><strong>Priorità</strong></td>
+<td>1</td>
+</tr>
+<tr>
+<td><strong>Versione</strong></td>
+<td>1.0</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>Sotto requisiti</strong></td>
+</tr>
+<tr>
+<td><strong>001</strong></td>
+<td>Hosta un sito che permette la gestione del prodotto: utenti, capsule, configurazioni</td>
+</tr>
+<tr>
+<td><strong>002</strong></td>
+<td>Comunica con altri dispositivi</td>
+</tr>
+<tr>
+<td><strong>003</strong></td>
+<td>Comunica con componenti esterni</td>
+</tr>
+</tbody>
+</table>
+<h3 id="use-case">Use case</h3>
+<p><img src="C:\iSete\Documentazione\img\Use_case.png" alt="Use case"></p>
+<h3 id="pianificazione">Pianificazione</h3>
+<!--
+Prima di stabilire una pianificazione bisogna avere almeno una vaga idea
+del modello di sviluppo che si intende adottare. In questa sezione
+bisognerà inserire il modello concettuale di sviluppo che si seguirà
+durante il progetto. Gli elementi di riferimento per una buona
+pianificazione derivano da una scomposizione top-down della problematica
+del progetto.
+
+La pianificazione può essere rappresentata mediante un diagramma di
+Gantt.
+
+Se si usano altri metodi di pianificazione (es scrum), dovranno apparire
+in questo capitolo.
+-->
+<h3 id="analisi-dei-mezzi">Analisi dei mezzi</h3>
+<!--
+Elencare e *descrivere* i mezzi disponibili per la realizzazione del
+progetto. Ricordarsi di sempre descrivere nel dettaglio le versioni e il
+modello di riferimento.
+
+SDK, librerie, tools utilizzati per la realizzazione del progetto e
+eventuali dipendenze.
+
+Su quale piattaforma dovrà essere eseguito il prodotto? Che hardware
+particolare è coinvolto nel progetto? Che particolarità e limitazioni
+presenta? Che hw sarà disponibile durante lo sviluppo?
+-->
+<h4 id="software">Software</h4>
+<ul>
+<li>Apache 2.4.10</li>
+<li>MySQL 5.5.44-0+deb8u1</li>
+<li>PHP 5.6.17-0+deb8u1</li>
+<li>Android Studio 2.0</li>
+<li>Raspbian 8.0</li>
+<li>API Google Chart</li>
+<li>Bootstrap 3.3.6</li>
+<li>JQuery 1.12.0</li>
+<li>JDK Java 1.8.0_65</li>
+<li>libreria jdbc (mysql connector)</li>
+<li>libreria gpio (servo motore)</li>
+</ul>
+<h4 id="hardware">Hardware</h4>
+<ul>
+<li>Attrezzi presenti nell&#39;aula di modellismo</li>
+<li>Cartone</li>
+<li>Legno</li>
+<li>Cartone</li>
+<li>Servo motore</li>
+<li>Raspberry</li>
+<li>Capsule del caffè</li>
+<li>Tablet</li>
+</ul>
+<h2 id="progettazione">Progettazione</h2>
+<!--
+Questo capitolo descrive esaustivamente come deve essere realizzato il
+prodotto fin nei suoi dettagli. Una buona progettazione permette
+all’esecutore di evitare fraintendimenti e imprecisioni
+nell’implementazione del prodotto.
+-->
+<p><img src="C:\iSete\Documentazione\img\gantt.png" alt="Gantt"></p>
+<h3 id="design-dell-architettura-del-sistema">Design dell’architettura del sistema</h3>
+<!--
+Descrive:
+
+-   La struttura del programma/sistema lo schema di rete...
+
+-   Gli oggetti/moduli/componenti che lo compongono.
+
+-   I flussi di informazione in ingresso ed in uscita e le
+    relative elaborazioni. Può utilizzare *diagrammi di flusso dei
+    dati* (DFD).
+
+-   Eventuale sitemap
+-->
+<h3 id="design-dei-dati-e-database">Design dei dati e database</h3>
+<!--
+Descrizione delle strutture di dati utilizzate dal programma in base
+agli attributi e le relazioni degli oggetti in uso.
+-->
+<!--
+Se il diagramma E-R viene modificato, sulla doc dovrà apparire l’ultima
+versione, mentre le vecchie saranno sui diari.
+-->
+<p><img src="C:\iSete\Documentazione\img\ER.PNG" alt="ER"></p>
+<h3 id="web-server">Web Server</h3>
+<h4 id="sitoweb">Sitoweb</h4>
+<h5 id="login-ettore-usha-">Login(Ettore &amp; Usha)</h5>
+<p>La pagina di login, dovrebbe diventare qualcosa di simile
+all&#39;immagine sottostante.</p>
+<p><img src="C:\iSete\Documentazione\img\login.png" alt="Login"></p>
+<p>Da cui si accede, poi alla pagina richiesta.
+Vorremo fare anche in modo che ci sia un bottone anche per potersi registrare al sito.</p>
+<h5 id="richiesta-ettore-usha-">Richiesta (Ettore &amp; Usha)</h5>
+<p>La pagina richiesta abbiamo deciso di farla in questo modo</p>
+<p><img src="C:\iSete\Documentazione\img\richieste.png" alt="Richiesta"></p>
+<p>Come si può notare, vi sono delle zone tratteggiate. Esse, sono delle &quot;idee temporanee&quot;
+da sviluppare in maniera migliore in fase di implementazione.</p>
+<h5 id="pagina-di-configurazione-raffaele-">Pagina di configurazione(Raffaele)</h5>
+<p>Ho pensato di fare la pagina di configurazione nel seguente modo:</p>
+<p>un titolo in alto alla pagina, una tabella centrale che contiene i record, tre bottoni rispettivamente per aggiungere, rimuovere e modificare le configurazioni.</p>
+<p><img src="C:\iSete\Documentazione\img\config_table.png" alt="Config table page"></p>
+<h5 id="gestione-capsule-raffaele-">Gestione capsule (Raffaele)</h5>
+<p>La pagina dovrebbe essere strutturata nel seguente modo:</p>
+<p>un titolo in alto alla pagina, una tabella centrale che contiene i record, tre bottoni rispettivamente per aggiungere, rimuovere e modificare le capsule.</p>
+<p><img src="C:\iSete\Documentazione\img\gestione_capsule.png" alt="Gestione capsule"></p>
+<h5 id="pagina-statistiche-raffaele-">Pagina Statistiche (Raffaele)</h5>
+<p>Per quanto riguarda la pagina di statistiche per il responsabile, ho pensato
+di svilupparla con un titolo in alto, con delle tabelle contenenti delle
+statistiche che in seguito vengono rappresentati attraverso dei grafici.</p>
+<p><img src="C:\iSete\Documentazione\img\stats.png" alt="Stats page"></p>
+<h5 id="gestione-utenti-nishan-">Gestione utenti(Nishan)</h5>
+<p>Ho progettato una pagina molto semplice con una tabella chiara con le informazioni neccessarie e ho anche inserito dei campi per gestire la tabella.</p>
+<p>All&#39;inizio della pagina chiedo le informazione base per aggiungere utenti e rimuoverli.</p>
+<p>Per aggiungere un utente chiedo di inserire nome, cognome, credito e password. Deve essere obbligatorio mettere tutti i dati. Per rimuovere l&#39;utente basta inserire nome e cognome.</p>
+<p><img src="C:\iSete\Documentazione\img\GestioneUtenti.png" alt="Gestione utenti"></p>
+<h5 id="storico-acquisti-nishan-">Storico acquisti(Nishan)</h5>
+<p>Ho progettato una pagina molto semplice con una tabella chiara con le informazioni neccessarie.</p>
+<p>Questa pagina è visible solamente agli utenti che sono registrati e, tramite la connessione al database, faccio vedere
+tutti gli acquisti.</p>
+<p><img src="C:\iSete\Documentazione\img\prog_storico.png" alt="Storico"></p>
+<h4 id="applicazione-android-raffaele-">Applicazione Android(Raffaele)</h4>
+<p>L&#39;applicazione Android ho pensato di farla semplicemente tramite una
+webview permettendo così di utilizzare unicamente il sito e renderlo responsive
+su qualunque smartphone android.</p>
+<h3 id="hw">HW</h3>
+<h4 id="gestione-andrea-serhiy-">Gestione (Andrea &amp; Serhiy)</h4>
+<p>Per la memorizzazione offline e il collegamento ethernet abbiamo inizialmente deciso di usare Arduino, ma a causa di troppi problemi riscontrati abbiamo deciso di usare Raspberry.
+Abbiamo deciso di fare uno codice in java che, a dipendenza di quante capsule venivano scelte, faceva girare un servo motore (a dipendenza della capsula scelta) n volte.</p>
+<h4 id="struttura-nishan-raffaele-">Struttura (Nishan &amp; Raffaele)</h4>
+<p>Per la struttura abbiamo pensato ad una superificie da attaccare al muro sulla quale posizionare dei separatori per le capsule.
+Le capsule saranno visibili poichè si userà del plexiglass come materiale per la facciata frontale.</p>
+<p>Uno schizzo fatto alla lavagna con qualche misura annotata.
+<img src="C:\iSete\Documentazione\img\dispenser_3d.png" alt="Dispenser 3d"></p>
+<p>Progettazione dall&#39;alto del dispenser con misure più nel dettaglio:</p>
+<ul>
+<li>1) Materiale che andrà attaccato alla parete.
+Dimensioni: 50x30x1 centimetri.</li>
+<li>2) Materiale che avrà la funziona di separatore tra le diverse colonne di capsule.
+Dimensioni: 1x25x3 centimetri in modo da contenere una decina di capsule e avere lo spazio per creare un&#39;unica via d&#39;uscita.</li>
+<li>3) Plexiglass per fare in modo di poter vedere le capsule all&#39;interno del dispenser.
+Dimensioni: 6.5x25x0.3 centimetri per poter ricoprire tutta la lunghezza dei separatori.</li>
+<li>4) Materiale che servirà per avere un spazio tra il muro e la base dove poter posizionare il Raspberry e il cablaggio per collegare gli altri componenti.
+Dimensioni: 1.8x15x5 centimetri.</li>
+</ul>
+<p><img src="C:\iSete\Documentazione\img\dispenser_vista_alto.png" alt="Dispenser dall&apos;alto"></p>
+<p>Vista da dietro del dispenser:
+<img src="C:\iSete\Documentazione\img\dispenser_vista_dietro.png" alt="Dispenser da dietro"></p>
+<p>Per quanto riguarda la posizione dei servo motori praticheremo dei fori alla base dove inserirceli dentro.</p>
+<h4 id="espulsione-capsule-nishan-raffaele-">Espulsione capsule (Nishan &amp; Raffaele)</h4>
+<p>Per quanto riguarda l&#39;espulsione delle capsule abbiamo pensato di far ruotare le capsule usando il metodo a ferro di cavallo.</p>
+<p>Il servo motore avrà attaccata un&#39;elica che a sua volta sarà collegata al &quot;ferro di cavallo&quot; per farlo girare.
+Con questo metodo si riesce a prendere una capsula alla volta, poichè grazie alla rotazione del contenitore si chiude lo spazio per una seconda capsula.
+<img src="C:\iSete\Documentazione\img\Servo.png" alt="Servo"></p>
+<h4 id="offline-mode-serhiy-">Offline-Mode (Serhiy)</h4>
+<p>L&#39;offline mode richiede nel nostro caso di aveve l&#39;accesso completo al sito anche quando il RaspBerry non ha la connessione alla rete locale della scuola. Per poter soddisfare questa richieta ho deciso, dopo molte ricerche, ho deciso di usare il tablet prestatoci dal docente Barchi come display e metodi di input (tastiera e mouse) del nostro server. Questo device verrà connesso tramite usb al RaspBerry e verrà alloggiato vicino alla loggia delle capsule.</p>
+<h2 id="implementazione">Implementazione</h2>
+<!--
+In questo capitolo dovrà essere mostrato come è stato realizzato il
+lavoro. Questa parte può differenziarsi dalla progettazione in quanto il
+risultato ottenuto non per forza può essere come era stato progettato.
+
+Sulla base di queste informazioni il lavoro svolto dovrà essere
+riproducibile.
+
+In questa parte è richiesto l’inserimento di codice sorgente/print
+screen di maschere solamente per quei passaggi particolarmente
+significativi e/o critici.
+
+Inoltre dovranno essere descritte eventuali varianti di soluzione o
+scelte di prodotti con motivazione delle scelte.
+
+Non deve apparire nessuna forma di guida d’uso di librerie o di
+componenti utilizzati. Eventualmente questa va allegata.
+
+Per eventuali dettagli si possono inserire riferimenti ai diari.
+-->
+<h3 id="web-server">Web Server</h3>
+<h4 id="sitoweb">Sitoweb</h4>
+<h6 id="premessa">Premessa</h6>
+<p>La pagina di richiesta ingloberà tutte le altre pagine di ipotetico interesse dell&#39;utente
+(quindi storico, configurazione (per responsabile), gestione utenti (per responsabile), ...).
+Questa scelta è stata adottata, in parte per via di consigli di terze parti ma anche perché permetteva
+una maggiore elasticità di inserimento di elementi aggiuntivi (riferimenti esterni in generale).</p>
+<h5 id="gestione-utenti-nishan-">Gestione utenti (Nishan)</h5>
+<h6 id="aggiungi-utente">Aggiungi utente</h6>
+<p>Per svolgere questa pagina ho usato Boostrap.
+Per chiedere il credito ho inserito un campo number value, per la mail ho usato una funzione di controllo che ha usato Ettore per il login. Quando si inserisce la password e le inserisco nel database le codifico con la una funzione che si chiama .md5. Poi tramite una funzione controllo se le due password sono uguali.
+Con questo if controllo se tutti i campi sono completati.</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>if(!empty($nome)&nbsp;&amp;&amp;&nbsp;!empty($cognome)&nbsp;&amp;&amp;&nbsp;!empty($credito)&nbsp;&amp;&amp;&nbsp;!empty($password)){</span></span></span></div></pre><p>Questo è il risultato di come appare la nostra finestra aggiungi utenti.</p>
+<p><img src="C:\iSete\Documentazione\img\aggiungi.PNG" alt="Aggiungi utenti"></p>
+<h6 id="rimuovi-utente">Rimuovi utente</h6>
+<p>Per rimuovere un utente basta inserire l&#39;email dell&#39;utente.</p>
+<p><img src="C:\iSete\Documentazione\img\rimuovi.png" alt="Rimuovi utenti"></p>
+<p>La pagina risultante è questa.
+<img src="C:\iSete\Documentazione\img\tasto_indietro.PNG" alt="Tasto indietro"></p>
+<h5 id="gestione-credito-nishan-">Gestione credito (Nishan)</h5>
+<p>Con questo modulo posso gestire il credito massimo che si puo avere. Poi come ho detto in precedenza, quando inserisco un nuovo utente controllo che il credito iniziale sia minore uguale al massimo.</p>
+<p><img src="C:\iSete\Documentazione\img\modifica_credito.PNG" alt="Modifica credito"></p>
+<h5 id="storico-utente-nishan-">Storico utente (Nishan)</h5>
+<p>Questa pagina mostra le capsule prese dall&#39;utente. Quando l&#39;utente accede prendo il nome utente e uso quello per mostrare lo storico.</p>
+<p><img src="C:\iSete\Documentazione\img\storico_imp.PNG" alt="Storico"></p>
+<h5 id="login-ettore-">Login(Ettore)</h5>
+<p>Per la creazione del login, ho deciso di formare il tutto con l&#39;ausilio degli elementi Bootstrap
+dedicati principalmente ai form, ma non solo: ho deciso di fare in modo che il tutto fosse &quot;avvolto&quot; in un pannello,
+rendendo l&#39;intera pagina di Login comprente solo una parte dell&#39;intero schermo. Ho addottato questa decisione, perché
+buona parte dei login che si possono trovarer in giro hanno uno &quot;standard di visualizzazione&quot; e volevo provare
+ad imitarlo. Per rendere anche più intuitivo il tutto, ho deciso di utilizzare le Glyphicon, una serie
+di icone standardizzate implementate da Bootstrap.</p>
+<p><img src="C:\iSete\Documentazione\img\loginView.PNG" alt="Design Login"></p>
+<h5 id="richiesta-ettore-">Richiesta (Ettore)</h5>
+<p>Nella pagina di richiesta sono presenti univocamente i due input che si riferiscono al tipo e al quantitativo di capsule.
+Per finire, i grafici e le opzioni verranno implementate in modo differente dall&#39;aspettato.</p>
+<p><img src="C:\iSete\Documentazione\img\richiesteView.PNG" alt="Design Richiesta"></p>
+<h5 id="sezione-configurazione-raffaele-">Sezione configurazione(Raffaele)</h5>
+<p>La sezione è configurata in modo da avere una tabella centrale con sopra tre bottoni per le funzionalità: aggiungi, rimuovi e modifica.
+<img src="C:\iSete\Documentazione\img\implementazioneConfigurazione.PNG" alt="Configurazione implementazione"></p>
+<p>La tabella è strutturata nel seguente modo:</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&lt;?php&nbsp;while($row&nbsp;=&nbsp;sess(&quot;db&quot;)-&gt;fetch($tmp)){&nbsp;?&gt;</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>&lt;tr&gt;</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>&lt;td&gt;&lt;?php&nbsp;echo&nbsp;$row[&quot;co_nome&quot;];?&gt;&lt;/td&gt;</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;?php&nbsp;echo&nbsp;$row[&quot;co_valore&quot;];?&gt;&lt;/td&gt;</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;?php&nbsp;echo&nbsp;$row[&quot;co_descrizione&quot;];?&gt;&lt;/td&gt;</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>&lt;/tr&gt;</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&lt;?php&nbsp;}</span></span></span></div></pre><h6 id="aggiungi-configurazione">Aggiungi configurazione</h6>
+<p>Quando si clicca il bottone &quot;Aggiungi configurazione&quot; uscirà un popup in cui viene richiesto il nome, il valore
+e una descrizione.</p>
+<p><img src="C:\iSete\Documentazione\img\aggiungiConfigurazione.PNG" alt="Aggiungi configurazione"></p>
+<p>Una volta confermata l&#39;aggiunta, il sito si reindirizza ad un&#39;altra pagina che aggiunge la configurazione al database:</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>$nome&nbsp;=&nbsp;$_POST[&#39;nome&#39;];</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>$valore&nbsp;=&nbsp;$_POST[&#39;valore&#39;];</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>$descrizione&nbsp;=&nbsp;$_POST[&#39;descrizione&#39;];</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>sess(&quot;db&quot;)-&gt;start();</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>if(!empty($nome)&nbsp;&amp;&amp;&nbsp;!empty($valore)){</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>$ret&nbsp;=&nbsp;sess(&quot;db&quot;)-&gt;query(&quot;INSERT&nbsp;INTO&nbsp;configurazione&nbsp;(co_nome,&nbsp;co_valore,&nbsp;co_descrizione)</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&nbsp;&nbsp;&nbsp;&nbsp;VALUES&nbsp;(&#39;&quot;.$nome.&quot;&#39;,&nbsp;&#39;&quot;.$valore.&quot;&#39;,&nbsp;&#39;&quot;.$descrizione.&quot;&#39;);&quot;);</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&nbsp;&nbsp;&nbsp;&nbsp;if($ret){</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>echo&nbsp;&quot;Configurazione&nbsp;aggiunta&nbsp;correttamente&quot;;</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>}else{</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>echo&nbsp;&quot;Configurazione&nbsp;già&nbsp;presente&quot;;</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>}</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>}</span></span></span></div></pre><h6 id="modifica-configurazione">Modifica configurazione</h6>
+<p>Quando si clica il bottone &quot;Modifica configurazione&quot; uscirà un popup dove si deve scegliere tramite un menù la configurazione, il suo nuovo valore ed un eventuale descrizione.
+<img src="C:\iSete\Documentazione\img\modificaConfigurazione.PNG" alt="Modifica configurazione"></p>
+<p>Una volta confermata la modifica, il sito si reindirizza ad un&#39;altra pagina che modifica la configurazione nel database:</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>$nome&nbsp;=&nbsp;$_POST[&#39;nome&#39;];</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>$valore&nbsp;=&nbsp;$_POST[&#39;valore&#39;];</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>$descrizione&nbsp;=&nbsp;$_POST[&#39;descrizione&#39;];</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>sess(&quot;db&quot;)-&gt;start();</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>if(!empty($nome)&nbsp;&amp;&amp;&nbsp;!empty($valore)&nbsp;&amp;&amp;&nbsp;isset($descrizione)){</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>$ret&nbsp;=&nbsp;sess(&quot;db&quot;)-&gt;query(&quot;UPDATE&nbsp;configurazione&nbsp;SET&nbsp;co_nome&nbsp;=&nbsp;&#39;$nome&#39;,&nbsp;co_valore&nbsp;=&nbsp;&#39;$valore&#39;,</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&nbsp;&nbsp;&nbsp;&nbsp;co_descrizione&nbsp;=&nbsp;&#39;$descrizione&#39;&nbsp;WHERE&nbsp;co_nome&nbsp;=&nbsp;&#39;$nome&#39;;&quot;);</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&nbsp;&nbsp;&nbsp;&nbsp;if($ret){</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>echo&nbsp;&quot;Aggiornamento&nbsp;configurazione&nbsp;effettuato&quot;;</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>}</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&nbsp;&nbsp;&nbsp;&nbsp;else{</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>echo&nbsp;&quot;Errore&nbsp;imprevisto&quot;;</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>}</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>}</span></span></span></div></pre><h6 id="elimina-configurazione">Elimina Configurazione</h6>
+<p>Quando si clicca il bottone &quot;Rimuovi configurazione&quot; uscirà uscirà un popup dove si deve scegliere tramite un menü la configurazione da rimuovere.
+<img src="C:\iSete\Documentazione\img\rimuoviConfigurazione.PNG" alt="Rimuovi configurazione"></p>
+<p>Una volta confermata l&#39;eliminazione, il sito si reindirizza ad un&#39;altra pagina che elimina la configurazione nel database:</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>$nome&nbsp;=&nbsp;$_POST[&#39;nome&#39;];</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>sess(&quot;db&quot;)-&gt;start();</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>if(!empty($nome)){</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>$ret&nbsp;=&nbsp;sess(&quot;db&quot;)-&gt;query(&quot;DELETE&nbsp;FROM&nbsp;configurazione&nbsp;WHERE&nbsp;co_nome=&#39;$nome&#39;&quot;);</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&nbsp;&nbsp;&nbsp;&nbsp;if($ret){</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>echo&nbsp;&quot;Configurazione&nbsp;rimossa&nbsp;correttamente&quot;;</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>}</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&nbsp;&nbsp;&nbsp;&nbsp;else{</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>echo&nbsp;&quot;Configurazione&nbsp;non&nbsp;trovata&quot;;</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>}</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>}</span></span></span></div></pre><h5 id="pagina-statistiche-raffaele-">Pagina Statistiche(Raffaele)</h5>
+<h4 id="applicazione-android-raffaele-">Applicazione Android(Raffaele)</h4>
+<p>Con la seguente riga di codice abilito l&#39;applicazione alla navigazione in internet.</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&lt;uses-permission&nbsp;android:name=&quot;android.permission.INTERNET&quot;/&gt;</span></span></span></div></pre><p>Mentre con quest&#39;altra riga di codice abilito l&#39;applicazione a ricavare informazioni sullo stato di rete.</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&lt;uses-permission&nbsp;android:name=&quot;android.permission.ACCESS_NETWORK_STATE&quot;/&gt;</span></span></span></div></pre><p>Con questo pezzo di codice, nella classe java dell&#39;applicazione, nel metodo onCreate ricavo lo stato della rete tramite le classi ConnectivityManager e NetworkInfo.
+Successivamente controllo che l&#39;applicazione sia connessa alla rete e informo tramite un toast(popup) l&#39;esito sia positivo che negativo.
+In caso di esito positivo creo la webview e la reindirizzo, tramite il metodo loadUrl, al sito desiderato.</p>
+<pre class="editor-colors lang-java"><div class="line"><span class="source java"><span>&nbsp;</span><span class="storage type annotation java"><span>@Override</span></span></span></div><div class="line"><span class="source java"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="storage modifier java"><span>protected</span></span><span>&nbsp;</span><span class="storage type primitive array java"><span>void</span></span><span>&nbsp;</span><span class="meta method-call java"><span class="meta method java"><span>onCreate</span></span><span class="punctuation definition method-parameters begin java"><span>(</span></span><span class="storage type java"><span>Bundle</span></span><span>&nbsp;savedInstanceState</span><span class="punctuation definition method-parameters end java"><span>)</span></span></span><span>&nbsp;</span><span class="punctuation section block begin java"><span>{</span></span></span></div><div class="line"><span class="source java"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="variable language java"><span>super</span></span><span class="keyword operator dereference java"><span>.</span></span><span class="meta method-call java"><span class="meta method java"><span>onCreate</span></span><span class="punctuation definition method-parameters begin java"><span>(</span></span><span>savedInstanceState</span><span class="punctuation definition method-parameters end java"><span>)</span></span></span><span class="punctuation terminator java"><span>;</span></span></span></div><div class="line"><span class="source java"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta method-call java"><span class="meta method java"><span>setContentView</span></span><span class="punctuation definition method-parameters begin java"><span>(</span></span><span class="storage type java"><span>R</span></span><span class="keyword operator dereference java"><span>.</span></span><span>layout</span><span class="keyword operator dereference java"><span>.</span></span><span>activity_main</span><span class="punctuation definition method-parameters end java"><span>)</span></span></span><span class="punctuation terminator java"><span>;</span></span></span></div><div class="line"><span class="source java"><span>&nbsp;</span></span></div><div class="line"><span class="source java"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="storage type java"><span>ConnectivityManager</span></span><span>&nbsp;cManager&nbsp;</span><span class="keyword operator assignment java"><span>=</span></span><span>&nbsp;</span><span>(</span><span class="storage type java"><span>ConnectivityManager</span></span><span>)</span><span>&nbsp;</span><span class="meta method-call java"><span class="meta method java"><span>getSystemService</span></span><span class="punctuation definition method-parameters begin java"><span>(</span></span><span class="variable language this java"><span>this</span></span><span class="constant other java"><span class="keyword operator dereference java"><span>.</span></span><span>CONNECTIVITY_SERVICE</span></span><span class="punctuation definition method-parameters end java"><span>)</span></span></span><span class="punctuation terminator java"><span>;</span></span></span></div><div class="line"><span class="source java"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="storage type java"><span>NetworkInfo</span></span><span>&nbsp;nInfo&nbsp;</span><span class="keyword operator assignment java"><span>=</span></span><span>&nbsp;cManager</span><span class="keyword operator dereference java"><span>.</span></span><span class="meta method-call java"><span class="meta method java"><span>getActiveNetworkInfo</span></span><span class="punctuation definition method-parameters begin java"><span>(</span></span><span class="punctuation definition method-parameters end java"><span>)</span></span></span><span class="punctuation terminator java"><span>;</span></span></span></div><div class="line"><span class="source java"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword control java"><span>if</span></span><span>(</span><span>nInfo</span><span class="keyword operator comparison java"><span>!=</span></span><span>&nbsp;</span><span class="constant language java"><span>null</span></span><span>&nbsp;</span><span class="keyword operator logical java"><span>&amp;&amp;</span></span><span>&nbsp;nInfo</span><span class="keyword operator dereference java"><span>.</span></span><span class="meta method-call java"><span class="meta method java"><span>isConnected</span></span><span class="punctuation definition method-parameters begin java"><span>(</span></span><span class="punctuation definition method-parameters end java"><span>)</span></span></span><span>)</span><span class="punctuation section block begin java"><span>{</span></span></span></div><div class="line"><span class="source java"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="storage type java"><span>Toast</span></span><span class="keyword operator dereference java"><span>.</span></span><span class="meta method-call java"><span class="meta method java"><span>makeText</span></span><span class="punctuation definition method-parameters begin java"><span>(</span></span><span class="variable language this java"><span>this</span></span><span class="punctuation definition seperator parameter java"><span>,</span></span><span class="string quoted double java"><span class="punctuation definition string begin java"><span>&quot;</span></span><span>Connessione&nbsp;a&nbsp;internet&nbsp;disponibile</span><span class="punctuation definition string end java"><span>&quot;</span></span></span><span class="punctuation definition seperator parameter java"><span>,</span></span><span class="storage type java"><span>Toast</span></span><span class="constant other java"><span class="keyword operator dereference java"><span>.</span></span><span>LENGTH_LONG</span></span><span class="punctuation definition method-parameters end java"><span>)</span></span></span><span class="keyword operator dereference java"><span>.</span></span><span class="meta method-call java"><span class="meta method java"><span>show</span></span><span class="punctuation definition method-parameters begin java"><span>(</span></span><span class="punctuation definition method-parameters end java"><span>)</span></span></span><span class="punctuation terminator java"><span>;</span></span></span></div><div class="line"><span class="source java"><span>&nbsp;</span></span></div><div class="line"><span class="source java"><span>&nbsp;</span></span></div><div class="line"><span class="source java"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="storage type java"><span>WebView</span></span><span>&nbsp;webView&nbsp;</span><span class="keyword operator assignment java"><span>=</span></span><span>&nbsp;</span><span>(</span><span class="storage type java"><span>WebView</span></span><span>)</span><span class="meta method-call java"><span class="meta method java"><span>findViewById</span></span><span class="punctuation definition method-parameters begin java"><span>(</span></span><span class="storage type java"><span>R</span></span><span class="keyword operator dereference java"><span>.</span></span><span>id</span><span class="keyword operator dereference java"><span>.</span></span><span>webView</span><span class="punctuation definition method-parameters end java"><span>)</span></span></span><span class="punctuation terminator java"><span>;</span></span></span></div><div class="line"><span class="source java"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;webView</span><span class="keyword operator dereference java"><span>.</span></span><span class="meta method-call java"><span class="meta method java"><span>setWebViewClient</span></span><span class="punctuation definition method-parameters begin java"><span>(</span></span><span class="keyword control new java"><span>new</span></span><span>&nbsp;</span><span class="storage type java"><span>WebViewClient</span></span><span>(</span><span>)</span><span class="punctuation definition method-parameters end java"><span>)</span></span></span><span class="punctuation terminator java"><span>;</span></span></span></div><div class="line"><span class="source java"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;webView</span><span class="keyword operator dereference java"><span>.</span></span><span class="meta method-call java"><span class="meta method java"><span>getSettings</span></span><span class="punctuation definition method-parameters begin java"><span>(</span></span><span class="punctuation definition method-parameters end java"><span>)</span></span></span><span class="keyword operator dereference java"><span>.</span></span><span class="meta method-call java"><span class="meta method java"><span>setJavaScriptEnabled</span></span><span class="punctuation definition method-parameters begin java"><span>(</span></span><span class="constant language java"><span>true</span></span><span class="punctuation definition method-parameters end java"><span>)</span></span></span><span class="punctuation terminator java"><span>;</span></span></span></div><div class="line"><span class="source java"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;webView</span><span class="keyword operator dereference java"><span>.</span></span><span class="meta method-call java"><span class="meta method java"><span>setVerticalScrollBarEnabled</span></span><span class="punctuation definition method-parameters begin java"><span>(</span></span><span class="constant language java"><span>false</span></span><span class="punctuation definition method-parameters end java"><span>)</span></span></span><span class="punctuation terminator java"><span>;</span></span></span></div><div class="line"><span class="source java"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;webView</span><span class="keyword operator dereference java"><span>.</span></span><span class="meta method-call java"><span class="meta method java"><span>setHorizontalScrollBarEnabled</span></span><span class="punctuation definition method-parameters begin java"><span>(</span></span><span class="constant language java"><span>false</span></span><span class="punctuation definition method-parameters end java"><span>)</span></span></span><span class="punctuation terminator java"><span>;</span></span></span></div><div class="line"><span class="source java"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;webView</span><span class="keyword operator dereference java"><span>.</span></span><span class="meta method-call java"><span class="meta method java"><span>loadUrl</span></span><span class="punctuation definition method-parameters begin java"><span>(</span></span><span class="string quoted double java"><span class="punctuation definition string begin java"><span>&quot;</span></span><span>192.168.1.253</span><span class="punctuation definition string end java"><span>&quot;</span></span></span><span class="punctuation definition method-parameters end java"><span>)</span></span></span><span class="punctuation terminator java"><span>;</span></span></span></div><div class="line"><span class="source java"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="punctuation section block end java"><span>}</span></span></span></div><div class="line"><span class="source java"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword control java"><span>else</span></span><span class="punctuation section block begin java"><span>{</span></span></span></div><div class="line"><span class="source java"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="storage type java"><span>Toast</span></span><span class="keyword operator dereference java"><span>.</span></span><span class="meta method-call java"><span class="meta method java"><span>makeText</span></span><span class="punctuation definition method-parameters begin java"><span>(</span></span><span class="variable language this java"><span>this</span></span><span class="punctuation definition seperator parameter java"><span>,</span></span><span class="string quoted double java"><span class="punctuation definition string begin java"><span>&quot;</span></span><span>Connessione&nbsp;a&nbsp;internet&nbsp;non&nbsp;disponibile</span><span class="punctuation definition string end java"><span>&quot;</span></span></span><span class="punctuation definition seperator parameter java"><span>,</span></span><span class="storage type java"><span>Toast</span></span><span class="constant other java"><span class="keyword operator dereference java"><span>.</span></span><span>LENGTH_LONG</span></span><span class="punctuation definition method-parameters end java"><span>)</span></span></span><span class="keyword operator dereference java"><span>.</span></span><span class="meta method-call java"><span class="meta method java"><span>show</span></span><span class="punctuation definition method-parameters begin java"><span>(</span></span><span class="punctuation definition method-parameters end java"><span>)</span></span></span><span class="punctuation terminator java"><span>;</span></span></span></div><div class="line"><span class="source java"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="punctuation section block end java"><span>}</span></span></span></div><div class="line"><span class="source java"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="punctuation section block end java"><span>}</span></span></span></div></pre>
+<h3 id="hw">HW</h3>
+<h4 id="struttura-legno-nishan-">Struttura legno(Nishan)</h4>
+<p>Come si vede nell&#39;immagine sottostante ho messo due pezzi di legno di spessore 1 cm.
+Questi due distano 4.8 cm.
+Alla base ho messo 5 strati di cartone che formano 5 centimentri in modo che la capsula cada nel ferro di cavallo
+<img src="C:\iSete\Documentazione\img\HW_Finale2.png" alt="Corridoio"></p>
+<p>Il legno che funge da corridoio per le capsule sono alte 4 centimetri.
+Sopra questo metteremo un plexiglass in modo che si veda il colore della capsula ma nessuno li potrà toccare.
+<img src="C:\iSete\Documentazione\img\HW_Finale1.png" alt="Parete"></p>
+<p>Per mettere il servo motore ho fatto il buco e poi ho fatto un buco di mezzo centimetro cosi entra tutta la struttura e rimane fuori solamente l&#39;elica.
+<img src="C:\iSete\Documentazione\img\HW_Finale.png" alt="Buco"></p>
+<p>Questo sarà il nostro sostegno, andrà dietro alla struttura con lo spessore in mezzo in modo che mettiamo in mezzo la breadboard.
+<img src="C:\iSete\Documentazione\img\HW_Finale3.png" alt="Buco"></p>
+<h4 id="espulsione-capsule-andrea-">Espulsione capsule(Andrea)</h4>
+<h5 id="schema-logico">Schema Logico</h5>
+<p><img src="C:\iSete\Progettazione\Raspberry Pi\Progettazione\schema logico.PNG" alt="Schema"></p>
+<h5 id="codice">Codice</h5>
+<p>Per far funzionare il servo motore con il Raspberry ho cercato uno script che mi permettesse la connessione fra Servo motore e Raspberry, dopodiché, per farlo funzionare, ho dovuto installare la libreria GPIO seguendo  <a href="http://pi4j.com/install.html">la seguente guida</a>
+Dopodiché ho implementato la classe funzionante in modo tale che il codice potesse essere usato anche con l&#39;aumento di tipi di capsule. Per fare ciò ho dovuto collegarmi al database tramite java e per fare ciò ho dovuto usare la classe <a href="https://dev.mysql.com/downloads/connector/j/3.1.html">jdbc</a>. Ho creato un codice che, passando due parametri come argomenti della classe, che equivalgono al numero delle capsule e al tipo delle capsule, mi facciano girare il servo motore, corrispondente al tipo della capsula, un numero di volte equivalte al primo parametro passato.</p>
+<pre class="editor-colors lang-java"><div class="line"><span class="source java"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="storage modifier java"><span>public</span></span><span>&nbsp;</span><span class="storage modifier java"><span>static</span></span><span>&nbsp;</span><span class="storage type primitive array java"><span>void</span></span><span>&nbsp;</span><span class="meta method-call java"><span class="meta method java"><span>main</span></span><span class="punctuation definition method-parameters begin java"><span>(</span></span><span class="storage type object array java"><span>String</span></span><span>[]&nbsp;args</span><span class="punctuation definition method-parameters end java"><span>)</span></span></span><span>&nbsp;</span><span class="punctuation section block begin java"><span>{</span></span></span></div><div class="line"><span class="source java"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="storage type java"><span>ServoMotoreModulare</span></span><span>&nbsp;s&nbsp;</span><span class="keyword operator assignment java"><span>=</span></span><span>&nbsp;</span><span class="keyword control new java"><span>new</span></span><span>&nbsp;</span><span class="storage type java"><span>ServoMotoreModulare</span></span><span>(</span><span class="storage type java"><span>Integer</span></span><span class="keyword operator dereference java"><span>.</span></span><span class="meta method-call java"><span class="meta method java"><span>parseInt</span></span><span class="punctuation definition method-parameters begin java"><span>(</span></span><span>args[</span><span class="constant numeric java"><span>0</span></span><span>]</span><span class="punctuation definition method-parameters end java"><span>)</span></span></span><span>,&nbsp;args[</span><span class="constant numeric java"><span>1</span></span><span>]</span><span>)</span><span class="punctuation terminator java"><span>;</span></span></span></div><div class="line"><span class="source java"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="punctuation section block end java"><span>}</span></span></span></div></pre>
+<p>Per fare ciò ho creato dei metodi che richiamo nel costruttore.</p>
+<pre class="editor-colors lang-java"><div class="line"><span class="source java"><span>&nbsp;</span></span></div><div class="line"><span class="source java"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="storage modifier java"><span>public</span></span><span>&nbsp;</span><span class="meta method-call java"><span class="meta method java"><span>ServoMotoreModulare</span></span><span class="punctuation definition method-parameters begin java"><span>(</span></span><span class="storage type primitive array java"><span>int</span></span><span>&nbsp;n</span><span class="punctuation definition seperator parameter java"><span>,</span></span><span>&nbsp;</span><span class="storage type java"><span>String</span></span><span>&nbsp;t</span><span class="punctuation definition method-parameters end java"><span>)</span></span></span><span>&nbsp;</span><span class="punctuation section block begin java"><span>{</span></span><span>&nbsp;</span><span class="comment line double-slash java"><span class="punctuation definition comment java"><span>//</span></span><span>&nbsp;costruttore</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source java"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="variable language this java"><span>this</span></span><span class="keyword operator dereference java"><span>.</span></span><span class="meta method-call java"><span class="meta method java"><span>connected</span></span><span class="punctuation definition method-parameters begin java"><span>(</span></span><span class="punctuation definition method-parameters end java"><span>)</span></span></span><span class="punctuation terminator java"><span>;</span></span><span>&nbsp;</span><span class="comment line double-slash java"><span class="punctuation definition comment java"><span>//</span></span><span>&nbsp;connessione&nbsp;al&nbsp;db</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source java"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="variable language this java"><span>this</span></span><span class="keyword operator dereference java"><span>.</span></span><span class="meta method-call java"><span class="meta method java"><span>setTypeCapsula</span></span><span class="punctuation definition method-parameters begin java"><span>(</span></span><span>t</span><span class="punctuation definition method-parameters end java"><span>)</span></span></span><span class="punctuation terminator java"><span>;</span></span><span>&nbsp;</span><span class="comment line double-slash java"><span class="punctuation definition comment java"><span>//</span></span><span>&nbsp;settaggio&nbsp;del&nbsp;pin</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source java"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="variable language this java"><span>this</span></span><span class="keyword operator dereference java"><span>.</span></span><span class="meta method-call java"><span class="meta method java"><span>rotation</span></span><span class="punctuation definition method-parameters begin java"><span>(</span></span><span>n</span><span class="punctuation definition method-parameters end java"><span>)</span></span></span><span class="punctuation terminator java"><span>;</span></span><span>&nbsp;</span><span class="comment line double-slash java"><span class="punctuation definition comment java"><span>//</span></span><span>&nbsp;rotazione&nbsp;del&nbsp;servo&nbsp;motore</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source java"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="punctuation section block end java"><span>}</span></span></span></div></pre>
+<p>tramite this.connected() faccio la connessione al db.
+con il metodo setTypeCapsula() cerco prima nell&#39;array la posizione in cui si trova quel tipo di capsula, dopodiché uso quella posizione per inizalizzare il servo motore dove la posizione nell&#39;array dei pin è uguale a quella dell&#39;array delle capsule</p>
+<pre class="editor-colors lang-java"><div class="line"><span class="source java"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="storage modifier java"><span>public</span></span><span>&nbsp;</span><span class="storage type primitive array java"><span>void</span></span><span>&nbsp;</span><span class="meta method-call java"><span class="meta method java"><span>setTypeCapsula</span></span><span class="punctuation definition method-parameters begin java"><span>(</span></span><span class="storage type java"><span>String</span></span><span>&nbsp;tipo</span><span class="punctuation definition method-parameters end java"><span>)</span></span></span><span>&nbsp;</span><span class="punctuation section block begin java"><span>{</span></span><span>&nbsp;</span><span class="comment line double-slash java"><span class="punctuation definition comment java"><span>//</span></span><span>&nbsp;tipo&nbsp;della&nbsp;capsula</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source java"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="storage type primitive array java"><span>int</span></span><span>&nbsp;p&nbsp;</span><span class="keyword operator assignment java"><span>=</span></span><span>&nbsp;nomiCapsule</span><span class="keyword operator dereference java"><span>.</span></span><span class="meta method-call java"><span class="meta method java"><span>indexOf</span></span><span class="punctuation definition method-parameters begin java"><span>(</span></span><span>tipo</span><span class="punctuation definition method-parameters end java"><span>)</span></span></span><span class="punctuation terminator java"><span>;</span></span><span>&nbsp;</span><span class="comment line double-slash java"><span class="punctuation definition comment java"><span>//</span></span><span>&nbsp;mi&nbsp;ritorna&nbsp;la&nbsp;posizione&nbsp;dove&nbsp;value=tipo</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source java"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;myServo&nbsp;</span><span class="keyword operator assignment java"><span>=</span></span><span>&nbsp;gpio</span><span class="keyword operator dereference java"><span>.</span></span><span class="meta method-call java"><span class="meta method java"><span>provisionDigitalOutputPin</span></span><span class="punctuation definition method-parameters begin java"><span>(</span></span><span>pinRasp[p]</span><span class="punctuation definition seperator parameter java"><span>,</span></span><span>&nbsp;</span><span class="comment line double-slash java"><span class="punctuation definition comment java"><span>//</span></span><span>&nbsp;pin&nbsp;del&nbsp;servo&nbsp;motore&nbsp;corrispondente</span><span>&nbsp;</span></span></span></span></div><div class="line"><span class="source java"><span class="meta method-call java"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string quoted double java"><span class="punctuation definition string begin java"><span>&quot;</span></span><span>My&nbsp;LED</span><span class="punctuation definition string end java"><span>&quot;</span></span></span><span class="punctuation definition seperator parameter java"><span>,</span></span><span>&nbsp;</span><span class="comment line double-slash java"><span class="punctuation definition comment java"><span>//</span></span><span>&nbsp;PIN&nbsp;FRIENDLY&nbsp;NAME&nbsp;(optional)</span><span>&nbsp;</span></span></span></span></div><div class="line"><span class="source java"><span class="meta method-call java"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="storage type java"><span>PinState</span></span><span class="constant other java"><span class="keyword operator dereference java"><span>.</span></span><span>LOW</span></span><span class="punctuation definition method-parameters end java"><span>)</span></span></span><span class="punctuation terminator java"><span>;</span><span>;</span></span></span></div><div class="line"><span class="source java"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="punctuation section block end java"><span>}</span></span></span></div></pre>
+<p>infine con il metodo this.rotation() realizzo un for che mi faccia girare il servo motore inizalizzato in precedenza n volte.</p>
+<h4 id="offline-mode-serhiy-">Offline-Mode (Serhiy)</h4>
+<h5 id="lato-server">Lato Server</h5>
+<p>Ho inizialmente installato settato l&#39;indirizzo statico sull&#39;interfaccia usb0 del RaspBerry.<br>
+Per fare ciò ho aperto il file interfaces</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>sudo&nbsp;nano&nbsp;/etc/network/interfaces</span></span></span></div></pre><p>e ho aggiunto le seguenti righe:</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>iface&nbsp;usb0&nbsp;inet&nbsp;static</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>address&nbsp;192.168.42.226</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>netmask&nbsp;255.255.255.0</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>network&nbsp;192.168.42.0</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>broadcast&nbsp;192.168.42.255</span></span></span></div></pre><p>Fatto ciò ho salvato e chiuso il file.<br>
+A questo punto ho installato il server vnc di TightVNC sul RaspBerry eseguendo nel terminale il seguente comando:</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>sudo&nbsp;apt-get&nbsp;install&nbsp;tightvncserver</span></span></span></div></pre><p>Successivamente ho settato le impostazioni del pacchetto eseguendo questo comando:</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>tightvncserver</span></span></span></div></pre><p>Mi è stato quindi chiesto di impostare la password, che nel mio caso è stata &#39;iSete2016&#39;.<br>
+Finito la configurazione iniziale, ho continuato con la configurazione più tecnica:
+mi sono diretto nella directory /etc/init.d</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>cd&nbsp;/etc/init.d</span></span></span></div></pre><p>e ho creato il file vncboot.</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>sudo&nbsp;nano&nbsp;vncboot</span></span></span></div></pre><p>All&#39;interno di questo file ho quindi incollato le seguenti righe di codice:</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>#!&nbsp;/bin/sh</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>###&nbsp;BEGIN&nbsp;INIT&nbsp;INFO</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>#&nbsp;Provides:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;vncboot</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>#&nbsp;Required-Start:&nbsp;&nbsp;&nbsp;&nbsp;$local_fs</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>#&nbsp;Required-Stop:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$local_fs</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>#&nbsp;Default-Start:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2&nbsp;3&nbsp;4&nbsp;5</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>#&nbsp;Default-Stop:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;1&nbsp;6</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>#&nbsp;Short-Description:&nbsp;Run&nbsp;tightvnc&nbsp;on&nbsp;boot</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>###&nbsp;END&nbsp;INIT&nbsp;INFO</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;</span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/bin</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>export&nbsp;USER=&#39;pi&#39;</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;</span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>eval&nbsp;cd&nbsp;~$USER</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;</span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>.&nbsp;/lib/init/vars.sh</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>.&nbsp;/lib/lsb/init-functions</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;</span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>case&nbsp;&quot;$1&quot;&nbsp;in</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>start)</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>log_begin_msg&nbsp;&quot;Starting&nbsp;VNC&nbsp;server&quot;</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>su&nbsp;$USER&nbsp;-c&nbsp;&#39;/usr/bin/vncserver&nbsp;:1&nbsp;-geometry&nbsp;1680x1050&nbsp;-depth&nbsp;24&#39;</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>log_end_msg&nbsp;$?</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>exit&nbsp;0</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>;;</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>stop)</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>pkill&nbsp;Xtightvnc</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>log_begin_msg&nbsp;&quot;Stopping&nbsp;VNC&nbsp;server&quot;</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>log_end_msg&nbsp;$?</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>exit&nbsp;0</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>;;</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>*)</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>echo&nbsp;&quot;Usage:&nbsp;/etc/init.d/vncboot&nbsp;{start|stop}&quot;</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>exit&nbsp;1</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>;;</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>esac</span></span></span></div></pre><p>Fatto ciò ho salvato e chiuso il file.<br>
+Arrivato a questo punto ho aggiornato i suoi permessi</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>sudo&nbsp;chmod&nbsp;755&nbsp;vncboot</span></span></span></div></pre><p>e ho aggiunto lo script alla mia startup.</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>sudo&nbsp;update-rc.d&nbsp;vncboot&nbsp;defaults</span></span></span></div></pre><p>Per attivare il server vnc ho dovuto infine eseguire questo script nel terminale:</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>vncserver&nbsp;:1&nbsp;-geometry&nbsp;800x1280&nbsp;-depth&nbsp;16</span></span></span></div></pre><h5 id="lato-client">Lato Client</h5>
+<p>Completato il lato server, ho comiciato a lavorare sul lato client, cioè sul Tablet.<br>
+Essendo il mio un tablet senza la possibilità di fare il tethering usb di default (questo dovuto al fatto che è un dispositivo che ha solo le connettività wifi e bluetooth) ho prima di tutto installato l&#39;applicazione &#39;USB Tethering&#39;, che permette ai dispositivi come il mio di accedere alle impostazioni ufficiali dell&#39;USB Tether.<br>
+Una volta installata, ho scaricato anche l&#39;applicazione &#39;bVNC Free&#39;, la quale serve a potersi connettere in VNC al RaspBerry.<br>
+Completate le installazioni ho continuato con le configurazioni e infine con la connessione.<br>
+Prima di tutto mi sono diretto nelle Impostazioni-&gt;Generale-&gt;Info sul dispositivo e ho quindi cliccato 10 volte sulla &#39;Versione della Build&#39;, il tutto per poter attivare le &#39;Opzioni Sviluppatore&#39;.
+Attivato esse, mi sono recato nelle nuove opzioni e ho abilitato il &#39;Debug USB&#39;.<br>
+Terminato i passaggi precedenti ho collegato il tablet al RaspBerry tramite il cavo USB, dopodiché ho aperto l&#39;applicazione dedicata al tethering e, grazie al collegamento all&#39;interno di essa, mi sono diretto nelle impostazioni ufficiali di Android per il Tethering USB, ove l&#39;ho abilitato.<br>
+A questo punto ho aperto l&#39;applicazione scaricata precedentemente per la connessione VNC e ho inserito nei campi le informazioni richieste:<br>
+<code>Title : iSete</code><br>
+<code>IP : 192.168.42.266 ; Port : 5901</code><br>
+<code>Password : iSete2016</code></p>
+<p>Una volta connesso ho disabilitato le &#39;Extra Keys&#39; e modificato la &#39;Input Mode&#39; in &#39;Direct, Hold Pan&#39;.<br>
+Ho infine aperto il sito in modalità &#39;Presentazione&#39; tramite il seguente comando</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>epiphany-browser&nbsp;-a&nbsp;--profile&nbsp;~/.config&nbsp;</span><span class="markup underline link http hyperlink"><span>http://192.168.2.253</span></span></span></span></div></pre><p>e, cliccando col tasto destro sulla barra di stato e selezionando &#39;Sì/No Decorazioni&#39;, ho fatto in modo che la barra blu superiore sparisse.</p>
+<h2 id="test">Test</h2>
+<h3 id="protocollo-di-test">Protocollo di test</h3>
+<!--
+Definire in modo accurato tutti i test che devono essere realizzati per
+garantire l’adempimento delle richieste formulate nei requisiti. I test
+fungono da garanzia di qualità del prodotto. Ogni test deve essere
+ripetibile alle stesse condizioni.
+
+
+|Test Case      | TC-001                               |
+|---------------|--------------------------------------|
+|**Nome**       |Import a card, but not shown with the GUI |
+|**Riferimento**|REQ-012                               |
+|**Descrizione**|Import a card with KIC, KID and KIK keys with no obfuscation, but not shown with the GUI |
+|**Prerequisiti**|Store on local PC: Profile\_1.2.001.xml (appendix n\_n) and Cards\_1.2.001.txt (appendix n\_n) |
+|**Procedura**     | - Go to “Cards manager” menu, in main page click “Import Profiles” link, Select the “1.2.001.xml” file, Import the Profile - Go to “Cards manager” menu, in main page click “Import Cards” link, Select the “1.2.001.txt” file, Delete the cards, Select the “1.2.001.txt” file, Import the cards |
+|**Risultati attesi** |Keys visible in the DB (OtaCardKey) but not visible in the GUI (Card details) |
+-->
+<table>
+<thead>
+<tr>
+<th>Test Case</th>
+<th>TC-001</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Nome</strong></td>
+<td>Input form del sito</td>
+</tr>
+<tr>
+<td><strong>Riferimento</strong></td>
+<td>REQ-006</td>
+</tr>
+<tr>
+<td><strong>Descrizione</strong></td>
+<td>Andare ad inserire in ogni campo di ogni form del sito valori che dovrebbe accettere e quelli che non dovrebbe accettare.</td>
+</tr>
+<tr>
+<td><strong>Prerequisiti</strong></td>
+<td>Sito funzionante.</td>
+</tr>
+<tr>
+<td><strong>Procedura</strong></td>
+<td>Testare ogni campo di ogni form del sito, inserendo dati non ammessi come spazio, caratteri diversi da numeri e lettere oppure inserire parole dove viene richiesto un numero.</td>
+</tr>
+<tr>
+<td><strong>Risultati attesi</strong></td>
+<td>Vedi allegato: test.xlsx</td>
+</tr>
+<tr>
+<td><strong>Risultati ottenuti</strong></td>
+<td>Vedi allegato: test.xlsx</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Test Case</th>
+<th>TC-002</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Nome</strong></td>
+<td>Output form del sito</td>
+</tr>
+<tr>
+<td><strong>Riferimento</strong></td>
+<td>REQ-003, REQ-004, REQ-005, REQ-006</td>
+</tr>
+<tr>
+<td><strong>Descrizione</strong></td>
+<td>Verificare il risultato a dipendenza dei privilegi dell&#39;utente loggato.</td>
+</tr>
+<tr>
+<td><strong>Prerequisiti</strong></td>
+<td>Sito funzionante e dati input validi</td>
+</tr>
+<tr>
+<td><strong>Procedura</strong></td>
+<td>Verificare nelle tabelle del sito e nelle tabelle del database il risultato delle richieste effettuate a dipendenza dei privilegi dell&#39;utente loggato.</td>
+</tr>
+<tr>
+<td><strong>Risultati attesi</strong></td>
+<td>Vedi allegato: test.xlsx</td>
+</tr>
+<tr>
+<td><strong>Risultati ottenuti</strong></td>
+<td>Vedi allegato: test.xlsx</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Test Case</th>
+<th>TC-003</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Nome</strong></td>
+<td>Hardware</td>
+</tr>
+<tr>
+<td><strong>Riferimento</strong></td>
+<td>REQ-001</td>
+</tr>
+<tr>
+<td><strong>Descrizione</strong></td>
+<td>Verificare che la struttura sia modulabile, possa essere riempita facilmente e comunicare con un servo motore per l&#39;espulsione delle capsule</td>
+</tr>
+<tr>
+<td><strong>Prerequisiti</strong></td>
+<td>Sito e hardware funzionanti</td>
+</tr>
+<tr>
+<td><strong>Procedura</strong></td>
+<td>-Provare ad aumentare la quantità di capsule contenute</td>
+</tr>
+</tbody>
+</table>
+<p>-controllare che sia facile da riempire
+-verificare che si riesca a comunicare con il servo motore|
+|<strong>Risultati attesi</strong> |La struttura sarà modulabile, potrà essere riempita facilmente con il server e comunicherà con il servo motore per poter espellere le capsule. Vedi anche allegato: test.xlsx|
+|<strong>Risultati ottenuti</strong> |La struttura non è modulabile, può essere riempita facilmente e comunica con il servo motore se e solo la distanza tra la base della struttura è del plexiglass è di almeno 4.3 centimetri. Vedi anche allegato: test.xlsx|</p>
+<table>
+<thead>
+<tr>
+<th>Test Case</th>
+<th>TC-004</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Nome</strong></td>
+<td>Riconoscimento</td>
+</tr>
+<tr>
+<td><strong>Riferimento</strong></td>
+<td>REQ-002</td>
+</tr>
+<tr>
+<td><strong>Descrizione</strong></td>
+<td>Verificare che ci si possa riconoscere per usufruire del prodotto, anche in caso di server down</td>
+</tr>
+<tr>
+<td><strong>Prerequisiti</strong></td>
+<td>Sito funzionante</td>
+</tr>
+<tr>
+<td><strong>Procedura</strong></td>
+<td>Collegarsi con un computer o con uno smartphone/tablet al sito e provare a loggare.</td>
+</tr>
+<tr>
+<td><strong>Risultati attesi</strong></td>
+<td>Si verrà riconosciuti, anche in caso di server down</td>
+</tr>
+<tr>
+<td><strong>Risultati ottenuti</strong></td>
+<td>Si viene riconosciuti, in caso di server down non ci si può connettere</td>
+</tr>
+</tbody>
+</table>
+<h3 id="risultati-test">Risultati test</h3>
+<!--
+Tabella riassuntiva in cui si inseriscono i test riusciti e non del
+prodotto finale. Se un test non riesce e viene corretto l’errore, questo
+dovrà risultare nel documento finale come riuscito (la procedura della
+correzione apparirà nel diario), altrimenti dovrà essere descritto
+l’errore con eventuali ipotesi di correzione.
+-->
+<h3 id="mancanze-limitazioni-conosciute">Mancanze/limitazioni conosciute</h3>
+<ul>
+<li><p>Non è modulabile (o difficilmente modulabile) la parte hardware</p>
+</li>
+<li><p>Un po&#39; lento nell&#39;attuazione della richiesta</p>
+</li>
+<li><p>Misurazioni errate per lo spazio delle capsule tra l&#39;area di base e il plexiglass</p>
+</li>
+</ul>
+<!--
+Descrizione con motivazione di eventuali elementi mancanti o non
+completamente implementati, al di fuori dei test case. Non devono essere
+riportati gli errori e i problemi riscontrati e poi risolti durante il
+progetto.
+-->
+<h2 id="consuntivo">Consuntivo</h2>
+<!--
+Consuntivo del tempo di lavoro effettivo e considerazioni riguardo le
+differenze rispetto alla pianificazione (cap 1.7) (ad esempio Gannt
+consuntivo).
+-->
+<p>Durante lo sviluppo del progetto, vi sono stati vari cambiamenti dall&#39;idea di partenza:</p>
+<ul>
+<li><p><strong>dal utilizzare l&#39;Arduino al Raspberry</strong>
+  principalmente, è stato fatto questo cambiamento, perché ci serviva un sistema efficente per la comunicazione in parallello con un
+  sistema di memorizazzione e via ethernet. Dato che arduino questa funzionalità la gestiva in modo inutilizzabile, poco pratico, per
+  ciò di cui avevamo bisogno, abbiamo adottato la scelta di utilizzare comunque una sorta di micro-controllore, ma &quot;nato&quot; per riuscire
+  a gestire al meglio questa, apparentemente insignificante, particolarità.</p>
+</li>
+<li><p><strong>design sito e multi-pagina a mono pagina</strong>
+  fare il sito monopagina è una scelta è avvenuta grazie anche ad un consiglio offertoci da un nostro professore. In effetti, ultimamente, le applicazioni, o pagine,
+  web tendono a fare tutto ciò di cui si ha bisogno su un&#39;univoca pagina, per fare in modo che su qualsiasi dispositivo sia facilmente utilizzabile
+  senza troppi problemi. Questa scelta non ha mancato di portarci problemi, ma con la giusta determinazione e testardaggine, siamo comunque più
+  soddisfatti del risultato. Inoltre, durante lo sviluppo vi sono stati parecchi cambiamenti
+riguardanti le pagine web, tentando di migliorarle sempre di più.</p>
+</li>
+<li><p><strong>approccio diretto con iSete</strong>
+  per quanto riguarda i metodi per poter comunicare direttamente (senza bisogno di dispositivi esterni, intendesi) con il nostro sistema, vi sono
+  stati una grande quantità di cambiamenti o supposizioni. Tra riconoscimenti di vario genere (QR Code, carta, codice identificativo) e metodi di
+  iterazione (solo schermo, schermo e tastierino numerico, eccetera), siamo arrivati alla conclusione di utilizzare un dispositivo che ci desse
+  abbastanza libertà di scelta: un tablet. Non sarà stata la via più semplice, ma quella più conveniente di sicuro.</p>
+</li>
+<li><p><strong>struttura hardware</strong>
+  la struttura hardware ha avuto leggere modifiche riguradante le misure che essa avrebbe dovuto avere. Il nostro più grande collo di bottiglia era
+  avere a disposizione un officina per poter creare questa struttura, dato che necessitavamo di docenti specifici (quindi in mancanza di essi non
+  si poteva proseguire). Inoltre, non essendo degli esperti nel settore di laborazione di materiali, in alcuni casi ha portato anche dei rallentamenti.</p>
+</li>
+</ul>
+<h2 id="conclusioni">Conclusioni</h2>
+<p>Questo progetto è un idea alternativa alle macchinette da caffé, potrebbe essere molto interessante
+in caso che non si voglia avere molte macchinette da caffe sparse per una determinata zona, ma avere un ritrovo
+per tutte le capsule desiderate. L&#39;ipotesi, però, che esso diventi un oggetto comune non è totalmente da scartare,
+tutto dipende dai bisogni di ogni singolo utente, giustamente. Inoltre, permette un punto d&#39;accesso univoco
+indipendentemente dall&#39;utente che vi accede, il che può essere un fattore molto comodo.</p>
+<!--
+Quali sono le implicazioni della mia soluzione? Che impatto avrà?
+Cambierà il mondo? È un successo importante? È solo un’aggiunta
+marginale o è semplicemente servita per scoprire che questo percorso è
+stato una perdita di tempo? I risultati ottenuti sono generali,
+facilmente generalizzabili o sono specifici di un caso particolare? ecc
+-->
+<h3 id="sviluppi-futuri">Sviluppi futuri</h3>
+<ul>
+<li><p>Il nostro modello hardware non è stato progettato con l&#39;intento di diventare direttamente modulabile. Quindi, uno sviluppo futuro potrebbe essere il re-design della struttura in modo da renderla più facilmente
+modulabile.</p>
+</li>
+<li><p>Si potrebbe fare in modo che faccia cadere direttamente la capsula in una macchinetta la quale faccia il caffé.</p>
+</li>
+<li><p>Struttura finale di come pensavamo di farla</p>
+</li>
+</ul>
+<p><img src="C:\iSete\Progettazione\progettazione fisica\fronte.PNG" alt="fronte"></p>
+<p><img src="C:\iSete\Progettazione\progettazione fisica\retro.PNG" alt="retro">
+<!--
+  Migliorie o estensioni che possono essere sviluppate sul prodotto.
+--></p>
+<h3 id="considerazioni-personali">Considerazioni personali</h3>
+<h4 id="nishan">Nishan</h4>
+<p>Per me, questo è la seconda esperienza in un progetto di gruppo ma gestito in modo diverso.
+Quest&#39;anno abbiamo usato droptask per dividerci il lavoro e secondo me è stata una bella
+idea ma anche contemporaneamente utile perchè in questo modo potevi sempre sapere cosa c&#39;era da
+fare e cosa mancava. Mi è piaciuto il progetto perchè ho potuto lavorare un po sul sito e sull&#39;hardware.
+In conclusione volevo anche dire che questo progetto facendolo in massimo 5 persone era piu produttivo
+e coinvolgieva tutti in modo attivo.</p>
+<h4 id="raffaele">Raffaele</h4>
+<p>Come per Nishan, questo è il mio secondo progetto di gruppo. Quest&#39;anno invece del solito modello a cascata abbiamo utilizzato la metodologia SCRUM. È stato interessante perchè è stato qualcosa di nuovo e potenzialmente utile in futuro.
+Nonostante avessimo un gran carico di lavoro siamo riusciti a gestirlo abbastanza bene con questo metodo poichè ogni 2 settimane si faceva il punto della situazione mettendo nuovi paletti da seguire.
+È stato utile perchè a differenza di un gantt classico il programma poteva cambiare, anche drasticamente, dando nuove priorità.</p>
+<h4 id="ettore">Ettore</h4>
+<p>Il progetto agli inizi mi convinceva molto e avrei voluto finirlo. Trovo che come gruppo potevamo
+fare molto di più. Per quanto, comunque, non abbiamo finito, trovo che il risutlato non sia dei peggiori di cui mi immaginavo.</p>
+<h4 id="serhiy">Serhiy</h4>
+<p>Durante quest&#39;anno scolatico questo è stato il mio terzo progetto, e posso anche dire che è stato il più interessante, ma anche il più stressante, di tutti.<br>
+Grazie a esso ho imparato a documentarmi molto bene prima di iniziare a lavorare su qualcosa, così da non incombere in continui errori nello sviluppo del mio compito.<br>
+È stato però un duro colpo quando, dopo qualche settimana che io e Andrea stavamo lavorando con l&#39;Arduino, si è deciso di utilizzare il Raspberry, perché le settimane dedicate a lavorare con il primo si sono rivelate completamente inutili e abbiamo dovuto quindi ricominciare da capo.<br>
+Dall&#39;altro canto però questo cambiamento è stata un&#39;ottima idea, perché ha semplificato di molto la progettazione delle varie comunicazioni e ha permesso di ridurre le dimensioni del nostro dispenser.<br>
+È stato interessante lavorare in gruppo, perché se si ha un problema o un dubbio ci si può consultare con i propri compagni, che sono sempre disposti ad aiutarti. L&#39;unica pecca è stata però il fatto che, quando due componenti lavorano con il Raspberry e uno dei due deve per forza riavviarlo allora bisogna che lui aspetti che l&#39;altro compagno finisca il suo lavoro prima di poter procedere.</p>
+<h4 id="andrea">Andrea</h4>
+<p>Questo progetto è stato molto interessante poiché ho imparato a lavorare con il Raspberry, inoltre ho imparato a lavorare in gruppo.
+Questo progetto è stato anche molto stressante poiché ho perso moltissime ore a sbattere la testa su cose che non funzionavano.
+Il dover cambiare da lavorare con l&#39;Arduino a dover lavorare con il Raspberry è stato molto noioso poiché ho &quot;perso&quot; tutto ciò che avevo fatto, ma grazie al fatto che abbiamo cambiato modo di lavorare è stato molto più facile.
+Comunque sia la penso come gli altri. Questo progetto è stato molto istruttivo.
+<!--
+  Cosa ho imparato in questo progetto? ecc
+--></p>
+<h3 id="sitografia">Sitografia</h3>
+<ul>
+<li><a href="http://www.w3schools.com">W3Schools</a></li>
+<li><a href="http://www.pi4j.com">PI4J</a></li>
+<li><a href="https://developers.google.com/chart">API Google Chart</a></li>
+<li><a href="http://joshuawoehlke.com/android-raspberry-pi-display-over-usb/">USB</a></li>
+</ul>
+<!--
+1.  URL del sito (se troppo lungo solo dominio, evt completo nel
+    diario),
+
+2.  Eventuale titolo della pagina (in italico),
+
+3.  Data di consultazione (GG-MM-AAAA).
+
+**Esempio:**
+
+-   http://standards.ieee.org/guides/style/section7.html, *IEEE
+    Standards Style Manual*, 07-06-2008.
+-->
+<h2 id="allegati">Allegati</h2>
+<!--
+Elenco degli allegati, esempio:
+
+-   Diari di lavoro
+
+-   Codici sorgente/documentazione macchine virtuali
+
+-   Istruzioni di installazione del prodotto (con credenziali
+    di accesso) e/o di eventuali prodotti terzi
+
+-   Documentazione di prodotti di terzi
+
+-   Eventuali guide utente / Manuali di utilizzo
+
+-   Mandato e/o Qdc
+
+-   Prodotto
+
+-   …
+-->
+<ul>
+<li><p>QDC</p>
+</li>
+<li><p>Diari di lavoro</p>
+</li>
+<li><p>Test Form</p>
+</li>
+<li><p>Prodotto</p>
+</li>
+</ul></body>
+</html>
