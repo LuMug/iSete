@@ -877,8 +877,13 @@ Per me, questo è la seconda esperienza in un progetto di gruppo ma gestito in m
 Quest'anno abbiamo usato droptask per dividerci il lavoro e secondo me è stata una bella
 idea ma anche contemporaneamente utile perchè in questo modo potevi sempre sapere cosa c'era da
 fare e cosa mancava. Mi è piaciuto il progetto perchè ho potuto lavorare un po sul sito e sull'hardware.
-In conclusione volevo anche dire che, questo progetto facendolo in massimo 5 persone era piu produttivo,
+In conclusione volevo anche dire che questo progetto facendolo in massimo 5 persone era piu produttivo
 e coinvolgieva tutti in modo attivo.
+
+#### Raffaele
+Come per Nishan, questo è il mio secondo progetto di gruppo. Quest'anno invece del solito modello a cascata abbiamo utilizzato la metodologia SCRUM. È stato interessante perchè è stato qualcosa di nuovo e potenzialmente utile in futuro.
+Nonostante avessimo un gran carico di lavoro siamo riusciti a gestirlo abbastanza bene con questo metodo poichè ogni 2 settimane si faceva il punto della situazione mettendo nuovi paletti da seguire.
+È stato utile perchè a differenza di un gantt classico il programma poteva cambiare, anche drasticamente, dando nuove priorità.
 <!--
   Cosa ho imparato in questo progetto? ecc
 -->
