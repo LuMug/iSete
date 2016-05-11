@@ -709,7 +709,14 @@ In caso di esito positivo creo la webview e la reindirizzo, tramite il metodo lo
 Come si vede nell'immagine sottostante ho messo due pezzi di legno di spessore 1 cm.
 Questi due distano 4.8 cm.
 Alla base ho messo 5 strati di cartone che formano 5 centimentri in modo che la capsula cada nel ferro di cavallo
-![Login](img/HW_Finale2.png)
+![Corridoio](img/HW_Finale2.png)
+
+Il legno che funge da corridoio per le capsule sono alte 4 centimetri. 
+Sopra questo metteremo un plexiglass in modo che si veda il colore della capsula ma nessuno li potrà toccare.
+![Parete](img/HW_Finale1.png)
+
+Per mettere il servo motore ho fatto il buco e poi ho fatto un buco di mezzo centimetro cosi entra tutta la struttura e rimane fuori solamente l'elica.
+![Buco](img/HW_Finale.png)
 
 
 #### Espulsione capsule(Andrea)
