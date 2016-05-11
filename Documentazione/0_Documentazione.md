@@ -497,6 +497,8 @@ Il servo motore avrà attaccata un'elica che a sua volta sarà collegata al "fer
 Con questo metodo si riesce a prendere una capsula alla volta, poichè grazie alla rotazione del contenitore si chiude lo spazio per una seconda capsula.
 ![Servo](img/Servo.png)
 
+#### Offline-Mode (Serhiy)
+L'offline mode richiede nel nostro caso di aveve l'accesso completo al sito anche quando il RaspBerry non ha la connessione alla rete locale della scuola. Per poter soddisfare questa richieta ho deciso, dopo molte ricerche, ho deciso di usare il tablet prestatoci dal docente Barchi come display e metodi di input (tastiera e mouse) del nostro server. Questo device verrà connesso tramite usb al RaspBerry e verrà alloggiato vicino alla loggia delle capsule.
 
 
 ## Implementazione
@@ -754,7 +756,11 @@ con il metodo setTypeCapsula() cerco prima nell'array la posizione in cui si tro
 ```
 infine con il metodo this.rotation() realizzo un for che mi faccia girare il servo motore inizalizzato in precedenza n volte.
 
-#### Memorizzazione(Serhiy)
+#### Offline-Mode (Serhiy)
+Ho inizialmente installato il server vnc di TightVNCS sul RaspBerry eseguendo nel terminale il seguente comando:
+```
+sudo apt-get install tightvncserver
+```
 
 
 ## Test
