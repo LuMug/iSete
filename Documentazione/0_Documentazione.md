@@ -994,6 +994,11 @@ Come per Nishan, questo è il mio secondo progetto di gruppo. Quest'anno invece 
 Nonostante avessimo un gran carico di lavoro siamo riusciti a gestirlo abbastanza bene con questo metodo poichè ogni 2 settimane si faceva il punto della situazione mettendo nuovi paletti da seguire.
 È stato utile perchè a differenza di un gantt classico il programma poteva cambiare, anche drasticamente, dando nuove priorità.
 
+### Ettore
+
+Il progetto agli inizi mi convinceva molto e avrei voluto finirlo. Trovo che come gruppo potevamo
+fare molto di più. Per quanto, comunque, non abbiamo finito, trovo che il risutlato non sia dei peggiori di cui mi immaginavo.
+
 #### Serhiy
 
 Durante quest'anno scolatico questo è stato il mio terzo progetto, e posso anche dire che è stato il più interessante, ma anche il più stressante, di tutti.<br>
