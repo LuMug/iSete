@@ -27,6 +27,7 @@ Oggi ero presente alla lezione fino alle 14. Durante queste ore ho incollato 5 s
 per le colonne, ho disegnato la parte che bisognava tagliare per la parete dietro. Ho fatto la docuemntazione e fatto le conclusioni del progetto.
 
 #####Serhiy
+Oggi ho completato con successo il collegamento del tablet con il Raspberry
 
 
 ##  Problemi riscontrati e soluzioni adottate
@@ -54,6 +55,9 @@ Poiché l'espulsione capsule non funziona correttamente siamo indietro con il pr
 In linea
 
 #####Ettore
+
+#####Serhiy
+In linea
 
 
 ## Programma di massima per la prossima giornata di lavoro

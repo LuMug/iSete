@@ -993,6 +993,15 @@ e coinvolgieva tutti in modo attivo.
 Come per Nishan, questo è il mio secondo progetto di gruppo. Quest'anno invece del solito modello a cascata abbiamo utilizzato la metodologia SCRUM. È stato interessante perchè è stato qualcosa di nuovo e potenzialmente utile in futuro.
 Nonostante avessimo un gran carico di lavoro siamo riusciti a gestirlo abbastanza bene con questo metodo poichè ogni 2 settimane si faceva il punto della situazione mettendo nuovi paletti da seguire.
 È stato utile perchè a differenza di un gantt classico il programma poteva cambiare, anche drasticamente, dando nuove priorità.
+
+#### Serhiy
+
+Durante quest'anno scolatico questo è stato il mio terzo progetto, e posso anche dire che è stato il più interessante, ma anche il più stressante, di tutti.<br>
+Grazie a esso ho imparato a documentarmi molto bene prima di iniziare a lavorare su qualcosa, così da non incombere in continui errori nello sviluppo del mio compito.<br>
+È stato però un duro colpo quando, dopo qualche settimana che io e Andrea stavamo lavorando con l'Arduino, si è deciso di utilizzare il Raspberry, perché le settimane dedicate a lavorare con il primo si sono rivelate completamente inutili e abbiamo dovuto quindi ricominciare da capo.<br>
+Dall'altro canto però questo cambiamento è stata un'ottima idea, perché ha semplificato di molto la progettazione delle varie comunicazioni e ha permesso di ridurre le dimensioni del nostro dispenser.<br>
+È stato interessante lavorare in gruppo, perché se si ha un problema o un dubbio ci si può consultare con i propri compagni, che sono sempre disposti ad aiutarti. L'unica pecca è stata però il fatto che, quando due componenti lavorano con il Raspberry e uno dei due deve per forza riavviarlo allora bisogna che lui aspetti che l'altro compagno finisca il suo lavoro prima di poter procedere.
+
 <!--
   Cosa ho imparato in questo progetto? ecc
 -->
