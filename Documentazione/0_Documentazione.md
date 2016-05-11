@@ -15,8 +15,6 @@
 
   - [Analisi e specifica dei requisiti](#analisi-e-specifica-dei-requisiti)
 
-  - [Analisi e specifica dei requisiti](#analisi-e-specifica-dei-requisiti)
-
 1. [Use case](#use-case)
 
   - [Pianificazione](#pianificazione)
@@ -808,6 +806,8 @@ l’errore con eventuali ipotesi di correzione.
 
 - Un po' lento nell'attuazione della richiesta
 
+- Misurazioni errate per lo spazio delle capsule tra l'area di base e il plexiglass
+
 <!--
 Descrizione con motivazione di eventuali elementi mancanti o non
 completamente implementati, al di fuori dei test case. Non devono essere
@@ -893,6 +893,8 @@ e coinvolgieva tutti in modo attivo.
 
 - [W3Schools](http://www.w3schools.com)
 - [PI4J](http://www.pi4j.com)
+- [API Google Chart](https://developers.google.com/chart)
+
 <!--
 1.  URL del sito (se troppo lungo solo dominio, evt completo nel
     diario),
@@ -906,6 +908,7 @@ e coinvolgieva tutti in modo attivo.
 -   http://standards.ieee.org/guides/style/section7.html, *IEEE
     Standards Style Manual*, 07-06-2008.
 -->
+
 ## Allegati
 <!--
 Elenco degli allegati, esempio:
@@ -927,3 +930,11 @@ Elenco degli allegati, esempio:
 
 -   …
 -->
+
+- QDC
+
+- Diari di lavoro
+
+- Test Form
+
+- Prodotto
