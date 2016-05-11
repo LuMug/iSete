@@ -10,6 +10,8 @@ Quest'oggi abbiamo avuto a disposizione solo le prime 5 ore del mattino.
 
 #####Ettore
 
+In questa giornata, ho cercato di migliorare il sito internet.
+
 #####Andrea
 
 Poiché i pezzi non erano arrivati non ho potuto finire la bread board così ho aiutato i miei compagni a finire ciò che stavano facendo e in seguito ho preso le misure per fare il disegno tecnico.
@@ -30,6 +32,7 @@ Poi, insieme ad Andrea abbiamo preso tutte le misure da dare per fare il disegno
 
 #####Ettore
 
+Vi sono bug nel sito che non riesco ancora a risolvere.
 
 #####Andrea
 
@@ -52,13 +55,14 @@ In linea con il programma
 
 #####Ettore
 
+Indetro rispetto alla pianificazione.
+
 ## Programma di massima per la prossima giornata di lavoro
 
 #####Ettore
 
 Essendo presenti altri bug a me conosciuti, ho intenzione di sistemarli
-e migliorare il design del sito, rendendolo più facilmente usabile
-per i dispositivi mobili.
+e migliorare il design generale del sito.
 
 #####Andrea
 
