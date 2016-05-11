@@ -11,6 +11,8 @@
 #####Andrea
 
 #####Raffaele
+Durante tutta la giornata mi sono occupato di effettuare i test sui form all'interno del sito, sulla struttura e sul raspberry.
+Inoltre ho lavorato sulla documentazione.
 
 #####Nishan
 Oggi ero presente alla lezione fino alle 14. Durante queste ore ho incollato 5 strati di cartone
@@ -36,19 +38,11 @@ per le colonne, ho disegnato la parte che bisognava tagliare per la parete dietr
 #####Nishan
 
 #####Raffaele
-
+In linea
 
 #####Ettore
 
 
 ## Programma di massima per la prossima giornata di lavoro
 
-#####Ettore
-
-#####Andrea
-
-#####Raffaele
-
-#####Nishan
-
-#####Serhiy
+Preparazione sulla presentazione
