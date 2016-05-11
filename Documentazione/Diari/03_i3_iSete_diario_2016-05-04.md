@@ -27,6 +27,7 @@ Poi, insieme ad Andrea abbiamo preso tutte le misure da dare per fare il disegno
 
 #####Serhiy
 
+Durante la giornata di oggi ho continuato la mia ricerca al collegamento Tablet-Raspberry, facendo anche delle prove che però hanno tutte fallito.
 
 ##  Problemi riscontrati e soluzioni adottate
 
@@ -39,6 +40,8 @@ Vi sono bug nel sito che non riesco ancora a risolvere.
 Non avendo i pezzi non ho potuto finire la bread board
 
 #####Serhiy
+
+Il Tablet non riesce a dare l'indirizzo ip al Raspberry.
 
 ##  Punto della situazione rispetto alla pianificazione
 
@@ -55,7 +58,11 @@ In linea con il programma
 
 #####Ettore
 
-Indetro rispetto alla pianificazione.
+Indietro rispetto alla pianificazione.
+
+#####Serhiy
+
+In ritardo rispetto alla pianificazione.
 
 ## Programma di massima per la prossima giornata di lavoro
 
