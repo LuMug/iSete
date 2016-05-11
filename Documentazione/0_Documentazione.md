@@ -789,16 +789,39 @@ ripetibile alle stesse condizioni.
 |**Prerequisiti**|Sito funzionante.|
 |**Procedura**   |Testare ogni campo di ogni form del sito, inserendo dati non ammessi come spazio, caratteri diversi da numeri e lettere oppure inserire parole dove viene richiesto un numero.|
 |**Risultati attesi** |Vedi allegato: test.xlsx|
+|**Risultati ottenuti** |Vedi allegato: test.xlsx|
 
 |Test Case       | TC-002                              |
 |----------------|--------------------------------------|
 |**Nome**        |Test form(output) del sito|
-|**Riferimento** |REQ-003, REQ-004, REQ-005|
-|**Descrizione** |Inserire dati corretti e verificare il risultato a dipendenza dei privilegi dell'utente loggato.|
-|**Prerequisiti**|Sito funzionante.|
+|**Riferimento** |REQ-003, REQ-004, REQ-005, REQ-006|
+|**Descrizione** |Verificare il risultato a dipendenza dei privilegi dell'utente loggato.|
+|**Prerequisiti**|Sito funzionante e dati input validi|
 |**Procedura**   |Verificare nelle tabelle del sito e nelle tabelle del database il risultato delle richieste effettuate a dipendenza dei privilegi dell'utente loggato.|
 |**Risultati attesi** |Vedi allegato: test.xlsx|
+|**Risultati ottenuti** |Vedi allegato: test.xlsx|
 
+|Test Case       | TC-003                               |
+|----------------|--------------------------------------|
+|**Nome**        |Test Hardware|
+|**Riferimento** |REQ-001|
+|**Descrizione** |Verificare che la struttura sia modulabile, possa essere riempita facilmente e comunicare con un servo motore per l'espulsione delle capsule|
+|**Prerequisiti**|Sito e hardware funzionanti|
+|**Procedura**   |-Provare ad aumentare la quantità di capsule contenute
+-controllare che sia facile da riempire
+-verificare che si riesca a comunicare con il servo motore|
+|**Risultati attesi** |La struttura sarà modulabile, potrà essere riempita facilmente con il server e comunicherà con il servo motore per poter espellere le capsule. Vedi anche allegato: test.xlsx|
+|**Risultati ottenuti** |La struttura non è modulabile, può essere riempita facilmente e comunica con il servo motore. Vedi anche allegato: test.xlsx|
+
+|Test Case       | TC-004                               |
+|----------------|--------------------------------------|
+|**Nome**        |Test riconoscimento|
+|**Riferimento** |REQ-002|
+|**Descrizione** |Verificare che ci si possa riconoscere per usufruire del prodotto, anche in caso di server down|
+|**Prerequisiti**|Sito funzionante|
+|**Procedura**   |Collegarsi con un computer o con uno smartphone/tablet al sito e provare a loggare.|
+|**Risultati attesi** |Si verrà riconosciuti, anche in caso di server down|
+|**Risultati ottenuti** |Si viene riconosciuti, in caso di server down non ci si può connettere|
 
 ### Risultati test
 <!--
