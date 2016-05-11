@@ -705,7 +705,9 @@ In caso di esito positivo creo la webview e la reindirizzo, tramite il metodo lo
 ```
 ### HW
 
-#### Servo motore(Andrea)
+#### Espulsione capsule(Andrea)
+#####Schema Logico
+#####Codice 
 Per far funzionare il servo motore con il Raspberry ho cercato uno script che mi permettesse la connessione fra Servo motore e Raspberry, dopodiché, per farlo funzionare, ho dovuto installare la libreria GPIO seguendo  [la seguente guida](http://pi4j.com/install.html)
 Dopodiché ho implementato la classe funzionante in modo tale che il codice potesse essere usato anche con l'aumento di tipi di capsule. Per fare ciò ho dovuto collegarmi al database tramite java e per fare ciò ho dovuto usare la classe [jdbc](https://dev.mysql.com/downloads/connector/j/3.1.html). Ho creato un codice che, passando due parametri come argomenti della classe, che equivalgono al numero delle capsule e al tipo delle capsule, mi facciano girare il servo motore, corrispondente al tipo della capsula, un numero di volte equivalte al primo parametro passato.
 ```
