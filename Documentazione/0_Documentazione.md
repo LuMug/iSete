@@ -15,8 +15,6 @@
 
   - [Analisi e specifica dei requisiti](#analisi-e-specifica-dei-requisiti)
 
-  - [Analisi e specifica dei requisiti](#analisi-e-specifica-dei-requisiti)
-
 1. [Use case](#use-case)
 
   - [Pianificazione](#pianificazione)
@@ -28,10 +26,6 @@
   - [Design dell’architettura del sistema](#design-dell’architettura-del-sistema)
 
   - [Design dei dati e database](#design-dei-dati-e-database)
-
-  - [Design delle interfacce](#design-delle-interfacce)
-
-  - [Design procedurale](#design-procedurale)
 
 1. [Implementazione](#implementazione)
 
@@ -51,13 +45,7 @@
 
   - [Considerazioni personali](#considerazioni-personali)
 
-1. [Bibliografia](#bibliografia)
-
-  - [Bibliografia per articoli di riviste](#bibliografia-per-articoli-di-riviste)
-
-  - [Bibliografia per libri](#bibliografia-per-libri)
-
-  - [Sitografia](#sitografia)
+1. [Sitografia](#sitografia)
 
 1. [Allegati](#allegati)
 
@@ -212,11 +200,10 @@ Per utilizzare questo prodotto non bisogna avere competenze particolari.
 |**Priorità**|1                     |
 |**Versione**|1.0                   |
 |            |**Sotto requisiti** |
-|**001**      | 	Deve essere modulabile.  |
-|**002**      | Deve essere riempito con le capsule.|
+|**001**      |Deve essere modulabile.  |
+|**002**      |Deve essere riempito con le capsule.|
 |**003**      |Il ricaricamento deve essere facilitato, senza compromettere il funzionamento della struttura.                  |
 |**004**      |Deve avere un metodo di espulsione delle capsule a dipendenza della scelta effettuata.|
-|**005**      |Notificare al responsabile della mancanza delle capsule.|
 |**006**      |Deve comunicare al server gli acquisti.|
 |**007**      |Le capsule devono essere gestite da un servomotore controllato dall’Arduino.|
 
@@ -227,8 +214,8 @@ Per utilizzare questo prodotto non bisogna avere competenze particolari.
 |**Priorità**|1                     |
 |**Versione**|1.0                   |
 |            |**Sotto requisiti** |
-|**001**      | Deve essere presente un metodo di riconoscimento univoco dell’utente per chi vuole usufruire dell’apparecchio.  |
-|**002**      | Bisogna avere una server dove memorizzare gli utenti.|
+|**001**      |Deve essere presente un metodo di riconoscimento univoco dell’utente per chi vuole usufruire dell’apparecchio.  |
+|**002**      |Bisogna avere una server dove memorizzare gli utenti.|
 |**003**      |In caso di server down, bisogna avere un riconoscimento locale.                 |
 |**004**      |In caso di server down, bisogna avere un metodo di memorizzazione temporaneo in locale.|
 
@@ -238,8 +225,8 @@ Per utilizzare questo prodotto non bisogna avere competenze particolari.
 |**Priorità**|1                     |
 |**Versione**|1.0                   |
 |            |**Sotto requisiti** |
-|**001**      | 	Amministratore gestisce il sito.  |
-|**002**      | Deve poter dare permessi.|
+|**001**      |Amministratore gestisce il sito.  |
+|**002**      |Deve poter dare permessi.|
 |**003**      |Deve poter aggiungere i moduli.        |
 
 |ID |REQ-004                                       |
@@ -248,8 +235,8 @@ Per utilizzare questo prodotto non bisogna avere competenze particolari.
 |**Priorità**|1                     |
 |**Versione**|1.0                   |
 |            |**Sotto requisiti** |
-|**001**      | 	Si preoccupa della gestione dei crediti di ogni singolo utente.  |
-|**002**      | Ricaricare il distributore di capsule. |
+|**001**      |Si preoccupa della gestione dei crediti di ogni singolo utente.  |
+|**002**      |Ricaricare il distributore di capsule. |
 |**003**      |Avere la possibilità di creare utenti.    |
 |**004**      |Deve poter gestire gli utenti.|
 |**005**      |Deve poter creare i grafici dei acquisti.|
@@ -262,18 +249,19 @@ Per utilizzare questo prodotto non bisogna avere competenze particolari.
 |**Priorità**|1                     |
 |**Versione**|1.0                   |
 |            |**Sotto requisiti** |
-|**001**      | 	Ogni utente deve poter consultare il proprio credito.  |
-|**002**      | Ha a disposizione informazioni riguardanti i propri acquisti quali storico e quantità di capsule.|
+|**001**      |Ogni utente deve poter consultare il proprio credito.  |
+|**002**      |Ha a disposizione informazioni riguardanti i propri acquisti quali storico e quantità di capsule.|
 
 |ID |REQ-006                                     |
 |---|--------------------------------------------------------|
-|**Nome**    |Utente comune |
+|**Nome**    |Raspberry |
 |**Priorità**|1                     |
 |**Versione**|1.0                   |
 |            |**Sotto requisiti** |
-|**001**      | Gestione credito dei utenti dal responsabile. |
-|**002**      | Ordinare le capsule dal utente.|
-|**003**      |Gestione intero sistema dall’amministratore.  |
+|**001**      |Hosta un sito che permette la gestione del prodotto: utenti, capsule, configurazioni |
+|**002**      |Comunica con altri dispositivi|
+|**003**      |Comunica con componenti esterni|
+
 
 ### Use case
 
@@ -324,10 +312,11 @@ presenta? Che hw sarà disponibile durante lo sviluppo?
 - Attrezzi presenti nell'aula di modellismo
 - Cartone
 - Legno
-- Cartone 
+- Cartone
 - Servo motore
 - Raspberry
 - Capsule del caffè
+- Tablet
 
 ## Progettazione
 <!--
@@ -356,38 +345,13 @@ Descrive:
 Descrizione delle strutture di dati utilizzate dal programma in base
 agli attributi e le relazioni degli oggetti in uso.
 -->
-### Schema E-R, schema logico e descrizione.
 <!--
 Se il diagramma E-R viene modificato, sulla doc dovrà apparire l’ultima
 versione, mentre le vecchie saranno sui diari.
 -->
 
 ![ER](img/ER.PNG)
-### Design delle interfacce
-<!--
-Descrizione delle interfacce interne ed esterne del sistema e
-dell’interfaccia utente. La progettazione delle interfacce è basata
-sulle informazioni ricavate durante la fase di analisi e realizzata
-tramite mockups.
--->
-### Design procedurale
-<!--
-Descrive i concetti dettagliati dell’architettura/sviluppo utilizzando
-ad esempio:
 
--   Diagrammi di flusso e Nassi.
-
--   Tabelle.
-
--   Classi e metodi.
-
--   Tabelle di routing
-
--   Diritti di accesso a condivisioni …
-
-Questi documenti permetteranno di rappresentare i dettagli procedurali
-per la realizzazione del prodotto.
--->
 ### Web Server
 
 #### Sitoweb
@@ -615,7 +579,7 @@ $valore = $_POST['valore'];
 $descrizione = $_POST['descrizione'];
 sess("db")->start();
 if(!empty($nome) && !empty($valore)){
-	$ret = sess("db")->query("INSERT INTO configurazione (co_nome, co_valore, co_descrizione) 
+	$ret = sess("db")->query("INSERT INTO configurazione (co_nome, co_valore, co_descrizione)
 	VALUES ('".$nome."', '".$valore."', '".$descrizione."');");
 	if($ret){
 		echo "Configurazione aggiunta correttamente";
@@ -681,7 +645,7 @@ Mentre con quest'altra riga di codice abilito l'applicazione a ricavare informaz
 Con questo pezzo di codice, nella classe java dell'applicazione, nel metodo onCreate ricavo lo stato della rete tramite le classi ConnectivityManager e NetworkInfo.
 Successivamente controllo che l'applicazione sia connessa alla rete e informo tramite un toast(popup) l'esito sia positivo che negativo.
 In caso di esito positivo creo la webview e la reindirizzo, tramite il metodo loadUrl, al sito desiderato.
-```
+```java
  @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -706,6 +670,7 @@ In caso di esito positivo creo la webview e la reindirizzo, tramite il metodo lo
     }
 ```
 ### HW
+
 #### Struttura legno(Nishan)
 
 Come si vede nell'immagine sottostante ho messo due pezzi di legno di spessore 1 cm.
@@ -713,7 +678,7 @@ Questi due distano 4.8 cm.
 Alla base ho messo 5 strati di cartone che formano 5 centimentri in modo che la capsula cada nel ferro di cavallo
 ![Corridoio](img/HW_Finale2.png)
 
-Il legno che funge da corridoio per le capsule sono alte 4 centimetri. 
+Il legno che funge da corridoio per le capsule sono alte 4 centimetri.
 Sopra questo metteremo un plexiglass in modo che si veda il colore della capsula ma nessuno li potrà toccare.
 ![Parete](img/HW_Finale1.png)
 
@@ -725,17 +690,19 @@ Questo sarà il nostro sostegno, andrà dietro alla struttura con lo spessore in
 
 
 #### Espulsione capsule(Andrea)
-#####Schema Logico
-#####Codice 
+
+##### Schema Logico
+![Schema](../Progettazione/Raspberry Pi/Progettazione/schema logico.PNG)
+##### Codice
 Per far funzionare il servo motore con il Raspberry ho cercato uno script che mi permettesse la connessione fra Servo motore e Raspberry, dopodiché, per farlo funzionare, ho dovuto installare la libreria GPIO seguendo  [la seguente guida](http://pi4j.com/install.html)
 Dopodiché ho implementato la classe funzionante in modo tale che il codice potesse essere usato anche con l'aumento di tipi di capsule. Per fare ciò ho dovuto collegarmi al database tramite java e per fare ciò ho dovuto usare la classe [jdbc](https://dev.mysql.com/downloads/connector/j/3.1.html). Ho creato un codice che, passando due parametri come argomenti della classe, che equivalgono al numero delle capsule e al tipo delle capsule, mi facciano girare il servo motore, corrispondente al tipo della capsula, un numero di volte equivalte al primo parametro passato.
-```
+```java
     public static void main(String[] args) {
         ServoMotoreModulare s = new ServoMotoreModulare(Integer.parseInt(args[0]), args[1]);
     }
 ```
 Per fare ciò ho creato dei metodi che richiamo nel costruttore.
-```
+```java
 
     public ServoMotoreModulare(int n, String t) { // costruttore
         this.connected(); // connessione al db
@@ -746,7 +713,7 @@ Per fare ciò ho creato dei metodi che richiamo nel costruttore.
 tramite this.connected() faccio la connessione al db.
 con il metodo setTypeCapsula() cerco prima nell'array la posizione in cui si trova quel tipo di capsula, dopodiché uso quella posizione per inizalizzare il servo motore dove la posizione nell'array dei pin è uguale a quella dell'array delle capsule
 
-```
+```java
     public void setTypeCapsula(String tipo) { // tipo della capsula
         int p = nomiCapsule.indexOf(tipo); // mi ritorna la posizione dove value=tipo
         myServo = gpio.provisionDigitalOutputPin(pinRasp[p], // pin del servo motore corrispondente
@@ -781,8 +748,50 @@ ripetibile alle stesse condizioni.
 |**Prerequisiti**|Store on local PC: Profile\_1.2.001.xml (appendix n\_n) and Cards\_1.2.001.txt (appendix n\_n) |
 |**Procedura**     | - Go to “Cards manager” menu, in main page click “Import Profiles” link, Select the “1.2.001.xml” file, Import the Profile - Go to “Cards manager” menu, in main page click “Import Cards” link, Select the “1.2.001.txt” file, Delete the cards, Select the “1.2.001.txt” file, Import the cards |
 |**Risultati attesi** |Keys visible in the DB (OtaCardKey) but not visible in the GUI (Card details) |
-
 -->
+
+|Test Case       | TC-001                               |
+|----------------|--------------------------------------|
+|**Nome**        |Input form del sito|
+|**Riferimento** |REQ-006|
+|**Descrizione** |Andare ad inserire in ogni campo di ogni form del sito valori che dovrebbe accettere e quelli che non dovrebbe accettare.|
+|**Prerequisiti**|Sito funzionante.|
+|**Procedura**   |Testare ogni campo di ogni form del sito, inserendo dati non ammessi come spazio, caratteri diversi da numeri e lettere oppure inserire parole dove viene richiesto un numero.|
+|**Risultati attesi** |Vedi allegato: test.xlsx|
+|**Risultati ottenuti** |Vedi allegato: test.xlsx|
+
+|Test Case       | TC-002                              |
+|----------------|--------------------------------------|
+|**Nome**        |Output form del sito|
+|**Riferimento** |REQ-003, REQ-004, REQ-005, REQ-006|
+|**Descrizione** |Verificare il risultato a dipendenza dei privilegi dell'utente loggato.|
+|**Prerequisiti**|Sito funzionante e dati input validi|
+|**Procedura**   |Verificare nelle tabelle del sito e nelle tabelle del database il risultato delle richieste effettuate a dipendenza dei privilegi dell'utente loggato.|
+|**Risultati attesi** |Vedi allegato: test.xlsx|
+|**Risultati ottenuti** |Vedi allegato: test.xlsx|
+
+|Test Case       | TC-003                               |
+|----------------|--------------------------------------|
+|**Nome**        |Hardware|
+|**Riferimento** |REQ-001|
+|**Descrizione** |Verificare che la struttura sia modulabile, possa essere riempita facilmente e comunicare con un servo motore per l'espulsione delle capsule|
+|**Prerequisiti**|Sito e hardware funzionanti|
+|**Procedura**   |-Provare ad aumentare la quantità di capsule contenute
+-controllare che sia facile da riempire
+-verificare che si riesca a comunicare con il servo motore|
+|**Risultati attesi** |La struttura sarà modulabile, potrà essere riempita facilmente con il server e comunicherà con il servo motore per poter espellere le capsule. Vedi anche allegato: test.xlsx|
+|**Risultati ottenuti** |La struttura non è modulabile, può essere riempita facilmente e comunica con il servo motore se e solo la distanza tra la base della struttura è del plexiglass è di almeno 4.3 centimetri. Vedi anche allegato: test.xlsx|
+
+|Test Case       | TC-004                               |
+|----------------|--------------------------------------|
+|**Nome**        |Riconoscimento|
+|**Riferimento** |REQ-002|
+|**Descrizione** |Verificare che ci si possa riconoscere per usufruire del prodotto, anche in caso di server down|
+|**Prerequisiti**|Sito funzionante|
+|**Procedura**   |Collegarsi con un computer o con uno smartphone/tablet al sito e provare a loggare.|
+|**Risultati attesi** |Si verrà riconosciuti, anche in caso di server down|
+|**Risultati ottenuti** |Si viene riconosciuti, in caso di server down non ci si può connettere|
+
 ### Risultati test
 <!--
 Tabella riassuntiva in cui si inseriscono i test riusciti e non del
@@ -796,6 +805,8 @@ l’errore con eventuali ipotesi di correzione.
 - Non è modulabile (o difficilmente modulabile) la parte hardware
 
 - Un po' lento nell'attuazione della richiesta
+
+- Misurazioni errate per lo spazio delle capsule tra l'area di base e il plexiglass
 
 <!--
 Descrizione con motivazione di eventuali elementi mancanti o non
@@ -818,11 +829,12 @@ Durante lo sviluppo del progetto, vi sono stati vari cambiamenti dall'idea di pa
 	ciò di cui avevamo bisogno, abbiamo adottato la scelta di utilizzare comunque una sorta di micro-controllore, ma "nato" per riuscire
 	a gestire al meglio questa, apparentemente insignificante, particolarità.
 
-- **sito multi-pagina a mono pagina**
-	questa scelta è avvenuta grazie anche ad un consiglio offertoci da un nostro professore. In effetti, ultimamente, le applicazioni, o pagine,
+- **design sito e multi-pagina a mono pagina**
+	fare il sito monopagina è una scelta è avvenuta grazie anche ad un consiglio offertoci da un nostro professore. In effetti, ultimamente, le applicazioni, o pagine,
 	web tendono a fare tutto ciò di cui si ha bisogno su un'univoca pagina, per fare in modo che su qualsiasi dispositivo sia facilmente utilizzabile
 	senza troppi problemi. Questa scelta non ha mancato di portarci problemi, ma con la giusta determinazione e testardaggine, siamo comunque più
-	soddisfatti del risultato.
+	soddisfatti del risultato. Inoltre, durante lo sviluppo vi sono stati parecchi cambiamenti
+  riguardanti le pagine web, tentando di migliorarle sempre di più.
 
 - **approccio diretto con iSete**
 	per quanto riguarda i metodi per poter comunicare direttamente (senza bisogno di dispositivi esterni, intendesi) con il nostro sistema, vi sono
@@ -856,46 +868,38 @@ facilmente generalizzabili o sono specifici di un caso particolare? ecc
 modulabile.
 
 - Si potrebbe fare in modo che faccia cadere direttamente la capsula in una macchinetta la quale faccia il caffé.
+
+- Struttura finale di come pensavamo di farla
+
+![fronte](../Progettazione/progettazione fisica/fronte.PNG)
+
+![retro](../Progettazione/progettazione fisica/retro.PNG)
 <!--
   Migliorie o estensioni che possono essere sviluppate sul prodotto.
 -->
 ### Considerazioni personali
+#### Nishan
+Per me, questo è la seconda esperienza in un progetto di gruppo ma gestito in modo diverso.
+Quest'anno abbiamo usato droptask per dividerci il lavoro e secondo me è stata una bella
+idea ma anche contemporaneamente utile perchè in questo modo potevi sempre sapere cosa c'era da
+fare e cosa mancava. Mi è piaciuto il progetto perchè ho potuto lavorare un po sul sito e sull'hardware.
+In conclusione volevo anche dire che questo progetto facendolo in massimo 5 persone era piu produttivo
+e coinvolgieva tutti in modo attivo.
+
+#### Raffaele
+Come per Nishan, questo è il mio secondo progetto di gruppo. Quest'anno invece del solito modello a cascata abbiamo utilizzato la metodologia SCRUM. È stato interessante perchè è stato qualcosa di nuovo e potenzialmente utile in futuro.
+Nonostante avessimo un gran carico di lavoro siamo riusciti a gestirlo abbastanza bene con questo metodo poichè ogni 2 settimane si faceva il punto della situazione mettendo nuovi paletti da seguire.
+È stato utile perchè a differenza di un gantt classico il programma poteva cambiare, anche drasticamente, dando nuove priorità.
 <!--
   Cosa ho imparato in questo progetto? ecc
 -->
-## Bibliografia
-
-### Bibliografia per articoli di riviste
-<!--
-1.  Cognome e nome (o iniziali) dell’autore o degli autori, o nome
-    dell’organizzazione,
-
-2.  Titolo dell’articolo (tra virgolette),
-
-3.  Titolo della rivista (in italico),
-
-4.  Anno e numero
-
-5.  Pagina iniziale dell’articolo,
--->
-### Bibliografia per libri
-
-<!--
-1.  Cognome e nome (o iniziali) dell’autore o degli autori, o nome
-    dell’organizzazione,
-
-2.  Titolo del libro (in italico),
-
-3.  ev. Numero di edizione,
-
-4.  Nome dell’editore,
-
-5.  Anno di pubblicazione,
-
-6.  ISBN.
--->
 
 ### Sitografia
+
+- [W3Schools](http://www.w3schools.com)
+- [PI4J](http://www.pi4j.com)
+- [API Google Chart](https://developers.google.com/chart)
+
 <!--
 1.  URL del sito (se troppo lungo solo dominio, evt completo nel
     diario),
@@ -909,6 +913,7 @@ modulabile.
 -   http://standards.ieee.org/guides/style/section7.html, *IEEE
     Standards Style Manual*, 07-06-2008.
 -->
+
 ## Allegati
 <!--
 Elenco degli allegati, esempio:
@@ -930,3 +935,11 @@ Elenco degli allegati, esempio:
 
 -   …
 -->
+
+- QDC
+
+- Diari di lavoro
+
+- Test Form
+
+- Prodotto
