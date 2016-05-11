@@ -724,11 +724,114 @@ con il metodo setTypeCapsula() cerco prima nell'array la posizione in cui si tro
 infine con il metodo this.rotation() realizzo un for che mi faccia girare il servo motore inizalizzato in precedenza n volte.
 
 #### Offline-Mode (Serhiy)
-Ho inizialmente installato il server vnc di TightVNCS sul RaspBerry eseguendo nel terminale il seguente comando:
+##### Lato Server
+
+Ho inizialmente installato settato l'indirizzo statico sull'interfaccia usb0 del RaspBerry.<br>
+Per fare ciò ho aperto il file interfaces
+```
+sudo nano /etc/network/interfaces
+```
+e ho aggiunto le seguenti righe:
+```
+iface usb0 inet static
+address 192.168.42.226
+netmask 255.255.255.0
+network 192.168.42.0
+broadcast 192.168.42.255
+```
+Fatto ciò ho salvato e chiuso il file.<br>
+A questo punto ho installato il server vnc di TightVNC sul RaspBerry eseguendo nel terminale il seguente comando:
 ```
 sudo apt-get install tightvncserver
 ```
+Successivamente ho settato le impostazioni del pacchetto eseguendo questo comando:
+```
+tightvncserver
+```
+Mi è stato quindi chiesto di impostare la password, che nel mio caso è stata 'iSete2016'.<br>
+Finito la configurazione iniziale, ho continuato con la configurazione più tecnica:
+mi sono diretto nella directory /etc/init.d
+```
+cd /etc/init.d
+```
+e ho creato il file vncboot.
+```
+sudo nano vncboot
+```
+All'interno di questo file ho quindi incollato le seguenti righe di codice:
+```
+#! /bin/sh
+### BEGIN INIT INFO
+# Provides:          vncboot
+# Required-Start:    $local_fs
+# Required-Stop:     $local_fs
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Run tightvnc on boot
+### END INIT INFO
 
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/bin
+export USER='pi'
+
+eval cd ~$USER
+
+. /lib/init/vars.sh
+. /lib/lsb/init-functions
+
+case "$1" in
+start)
+log_begin_msg "Starting VNC server"
+su $USER -c '/usr/bin/vncserver :1 -geometry 1680x1050 -depth 24'
+log_end_msg $?
+exit 0
+;;
+stop)
+pkill Xtightvnc
+log_begin_msg "Stopping VNC server"
+log_end_msg $?
+exit 0
+;;
+*)
+echo "Usage: /etc/init.d/vncboot {start|stop}"
+exit 1
+;;
+esac
+```
+Fatto ciò ho salvato e chiuso il file.<br>
+Arrivato a questo punto ho aggiornato i suoi permessi
+```
+sudo chmod 755 vncboot
+```
+e ho aggiunto lo script alla mia startup.
+```
+sudo update-rc.d vncboot defaults
+```
+
+Per attivare il server vnc ho dovuto infine eseguire questo script nel terminale:
+```
+vncserver :1 -geometry 800x1280 -depth 16
+```
+
+##### Lato Client
+
+Completato il lato server, ho comiciato a lavorare sul lato client, cioè sul Tablet.<br>
+Essendo il mio un tablet senza la possibilità di fare il tethering usb di default (questo dovuto al fatto che è un dispositivo che ha solo le connettività wifi e bluetooth) ho prima di tutto installato l'applicazione 'USB Tethering', che permette ai dispositivi come il mio di accedere alle impostazioni ufficiali dell'USB Tether.<br>
+Una volta installata, ho scaricato anche l'applicazione 'bVNC Free', la quale serve a potersi connettere in VNC al RaspBerry.<br>
+Completate le installazioni ho continuato con le configurazioni e infine con la connessione.<br>
+Prima di tutto mi sono diretto nelle Impostazioni->Generale->Info sul dispositivo e ho quindi cliccato 10 volte sulla 'Versione della Build', il tutto per poter attivare le 'Opzioni Sviluppatore'.
+Attivato esse, mi sono recato nelle nuove opzioni e ho abilitato il 'Debug USB'.<br>
+Terminato i passaggi precedenti ho collegato il tablet al RaspBerry tramite il cavo USB, dopodiché ho aperto l'applicazione dedicata al tethering e, grazie al collegamento all'interno di essa, mi sono diretto nelle impostazioni ufficiali di Android per il Tethering USB, ove l'ho abilitato.<br>
+A questo punto ho aperto l'applicazione scaricata precedentemente per la connessione VNC e ho inserito nei campi le informazioni richieste:<br>
+``Title : iSete``<br>
+``IP : 192.168.42.266 ; Port : 5901``<br>
+``Password : iSete2016``
+
+Una volta connesso ho disabilitato le 'Extra Keys' e modificato la 'Input Mode' in 'Direct, Hold Pan'.<br>
+Ho infine aperto il sito in modalità 'Presentazione' tramite il seguente comando
+```
+epiphany-browser -a --profile ~/.config http://192.168.2.253
+```
+e, cliccando col tasto destro sulla barra di stato e selezionando 'Sì/No Decorazioni', ho fatto in modo che la barra blu superiore sparisse.
 
 ## Test
 
