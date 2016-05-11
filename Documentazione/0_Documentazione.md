@@ -45,13 +45,7 @@
 
   - [Considerazioni personali](#considerazioni-personali)
 
-1. [Bibliografia](#bibliografia)
-
-  - [Bibliografia per articoli di riviste](#bibliografia-per-articoli-di-riviste)
-
-  - [Bibliografia per libri](#bibliografia-per-libri)
-
-  - [Sitografia](#sitografia)
+1. [Sitografia](#sitografia)
 
 1. [Allegati](#allegati)
 
