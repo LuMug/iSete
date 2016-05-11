@@ -783,7 +783,7 @@ ripetibile alle stesse condizioni.
 
 |Test Case       | TC-001                               |
 |----------------|--------------------------------------|
-|**Nome**        |Test form(input) del sito|
+|**Nome**        |Input form del sito|
 |**Riferimento** |REQ-006|
 |**Descrizione** |Andare ad inserire in ogni campo di ogni form del sito valori che dovrebbe accettere e quelli che non dovrebbe accettare.|
 |**Prerequisiti**|Sito funzionante.|
@@ -793,7 +793,7 @@ ripetibile alle stesse condizioni.
 
 |Test Case       | TC-002                              |
 |----------------|--------------------------------------|
-|**Nome**        |Test form(output) del sito|
+|**Nome**        |Output form del sito|
 |**Riferimento** |REQ-003, REQ-004, REQ-005, REQ-006|
 |**Descrizione** |Verificare il risultato a dipendenza dei privilegi dell'utente loggato.|
 |**Prerequisiti**|Sito funzionante e dati input validi|
@@ -803,7 +803,7 @@ ripetibile alle stesse condizioni.
 
 |Test Case       | TC-003                               |
 |----------------|--------------------------------------|
-|**Nome**        |Test Hardware|
+|**Nome**        |Hardware|
 |**Riferimento** |REQ-001|
 |**Descrizione** |Verificare che la struttura sia modulabile, possa essere riempita facilmente e comunicare con un servo motore per l'espulsione delle capsule|
 |**Prerequisiti**|Sito e hardware funzionanti|
@@ -811,11 +811,11 @@ ripetibile alle stesse condizioni.
 -controllare che sia facile da riempire
 -verificare che si riesca a comunicare con il servo motore|
 |**Risultati attesi** |La struttura sarà modulabile, potrà essere riempita facilmente con il server e comunicherà con il servo motore per poter espellere le capsule. Vedi anche allegato: test.xlsx|
-|**Risultati ottenuti** |La struttura non è modulabile, può essere riempita facilmente e comunica con il servo motore. Vedi anche allegato: test.xlsx|
+|**Risultati ottenuti** |La struttura non è modulabile, può essere riempita facilmente e comunica con il servo motore se e solo la distanza tra la base della struttura è del plexiglass è di almeno 4.3 centimetri. Vedi anche allegato: test.xlsx|
 
 |Test Case       | TC-004                               |
 |----------------|--------------------------------------|
-|**Nome**        |Test riconoscimento|
+|**Nome**        |Riconoscimento|
 |**Riferimento** |REQ-002|
 |**Descrizione** |Verificare che ci si possa riconoscere per usufruire del prodotto, anche in caso di server down|
 |**Prerequisiti**|Sito funzionante|
