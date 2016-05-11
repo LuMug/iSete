@@ -906,6 +906,13 @@ modulabile.
   Migliorie o estensioni che possono essere sviluppate sul prodotto.
 -->
 ### Considerazioni personali
+#### Nishan
+Per me, questo è la seconda esperienza in un progetto di gruppo ma gestito in modo diverso.
+Quest'anno abbiamo usato droptask per dividerci il lavoro e secondo me è stata una bella 
+idea ma anche contemporaneamente utile perchè in questo modo potevi sempre sapere cosa c'era da
+fare e cosa mancava. Mi è piaciuto il progetto perchè ho potuto lavorare un po sul sito e sull'hardware.
+In conclusione volevo anche dire che, questo progetto facendolo in massimo 5 persone era piu produttivo,
+e coinvolgieva tutti in modo attivo.
 <!--
   Cosa ho imparato in questo progetto? ecc
 -->
