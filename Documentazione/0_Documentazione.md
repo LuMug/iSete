@@ -718,6 +718,9 @@ Sopra questo metteremo un plexiglass in modo che si veda il colore della capsula
 Per mettere il servo motore ho fatto il buco e poi ho fatto un buco di mezzo centimetro cosi entra tutta la struttura e rimane fuori solamente l'elica.
 ![Buco](img/HW_Finale.png)
 
+Questo sarà il nostro sostegno, andrà dietro alla struttura con lo spessore in mezzo in modo che mettiamo in mezzo la breadboard.
+![Buco](img/HW_Finale3.png)
+
 
 #### Espulsione capsule(Andrea)
 #####Schema Logico
