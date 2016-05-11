@@ -212,11 +212,10 @@ Per utilizzare questo prodotto non bisogna avere competenze particolari.
 |**Priorità**|1                     |
 |**Versione**|1.0                   |
 |            |**Sotto requisiti** |
-|**001**      | 	Deve essere modulabile.  |
-|**002**      | Deve essere riempito con le capsule.|
+|**001**      |Deve essere modulabile.  |
+|**002**      |Deve essere riempito con le capsule.|
 |**003**      |Il ricaricamento deve essere facilitato, senza compromettere il funzionamento della struttura.                  |
 |**004**      |Deve avere un metodo di espulsione delle capsule a dipendenza della scelta effettuata.|
-|**005**      |Notificare al responsabile della mancanza delle capsule.|
 |**006**      |Deve comunicare al server gli acquisti.|
 |**007**      |Le capsule devono essere gestite da un servomotore controllato dall’Arduino.|
 
@@ -227,8 +226,8 @@ Per utilizzare questo prodotto non bisogna avere competenze particolari.
 |**Priorità**|1                     |
 |**Versione**|1.0                   |
 |            |**Sotto requisiti** |
-|**001**      | Deve essere presente un metodo di riconoscimento univoco dell’utente per chi vuole usufruire dell’apparecchio.  |
-|**002**      | Bisogna avere una server dove memorizzare gli utenti.|
+|**001**      |Deve essere presente un metodo di riconoscimento univoco dell’utente per chi vuole usufruire dell’apparecchio.  |
+|**002**      |Bisogna avere una server dove memorizzare gli utenti.|
 |**003**      |In caso di server down, bisogna avere un riconoscimento locale.                 |
 |**004**      |In caso di server down, bisogna avere un metodo di memorizzazione temporaneo in locale.|
 
@@ -238,8 +237,8 @@ Per utilizzare questo prodotto non bisogna avere competenze particolari.
 |**Priorità**|1                     |
 |**Versione**|1.0                   |
 |            |**Sotto requisiti** |
-|**001**      | 	Amministratore gestisce il sito.  |
-|**002**      | Deve poter dare permessi.|
+|**001**      |Amministratore gestisce il sito.  |
+|**002**      |Deve poter dare permessi.|
 |**003**      |Deve poter aggiungere i moduli.        |
 
 |ID |REQ-004                                       |
@@ -248,8 +247,8 @@ Per utilizzare questo prodotto non bisogna avere competenze particolari.
 |**Priorità**|1                     |
 |**Versione**|1.0                   |
 |            |**Sotto requisiti** |
-|**001**      | 	Si preoccupa della gestione dei crediti di ogni singolo utente.  |
-|**002**      | Ricaricare il distributore di capsule. |
+|**001**      |Si preoccupa della gestione dei crediti di ogni singolo utente.  |
+|**002**      |Ricaricare il distributore di capsule. |
 |**003**      |Avere la possibilità di creare utenti.    |
 |**004**      |Deve poter gestire gli utenti.|
 |**005**      |Deve poter creare i grafici dei acquisti.|
@@ -262,18 +261,19 @@ Per utilizzare questo prodotto non bisogna avere competenze particolari.
 |**Priorità**|1                     |
 |**Versione**|1.0                   |
 |            |**Sotto requisiti** |
-|**001**      | 	Ogni utente deve poter consultare il proprio credito.  |
-|**002**      | Ha a disposizione informazioni riguardanti i propri acquisti quali storico e quantità di capsule.|
+|**001**      |Ogni utente deve poter consultare il proprio credito.  |
+|**002**      |Ha a disposizione informazioni riguardanti i propri acquisti quali storico e quantità di capsule.|
 
 |ID |REQ-006                                     |
 |---|--------------------------------------------------------|
-|**Nome**    |Utente comune |
+|**Nome**    |Raspberry |
 |**Priorità**|1                     |
 |**Versione**|1.0                   |
 |            |**Sotto requisiti** |
-|**001**      | Gestione credito dei utenti dal responsabile. |
-|**002**      | Ordinare le capsule dal utente.|
-|**003**      |Gestione intero sistema dall’amministratore.  |
+|**001**      |Hosta un sito che permette la gestione del prodotto: utenti, capsule, configurazioni |
+|**002**      |Comunica con altri dispositivi|
+|**003**      |Comunica con componenti esterni|
+
 
 ### Use case
 
@@ -779,8 +779,27 @@ ripetibile alle stesse condizioni.
 |**Prerequisiti**|Store on local PC: Profile\_1.2.001.xml (appendix n\_n) and Cards\_1.2.001.txt (appendix n\_n) |
 |**Procedura**     | - Go to “Cards manager” menu, in main page click “Import Profiles” link, Select the “1.2.001.xml” file, Import the Profile - Go to “Cards manager” menu, in main page click “Import Cards” link, Select the “1.2.001.txt” file, Delete the cards, Select the “1.2.001.txt” file, Import the cards |
 |**Risultati attesi** |Keys visible in the DB (OtaCardKey) but not visible in the GUI (Card details) |
-
 -->
+
+|Test Case       | TC-001                               |
+|----------------|--------------------------------------|
+|**Nome**        |Test form(input) del sito|
+|**Riferimento** |REQ-006|
+|**Descrizione** |Andare ad inserire in ogni campo di ogni form del sito valori che dovrebbe accettere e quelli che non dovrebbe accettare.|
+|**Prerequisiti**|Sito funzionante.|
+|**Procedura**   |Testare ogni campo di ogni form del sito, inserendo dati non ammessi come spazio, caratteri diversi da numeri e lettere oppure inserire parole dove viene richiesto un numero.|
+|**Risultati attesi** |Vedi allegato: test.xlsx|
+
+|Test Case       | TC-002                              |
+|----------------|--------------------------------------|
+|**Nome**        |Test form(output) del sito|
+|**Riferimento** |REQ-003, REQ-004, REQ-005|
+|**Descrizione** |Inserire dati corretti e verificare il risultato a dipendenza dei privilegi dell'utente loggato.|
+|**Prerequisiti**|Sito funzionante.|
+|**Procedura**   |Verificare nelle tabelle del sito e nelle tabelle del database il risultato delle richieste effettuate a dipendenza dei privilegi dell'utente loggato.|
+|**Risultati attesi** |Vedi allegato: test.xlsx|
+
+
 ### Risultati test
 <!--
 Tabella riassuntiva in cui si inseriscono i test riusciti e non del
