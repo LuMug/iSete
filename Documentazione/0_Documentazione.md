@@ -324,10 +324,11 @@ presenta? Che hw sarà disponibile durante lo sviluppo?
 - Attrezzi presenti nell'aula di modellismo
 - Cartone
 - Legno
-- Cartone 
+- Cartone
 - Servo motore
 - Raspberry
 - Capsule del caffè
+- Tablet
 
 ## Progettazione
 <!--
@@ -356,7 +357,6 @@ Descrive:
 Descrizione delle strutture di dati utilizzate dal programma in base
 agli attributi e le relazioni degli oggetti in uso.
 -->
-### Schema E-R, schema logico e descrizione.
 <!--
 Se il diagramma E-R viene modificato, sulla doc dovrà apparire l’ultima
 versione, mentre le vecchie saranno sui diari.
@@ -370,6 +370,7 @@ dell’interfaccia utente. La progettazione delle interfacce è basata
 sulle informazioni ricavate durante la fase di analisi e realizzata
 tramite mockups.
 -->
+
 ### Design procedurale
 <!--
 Descrive i concetti dettagliati dell’architettura/sviluppo utilizzando
@@ -613,7 +614,7 @@ $valore = $_POST['valore'];
 $descrizione = $_POST['descrizione'];
 sess("db")->start();
 if(!empty($nome) && !empty($valore)){
-	$ret = sess("db")->query("INSERT INTO configurazione (co_nome, co_valore, co_descrizione) 
+	$ret = sess("db")->query("INSERT INTO configurazione (co_nome, co_valore, co_descrizione)
 	VALUES ('".$nome."', '".$valore."', '".$descrizione."');");
 	if($ret){
 		echo "Configurazione aggiunta correttamente";
@@ -679,7 +680,7 @@ Mentre con quest'altra riga di codice abilito l'applicazione a ricavare informaz
 Con questo pezzo di codice, nella classe java dell'applicazione, nel metodo onCreate ricavo lo stato della rete tramite le classi ConnectivityManager e NetworkInfo.
 Successivamente controllo che l'applicazione sia connessa alla rete e informo tramite un toast(popup) l'esito sia positivo che negativo.
 In caso di esito positivo creo la webview e la reindirizzo, tramite il metodo loadUrl, al sito desiderato.
-```
+```java
  @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -704,6 +705,7 @@ In caso di esito positivo creo la webview e la reindirizzo, tramite il metodo lo
     }
 ```
 ### HW
+
 #### Struttura legno(Nishan)
 
 Come si vede nell'immagine sottostante ho messo due pezzi di legno di spessore 1 cm.
@@ -711,7 +713,7 @@ Questi due distano 4.8 cm.
 Alla base ho messo 5 strati di cartone che formano 5 centimentri in modo che la capsula cada nel ferro di cavallo
 ![Corridoio](img/HW_Finale2.png)
 
-Il legno che funge da corridoio per le capsule sono alte 4 centimetri. 
+Il legno che funge da corridoio per le capsule sono alte 4 centimetri.
 Sopra questo metteremo un plexiglass in modo che si veda il colore della capsula ma nessuno li potrà toccare.
 ![Parete](img/HW_Finale1.png)
 
@@ -723,17 +725,19 @@ Questo sarà il nostro sostegno, andrà dietro alla struttura con lo spessore in
 
 
 #### Espulsione capsule(Andrea)
-#####Schema Logico
-#####Codice 
+
+##### Schema Logico
+![Schema](../Progettazione/Raspberry Pi/Progettazione/Schema logico.PNG)
+##### Codice
 Per far funzionare il servo motore con il Raspberry ho cercato uno script che mi permettesse la connessione fra Servo motore e Raspberry, dopodiché, per farlo funzionare, ho dovuto installare la libreria GPIO seguendo  [la seguente guida](http://pi4j.com/install.html)
 Dopodiché ho implementato la classe funzionante in modo tale che il codice potesse essere usato anche con l'aumento di tipi di capsule. Per fare ciò ho dovuto collegarmi al database tramite java e per fare ciò ho dovuto usare la classe [jdbc](https://dev.mysql.com/downloads/connector/j/3.1.html). Ho creato un codice che, passando due parametri come argomenti della classe, che equivalgono al numero delle capsule e al tipo delle capsule, mi facciano girare il servo motore, corrispondente al tipo della capsula, un numero di volte equivalte al primo parametro passato.
-```
+```java
     public static void main(String[] args) {
         ServoMotoreModulare s = new ServoMotoreModulare(Integer.parseInt(args[0]), args[1]);
     }
 ```
 Per fare ciò ho creato dei metodi che richiamo nel costruttore.
-```
+```java
 
     public ServoMotoreModulare(int n, String t) { // costruttore
         this.connected(); // connessione al db
@@ -744,7 +748,7 @@ Per fare ciò ho creato dei metodi che richiamo nel costruttore.
 tramite this.connected() faccio la connessione al db.
 con il metodo setTypeCapsula() cerco prima nell'array la posizione in cui si trova quel tipo di capsula, dopodiché uso quella posizione per inizalizzare il servo motore dove la posizione nell'array dei pin è uguale a quella dell'array delle capsule
 
-```
+```java
     public void setTypeCapsula(String tipo) { // tipo della capsula
         int p = nomiCapsule.indexOf(tipo); // mi ritorna la posizione dove value=tipo
         myServo = gpio.provisionDigitalOutputPin(pinRasp[p], // pin del servo motore corrispondente
@@ -850,6 +854,12 @@ facilmente generalizzabili o sono specifici di un caso particolare? ecc
 modulabile.
 
 - Si potrebbe fare in modo che faccia cadere direttamente la capsula in una macchinetta la quale faccia il caffé.
+
+- Struttura finale di come pensavamo di farla
+
+![fronte](../Progettazione/progettazione fisica/fronte.PNG)
+
+![retro](../Progettazione/progettazione fisica/retro.PNG)
 <!--
   Migliorie o estensioni che possono essere sviluppate sul prodotto.
 -->
